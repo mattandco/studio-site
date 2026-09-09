@@ -614,13 +614,20 @@ strong {
   margin-top: clamp(36px, 5vw, 64px);
   display: flex;
   flex-wrap: wrap;
-  gap: clamp(24px, 4vw, 56px) clamp(40px, 6vw, 80px);
+  align-items: flex-start;
+  gap: clamp(24px, 5vw, 64px) clamp(64px, 10vw, 160px);
 }
 .dec-band .action {
   border-top: 1px solid rgba(255, 255, 255, 0.45);
   padding-top: 16px;
-  max-width: 420px;
   min-width: 0;
+}
+.dec-band .action:first-child {
+  flex: 1 1 560px;
+  max-width: 720px;
+}
+.dec-band .action:last-child {
+  flex: 0 1 auto;
 }
 .dec-band .action .al {
   font-family: var(--font-mono), monospace;

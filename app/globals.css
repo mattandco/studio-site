@@ -621,10 +621,13 @@ strong {
   border-top: 1px solid rgba(255, 255, 255, 0.45);
   padding-top: 16px;
   min-width: 0;
+  /* Hug the content's own width rather than stretching to fill the row,
+     so the top rule always matches the length of the text under it. */
+  flex: 0 1 auto;
+  width: max-content;
 }
 .dec-band .action:first-child {
-  flex: 1 1 560px;
-  max-width: 720px;
+  max-width: min(720px, 100%);
 }
 .dec-band .action:last-child {
   flex: 0 1 auto;

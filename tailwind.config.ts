@@ -1,50 +1,36 @@
 import type { Config } from "tailwindcss";
 
 /**
- * Design token registry (README "Design tokens" tables).
- *
- * Tailwind v4 is CSS-first: the tokens that actually drive the generated
- * utility classes (bg-paper, text-accent, font-display, …) are declared as
- * CSS custom properties in app/globals.css under `@theme inline`, and are
- * loaded here via `@config` so this file stays the canonical, typed source
- * of the palette and type scale for any tooling that reads it.
+ * Design token registry — house design frame, ported from the
+ * collective-service proposal reference. The tokens that actually drive
+ * generated utility classes live as CSS custom properties in
+ * app/globals.css under `@theme inline`; this file stays the canonical,
+ * typed source of the palette for any tooling that reads it.
  */
 const config: Config = {
   theme: {
     extend: {
       colors: {
-        paper: "#F4F2EC",
-        ink: "#12130E",
-        "ink-muted": "#4A4B42",
-        "ink-faint": "#5C5D53",
-        meta: "#66675E",
-        rule: "#D8D5CB",
-        "rule-list": "#E0DDD2",
-        "border-soft": "#C9C5B8",
-        accent: "#A24B3F",
-        selection: "#E4DFD1",
-        "dark-body": "#D8D5CB",
-        "dark-muted": "#B9B6A9",
-        "dark-faint": "#8A8B80",
-        "accent-light": "#C97B6A",
-        "dark-rule": "#33342C",
-        "dark-bg": "#12130E",
+        paper: "#F5F4EF",
+        "paper-2": "#ECEBE3",
+        ink: "#101114",
+        mute: "#585A52",
+        hair: "#DEDCD1",
+        "hair-strong": "#C6C4B6",
+        blue: "#1D2BE3",
+        red: "#D11A2A",
+        ghost: "#E7E5DA",
       },
       fontFamily: {
-        display: ["var(--font-libre-caslon-display)", "Georgia", "serif"],
-        serif: ["var(--font-libre-caslon-text)", "Georgia", "serif"],
-        sans: ["var(--font-archivo)", "sans-serif"],
-        mono: ["var(--font-ibm-plex-mono)", "monospace"],
+        display: ["var(--font-bricolage)", "Arial Black", "Arial", "sans-serif"],
+        serif: ["var(--font-newsreader)", "Georgia", "serif"],
+        mono: ["var(--font-fragment-mono)", "Courier New", "monospace"],
       },
       transitionTimingFunction: {
-        reveal: "cubic-bezier(0.16,1,0.3,1)",
-        interaction: "cubic-bezier(0.22,1,0.36,1)",
-      },
-      borderRadius: {
-        button: "2px",
+        house: "cubic-bezier(0.22,0.75,0.15,1)",
       },
       maxWidth: {
-        container: "1240px",
+        container: "1360px",
       },
     },
   },

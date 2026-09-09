@@ -1,40 +1,30 @@
 import type { Metadata } from "next";
-import {
-  Libre_Caslon_Display,
-  Libre_Caslon_Text,
-  Archivo,
-  IBM_Plex_Mono,
-} from "next/font/google";
-import { MotionProvider } from "@/components/motion/MotionProvider";
+import { Bricolage_Grotesque, Newsreader, Fragment_Mono } from "next/font/google";
+import PageMotion from "@/components/motion/PageMotion";
+import ScrollChrome from "@/components/motion/ScrollChrome";
 import RevealEngine from "@/components/motion/RevealEngine";
 import "./globals.css";
 
-const libreCaslonDisplay = Libre_Caslon_Display({
-  weight: "400",
+const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
-  variable: "--font-libre-caslon-display",
+  variable: "--font-bricolage",
   display: "swap",
+  axes: ["opsz"],
 });
 
-const libreCaslonText = Libre_Caslon_Text({
+const newsreader = Newsreader({
   weight: ["400", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
-  variable: "--font-libre-caslon-text",
+  variable: "--font-newsreader",
   display: "swap",
 });
 
-const archivo = Archivo({
-  weight: ["400", "500", "600"],
+const fragmentMono = Fragment_Mono({
+  weight: "400",
+  style: ["normal", "italic"],
   subsets: ["latin"],
-  variable: "--font-archivo",
-  display: "swap",
-});
-
-const ibmPlexMono = IBM_Plex_Mono({
-  weight: ["400", "500"],
-  subsets: ["latin"],
-  variable: "--font-ibm-plex-mono",
+  variable: "--font-fragment-mono",
   display: "swap",
 });
 
@@ -93,7 +83,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${libreCaslonDisplay.variable} ${libreCaslonText.variable} ${archivo.variable} ${ibmPlexMono.variable}`}
+      // "js" is set statelessly here rather than via a blocking inline
+      // script: this is a React app, JS is always present once it hydrates,
+      // and the house frame's motion CSS (.js .rv, .js .h1 .ln>span, …)
+      // simply gates on this class being there from the first paint.
+      className={`${bricolageGrotesque.variable} ${newsreader.variable} ${fragmentMono.variable} js`}
     >
       <head>
         <script
@@ -102,10 +96,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <MotionProvider>
-          {children}
-          <RevealEngine />
-        </MotionProvider>
+        <PageMotion />
+        <ScrollChrome />
+        {children}
+        <RevealEngine />
       </body>
     </html>
   );

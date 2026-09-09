@@ -37,15 +37,15 @@ async function loadGoogleFont(
 }
 
 export default async function OpengraphImage() {
-  const [display, archivo] = await Promise.all([
-    loadGoogleFont("Libre Caslon Display", 400),
-    loadGoogleFont("Archivo", 600),
+  const [display, mono] = await Promise.all([
+    loadGoogleFont("Bricolage Grotesque", 800),
+    loadGoogleFont("Fragment Mono", 400),
   ]);
 
-  const fonts: { name: string; data: ArrayBuffer; weight: 400 | 600; style: "normal" }[] =
+  const fonts: { name: string; data: ArrayBuffer; weight: 400 | 800; style: "normal" }[] =
     [];
-  if (display) fonts.push({ name: "Libre Caslon Display", data: display, weight: 400, style: "normal" });
-  if (archivo) fonts.push({ name: "Archivo", data: archivo, weight: 600, style: "normal" });
+  if (display) fonts.push({ name: "Bricolage Grotesque", data: display, weight: 800, style: "normal" });
+  if (mono) fonts.push({ name: "Fragment Mono", data: mono, weight: 400, style: "normal" });
 
   return new ImageResponse(
     (
@@ -56,19 +56,19 @@ export default async function OpengraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#F4F2EC",
+          background: "#F5F4EF",
           padding: "72px",
         }}
       >
         <div
           style={{
             display: "flex",
-            fontFamily: archivo ? "Archivo" : "sans-serif",
-            fontWeight: 600,
-            fontSize: 22,
+            fontFamily: mono ? "Fragment Mono" : "monospace",
+            fontWeight: 400,
+            fontSize: 16,
             letterSpacing: 4,
             textTransform: "uppercase",
-            color: "#12130E",
+            color: "#1D2BE3",
           }}
         >
           Matthew Bowman · Studio
@@ -76,13 +76,14 @@ export default async function OpengraphImage() {
         <div
           style={{
             display: "flex",
-            fontFamily: display ? "Libre Caslon Display" : "serif",
-            fontWeight: 400,
-            fontSize: 68,
+            fontFamily: display ? "Bricolage Grotesque" : "sans-serif",
+            fontWeight: 800,
+            textTransform: "uppercase",
+            fontSize: 64,
             lineHeight: 1.05,
-            letterSpacing: -1,
-            color: "#12130E",
-            maxWidth: 980,
+            letterSpacing: -2,
+            color: "#101114",
+            maxWidth: 1000,
           }}
         >
           Bridging Gaps with Inclusive Technological Solutions
@@ -90,12 +91,12 @@ export default async function OpengraphImage() {
         <div
           style={{
             display: "flex",
-            fontFamily: archivo ? "Archivo" : "sans-serif",
-            fontWeight: 600,
+            fontFamily: mono ? "Fragment Mono" : "monospace",
+            fontWeight: 400,
             fontSize: 16,
             letterSpacing: 2,
             textTransform: "uppercase",
-            color: "#66675E",
+            color: "#585A52",
           }}
         >
           A studio for humanitarian information

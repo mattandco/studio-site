@@ -489,6 +489,49 @@ strong {
   border-color: var(--blue);
 }
 
+/* ---------- process stages (chapter 03: how we work) — ported from the
+   reference proposal's .stages ---------- */
+.stages {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  counter-reset: st;
+}
+.stages li {
+  counter-increment: st;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(52px, 72px) minmax(0, 1fr);
+  gap: 0 10px;
+  padding: 22px 0;
+  border-top: 1px solid var(--hairS);
+}
+.stages li:last-child {
+  border-bottom: 1px solid var(--hairS);
+}
+.stages li::before {
+  content: counter(st, decimal-leading-zero);
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--blue);
+}
+.stages b {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 650;
+  font-size: clamp(20px, 2vw, 26px);
+  letter-spacing: -0.015em;
+  display: block;
+  line-height: 1.15;
+}
+.stages p {
+  margin: 8px 0 0;
+  grid-column: 2;
+  max-width: 58ch;
+}
+
 /* ---------- callout (used for the featured, current engagement) ---------- */
 .callout {
   margin: 0 0 clamp(30px, 4vw, 46px);
@@ -577,6 +620,7 @@ strong {
   border-top: 1px solid rgba(255, 255, 255, 0.45);
   padding-top: 16px;
   max-width: 420px;
+  min-width: 0;
 }
 .dec-band .action .al {
   font-family: var(--font-mono), monospace;
@@ -595,6 +639,8 @@ strong {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   padding-bottom: 4px;
   display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
   transition: border-color 0.3s var(--ease);
 }
 .dec-band .action a:hover {
@@ -697,6 +743,12 @@ strong {
   }
 }
 @media (max-width: 480px) {
+  .stages li {
+    grid-template-columns: 44px minmax(0, 1fr);
+  }
+  .stages p {
+    grid-column: 1 / -1;
+  }
   .top {
     align-items: center;
   }

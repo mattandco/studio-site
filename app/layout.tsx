@@ -31,9 +31,10 @@ const fragmentMono = Fragment_Mono({
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://matthewbowman-studio.vercel.app";
 
-const title = "Matthew Bowman — a studio for humanitarian information";
+const title =
+  "Matthew Bowman · a web and app design and development studio for the humanitarian sector";
 const description =
-  "A small studio building data systems, platforms, and information services for humanitarian organisations. Work delivered within programmes of IFRC, UNICEF, WHO and the Gates Foundation.";
+  "A web and app design and development studio building sites, apps, and platforms for humanitarian organisations. Work delivered within programmes of IFRC, UNICEF, WHO and the Gates Foundation.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     title,
     description,
     url: siteUrl,
-    siteName: "Matthew Bowman — Studio",
+    siteName: "Matthew Bowman · Studio",
     type: "website",
     locale: "en_US",
   },
@@ -64,7 +65,7 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Matthew Bowman — Studio",
+  name: "Matthew Bowman · Studio",
   description,
   url: siteUrl,
   email: "mailto:matthew.bowman.consult@gmail.com",

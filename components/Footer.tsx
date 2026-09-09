@@ -3,9 +3,9 @@ export default function Footer() {
     <footer className="docfoot rv">
       <div className="sig">Matthew Bowman</div>
       <p>
-        Matthew Bowman — a studio for humanitarian information. Digital
-        systems, data platforms, and operational information, for
-        organisations that work in emergencies.
+        Matthew Bowman, a web and app design and development studio for the
+        humanitarian sector. Sites, apps, platforms, and the delivery behind
+        them, for organisations that work in emergencies.
       </p>
     </footer>
   );

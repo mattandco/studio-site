@@ -5,7 +5,8 @@ import { useEffect, useRef } from "react";
 const SECTIONS: { id: string; label: string }[] = [
   { id: "studio", label: "01" },
   { id: "capabilities", label: "02" },
-  { id: "work", label: "03" },
+  { id: "how-we-work", label: "03" },
+  { id: "work", label: "04" },
   { id: "contact", label: "—" },
 ];
 

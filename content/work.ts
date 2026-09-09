@@ -9,9 +9,11 @@ export type WorkItem = {
   linkLabel: string;
 };
 
-// Ported verbatim from the design reference (Matthew Bowman.dc.html).
-// Only StarApple and Nestvested carry outbound links — do not invent
-// URLs for the IFRC / RCCE entries, they are pending client confirmation.
+// The first six entries are ported verbatim from the design reference
+// (Matthew Bowman.dc.html); TrueLine Adjust and Assess were added after.
+// Outbound links only go to verified, live URLs (StarApple, Nestvested,
+// TrueLine) — do not invent URLs for the IFRC / RCCE entries, they are
+// pending client confirmation.
 export const WORK: WorkItem[] = [
   {
     num: "01",
@@ -72,5 +74,25 @@ export const WORK: WorkItem[] = [
     scope: "Mobile · Web · Product design",
     link: "",
     linkLabel: "",
+  },
+  {
+    num: "07",
+    name: "TrueLine Adjust",
+    client: "TrueLine",
+    title: "A fair rate, line by line, for loss adjusters",
+    note: "A web platform that reads contractor estimates, Excel, PDF, or photographed, and suggests a fair Jamaican rate for each line item, producing a clean Excel deliverable with the original and adjusted figures, variance, and citations.",
+    scope: "Web app · AI-assisted pricing · Excel deliverables",
+    link: "https://trueline-sigma.vercel.app",
+    linkLabel: "trueline-sigma.vercel.app",
+  },
+  {
+    num: "08",
+    name: "TrueLine Assess",
+    client: "TrueLine",
+    title: "From a site visit to a priced report",
+    note: "The damage-assessment sibling to TrueLine Adjust: a photo and a dictated note become an AI-drafted scope, priced by a deterministic local-rate engine, and delivered as a BOQ-style report for insurers across Jamaica and the Caribbean.",
+    scope: "Web app · AI-assisted scoping · Multi-tenant",
+    link: "https://trueline-assess.vercel.app",
+    linkLabel: "trueline-assess.vercel.app",
   },
 ];

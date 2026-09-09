@@ -3,12 +3,12 @@ import { WORK } from "@/content/work";
 // A register, not a gallery — text only, no thumbnails, no imagery.
 export default function WorkRegister() {
   return (
-    <section className="sec" id="work">
+    <section className="sec alt" id="work">
       <div className="gnum" aria-hidden="true">
-        03
+        04
       </div>
       <header className="shead rv">
-        <span className="cn">03</span>
+        <span className="cn">04</span>
         <div>
           <h2>Work</h2>
           <span className="tag">a register of engagements, not a gallery</span>

@@ -2,8 +2,8 @@ export default function Cover() {
   return (
     <section className="cover" aria-label="Cover">
       <p className="kick fade">
-        A small studio for humanitarian information · working with the
-        sector since 2010
+        Web and app design and development for the humanitarian sector ·
+        working with it since 2010
       </p>
       <h1 className="h1">
         <span className="ln l1">
@@ -20,7 +20,7 @@ export default function Cover() {
         </span>
       </h1>
       <p className="lede fade">
-        We build the data systems, platforms, and information services that
+        We design and build the websites, apps, and platforms that
         humanitarian organisations rely on when a decision cannot wait.
       </p>
       <div className="meta fade fade2">
@@ -29,12 +29,12 @@ export default function Cover() {
           <div className="v">2010</div>
         </div>
         <div>
-          <div className="k">Sector</div>
-          <div className="v">Humanitarian information</div>
+          <div className="k">Focus</div>
+          <div className="v">Web &amp; app design and development</div>
         </div>
         <div>
-          <div className="k">Engagements</div>
-          <div className="v">Worldwide</div>
+          <div className="k">Sector</div>
+          <div className="v">Humanitarian</div>
         </div>
         <div>
           <div className="k">Contact</div>

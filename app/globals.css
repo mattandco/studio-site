@@ -1,0 +1,210 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+/* ---------- design tokens (README "Design tokens" tables) ---------- */
+:root {
+  /* paper ground */
+  --paper: #f4f2ec;
+  --ink: #12130e;
+  --ink-muted: #4a4b42;
+  --ink-faint: #5c5d53;
+  --meta: #66675e;
+  --rule: #d8d5cb;
+  --rule-list: #e0ddd2;
+  --border-soft: #c9c5b8;
+  --accent: #a24b3f;
+  --selection: #e4dfd1;
+
+  /* ink ground (studio section) */
+  --dark-body: #d8d5cb;
+  --dark-muted: #b9b6a9;
+  --dark-faint: #8a8b80;
+  --accent-light: #c97b6a;
+  --dark-rule: #33342c;
+  --dark-bg: #12130e;
+
+  /* easings */
+  --ease-reveal: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-interaction: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-faint: var(--ink-faint);
+  --color-meta: var(--meta);
+  --color-rule: var(--rule);
+  --color-rule-list: var(--rule-list);
+  --color-border-soft: var(--border-soft);
+  --color-accent: var(--accent);
+  --color-selection: var(--selection);
+  --color-dark-body: var(--dark-body);
+  --color-dark-muted: var(--dark-muted);
+  --color-dark-faint: var(--dark-faint);
+  --color-accent-light: var(--accent-light);
+  --color-dark-rule: var(--dark-rule);
+  --color-dark-bg: var(--dark-bg);
+
+  --font-display: var(--font-libre-caslon-display);
+  --font-serif: var(--font-libre-caslon-text);
+  --font-sans: var(--font-archivo);
+  --font-mono: var(--font-ibm-plex-mono);
+}
+
+/* ---------- reset ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-serif), Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--selection);
+}
+
+a {
+  color: var(--ink);
+  text-decoration: none;
+  transition:
+    color 520ms var(--ease-interaction),
+    border-color 520ms var(--ease-interaction);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---------- motion keyframes ---------- */
+@keyframes mbCaret {
+  0%,
+  44% {
+    opacity: 1;
+  }
+  50%,
+  94% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mbSweep {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* ---------- interaction classes (README Motion §E) ---------- */
+/* Hovers are deliberately slow: 520-760ms, never the default 150-200ms. */
+
+.mb-nav-link {
+  color: var(--ink-faint);
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+  transition:
+    color 520ms var(--ease-interaction),
+    border-color 520ms var(--ease-interaction);
+}
+.mb-nav-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.mb-sound-toggle {
+  color: var(--meta);
+  transition: color 520ms var(--ease-interaction);
+}
+.mb-sound-toggle:hover {
+  color: var(--accent);
+}
+.mb-sound-dot {
+  transition: background-color 520ms var(--ease-interaction);
+}
+.mb-sound-toggle:hover .mb-sound-dot {
+  background: var(--accent);
+}
+
+.mb-cta-button {
+  transition:
+    background-color 640ms var(--ease-interaction),
+    letter-spacing 640ms var(--ease-interaction);
+}
+.mb-cta-button:hover {
+  background: var(--accent);
+  letter-spacing: 0.19em;
+}
+
+.mb-capability-title {
+  transition:
+    letter-spacing 700ms var(--ease-interaction),
+    color 700ms var(--ease-interaction);
+}
+.mb-capability-title:hover {
+  letter-spacing: 0.035em;
+  color: var(--accent);
+}
+
+.mb-register-row {
+  transition: padding-left 760ms var(--ease-interaction);
+}
+.mb-register-row:hover,
+.mb-register-row:focus-visible {
+  padding-left: 14px;
+}
+.mb-register-name {
+  transition: color 760ms var(--ease-interaction);
+}
+.mb-register-row:hover .mb-register-name,
+.mb-register-row:focus-visible .mb-register-name {
+  color: var(--accent);
+}
+.mb-register-row:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.mb-contact-email {
+  transition:
+    color 620ms var(--ease-interaction),
+    padding-bottom 620ms var(--ease-interaction);
+}
+.mb-contact-email:hover {
+  color: var(--accent);
+  padding-bottom: 13px;
+}
+
+.mb-phone-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.mb-panel-link {
+  transition:
+    color 520ms var(--ease-interaction),
+    border-color 520ms var(--ease-interaction);
+}
+.mb-panel-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}

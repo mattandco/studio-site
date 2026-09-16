@@ -18,8 +18,8 @@ export default function CurrentProject() {
         Swiss foundation created by Plan International to fund its programmes
         for girls. A new design standard for the site, rebuilt on WordPress so
         the Foundation&rsquo;s own team can edit every page without breaking
-        the design, and a giving flow that takes a one-time or monthly gift in
-        four currencies. The whole studio team is on it.
+        the design, and an online donation platform that takes a one-time or
+        monthly gift in four currencies. The whole studio team is on it.
       </p>
       <div className="now-meta">
         <div>
@@ -28,7 +28,7 @@ export default function CurrentProject() {
         </div>
         <div>
           <div className="k">Scope</div>
-          <div className="v">Design standard · WordPress build · Giving</div>
+          <div className="v">Design standard · WordPress build · Online donation platform</div>
         </div>
         <div>
           <div className="k">Status</div>

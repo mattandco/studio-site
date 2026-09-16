@@ -12,14 +12,14 @@ export default function CurrentProject() {
       <h2 id="now-title" className="now-title">
         Global Girls Foundation
       </h2>
-      <p className="now-tag">A redesign of the Foundation&rsquo;s website</p>
+      <p className="now-tag">Website redesign and online donation integration</p>
       <p className="now-copy">
         We are redesigning the website of the Global Girls Foundation, the
         Swiss foundation created by Plan International to fund its programmes
         for girls. A new design standard for the site, rebuilt on WordPress so
         the Foundation&rsquo;s own team can edit every page without breaking
-        the design, and an online donation platform that takes a one-time or
-        monthly gift in four currencies. The whole studio team is on it.
+        the design, and an online donation integration that takes a one-time
+        or monthly gift in four currencies. The whole studio team is on it.
       </p>
       <div className="now-meta">
         <div>
@@ -28,7 +28,7 @@ export default function CurrentProject() {
         </div>
         <div>
           <div className="k">Scope</div>
-          <div className="v">Design standard · WordPress build · Online donation platform</div>
+          <div className="v">Website redesign · Online donation integration</div>
         </div>
         <div>
           <div className="k">Status</div>

@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "nodejs";
 export const alt =
-  "Matthew Bowman · a web and app design and development studio for the humanitarian sector";
+  "Nestvested · a web and app design and development studio for the humanitarian sector";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -72,7 +72,7 @@ export default async function OpengraphImage() {
             color: "#1D2BE3",
           }}
         >
-          Matthew Bowman · Studio
+          Nestvested · Studio
         </div>
         <div
           style={{

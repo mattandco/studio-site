@@ -82,7 +82,7 @@ export default function ScrollChrome() {
       </div>
 
       <aside className="spine">
-        <span className="vlabel">Matthew Bowman · Studio</span>
+        <span className="vlabel">Nestvested · Studio</span>
         <div className="track" aria-hidden="true">
           <div className="fill" ref={sfillRef} />
         </div>

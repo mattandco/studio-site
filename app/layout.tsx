@@ -29,10 +29,10 @@ const fragmentMono = Fragment_Mono({
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://matthewbowman-studio.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://nestvested.co";
 
 const title =
-  "Matthew Bowman · a web and app design and development studio for the humanitarian sector";
+  "Nestvested · a web and app design and development studio for the humanitarian sector";
 const description =
   "A web and app design and development studio building sites, apps, and platforms for humanitarian organisations. Work delivered within programmes of IFRC, UNICEF, WHO and the Gates Foundation.";
 
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title,
     description,
     url: siteUrl,
-    siteName: "Matthew Bowman · Studio",
+    siteName: "Nestvested",
     type: "website",
     locale: "en_US",
   },
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Matthew Bowman · Studio",
+  name: "Nestvested",
   description,
   url: siteUrl,
   email: "mailto:matthew.bowman.consult@gmail.com",

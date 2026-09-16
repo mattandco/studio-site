@@ -20,19 +20,6 @@ export default function WorkRegister() {
           sector.
         </p>
         <div className="rest rv">
-          <div className="callout">
-            <span className="ct">
-              Currently in the studio · Global Girls Foundation
-            </span>
-            <span className="ctitle">
-              A digital home for the Global Girls Foundation
-            </span>
-            <p>
-              In progress with the whole studio team: a public platform for
-              the Foundation&rsquo;s programmes, built to be maintained by
-              their own people afterwards.
-            </p>
-          </div>
           <ul>
             {WORK.map((item) => (
               <li key={item.num}>

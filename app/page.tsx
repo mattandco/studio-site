@@ -1,5 +1,6 @@
 import TopRow from "@/components/TopRow";
 import Cover from "@/components/Cover";
+import CurrentProject from "@/components/CurrentProject";
 import ClientStrip from "@/components/ClientStrip";
 import Studio from "@/components/Studio";
 import Capabilities from "@/components/Capabilities";
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="wrap" id="top">
         <TopRow />
         <Cover />
+        <CurrentProject />
         <ClientStrip />
         <Studio />
         <Capabilities />

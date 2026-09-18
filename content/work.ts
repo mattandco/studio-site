@@ -10,9 +10,10 @@ export type WorkItem = {
 };
 
 // The first six entries are ported verbatim from the design reference
-// (Matthew Bowman.dc.html); TrueLine Adjust and Assess were added after.
+// (Matthew Bowman.dc.html); TrueLine Adjust and Assess were added after,
+// then Atrium (18 Sep 2026).
 // Outbound links only go to verified, live URLs (StarApple, Nestvested,
-// TrueLine) — do not invent URLs for the IFRC / RCCE entries, they are
+// TrueLine, Atrium) — do not invent URLs for the IFRC / RCCE entries, they are
 // pending client confirmation.
 export const WORK: WorkItem[] = [
   {
@@ -94,5 +95,15 @@ export const WORK: WorkItem[] = [
     scope: "Web app · AI-assisted scoping · Multi-tenant",
     link: "https://trueline-assess.vercel.app",
     linkLabel: "trueline-assess.vercel.app",
+  },
+  {
+    num: "09",
+    name: "Atrium",
+    client: "Atrium Filing",
+    title: "Florida court forms, prepared without a law firm",
+    note: "A document-preparation service for Florida family law: a customer chooses a packet, an AI-led intake gathers their answers, an operator reviews and completes the official Florida Supreme Court forms, and the finished packet arrives as a PDF, with the state's nonlawyer disclosures built into every step.",
+    scope: "Web app · AI-led intake · Payments · Operator dashboard",
+    link: "https://atriumfiling.com",
+    linkLabel: "atriumfiling.com",
   },
 ];

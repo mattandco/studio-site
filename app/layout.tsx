@@ -1,94 +1,86 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Newsreader, Fragment_Mono } from "next/font/google";
-import PageMotion from "@/components/motion/PageMotion";
-import ScrollChrome from "@/components/motion/ScrollChrome";
-import RevealEngine from "@/components/motion/RevealEngine";
+import { Golos_Text } from "next/font/google";
+import localFont from "next/font/local";
+import ContactFormProvider from "@/components/ContactForm";
+import PageTransition from "@/components/PageTransition";
+import SiteFooter from "@/components/SiteFooter";
+import SiteHeader from "@/components/SiteHeader";
+import { SITE } from "@/content/site";
 import "./globals.css";
 
-const bricolageGrotesque = Bricolage_Grotesque({
+const golos = Golos_Text({
+  weight: ["400", "500"],
   subsets: ["latin"],
-  variable: "--font-bricolage",
-  display: "swap",
-  axes: ["opsz"],
-});
-
-const newsreader = Newsreader({
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  variable: "--font-newsreader",
+  variable: "--font-golos",
   display: "swap",
 });
 
-const fragmentMono = Fragment_Mono({
+// Arabic and Chinese appear only in the hero's six-language display, so each is
+// a subset of just those letters (a few KB) rather than the whole family.
+const alexandria = localFont({
+  src: "./fonts/alexandria-subset.woff2",
   weight: "400",
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  variable: "--font-fragment-mono",
+  variable: "--font-alexandria",
   display: "swap",
+  preload: false,
+  adjustFontFallback: false,
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://nestvested.co";
+const notoSansSc = localFont({
+  src: "./fonts/noto-sans-sc-subset.woff2",
+  weight: "400",
+  variable: "--font-noto-sc",
+  display: "swap",
+  preload: false,
+  adjustFontFallback: false,
+});
 
-const title =
-  "Nestvested · a web and app design and development studio for the humanitarian sector";
+const title = "Nestvested · Websites and brands for NGOs and international organisations";
 const description =
-  "A web and app design and development studio building sites, apps, and platforms for humanitarian organisations. Work delivered within programmes of IFRC, UNICEF, WHO and the Gates Foundation.";
+  "Nestvested designs and builds websites and brands for NGOs and international organisations: fast, accessible sites your own team can update, built for slow and unstable connections.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
-  title,
+  metadataBase: new URL(SITE.url),
+  title: { default: title, template: "%s · Nestvested" },
   description,
-  alternates: {
-    canonical: "/",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
   openGraph: {
     title,
     description,
-    url: siteUrl,
-    siteName: "Nestvested",
+    url: SITE.url,
+    siteName: SITE.name,
     type: "website",
-    locale: "en_US",
+    locale: "en_GB",
   },
-  twitter: {
-    card: "summary_large_image",
-    title,
-    description,
-  },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Nestvested",
+  name: SITE.name,
+  legalName: SITE.legalName,
   description,
-  url: siteUrl,
-  email: "mailto:matthew.bowman.consult@gmail.com",
-  founder: {
-    "@type": "Person",
-    name: "Matthew Bowman",
+  url: SITE.url,
+  email: `mailto:${SITE.email}`,
+  telephone: SITE.phone.replaceAll(" ", ""),
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "35 Lady Musgrave Road, Building 18",
+    addressLocality: "Kingston",
+    addressCountry: "JM",
   },
+  founder: { "@type": "Person", name: SITE.founder },
   areaServed: "Worldwide",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="en"
-      // "js" is set statelessly here rather than via a blocking inline
-      // script: this is a React app, JS is always present once it hydrates,
-      // and the house frame's motion CSS (.js .rv, .js .h1 .ln>span, …)
-      // simply gates on this class being there from the first paint.
-      className={`${bricolageGrotesque.variable} ${newsreader.variable} ${fragmentMono.variable} js`}
+      lang="en-GB"
+      data-scroll-behavior="smooth"
+      className={`${golos.variable} ${alexandria.variable} ${notoSansSc.variable}`}
     >
       <head>
         <script
@@ -97,10 +89,14 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <PageMotion />
-        <ScrollChrome />
-        {children}
-        <RevealEngine />
+        <ContactFormProvider>
+          <a href="#content" className="skip-link">
+            Skip to content
+          </a>
+          <SiteHeader />
+          <PageTransition>{children}</PageTransition>
+          <SiteFooter />
+        </ContactFormProvider>
       </body>
     </html>
   );

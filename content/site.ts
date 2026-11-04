@@ -1,0 +1,14 @@
+// Company facts. The name and address are as printed on Nestvested Limited's
+// invoices; the email and phone are the ones the previous site published.
+export const SITE = {
+  name: "Nestvested",
+  legalName: "Nestvested Limited",
+  address: "35 Lady Musgrave Road, Building 18, Kingston, Jamaica",
+  founder: "Matthew Bowman",
+  email: "matthew.bowman.consult@gmail.com",
+  phone: "+1 876 881 8780",
+  phoneHref: "tel:+18768818780",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://nestvested.co",
+  // The date the accessibility tests in app/accessibility were last run.
+  accessibilityTested: "4 November 2026",
+};

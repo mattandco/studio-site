@@ -884,6 +884,8 @@ body {
   inset: 0;
   display: block;
   scale: 1.06;
+  /* Grows to the right, so headlines near the left edge of a screenshot stay whole. */
+  transform-origin: left center;
 }
 .work-image img {
   transition: scale 1.6s cubic-bezier(0.16, 1, 0.3, 1);

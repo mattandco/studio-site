@@ -211,6 +211,7 @@ export default function Motion({ view }: { view: string }) {
     const uncover = () => {
       covered.current = false;
       const list = pending.current.splice(0).filter(({ el }) => el.isConnected);
+      list.sort((a, b) => (a.el.compareDocumentPosition(b.el) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
       list.forEach(({ el }, index) => play(el, index * 110));
     };
     window.addEventListener("nv-uncover", uncover);

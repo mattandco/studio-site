@@ -1,24 +1,29 @@
 // The opening from the design: the logo draws itself on a white sheet, then flies to
-// the header as the sheet lifts. It runs from a small inline script, so it never waits
-// for the site's code on a slow connection, and it skips reduced motion and visitors
-// already on the site (a language switch, for example).
+// the header as the sheet lifts, and the real header logo only appears once it lands.
+// It runs from a small inline script, so it never waits for the site's code on a slow
+// connection. It plays on every load, as the design says, except for reduced motion
+// and a language switch, which is a full page load here but not in the design.
 export const introScript = `(function(){try{
 var d=document,w=window;
 if(w.matchMedia('(prefers-reduced-motion: reduce)').matches||!Element.prototype.animate)return;
-if(d.referrer&&new URL(d.referrer).origin===location.origin)return;
+var nav=performance.getEntriesByType('navigation')[0]||{};
+if(nav.type!=='reload'&&d.referrer&&new URL(d.referrer).origin===location.origin)return;
 w.__nvCovered=true;
 var EO='cubic-bezier(.16,1,.3,1)',EIO='cubic-bezier(.76,0,.24,1)';
-var cols=["#D9480F","#2457D6","#138A55","#B57A00","#7B3FE4","#D6246E"];
+var hues=["#D9480F","#2457D6","#138A55","#B57A00","#7B3FE4","#D6246E"],ring=[0,3,4,5,2,1];
+var step=Math.max(0,['en','fr','ru','es','ar','zh'].indexOf(d.documentElement.lang.slice(0,2)));
+var cols=[0,5,4,1,2,3].map(function(p){return hues[ring[(p-step+6)%6]]});
 var pos=[[-3.6,-7.2],[-3.6,0],[-3.6,7.2],[3.6,-7.2],[3.6,0],[3.6,7.2]];
 var root=d.createElement('div');root.setAttribute('aria-hidden','true');root.setAttribute('data-nv-intro','');
 root.style.cssText='position:fixed;inset:0;z-index:100';
 var dots=pos.map(function(p,i){return '<circle cx="'+p[0]+'" cy="'+p[1]+'" r="2.88" style="fill:'+cols[i]+';transform-box:fill-box;transform-origin:center;transform:scale(0)"></circle>'}).join('');
 var chars='Nestvested'.split('').map(function(c){return '<span style="display:inline-block;overflow:hidden;vertical-align:top;padding:.1em 0 .18em;margin:-.1em 0 -.18em"><span data-c style="display:inline-block;transform:translateY(112%)">'+c+'</span></span>'}).join('');
-root.innerHTML='<div data-s style="position:absolute;inset:0;background:#fff"><div data-t style="position:absolute;left:0;right:0;bottom:0;height:1px;background:#242126;transform-origin:left center;transform:scaleX(0)"></div></div><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none"><span data-l style="display:inline-flex;align-items:baseline;gap:.24em;font-size:clamp(48px,8vw,128px);font-weight:500;letter-spacing:-0.02em;line-height:1.6;color:#242126;white-space:nowrap;transform-origin:0 0"><svg viewBox="-7 -10.5 14 21" style="flex:none;width:.493em;height:.74em;position:relative;top:.04em;overflow:visible">'+dots+'</svg><span style="display:inline-block;white-space:nowrap">'+chars+'</span></span></div>';
+root.innerHTML='<style data-h>.logo{opacity:0}</style><div data-s style="position:absolute;inset:0;background:#fff"><div data-t style="position:absolute;left:0;right:0;bottom:0;height:1px;background:#242126;transform-origin:left center;transform:scaleX(0)"></div></div><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none"><span data-l style="display:inline-flex;align-items:baseline;gap:.24em;font-size:clamp(48px,8vw,128px);font-weight:500;letter-spacing:-0.02em;line-height:1.6;color:#242126;white-space:nowrap;transform-origin:0 0"><svg viewBox="-7 -10.5 14 21" style="flex:none;width:.493em;height:.74em;position:relative;top:.04em;overflow:visible">'+dots+'</svg><span style="display:inline-block;white-space:nowrap">'+chars+'</span></span></div>';
 d.body.appendChild(root);
 var q=function(s){return root.querySelector(s)},sheet=q('[data-s]'),lock=q('[data-l]');
 var done=false,uncover=function(){if(w.__nvCovered){w.__nvCovered=false;w.dispatchEvent(new Event('nv-uncover'))}};
-var end=function(){if(done)return;done=true;uncover();root.remove();var h=d.querySelector('.logo');if(h)h.style.opacity=''};
+var end=function(){if(done)return;done=true;uncover();root.remove()};
+var run=function(){
 root.querySelectorAll('circle').forEach(function(c,i){c.animate([{transform:'scale(0)'},{transform:'scale(1)'}],{duration:800,delay:100+i*95,easing:EO,fill:'both'})});
 root.querySelectorAll('[data-c]').forEach(function(c,i){c.animate([{transform:'translateY(112%)'},{transform:'none'}],{duration:1100,delay:380+i*42,easing:EO,fill:'both'})});
 q('[data-t]').animate([{transform:'scaleX(0)'},{transform:'scaleX(1)'}],{duration:700,delay:1500,easing:EIO,fill:'both'});
@@ -30,7 +35,10 @@ lock.animate([{transform:'none'},{transform:'translate('+(hr.left-o.left-s*(lr.l
 if(!flew)lock.animate([{opacity:1},{opacity:0}],{duration:500,easing:'ease',fill:'forwards'});
 sheet.animate([{transform:'none'},{transform:'translateY(-100%)'}],{duration:D,easing:EIO,fill:'forwards'});
 setTimeout(uncover,520);
-setTimeout(function(){lock.animate([{opacity:1},{opacity:0}],{duration:280,easing:'ease',fill:'forwards'});setTimeout(end,290)},D);
+setTimeout(function(){var h=d.querySelector('.logo');q('[data-h]').remove();if(h)h.animate([{opacity:0},{opacity:1}],{duration:280,easing:'ease'});lock.animate([{opacity:1},{opacity:0}],{duration:280,easing:'ease',fill:'forwards'});setTimeout(end,290)},D);
 },2100);
-setTimeout(end,6000);
+};
+d.body.offsetHeight;
+Promise.race([d.fonts?d.fonts.ready:Promise.resolve(),new Promise(function(r){setTimeout(r,900)})]).then(function(){try{run()}catch(e){end()}});
+setTimeout(end,8000);
 }catch(e){}})();`;

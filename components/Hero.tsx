@@ -5,7 +5,7 @@ import { HERO_LANGUAGES, setHeroIndex } from "@/lib/hero";
 import DiscussLink from "@/components/DiscussLink";
 import type { Lang } from "@/lib/languages";
 
-type Phase = "intro" | "in" | "out" | "none";
+type Phase = "intro" | "in" | "out" | "none" | "hide";
 
 const HOLD = 3400;
 
@@ -43,7 +43,7 @@ function Letters({
       {parts.map((part, index) => {
         const step = offset + index;
         const animation =
-          phase === "none"
+          phase === "none" || phase === "hide"
             ? "none"
             : phase === "out"
               ? `heroLeave .7s cubic-bezier(.7,0,.84,0) ${step * (ar ? 90 : 24)}ms both`
@@ -54,7 +54,7 @@ function Letters({
           <Fragment key={`${generation}${code}${index}`}>
             {ar && index > 0 ? " " : null}
             <span className="hero-unit">
-              <span style={{ animation }}>{part === " " ? " " : part}</span>
+              <span style={phase === "hide" ? { animation, transform: "translateY(112%)" } : { animation }}>{part === " " ? " " : part}</span>
             </span>
           </Fragment>
         );
@@ -135,8 +135,22 @@ export default function Hero({ lang, text }: { lang: Lang; text: HeroText }) {
       { threshold: 0.2 }
     );
     if (section.current) observer.observe(section.current);
-    schedule(duration(start, "intro") + HOLD);
+    // Behind the opening animation the letters wait, then rise as the sheet lifts.
+    const begin = () => {
+      live.current.phase = "intro";
+      setPhase("intro");
+      setGeneration((value) => value + 1);
+      schedule(duration(start, "intro") + HOLD);
+    };
+    if ((window as Window & { __nvCovered?: boolean }).__nvCovered) {
+      live.current.phase = "hide";
+      setPhase("hide");
+      window.addEventListener("nv-uncover", begin, { once: true });
+    } else {
+      schedule(duration(start, "intro") + HOLD);
+    }
     return () => {
+      window.removeEventListener("nv-uncover", begin);
       clearTimeout(timer.current);
       observer.disconnect();
       setHeroIndex(0);

@@ -135,7 +135,8 @@ export function startPaper(cv: HTMLCanvasElement, reduced: boolean) {
     presses.push({ cx: w * 0.78, cy: window.innerHeight * 0.55, D, still: true, H: D * 0.055 });
     request();
   } else {
-    schedule(400);
+    // The first press waits for the opening animation to finish, as in the design.
+    schedule((window as Window & { __nvCovered?: boolean }).__nvCovered ? 3600 : 400);
   }
   return () => {
     stopped = true;

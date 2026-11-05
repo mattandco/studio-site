@@ -57,6 +57,27 @@ export default async function CaseStudyPage({ params }: Props) {
     ["team", t.team],
   ];
 
+  // On the Collective Service study the before and after is the first image, on Matthew's instruction.
+  const sliderFirst = slug === "collective-service";
+  const slider = (
+        <section aria-labelledby="h-slider" className="wrap section">
+          <h2 id="h-slider" className="rule-label slider-label">
+            <span>{t.beforeAfter}</span>
+            <span>{common.drag}</span>
+          </h2>
+          <BeforeAfter
+            before={`/work/${slug}-before.jpg`}
+            after={`/work/${slug}-after.jpg`}
+            beforeLabel={t.before}
+            afterLabel={t.after}
+            label={t.beforeAfter}
+            beforeAlt={`${project.name} · ${t.before}`}
+            afterAlt={`${project.name} · ${t.after}`}
+            frame={FRAMES[slug].slider}
+          />
+        </section>
+  );
+
   return (
     <article aria-labelledby="case-title">
       <div className="wrap page-top">
@@ -101,6 +122,8 @@ export default async function CaseStudyPage({ params }: Props) {
         </dl>
       </div>
 
+      {sliderFirst && slider}
+
       <figure className="wrap case-image">
         <span className="work-image" style={{ "--frame": FRAMES[slug].image } as CSSProperties}>
           <Image src={project.detailImage.src} alt={project.detailImage.alt} fill sizes="(max-width: 1512px) 100vw, 1384px" />
@@ -119,22 +142,7 @@ export default async function CaseStudyPage({ params }: Props) {
         </dl>
       </section>
 
-      <section aria-labelledby="h-slider" className="wrap section">
-        <h2 id="h-slider" className="rule-label slider-label">
-          <span>{t.beforeAfter}</span>
-          <span>{common.drag}</span>
-        </h2>
-        <BeforeAfter
-          before={`/work/${slug}-before.jpg`}
-          after={`/work/${slug}-after.jpg`}
-          beforeLabel={t.before}
-          afterLabel={t.after}
-          label={t.beforeAfter}
-          beforeAlt={`${project.name} · ${t.before}`}
-          afterAlt={`${project.name} · ${t.after}`}
-          frame={FRAMES[slug].slider}
-        />
-      </section>
+      {!sliderFirst && slider}
 
       <div className="wrap case-body-wrap">
         <nav aria-label={t.onThisPage} className="on-this-page">

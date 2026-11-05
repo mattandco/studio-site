@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ClosingCta, NumberedRows } from "@/components/PageParts";
 import { getContent, getProject, nextProject } from "@/content/i18n";
 import { SITE } from "@/content/site";
 import { localePath, type Lang } from "@/lib/languages";
@@ -145,10 +146,20 @@ export default async function CaseStudyPage({ params }: Props) {
             <h2 id="h-decisions" className="body-heading">
               {t.decisions}
             </h2>
-            {project.decisions.map(({ title, text }) => (
+            {project.decisions.map(({ title, text, link }) => (
               <div key={title} className="decision">
                 <h3>{title}</h3>
-                <p>{text}</p>
+                <p>
+                  {text}
+                  {link && (
+                    <>
+                      {" "}
+                      <Link href={localePath(lang, link.href)} className="link">
+                        {link.text}
+                      </Link>
+                    </>
+                  )}
+                </p>
               </div>
             ))}
           </section>
@@ -256,12 +267,21 @@ export default async function CaseStudyPage({ params }: Props) {
         <p className="next-capability type-lg">{project.next}</p>
       </section>
 
-      <nav aria-label="Next case study" className="wrap next-case">
+      <section aria-labelledby="h-proves" className="wrap section">
+        <h2 id="h-proves" className="rule-label">
+          {t.proves}
+        </h2>
+        <NumberedRows rows={project.proves} />
+      </section>
+
+      <nav aria-label={t.nextCase} className="wrap next-case">
         <Link href={localePath(lang, `/work/${next.slug}`)}>
           <span className="next-case-label">{t.nextCase}</span>
           <span className="next-case-name">{next.name} →</span>
         </Link>
       </nav>
+
+      <ClosingCta lang={lang} />
     </article>
   );
 }

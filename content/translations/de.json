@@ -1,0 +1,1432 @@
+{
+  "meta": {
+    "title": "Nestvested · Websites, Marken und Evidenzsysteme für NGOs und internationale Organisationen",
+    "description": "Webdesign, Entwicklung, Branding und Evidenzsysteme für NGOs, Stiftungen und Organisationen des UN-Systems. Festpreise in Schweizer Franken, ein Angebot innerhalb von fünf Arbeitstagen."
+  },
+  "common": {
+    "skip": "Zum Inhalt springen",
+    "mainMenu": "Hauptmenü",
+    "breadcrumb": "Pfadnavigation",
+    "languages": "Sprachen",
+    "discuss": "Projekt besprechen",
+    "tellUs": "Senden Sie uns Ihr Briefing.",
+    "ctaLabel": "Kontakt",
+    "ctaText": "Ein grobes Briefing oder eine Leistungsbeschreibung genügt. Matthew Bowman antwortet noch am selben Geschäftstag, und innerhalb von fünf Arbeitstagen haben Sie ein Festpreisangebot."
+  },
+  "nav": {
+    "work": "Projekte",
+    "services": "Leistungen",
+    "about": "Über uns",
+    "insights": "Beiträge",
+    "workingWithUs": "Zusammenarbeit",
+    "contact": "Kontakt",
+    "readIn": "Lesen auf"
+  },
+  "hero": {
+    "title": "Websites und Marken für NGOs und internationale Organisationen.",
+    "seeWork": "Projekte ansehen",
+    "pause": "Pause",
+    "play": "Abspielen",
+    "statement": "Forschungsbasiertes Design, Websites, die über 3G laden, und Evidenzsysteme, die aus Ihren eigenen Dokumenten antworten und jede Quelle angeben. Festpreise, vereinbart vor Arbeitsbeginn.",
+    "facts": [
+      "Gegründet 2018",
+      "Eingetragenes Unternehmen",
+      "Festpreise in Schweizer Franken",
+      "Angebot innerhalb von fünf Arbeitstagen"
+    ]
+  },
+  "home": {
+    "selectedWork": "Ausgewählte Projekte",
+    "readCaseStudy": "Fallstudie lesen →",
+    "whatWeDo": "Was wir tun",
+    "services": [
+      {
+        "slug": "web-design",
+        "name": "Webdesign",
+        "text": "Forschungsbasiertes Design, früh als Prototyp umgesetzt und als Designsystem geliefert, das in jeder Sprache und Schrift funktioniert."
+      },
+      {
+        "slug": "web-development",
+        "name": "Webentwicklung",
+        "text": "Websites, die nach einem Performance-Budget gebaut und vor dem Launch nach WCAG getestet werden, mit einem Redaktionssystem, das Ihr eigenes Team betreibt."
+      },
+      {
+        "slug": "evidence-intelligence",
+        "name": "Evidenzsysteme",
+        "text": "Eine Wissensbasis aus allem, was Ihre Organisation besitzt, abgefragt in natürlicher Sprache, jede Antwort bis zu ihrer Quelle zurückverfolgt. Gehostet auf unserer oder Ihrer Infrastruktur; Genauigkeit per Benchmark gemessen und veröffentlicht."
+      },
+      {
+        "slug": "branding",
+        "name": "Branding",
+        "text": "Identitätssysteme, die bei 16 Pixel und über Sprachen hinweg funktionieren, geliefert als Richtlinien, die Partner ohne uns anwenden können."
+      },
+      {
+        "slug": "web-maintenance",
+        "name": "Website-Wartung",
+        "text": "Laufender Betrieb gegen eine wiederkehrende Pauschale — monatlich, vierteljährlich oder jährlich: Updates, Sicherheit, per Wiederherstellung geprüfte Backups, jeden Monat ein Bericht."
+      }
+    ],
+    "about": "Über uns",
+    "aboutLine": "Die Menschen, die Sie kennenlernen, machen die Arbeit.",
+    "aboutText": [
+      "Nestvested ist ein Studio für Webdesign und Webentwicklung, gegründet 2018 und eingetragen in Kingston, Jamaika. Gründer und Projektleiter Matthew Bowman arbeitet seit 2010 mit NGOs wie der IFRC, mit Teams in Genf und bei globalen Einsätzen.",
+      "Jedes Projekt wird vom ganzen Team getragen, statt eine Kette hinuntergereicht zu werden: Design, Entwicklung, Inhalte und Umsetzung arbeiten am selben Problem."
+    ],
+    "workingWithUs": "Zusammenarbeit",
+    "workingLine": "Bereit für Ihre Beschaffung, die Preise von Anfang an genannt.",
+    "working": [
+      {
+        "term": "Eingetragenes Unternehmen",
+        "text": "Verträge und Rechnungen von Nestvested Limited, Kingston, Jamaika. Unternehmensunterlagen und Referenzen liegen zum Versand mit dem Angebot bereit."
+      },
+      {
+        "term": "Festpreise in Schweizer Franken",
+        "text": "Vor Arbeitsbeginn vereinbart und an den Leistungsumfang gebunden, nicht an Stunden. Rechnungsstellung bei Unterzeichnung, bei der Designfreigabe und zum Launch."
+      },
+      {
+        "term": "Wartungspläne",
+        "text": "Vier Pläne für Websites, die wir bauen oder übernehmen, ab CHF 1.200 pro Monat, in der Analysephase auf die Website abgestimmt. Monatlich, vierteljährlich oder jährlich."
+      },
+      {
+        "term": "Nachweise, veröffentlicht",
+        "text": "Eine Erklärung zur Barrierefreiheit mit Testmethode, gegen ein Budget gemessene Performance und ein Sicherheitshinweis für jede Website, die wir betreiben. Bei Evidenzsystemen der Genauigkeits-Benchmark."
+      },
+      {
+        "term": "Nur erfahrene Fachleute",
+        "text": "Wer beim ersten Treffen dabei ist, macht die Arbeit. Jeder Partner wird im Angebot genannt, mit seinem Teil der Arbeit."
+      }
+    ],
+    "bookCall": "30-minütiges Gespräch buchen",
+    "workStatement": "Zwei Projekte in voller Länge, jede Zahl gemessen und datiert. Was noch nicht gestartet ist, ist auch so gekennzeichnet.",
+    "workNote": "Die frühere Arbeit des Gründers, seit 2010 mit der IFRC und Teams in Genf, entstand innerhalb dieser Teams und wird hier nicht veröffentlicht. Referenzen sind auf Anfrage verfügbar und werden im Angebot genannt.",
+    "servicesStatement": "Fünf Leistungen aus einem Team, jede zum Festpreis und jede mit Nachweisen für Ihre Unterlagen: ein Designsystem, Testergebnisse, ein Benchmark, ein Monatsbericht.",
+    "scopeAndFees": "Leistungsumfang und Preise →",
+    "aboutFacts": [
+      "Gegründet 2018",
+      "Nestvested Limited, Kingston, Jamaika",
+      "Vollständig remote",
+      "Sechs Arbeitssprachen: Englisch, Französisch, Russisch, Spanisch, Arabisch und Chinesisch"
+    ],
+    "people": [
+      {
+        "name": "Matthew Bowman",
+        "text": "Gründer und Projektleiter. Seit 2010 im humanitären Informationsmanagement tätig, mit der IFRC und Teams in Genf. Schreibt jedes Angebot und leitet jedes Projekt vom ersten Gespräch bis zum Launch."
+      }
+    ],
+    "fees": {
+      "label": "Preise",
+      "statement": "Typische Preise, damit Sie uns schon vor dem ersten Gespräch in die engere Wahl nehmen können. Jede Website ist anders: Der Festpreis wird im Angebot auf Grundlage Ihres Briefings festgelegt.",
+      "rows": [
+        {
+          "title": "Eine Website",
+          "fee": "ab CHF 35.000",
+          "text": "Recherche, Design, Umsetzung, Tests und Launch, mit einem Redaktionssystem, das Ihr Team betreibt."
+        },
+        {
+          "title": "Website und Marke",
+          "fee": "ab CHF 60.000",
+          "text": "Die oben genannte Website, dazu ein Identitätssystem und Richtlinien, die Partner anwenden können."
+        },
+        {
+          "title": "Ein Evidenzsystem",
+          "fee": "ab CHF 75.000",
+          "text": "Ein Evidenzsystem auf Grundlage Ihres Materials, mit veröffentlichtem Benchmark, auf unserer oder Ihrer Infrastruktur."
+        },
+        {
+          "title": "Eine Analysephase",
+          "fee": "ab CHF 8.000",
+          "text": "Wenn sich das Briefing noch nicht kalkulieren lässt: Fragebögen, ein Website-Audit und ein Projektplan, den Sie ausschreiben können."
+        }
+      ],
+      "note": "Jeder Preis ist an den Leistungsumfang im Angebot gebunden, nicht an Stunden, und wird in Schweizer Franken in drei Teilen abgerechnet: bei Unterzeichnung, bei der Designfreigabe und zum Launch. Keine Stundensätze."
+    },
+    "carePlans": {
+      "label": "Wartungspläne",
+      "statement": "Eine einseitige Website und eine Bibliothek mit tausend Seiten sind nicht dieselbe Aufgabe. Vier Pläne, ab CHF 1.200 pro Monat, in der Analysephase bemessen nach Seitenzahl, Sprachen, Integrationen, Traffic und Redaktionsteam.",
+      "facts": [
+        "Essential, Standard, Extended, Platform",
+        "Updates zuerst in der Testumgebung, tägliche Backups, Monitoring, eine namentlich benannte Ansprechperson",
+        "Monatlich, vierteljährlich 5 % günstiger oder jährlich 10 % günstiger",
+        "Mindestlaufzeit drei Monate, danach fortlaufend"
+      ],
+      "link": {
+        "text": "Die vier Pläne ansehen →",
+        "href": "/services/web-maintenance#care-plans"
+      }
+    },
+    "process": {
+      "label": "So läuft ein Projekt ab",
+      "statement": "Drei Phasen und vier Freigabepunkte. Gebaut wird erst, wenn Sie einen Prototyp durchgeklickt haben.",
+      "rows": [
+        {
+          "title": "Angebot",
+          "text": "Senden Sie uns das Briefing oder die Leistungsbeschreibung. Innerhalb von fünf Arbeitstagen haben Sie ein Festpreisangebot mit Zeitplan und namentlich genanntem Team. Lässt sich das Projekt noch nicht kalkulieren, schlagen wir stattdessen eine kurze Analysephase vor."
+        },
+        {
+          "title": "Analyse",
+          "text": "Fragebögen für Stakeholder und Zielgruppen, ein Website-Audit, wenn es eine Website gibt, und ein Analysedokument, das mit dem Projektplan endet: Leistungsumfang, Zeitplan und wer was freigibt."
+        },
+        {
+          "title": "Umsetzung",
+          "text": "Erst Design, dann ein klickbarer Prototyp, bevor etwas gebaut wird, dann Umsetzung, Launch und Wartung. Wöchentlich ein 30-minütiges Gespräch, mit Notizen am selben Tag."
+        }
+      ],
+      "facts": [
+        "Vier Freigabepunkte: Angebot, Design, Demo, Go-live",
+        "Ein namentlich genanntes Team vom ersten Gespräch an",
+        "Wöchentliches 30-minütiges Gespräch, Notizen am selben Tag",
+        "Barrierefreiheit und Performance vor dem Launch getestet und für Ihre Unterlagen dokumentiert",
+        "Typische Projektdauer: 14 Wochen"
+      ]
+    },
+    "questions": [
+      {
+        "q": "Können wir Referenzen bekommen?",
+        "a": "Ja. Referenzen von Kundenteams senden wir mit dem Angebot oder auf Anfrage, und Sie können sie direkt kontaktieren.",
+        "link": {
+          "text": "Zwei Projekte zeigen wir vollständig unter Projekte →",
+          "href": "/#work"
+        }
+      },
+      {
+        "q": "Wie gehen Sie mit unseren Daten um?",
+        "a": "Ihr Material bleibt Ihr Material. Wir unterzeichnen Ihre Datenschutzbestimmungen, halten nur vor, was die Arbeit erfordert, hosten dort, wo Ihre Regeln es verlangen, und geben am Projektende alles zurück oder löschen es."
+      },
+      {
+        "q": "Welche Unterlagen können Sie für die Registrierung als Lieferant senden?",
+        "a": "Unternehmensregistrierung, Bank- und Steuerdaten, Referenzen, die Erklärung zur Barrierefreiheit und einen Sicherheitshinweis, als ein Paket mit dem Angebot oder auf Anfrage."
+      },
+      {
+        "q": "Wer macht die Arbeit wirklich?",
+        "a": "Matthew Bowman leitet jedes Projekt. Fachleute für Design, Entwicklung, Inhalte und Barrierefreiheit werden im Angebot mit ihrem Teil der Arbeit genannt, und niemand kommt hinzu, ohne Ihnen vorher genannt worden zu sein."
+      },
+      {
+        "q": "Was passiert nach dem Launch?",
+        "a": "Korrekturen in den ersten 30 Tagen sind im Projektpreis enthalten. Danach ein Wartungsplan oder eine saubere Übergabe: Dokumentation, alle Konten auf Ihren Namen und eine Schulung für Ihr Team."
+      },
+      {
+        "q": "In welcher Zeitzone arbeiten Sie?",
+        "a": "Kingston, Jamaika, UTC−5. Unsere Vormittage sind in Genf Nachmittage und in New York Vormittage, und das wöchentliche Gespräch wird in Ihre Arbeitszeit gelegt."
+      }
+    ]
+  },
+  "footer": {
+    "tested": "WCAG 2.1 AA, getestet am 4. November 2026",
+    "statement": "Erklärung zur Barrierefreiheit →"
+  },
+  "caseStudy": {
+    "work": "Projekte",
+    "caseStudy": "Fallstudie",
+    "type": "Art",
+    "year": "Year",
+    "scope": "Umfang",
+    "languages": "Sprachen",
+    "headlineFigures": "Kennzahlen",
+    "onThisPage": "Auf dieser Seite",
+    "challenge": "Die Aufgabe",
+    "goals": "Die Ziele",
+    "decisions": "Wichtige Entscheidungen",
+    "brand": "Die Marke",
+    "brandGuidelines": "Die Markenrichtlinien",
+    "beforeAfter": "Vorher und nachher",
+    "before": "Vorher",
+    "after": "Nachher",
+    "result": "Das Ergebnis",
+    "learned": "Was wir gelernt haben",
+    "standards": "Erfüllte Standards",
+    "team": "Team",
+    "projectLead": "Projektleitung",
+    "clientTeam": "Kundenteam",
+    "carryNext": "Was diese Plattform als Nächstes tragen könnte",
+    "nextCase": "Nächste Fallstudie",
+    "proves": "Was das belegt"
+  },
+  "insightsPage": {
+    "title": "Beiträge",
+    "intro": "Kurze, belegte Beiträge für alle, die das Briefing schreiben, das Budget verantworten oder die Farbpalette betreuen. Jeder Beitrag nennt den Standard oder die Studie, auf die er sich stützt, sodass Sie ihn in Ihre eigene Leistungsbeschreibung übernehmen können.",
+    "minRead": "{n} Min. Lesezeit",
+    "read": "Lesen →",
+    "note": "Schreiben Sie gerade ein Briefing? Senden Sie es uns, wie es ist, und wir sagen Ihnen vor der Kalkulation, was noch fehlt."
+  },
+  "post": {
+    "inShort": "Kurz gefasst",
+    "sources": "Quellen",
+    "moreInsights": "Weitere Beiträge",
+    "copyLink": "Link kopieren",
+    "linkCopied": "Link kopiert",
+    "shareLinkedIn": "Auf LinkedIn teilen ↗"
+  },
+  "accessibility": {
+    "title": "Erklärung zur Barrierefreiheit",
+    "description": "Wie die Website von Nestvested nach WCAG 2.1 AA getestet wurde, was dabei gefunden wurde und wie Sie ein Problem melden können.",
+    "intro": "Diese Erklärung gilt für nestvested.co. Wir streben WCAG 2.1 Stufe AA an. Zuletzt haben wir die Website am 4. November 2026 getestet.",
+    "howTested": "Wie getestet wurde",
+    "tested": [
+      "Getestet wurde jeder Seitentyp: Startseite, Leistungsseite, Fallstudie, Beitragsliste, Artikel, die Fehlerseite „Seite nicht gefunden“ und diese Seite.",
+      "Automatisiert: axe-core mit seinen A- und AA-Regeln für WCAG 2.0, 2.1 und 2.2 sowie Lighthouse.",
+      "Tastatur: per Skript ausgeführte Tastendrücke durch Sprunglink, Menü, Kontaktformular und die Pause-Schaltfläche im Kopfbereich, mit Prüfung, ob der Fokus sichtbar bleibt.",
+      "Breiten von 320 bis 1.920 Pixel, geprüft auf seitliches Scrollen.",
+      "Ist „Bewegung reduzieren“ aktiviert, bleibt der Kopfbereich unbewegt auf seiner ersten Sprache stehen."
+    ],
+    "notDone": "Was nach unserem Wissen noch fehlt",
+    "gaps": [
+      "Die Website wurde nicht von einer Person mit Screenreader getestet.",
+      "Die bewegte Anzeige im Kopfbereich ist dekorativ und für Screenreader ausgeblendet."
+    ],
+    "report": "Problem melden",
+    "reportText": "Schreiben Sie an {email}, und eine namentlich benannte Person antwortet Ihnen.",
+    "security": "Sicherheitshinweis",
+    "securityText": "Die Website läuft auf Vercel und wird über HTTPS ausgeliefert. Sie hat keine Benutzerkonten und keine Webanalyse. Sie setzt keine eigenen Cookies. Das Kontaktformular speichert nichts: Es öffnet eine Nachricht in Ihrem eigenen E-Mail-Programm."
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "text": "Die Adresse hat sich möglicherweise beim Neuaufbau dieser Website geändert. Wenn Sie einem Link aus einem Angebot oder einer E-Mail gefolgt sind, teilen Sie uns das unter {email} mit, und wir korrigieren den Link noch am selben Geschäftstag.",
+    "home": "Startseite →",
+    "work": "Projekte ansehen →",
+    "services": "Leistungen →",
+    "insights": "Beiträge →"
+  },
+  "form": {
+    "title": "Projekt besprechen",
+    "close": "Schließen",
+    "doneTitle": "Ihr E-Mail-Programm sollte jetzt geöffnet sein.",
+    "doneText": "Ihre Nachricht ist ausgefüllt und an {name} adressiert. Klicken Sie dort auf Senden, dann erreicht sie einen Menschen. Falls sich nichts geöffnet hat, schreiben Sie an {email}.",
+    "writeAnother": "Weitere Nachricht schreiben",
+    "name": "Name",
+    "organisation": "Organisation",
+    "email": "Geschäftliche E-Mail",
+    "budget": "Budgetrahmen",
+    "message": "Ihr Vorhaben",
+    "send": "Senden",
+    "errorName": "Bitte geben Sie Ihren Namen ein.",
+    "errorOrganisation": "Bitte geben Sie Ihre Organisation ein.",
+    "errorEmail": "Bitte geben Sie Ihre geschäftliche E-Mail ein.",
+    "errorEmailFormat": "Bitte prüfen Sie die E-Mail-Adresse.",
+    "statement": "Senden Sie uns das Briefing oder die Leistungsbeschreibung (TOR), oder beschreiben Sie Ihr Vorhaben. Matthew Bowman antwortet noch am selben Geschäftstag, und innerhalb von fünf Arbeitstagen folgt ein Festpreisangebot.",
+    "messageHelp": "Ein grobes Briefing genügt. Seitentypen, Sprachen, zu übernehmende Inhalte und eine etwaige Frist helfen uns bei der Kalkulation.",
+    "errorMessage": "Bitte beschreiben Sie Ihr Vorhaben.",
+    "budgetHelp": "Optional. Ein Rahmen zeigt uns, welchen Leistungsumfang wir vorschlagen sollten.",
+    "budgetNotDecided": "Noch nicht festgelegt",
+    "budgetUnder": "Unter CHF 10.000",
+    "budgetA": "CHF 10.000 bis 35.000",
+    "budgetB": "CHF 35.000 bis 60.000",
+    "budgetC": "CHF 60.000 bis 100.000",
+    "budgetOver": "Über CHF 100.000",
+    "link": "Link zum Briefing oder zu den TOR",
+    "linkHelp": "Ein Link zu einem freigegebenen Dokument. Oder hängen Sie es an eine E-Mail an {email} an.",
+    "privacy": "Ihre Nachricht geht an einen Menschen und wird nur für die Antwort und das Angebot verwendet."
+  },
+  "authorNote": "Verfasst von Matthew Bowman, dem Gründer von Nestvested, der seit 2010 im humanitären Sektor arbeitet.",
+  "projects": [
+    {
+      "slug": "collective-service",
+      "name": "The Collective Service",
+      "type": "Partnerschaft",
+      "year": "2026",
+      "scope": "Website-Audit, kompletter Neuaufbau, vorgeschlagene Markenidentität und Dokumentenbibliothek",
+      "line": "Partnerschaft · 2026 · Kompletter Neuaufbau, vorgeschlagene Identität und eine Knowledge bank, die aus 279 Dokumenten antwortet. In der Testphase vor dem Relaunch.",
+      "languages": "Zunächst Englisch, weitere geplant",
+      "status": {
+        "label": "Status",
+        "text": "In der Testphase. Noch nicht gestartet"
+      },
+      "summary": "Die Bibliothek einer Partnerschaft für gesundheitliche Notlagen, von Grund auf neu aufgebaut, damit Koordinatorinnen und Koordinatoren bei langsamer Verbindung in Sekunden zu aktuellen Leitlinien gelangen, mit einer vorgeschlagenen Identität und einer Knowledge bank, die aus der Bibliothek selbst antwortet. In der Testphase vor dem Relaunch.",
+      "cardImage": {
+        "src": "/work/collective-service-knowledge-bank.jpg"
+      },
+      "detailImage": {
+        "src": "/work/collective-service-documents.jpg",
+        "alt": "Die Seite der Knowledge bank: ein Feld zum Beschreiben einer Situation über einer Darstellung der Bibliotheksdokumente, nach Themen gruppiert.",
+        "caption": "Die Knowledge bank auf der neuen Website, in der Testphase."
+      },
+      "figures": [
+        {
+          "value": "283 KB",
+          "label": "Startseite beim Öffnen auf dem Smartphone, bei einem Budget von 500 KB. Gemessen am 24. Oktober 2026"
+        },
+        {
+          "value": "30",
+          "label": "Seitenvorlagen, geprüft nach WCAG 2.2 AA. Gemessen am 22. Oktober 2026"
+        },
+        {
+          "value": "279",
+          "label": "In die Knowledge bank eingelesene Dokumente. Gemessen am 4. November 2026"
+        }
+      ],
+      "challenge": [
+        "The Collective Service ist eine globale Partnerschaft für Risikokommunikation und Einbindung von Gemeinschaften in gesundheitlichen Notlagen. Ihre Website wurde 2020 als zentrale Bibliothek für Leitlinien eingerichtet. Sie ist bis heute das Eingangstor der Partnerschaft: der Ort, an dem Koordinatorinnen und Koordinatoren sowie Einsatzkräfte Werkzeuge, Schulungen und Daten finden, wenn sie während eines Ausbruchs Gemeinschaften erreichen müssen.",
+        "Sechs Jahre später war die Website noch immer von der Pandemie geprägt, für die sie gebaut worden war. Der größte Teil ihrer Bibliothek stammte aus den Jahren 2020 bis 2022, während die Notlagen, an denen die Menschen arbeiteten, längst andere waren.",
+        "Die Menschen, die sie am dringendsten brauchen, sind auch am schwersten zu erreichen. In einer Umfrage von 2022 unter Personen, die Kursinhalte zu gesundheitlichen Notlagen weitergeben, war eine schlechte Verbindung in Ländern mit niedrigem Einkommen mit 29 % die am häufigsten genannte Schwierigkeit, gegenüber 8 % in Ländern mit hohem Einkommen. Die mediane Startseite auf dem Smartphone lag 2025 bei 2,56 MB, was bei 400 Kilobit pro Sekunde etwa 51 Sekunden dauert. Das ist zu lang für jemanden in der Koordination, der sofort ein Dokument braucht.",
+        "Die Partnerschaft hatte außerdem ein Erkennungsproblem. Eine Evaluation von 2023 stellte fest, dass ihr Name für manche verwirrend sei und ihr Zweck zu wenig kommuniziert werde. Ihr Logo bestand nur aus dem Namen und konnte daher nicht helfen."
+      ],
+      "goals": [
+        "Jede Seite leicht genug für eine langsame Verbindung machen, mit einem Budget von 500 KB pro Seite.",
+        "Aktuelle Leitlinien nach vorn holen und Veraltetes aussortieren.",
+        "Eine Dokumentenbibliothek mit Suche, Notfall-Kits und Weiterleitungen von jeder alten Adresse aufbauen.",
+        "Die Website an das Redaktionsteam der Partnerschaft übergeben, mit Tests, Schulung und Relaunch."
+      ],
+      "decisions": [
+        {
+          "title": "Von Grund auf neu bauen",
+          "text": "Die alte Website Seite für Seite zu aktualisieren, hätte die Struktur und das Gewicht erhalten, die sie loswerden musste. Deshalb wurde jede Seite neu gebaut: ein eigenes WordPress-Theme mit 30 Seitenvorlagen, ein neuer Redaktionsbereich und Inhalte, die über ein wiederholbares Importwerkzeug übernommen wurden, das sich erneut ausführen und prüfen lässt."
+        },
+        {
+          "title": "Das Gewichtslimit vor dem Design festlegen",
+          "text": "Hinter dem Design stand eine Regel: Wenn Zielgruppen in Konflikt geraten, haben Einsatzkräfte Vorrang. Deshalb musste jede Seite unter 500 KB bleiben, etwa 10 Sekunden bei 400 Kilobit pro Sekunde, und diese Grenze wurde zuerst festgelegt, sodass jede Vorlage danach gebaut wurde. Jeder Download nennt außerdem Format und Größe, bevor er angeklickt wird, damit niemand knappe Daten für eine unerwartete Datei verbraucht."
+        },
+        {
+          "title": "Jedes Dokument auf der Website vorhalten",
+          "text": "Viele Dokumente waren nur verlinkt und hätten nicht mehr funktioniert, sobald ein Herausgeber eine Seite verschoben hätte. Wir haben 155 davon geholt, sodass die Website nun eigene Kopien vorhält, mit französischen, portugiesischen, spanischen und Swahili-Fassungen, soweit die Herausgeber sie anbieten. Dokumente, die zwei-, drei- oder viermal gelistet waren, erscheinen jetzt einmal, mit ihren weiteren Sprachen auf derselben Seite."
+        },
+        {
+          "title": "Die Marke als Teil des Problems sehen",
+          "text": "Eine bessere Website allein konnte nicht erklären, was der Service ist. Deshalb haben wir parallel dazu die Argumente für eine neue Identität dargelegt. Die Gründe stehen weiter unten unter „Die Marke“."
+        },
+        {
+          "title": "Für die Menschen bauen, die sie betreiben",
+          "text": "Eine Bibliothek bleibt nur aktuell, wenn ihr eigenes Team sie aktuell halten kann. Der Redaktionsbereich hat für jede Inhaltsart ein Formular, und jedes Formular zeigt an, was vor der Veröffentlichung noch fehlt. Um ein Dokument hinzuzufügen, genügt es, seine Adresse einzufügen: Format, Größe und Seitenzahl werden automatisch ergänzt. Eine integrierte Anleitung zeigt dem Redaktionsteam jede Aufgabe Bildschirm für Bildschirm."
+        },
+        {
+          "title": "Einen neuen Weg in die Bibliothek erproben",
+          "text": "Die Suche hilft nur denen, die die richtigen Wörter kennen. Mit der Knowledge bank können Leserinnen und Leser eine Situation in eigenen Worten beschreiben und erhalten Ratschläge, die ausschließlich aus den Dokumenten der Bibliothek stammen, mit Quellenangabe zu jedem Punkt. Hat die Bibliothek keine Antwort, sagt sie das.",
+          "link": {
+            "text": "Sie befindet sich in der Testphase und ist die erste Umsetzung der Leistung, die wir heute als Evidenzsysteme anbieten →",
+            "href": "/services/evidence-intelligence"
+          }
+        }
+      ],
+      "brand": {
+        "intro": [
+          "Die neue Identität begann mit den eigenen Belegen der Partnerschaft, nicht mit dem Logo. Eine unabhängige Evaluation von 2023, gestützt auf 88 Interviews, 98 Umfrageantworten und vier Länderfallstudien, bezeichnete den Namen als „für manche verwirrend“ und führte „begrenzte Kommunikation über seinen Zweck“ als Schwäche auf. Sie ergab außerdem, dass 87 % der Befragten es für wahrscheinlich hielten, den Service in einer künftigen gesundheitlichen Notlage zu brauchen. Deshalb musste diese Identität auf Dauer angelegt sein und helfen zu erklären, was der Service ist.",
+          "Das bestehende Logo wurde geschaffen, um einer Pandemiereaktion einen Namen zu geben, und das hat es geleistet. Mehr war von ihm nicht verlangt worden. Ein Logo, das nur aus dem Namen besteht, kann keinen Namen erklären, den die Menschen verwirrend finden. Die Identität brauchte also eine Form, die die Idee trägt: Organisationen, die wie eine handeln, damit Gemeinschaften in einer Notlage Gehör finden."
+        ],
+        "reasons": [
+          {
+            "title": "Sie sagt, was der Service ist",
+            "text": "Drei getrennte Teile fügen sich zu einem Körper: eigenständige Organisationen, gleichrangig gezeichnet, werden zu einem Service. Wer die Bildmarke sieht, erkennt „gemeinsam“, bevor ein Wort gelesen ist. So wirkt sie bei jedem Auftritt gegen die Verwirrung, die die Evaluation festgestellt hat."
+          },
+          {
+            "title": "Sie hält die Partner gleichrangig",
+            "text": "Der Service ist eine Partnerschaft unter Gleichen. Kein Teil der Bildmarke hat Vorrang, und eine einzige zurückhaltende Farbe lässt sie neben vier etablierten Logos stehen, ohne sie zu bedrängen."
+          },
+          {
+            "title": "Sie passt zur Arbeitsweise der Partner",
+            "text": "Jeder Partner verbindet ein Symbol mit seinem Namen. Der Service war das einzige Mitglied seiner eigenen Partnerschaft ohne Symbol."
+          },
+          {
+            "title": "Sie funktioniert in jeder Sprache",
+            "text": "Der Service veröffentlicht auf Englisch, Französisch, Portugiesisch und Spanisch, und ein großer Teil seiner Arbeit findet im frankophonen und lusophonen Afrika statt. Ein Symbol funktioniert in all diesen Sprachen. Der Name bleibt auf Englisch, die Zeile darunter wird übersetzt."
+          },
+          {
+            "title": "Sie funktioniert überall, wo der Service auftritt",
+            "text": "Der Service erscheint zunehmend in Feeds, Browser-Tabs, Gruppenchats und auf Smartphones, wo eine Wortmarke nicht lesbar ist. Geschlossene Formen überstehen auch die Stempel, Abzeichen und Fotokopien von Feldmaterialien. Die Größe war nur einer von acht Tests. Beide Logos wurden geprüft auf Bedeutung, kleine Größen, wiederverwendbare Teile, die Wirkung neben den Partnern, die Übereinstimmung mit der Tonalität, zuverlässige Reproduktion, Unverwechselbarkeit und darauf, ob sich Regeln für sie festlegen lassen."
+          },
+          {
+            "title": "Sie übersteht eine Namensänderung",
+            "text": "Die Evaluation empfahl den Partnern, eine Änderung des Namens zu erwägen. Falls sie das tun, bleibt die Bildmarke, und nur die Wörter daneben ändern sich."
+          },
+          {
+            "title": "Sie stützt sich auf Belege, bei geringem Risiko",
+            "text": "Eine Studie von 2019 im Journal of Marketing Research ergab in sechs Experimenten mit 597 Logos, dass beschreibendere Logos leichter aufzunehmen sind und als authentischer beurteilt werden, vor allem bei Marken, die die Menschen noch nicht gut kennen. Die Kosten der Änderung sind gering: Der Name, an dem die Wiedererkennung hängt, bleibt, und die Bildmarke ist eine kleine Datei, die Schriften nutzt, die die Website bereits lädt. Das Risiko, nichts zu ändern, besteht darin, dass die Ergebnisse der Evaluation auf der sichtbarsten Ebene unbeantwortet bleiben."
+          }
+        ],
+        "guidelines": [
+          "Die Identität geht über die Bildmarke hinaus. Die Tonalität ist schlicht, konkret, ruhig und ehrlich, weil Fachjargon für jemanden mitten in einer Krise eine Hürde ist. Die Farbe hat eine Aufgabe: Tinte für Text, Sand für Hintergründe und Koralle nur für das, was gerade aktuell ist, und für die eine Aktion, auf die es ankommt.",
+          "All das ist in einem 57-seitigen Design- und Markendokument dargelegt, das im Oktober 2026 mit der Partnerschaft geteilt wurde. Teil A begründet die Änderung und legt die Richtlinien fest: die Belege, die Vergleichstests, Kosten und Risiken der Änderung, Sprache und Ton, Konstruktion, Schutzzone und Mindestgrößen, Farbe, Schrift, Fotografie, vier Sprachfassungen, die Verwendung neben den Partnern und die Regeln. Teil B ist der Designstandard für die Website, und jede Regel darin nennt ihren Grund und die Art ihrer Grundlage: die Leistungsbeschreibung, veröffentlichte Belege, einen berechneten Wert, einen Standard oder unser eigenes Urteil.",
+          "Die Identität ist ein Vorschlag und wird hier mit Erlaubnis der Partnerschaft gezeigt; über ihre Annahme entscheidet die Partnerschaft."
+        ]
+      },
+      "beforeAfter": [
+        {
+          "label": "Die Website",
+          "before": "Die 2020 eingerichtete Website",
+          "after": "Von Grund auf neu aufgebaut, mit 30 Seitenvorlagen"
+        },
+        {
+          "label": "Die Bibliothek",
+          "before": "Überwiegend aus den Jahren 2020 bis 2022",
+          "after": "Aktuelle Leitlinien zuerst, veraltetes Material nicht übernommen"
+        },
+        {
+          "label": "Dokumente",
+          "before": "Viele nur auf anderen Websites verlinkt",
+          "after": "Auf der Website selbst vorgehalten, darunter 155 von Herausgebern geholte"
+        },
+        {
+          "label": "Mehrfache Einträge",
+          "before": "Einige bis zu viermal gelistet",
+          "after": "Jedes einmal gelistet, mit seinen Sprachen an einem Ort"
+        },
+        {
+          "label": "Das Logo",
+          "before": "Nur der Name, auf Englisch",
+          "after": "Eine vorgeschlagene Bildmarke, lesbar bei 16 Pixel, gezeigt mit Erlaubnis der Partnerschaft"
+        },
+        {
+          "label": "Alte Adressen",
+          "before": "1.593 auf der alten Website",
+          "after": "Jede einer Stelle auf der neuen Website zugeordnet"
+        }
+      ],
+      "results": [
+        "Die Website ist noch nicht gestartet, daher gibt es noch keine Nutzungsdaten zu berichten. Bis zum Relaunch zeigt die öffentliche Adresse der Partnerschaft weiterhin die alte Website.",
+        "Berichten lässt sich, was getestet wurde. Am 23. Oktober 2026 fand ein Crawl von 332 Seiten und 634 Links zu anderen Websites keinen defekten Link. Jede Seite wird bei Breiten von 320 bis 1.920 Pixel geprüft. Die Besuchermessung ist eingebaut und wird erst nach Einwilligung geladen, sodass der Relaunch an der tatsächlichen Nutzung gemessen werden kann."
+      ],
+      "lessons": [
+        "Zählen Sie, bevor Sie gestalten. Die Auswertung der eigenen Datenbank der Website statt einer Schätzung aus einem Crawl zeigte, wie viel der Bibliothek in eine andere Zeit gehörte, und das änderte den Plan.",
+        "Gewicht ist eine Designentscheidung. Legen Sie die Grenze zuerst fest, dann wird jede Vorlage danach gebaut.",
+        "Begründen Sie eine Marke mit Belegen. Wenn Ergebnisse, Tests und Kosten der Änderung offenliegen, können Partner nach dem Argument entscheiden, nicht nach Geschmack.",
+        "Zeigen Sie echte Seiten. Die Prüfenden hefteten Kommentare an die laufende Website, sodass sich jeder Punkt auf etwas Sichtbares bezog und bis zu einer Korrektur oder Entscheidung nachverfolgt werden konnte."
+      ],
+      "standards": [
+        {
+          "label": "Barrierefreiheit",
+          "value": "WCAG 2.2 AA auf allen 30 Seitenvorlagen, durch skriptgesteuerte Tests in Headless Chrome mit echter Tastatureingabe, bei Desktop- und Smartphone-Breiten. Ausgenommen sind PDFs und eingebettete Berichte anderer Organisationen. Ein Screenreader-Test durch eine Person ist Teil der abschließenden Prüfung."
+        },
+        {
+          "label": "Sprachen",
+          "value": "Englisch. Soweit Herausgeber sie anbieten, enthalten Dokumente auch ihre französischen, portugiesischen, spanischen und Swahili-Fassungen."
+        },
+        {
+          "label": "Performance",
+          "value": "Budget von 500 KB, etwa 10 Sekunden bei 400 Kilobit pro Sekunde. Die Startseite hat beim Öffnen auf dem Smartphone 245 KB bis 283 KB und 530 KB bis 563 KB, wenn ganz bis zum Ende gescrollt wird."
+        },
+        {
+          "label": "Sicherheit",
+          "value": "Drei Backup-Ebenen: Wiederherstellungspunkte beim Host, eine nächtliche Datenbankkopie und das Code-Repository, per Skript geprüft."
+        }
+      ],
+      "clientTeam": "Sekretariat von The Collective Service",
+      "next": "Fragen und Antworten auf Französisch, Spanisch und Arabisch, aus derselben Bibliothek und weiterhin mit Quellenangabe zu jeder Antwort.",
+      "proves": [
+        {
+          "title": "Wir zählen, bevor wir gestalten.",
+          "text": "Die Auswertung der eigenen Datenbank der Website ergab 1.593 alte Adressen und eine Bibliothek, die überwiegend aus den Jahren 2020 bis 2022 stammte. Jede Adresse ist zugeordnet, und der Plan änderte sich, bevor eine Seite gezeichnet war."
+        },
+        {
+          "title": "Wir bauen nach Budget und veröffentlichen die Zahl.",
+          "text": "500 KB pro Seite wurden zuerst festgelegt. Die Startseite öffnet mit 283 KB, gemessen am 24. Oktober 2026."
+        },
+        {
+          "title": "Wir übergeben die Website an Ihr Redaktionsteam.",
+          "text": "Ein Formular pro Inhaltsart, eine integrierte Anleitung, und Format, Größe und Seitenzahl eines Dokuments werden aus seiner Adresse ergänzt."
+        },
+        {
+          "title": "Wir sagen, was noch nicht geschehen ist.",
+          "text": "Die Website ist in der Testphase, die Identität ist ein Vorschlag, und Nutzungsdaten gibt es erst, wenn es Besucher gibt."
+        },
+        {
+          "title": "Evidenzsysteme funktionieren mit einer echten Bibliothek.",
+          "text": "Die Knowledge bank antwortet aus 279 Dokumenten, belegt jeden Punkt und sagt, wenn die Bibliothek keine Antwort hat."
+        }
+      ]
+    },
+    {
+      "slug": "global-girls-foundation",
+      "name": "Global Girls Foundation",
+      "type": "Stiftung",
+      "year": "2026",
+      "scope": "Website-Redesign, WordPress-Umsetzung und Anbindung einer Fundraising-Plattform",
+      "line": "Stiftung · 2026 · Website-Redesign und Spenden in drei Währungen. Live seit dem 9. Oktober 2026.",
+      "languages": "Englisch",
+      "status": {
+        "label": "Live-Website",
+        "text": "globalgirlsfoundation.org",
+        "href": "https://globalgirlsfoundation.org"
+      },
+      "summary": "Eine von Plan International gegründete Schweizer Stiftung brauchte eine Website, die auf Beraterinnen und Berater von Philanthropen wie eine Institution wirkt und Kartenspenden in drei Währungen annimmt. Live seit dem 9. Oktober 2026, jede Seite und jede Weiterleitung am Tag selbst korrekt.",
+      "cardImage": {
+        "src": "/work/global-girls-foundation-home.jpg"
+      },
+      "detailImage": {
+        "src": "/work/global-girls-foundation-giving.jpg",
+        "alt": "Ein Abschnitt der Startseite der Global Girls Foundation mit der Überschrift „Drei Wege, in Mädchen zu investieren“ und drei Spalten: Jahresspendenfonds, zweckgebundene Spenden und Stiftungskapital.",
+        "caption": "Die Spendenoptionen auf der Startseite der Stiftung."
+      },
+      "figures": [
+        {
+          "value": "3",
+          "label": "Währungen für Einzel- und Monatsspenden: Schweizer Franken, Euro und US-Dollar"
+        },
+        {
+          "value": "100",
+          "label": "Lighthouse-Wert für Barrierefreiheit, Live-Startseite und Spendenseite. Gemessen am 4. November 2026"
+        },
+        {
+          "value": "14.0 s",
+          "label": "Live-Startseite vollständig geladen in einem 3G-Profil mit 400 kbit/s und 2 s Latenz. Gemessen am 4. November 2026"
+        }
+      ],
+      "challenge": [
+        "Die Global Girls Foundation ist eine 2022 errichtete Schweizer Stiftung, die von Plan International geschaffen wurde, um deren Programme für Mädchen zu finanzieren. Ihre Website muss Philanthropinnen und Philanthropen und deren Umfeld erreichen: Family Offices, Beraterinnen und Berater, Anwältinnen und Anwälte sowie Familien- und Unternehmensstiftungen.",
+        "Ihre Website entsprach diesem Anspruch nicht. Sie bestand aus 11 Seiten auf der WordPress-Plattform von Plan International, war schwer zu verwalten, Inhalte waren schwer zu finden, und es gab keine integrierte Möglichkeit zu spenden.",
+        "Die neue Website hatte zwei Aufgaben, die in verschiedene Richtungen ziehen. Sie musste für Menschen, die über ein Vermächtnis oder eine Zustiftung nachdenken, wie eine seriöse Institution wirken und zugleich eine Kartenspende von allen annehmen, die heute spenden möchten."
+      ],
+      "goals": [
+        "Klar sagen, was die Stiftung ist und warum man an sie spenden sollte.",
+        "Jeder Spendergruppe einen klaren Weg vom ersten Besuch bis zur Spende bieten.",
+        "Sichere Einzel- und Monatsspenden in mehr als einer Währung annehmen.",
+        "Dem Team der Stiftung ermöglichen, jede Seite zu bearbeiten, ohne das Design zu beschädigen."
+      ],
+      "decisions": [
+        {
+          "title": "Neben der Kasse ein Gespräch anbieten",
+          "text": "Eine Großspende beginnt meist mit einem Gespräch. Deshalb bietet der erste Bildschirm zwei Wege nebeneinander: jetzt spenden oder ein Gespräch beginnen. Der Jahresspendenfonds und das Stiftungskapital sind nur über ein Gespräch zugänglich."
+        },
+        {
+          "title": "Den Betrag selbst bestimmen lassen",
+          "text": "Frühere Versionen boten feste Spendenstufen an. Nachdem die Stiftung sie gesehen hatte, bat sie darum, sie zu streichen. Deshalb öffnet das Spendenmodul mit einem leeren Feld und setzt selbst keine Obergrenze. Bei einer Spende, die über das hinausgeht, was per Karte möglich ist, werden stattdessen die Bankdaten angezeigt, und diese können alle Spendenden bei jedem Betrag anfordern."
+        },
+        {
+          "title": "Kartendaten von der Website fernhalten",
+          "text": "Einzelspenden werden direkt auf der Seite angenommen, Monatsspenden auf der von Stripe gehosteten Seite. Kartendaten verarbeitet also Stripe, nie die Website. Bei deaktivierten Skripten funktioniert das Modul weiterhin als einfaches Formular."
+        },
+        {
+          "title": "Den Editor um die Seite herum bauen",
+          "text": "Die Mitarbeitenden der Stiftung mussten die Website selbst betreiben können. Das Redaktionsteam arbeitet auf der Seite, wie sie erscheinen wird: Es ändert Text direkt an Ort und Stelle und fügt Abschnitte aus einem Bildmenü hinzu, und die Website prüft jede Seite vor der Veröffentlichung anhand ihrer Regeln. Der WordPress-Adminbereich wurde im eigenen Erscheinungsbild der Stiftung neu gestaltet und enthält eine Anleitung mit 31 Schritten."
+        },
+        {
+          "title": "Echte Seiten prüfen, keine Bilder",
+          "text": "Das Design entstand als funktionierende Prüf-Website mit Kommentaren auf der Seite. Das Team der Stiftung prüfte echte Seiten auf echten Bildschirmen, und nur freigegebene Seiten wurden nach WordPress übernommen."
+        },
+        {
+          "title": "Umziehen, ohne die alten Adressen zu verlieren",
+          "text": "Die Domain der Stiftung lag bei Plan International, sodass der Umzug von dessen IT-Team abhing. Wir schickten die genauen erforderlichen Änderungen, und jede alte Adresse wurde auf ihr neues Ziel weitergeleitet. Am Launch-Tag antworteten alle 21 Seiten und 23 Weiterleitungen korrekt."
+        }
+      ],
+      "beforeAfter": [
+        {
+          "label": "Seiten",
+          "before": "11",
+          "after": "21"
+        },
+        {
+          "label": "Standort",
+          "before": "WordPress-Plattform von Plan International",
+          "after": "Eigene WordPress-Website, gehostet in Belgien"
+        },
+        {
+          "label": "Spenden",
+          "before": "Spenden nicht integriert",
+          "after": "Einzel- und Monatsspenden in Schweizer Franken, Euro und US-Dollar"
+        },
+        {
+          "label": "Bearbeitung",
+          "before": "Schwer zu verwalten",
+          "after": "Direkt auf der Seite vom Team der Stiftung bearbeitet"
+        }
+      ],
+      "results": [
+        "Die Website ging am 9. Oktober 2026 live, und alle 21 Seiten und 23 Weiterleitungen antworteten an diesem Tag korrekt. Einzel- und Monatsspenden wurden bis zum 12. Oktober beide mit echten Zahlungen bestätigt.",
+        "Zum ersten Mal kann die Stiftung auf ihrer eigenen Website Spenden annehmen, und ihre Mitarbeitenden wurden geschult, die Seiten selbst zu betreiben. Die Spendensummen gehören der Stiftung und werden hier nicht veröffentlicht."
+      ],
+      "lessons": [
+        "Entscheiden Sie, für wen die Website ist, und lassen Sie das die Streitfragen klären. Zu wissen, dass Philanthropen sie lesen, machte die meisten Fragen zu Formulierungen und Spenden leichter zu beantworten.",
+        "Rechnen Sie damit, dass sich die Spendenregeln ändern. Spendenstufen, Grenzen und Währungen änderten sich alle kurz vor dem Launch, daher musste das Spendenmodul leicht zu ändern sein.",
+        "Wenn ein Launch vom Team einer anderen Organisation abhängt, schicken Sie die genaue Änderung, keine allgemeine Bitte."
+      ],
+      "standards": [
+        {
+          "label": "Barrierefreiheit",
+          "value": "Lighthouse-Wert für Barrierefreiheit 100 auf der Live-Startseite und der Spendenseite, 4. November 2026. Ein axe-core-Lauf über 16 Seiten vor dem Launch fand keine bestätigten Verstöße. Ein Screenreader-Test durch eine Person ist bisher nicht dokumentiert."
+        },
+        {
+          "label": "Sprachen",
+          "value": "Englisch"
+        },
+        {
+          "label": "Performance",
+          "value": "Startseite 546 KB, Spendenseite 395 KB. Im 3G-Profil zeigt die Startseite die ersten Inhalte nach 6,8 s und ihren Hauptinhalt nach 12,5 s."
+        },
+        {
+          "label": "Sicherheit",
+          "value": "Gehostet in Belgien bei WP Engine · HTTPS mit HSTS · tägliche Backup-Punkte · Kartendaten bei Stripe"
+        }
+      ],
+      "clientTeam": "Mitarbeitende der Global Girls Foundation",
+      "next": "Seiten auf Deutsch und Französisch, maschinell übersetzt und vom Team der Stiftung geprüft, bevor etwas veröffentlicht wird.",
+      "proves": [
+        {
+          "title": "Wir starten an dem Tag, den wir nennen.",
+          "text": "Alle 21 Seiten und 23 Weiterleitungen antworteten am 9. Oktober 2026 korrekt, und echte Einzel- und Monatsspenden waren bis zum 12. Oktober bestätigt."
+        },
+        {
+          "title": "Barrierefreiheit wird gemessen, nicht versprochen.",
+          "text": "Lighthouse-Wert für Barrierefreiheit 100 auf der Live-Startseite und der Spendenseite; ein axe-core-Lauf über 16 Seiten fand keine bestätigten Verstöße."
+        },
+        {
+          "title": "Kartendaten berühren die Website nie.",
+          "text": "Einzelspenden auf der Seite und Monatsspenden auf der von Stripe gehosteten Seite, sodass die Website keine Kartendaten speichert, die zu schützen wären."
+        },
+        {
+          "title": "Wir arbeiten mit dem IT-Team der anderen Organisation zusammen.",
+          "text": "Die Domain lag bei Plan International. Wir schickten die genauen erforderlichen Änderungen, und jede alte Adresse erreichte ihr neues Ziel."
+        },
+        {
+          "title": "Danach betreibt Ihr Team die Website.",
+          "text": "Das Redaktionsteam ändert Text direkt auf der Seite, mit einer Anleitung in 31 Schritten im Adminbereich. Auch was noch nicht erledigt ist, steht schriftlich fest: Ein Screenreader-Test durch eine Person ist bisher nicht dokumentiert."
+        }
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "slug": "website-brief",
+      "title": "So schreiben Sie ein Website-Briefing, das Agenturen genau kalkulieren können",
+      "tag": "Beschaffung",
+      "date": "November 2026",
+      "summary": "Was Sie zählen, benennen und entscheiden sollten, bevor ein Website-Briefing hinausgeht, damit sich die eingehenden Angebote vergleichen lassen.",
+      "inShort": [
+        "Wenn Angebote weit auseinanderliegen, hat meist jede Agentur etwas geschätzt, das im Briefing fehlte.",
+        "Zählen Sie die Seitentypen, die zu übernehmenden Inhalte, die Sprachen und die Anbindungen an andere Systeme.",
+        "Nennen Sie Ihren Budgetrahmen und Ihre Bewertungskriterien im Briefing selbst."
+      ],
+      "lead": "Wenn drei Angebote für dieselbe Website weit auseinanderliegen, heißt das selten, dass zwei Agenturen falsch liegen. Meist hat jede etwas geschätzt, das im Briefing fehlte. Dieser Beitrag richtet sich an Programm- und Kommunikationsverantwortliche, die die Leistungsbeschreibung schreiben und anschließend die eingehenden Angebote vergleichen müssen.",
+      "body": [
+        {
+          "kind": "h",
+          "text": "Wozu die TOR dienen"
+        },
+        {
+          "kind": "p",
+          "text": "Das Beschaffungshandbuch der Vereinten Nationen beschreibt eine Leistungsbeschreibung (TOR) als „eine Beschreibung des Leistungsumfangs für Dienstleistungen, die in der Regel die zu erbringende Arbeit, das Qualitäts- und Aufwandsniveau, den Zeitplan und die zu liefernden Ergebnisse angibt“. Es ergänzt, dass ein Anbieter durch dieses Dokument oft zum ersten Mal und vor allem erfährt, was Sie brauchen, und dass klare Vorgaben das Risiko auf beiden Seiten begrenzen."
+        },
+        {
+          "kind": "p",
+          "text": "Das Handbuch warnt in beide Richtungen. Überspezifizierung „kann die Preise erhöhen und/oder die Zahl der Angebote verringern“. Unterspezifizierung ist der umgekehrte Fehler: Wesentliche Informationen fehlen. Bei einer Website ist dieser zweite Fehler der teure. Eine Agentur, die nicht erkennen kann, wie viele Inhalte zu übernehmen sind, schlägt entweder einen großen Puffer auf oder bietet niedrig an und kommt später wieder."
+        },
+        {
+          "kind": "quote",
+          "text": "Wenn zwei Angebote voneinander abweichen, fragen Sie, wovon jede Agentur ausgegangen ist. Die Lücke liegt meist im Briefing."
+        },
+        {
+          "kind": "h",
+          "text": "Was Sie vor dem Versand zählen sollten"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Seitentypen, nicht Seiten. Führen Sie die Vorlagen auf, die Sie brauchen: Startseite, Artikel, Dokument, Veranstaltung, Land. Die Kosten für Design und Umsetzung richten sich nach der Zahl der Typen, nicht der Seiten.",
+            "Was umziehen muss. Wie viele Seiten und Dokumente auf der aktuellen Website liegen und welche zurückbleiben können. Zählen Sie möglichst aus dem Content-System, denn ein Crawl übersieht, was nicht verlinkt ist.",
+            "Sprachen. Welche zum Launch, welche später, ob welche von rechts nach links gelesen werden und wer übersetzt.",
+            "Anbindungen. Nennen Sie jedes externe System: Zahlungen, Mailingliste, Dashboards, Single Sign-on. Geben Sie an, auf wen jedes Konto läuft.",
+            "Redaktion. Wie viele Personen die Website aktualisieren werden, wie oft und wie viel Schulung sie brauchen.",
+            "Standards. Das Barrierefreiheitsniveau, eine Grenze für das Seitengewicht, wo die Website gehostet werden darf, und etwaige Datenschutzregeln."
+          ]
+        },
+        {
+          "kind": "h",
+          "text": "Sagen Sie, wie Sie entscheiden"
+        },
+        {
+          "kind": "p",
+          "text": "Laut Handbuch müssen die Ausschreibungsunterlagen die Bewertungskriterien nennen, und die Gewichtung zwischen technischer und kommerzieller Bewertung muss feststehen, bevor eine Angebotsaufforderung hinausgeht. Halten Sie sich daran, auch wenn Ihre eigenen Regeln es nicht verlangen. Agenturen schreiben bessere Angebote, wenn sie wissen, was bewertet wird."
+        },
+        {
+          "kind": "p",
+          "text": "Nennen Sie dann einen Budgetrahmen. Er schwächt Ihre Position nicht. Er zeigt jeder Agentur, welchen Leistungsumfang sie vorschlagen soll, sodass Sie Antworten auf dieselbe Frage vergleichen. Führen Sie eine Fragerunde durch und teilen Sie jede Antwort mit allen Bietenden."
+        }
+      ],
+      "sources": [
+        {
+          "title": "United Nations Procurement Manual (DOS/2020.9), United Nations Department of Operational Support, 2020",
+          "href": "https://digitallibrary.un.org/record/3954918/files/Procurement_Manual_2020.pdf"
+        },
+        {
+          "title": "Web Content Accessibility Guidelines (WCAG) 2.2, W3C, 2023",
+          "href": "https://www.w3.org/TR/WCAG22/"
+        },
+        {
+          "title": "Performance budgets 101, web.dev",
+          "href": "https://web.dev/articles/performance-budgets-101"
+        }
+      ]
+    },
+    {
+      "slug": "performance-budget",
+      "title": "Ein Performance-Budget für Websites bei langsamen Verbindungen",
+      "tag": "Entwicklung",
+      "date": "November 2026",
+      "summary": "Wie Sie eine Grenze für das Seitengewicht festlegen, bevor das Design beginnt, und wie Sie so messen, dass die Zahl auf einem Smartphone mit schwachem Signal etwas aussagt.",
+      "inShort": [
+        "Legen Sie vor Designbeginn eine Grenze für das Seitengewicht fest und behandeln Sie sie als Anforderung.",
+        "Wir arbeiten mit 500 KB pro Seite: etwa zehn Sekunden bei 400 Kilobit pro Sekunde.",
+        "Messen Sie jede Seite beim Öffnen, bis zum Ende gescrollt und auf einem Smartphone mit hoher Pixeldichte."
+      ],
+      "lead": "Mitarbeitende im Feld öffnen eine Website oft auf dem Smartphone, bei schwachem Signal, mitten in etwas anderem. Dauert die Seite eine Minute, wird sie nicht gelesen. Dieser Beitrag richtet sich an Teams, die eine Website für Menschen mit geringer Bandbreite beauftragen oder bauen, und zeigt, wie wir eine Grenze wählen und einhalten.",
+      "body": [
+        {
+          "kind": "h",
+          "text": "Wählen Sie zuerst die Zahl"
+        },
+        {
+          "kind": "p",
+          "text": "web.dev definiert ein Performance-Budget als „eine Reihe von Grenzwerten für Messgrößen, die die Website-Leistung beeinflussen“. Als Ausgangspunkt schlägt es weniger als 170 KB an Ressourcen im kritischen Pfad und weniger als fünf Sekunden bis zur Interaktivität vor, berechnet für Basisgeräte in einem 3G-Netz."
+        },
+        {
+          "kind": "p",
+          "text": "Vergleichen Sie das mit dem Web, wie es ist. Der Web Almanac des HTTP Archive bezifferte die mediane Startseite 2025 auf 2,86 MB am Desktop und 2,56 MB mobil. Bei einer langsamen Verbindung von 400 Kilobit pro Sekunde brauchen 2,56 MB etwa 51 Sekunden, bis sie ankommen, noch vor jeder Verzögerung durch das Netz selbst."
+        },
+        {
+          "kind": "p",
+          "text": "Wir arbeiten mit 500 KB pro Seite. Das sind etwa zehn Sekunden bei derselben Geschwindigkeit: langsam, aber nutzbar. Es lässt Platz für ein gutes Foto und einen Satz Webfonts, was wichtig ist, wenn die Website auch wie die Organisation aussehen soll, die sie betreibt."
+        },
+        {
+          "kind": "quote",
+          "text": "Ein Budget, das niemand prüft, ist ein Wunsch. Es muss bei jedem Release gemessen werden, von jemandem, der das Release stoppen kann."
+        },
+        {
+          "kind": "h",
+          "text": "Messen Sie so, wie es scheitern wird"
+        },
+        {
+          "kind": "p",
+          "text": "Eine einzelne Zahl aus einem Desktop-Browser verdeckt den größten Teil des Problems. Diese Prüfungen haben bei unseren Projekten echte Überschreitungen aufgedeckt:"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Beim Öffnen. Verwenden Sie einen leeren Cache und zählen Sie die übertragenen Bytes, nicht die Größe der Dateien auf dem Server.",
+            "Bis zum Ende gescrollt. Lazy Loading verzögert Bilder, entfernt sie aber nicht. Eine Seite kann beim Öffnen bestehen und am Ende durchfallen.",
+            "Auf einem Smartphone mit hoher Pixeldichte. Zweifach- und Dreifach-Bildschirme fordern größere Bilder an, sodass dieselbe Seite weit mehr wiegen kann als auf einem Laptop.",
+            "Mit deaktiviertem JavaScript. Lazy Loading, das von einem Skript abhängt, stoppt, und alle Bilder der Seite werden möglicherweise auf einmal geladen."
+          ]
+        },
+        {
+          "kind": "h",
+          "text": "Schreiben Sie es in den Vertrag"
+        },
+        {
+          "kind": "p",
+          "text": "Schreiben Sie die Grenze samt Messmethode ins Briefing. Dann hat jede neue Funktion einen Preis, den das ganze Team sehen kann. Wenn etwas darüber liegt, nennt web.dev die drei ehrlichen Möglichkeiten: optimieren, entfernen oder gar nicht erst hinzufügen."
+        },
+        {
+          "kind": "p",
+          "text": "Diese Disziplin macht sich bei der ersten Notlage bezahlt, die ein neues Publikum über Smartphones und schlechte Verbindungen auf die Website führt. Dann ist es zu spät, damit anzufangen."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Performance budgets 101, web.dev",
+          "href": "https://web.dev/articles/performance-budgets-101"
+        },
+        {
+          "title": "Page Weight, Web Almanac 2025, HTTP Archive",
+          "href": "https://almanac.httparchive.org/en/2025/page-weight"
+        }
+      ]
+    },
+    {
+      "slug": "accessible-colour",
+      "title": "Barrierefreie Farbe, die eine Marke erkennbar hält",
+      "tag": "Barrierefreiheit",
+      "date": "November 2026",
+      "summary": "Warum die meisten Markenpaletten nur in bestimmten Paarungen scheitern und wie eine feste Aufgabe für jede Farbe sowohl die Marke als auch das Kontrastverhältnis bewahrt.",
+      "inShort": [
+        "Markenfarben scheitern selten überall. Sie scheitern bei kleinen Größen und in bestimmten Paarungen.",
+        "Fließtext braucht 4,5:1. Großer Text und Bedienelemente brauchen 3:1.",
+        "Geben Sie jeder Farbe eine Aufgabe und testen Sie jedes Paar, in dem sie erscheinen wird."
+      ],
+      "lead": "Barrierefreiheit und Branding werden oft gegeneinander ausgespielt, als müsse eines nachgeben. Das eigentliche Problem ist viel enger. Dieser Beitrag richtet sich an Kommunikations- und Designteams, die für eine Palette verantwortlich sind und gehört haben, dass sie durchfällt.",
+      "body": [
+        {
+          "kind": "h",
+          "text": "Was der Standard verlangt"
+        },
+        {
+          "kind": "p",
+          "text": "WCAG 2.2 verlangt für Text ein Kontrastverhältnis von mindestens 4,5:1 und für großen Text 3:1, wobei als groß mindestens 18 Punkt oder 14 Punkt fett gilt. Bedienelemente und bedeutungstragende Grafiken brauchen 3:1 gegenüber dem, was an sie angrenzt. Außerdem darf Farbe nicht das einzige Mittel sein, um Informationen darzustellen. Für Text, der Teil eines Logos oder Markennamens ist, gilt keine Kontrastanforderung."
+        },
+        {
+          "kind": "p",
+          "text": "Das ist der häufigste Fehler überhaupt. Die Studie von WebAIM aus dem Jahr 2026 zur Top-Million der Startseiten fand Text mit zu geringem Kontrast auf 83,9 % von ihnen, mit durchschnittlich 34 Fällen pro Seite."
+        },
+        {
+          "kind": "quote",
+          "text": "Die meisten Paletten scheitern nicht. Bestimmte Paarungen scheitern."
+        },
+        {
+          "kind": "h",
+          "text": "Wie das bei einer echten Palette aussieht"
+        },
+        {
+          "kind": "p",
+          "text": "Unser eigenes Logo verwendet sechs Farben, eine für jede Sprache in der Anzeige oben auf unserer Startseite. Auf Weiß erreicht das Blau 6,16:1, das Violett 5,72:1 und das Pink 4,84:1, alle drei könnten also Fließtext tragen. Das Orange erreicht 4,30:1, das Grün 4,38:1 und das Bernsteingelb 3,65:1. Diese drei scheitern bei kleinem Text und bestehen bei großem Text."
+        },
+        {
+          "kind": "p",
+          "text": "Wir haben die Farben nicht geändert. Wir haben ihre Aufgaben geändert. Alle sechs erscheinen in großen Schriftgraden und im Logo. Der gesamte kleine Text auf der Website ist fast schwarz oder dunkelgrau, bei 7,23:1 oder besser, selbst die kleine Bildunterschrift direkt über der farbigen Anzeige. Die Marke behält ihre Farbe, und niemand muss 14 Pixel großes Bernsteingelb lesen."
+        },
+        {
+          "kind": "h",
+          "text": "So prüfen Sie eine Palette"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Führen Sie jedes Paar auf: jede Textfarbe auf jedem Hintergrund, auf dem sie stehen wird, einschließlich Hover-Zuständen und Text über Fotos.",
+            "Markieren Sie jedes Paar als geeignet für Fließtext, nur für großen Text geeignet oder durchgefallen.",
+            "Geben Sie jeder Farbe anhand dieser Tabelle eine Aufgabe: Text, Großschrift, Fläche oder Dekoration.",
+            "Wo eine Farbe kleinen Text tragen muss, dunkeln Sie sie leicht ab, statt sie zu ersetzen. Leserinnen und Leser erkennen den Farbton, nicht den exakten Wert.",
+            "Finden Sie heraus, was allein die Farbe aussagt, etwa bei Links, Fehlern und Diagrammlinien, und ergänzen Sie eine Unterstreichung, ein Symbol oder eine Beschriftung."
+          ]
+        },
+        {
+          "kind": "h",
+          "text": "Halten Sie es schriftlich fest"
+        },
+        {
+          "kind": "p",
+          "text": "Eine Palette übersteht die Übergabe, wenn die Richtlinien sagen, was jede Farbe darf, nicht nur, welchen Wert sie hat. Nehmen Sie die Tabelle in den Markenleitfaden auf. Die nächste Person, die eine Kampagnenseite baut, muss es dann nicht selbst herausfinden, und die Marke sieht weiterhin aus wie sie selbst."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Understanding Success Criterion 1.4.3: Contrast (Minimum), W3C",
+          "href": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "Understanding Success Criterion 1.4.11: Non-text Contrast, W3C",
+          "href": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html"
+        },
+        {
+          "title": "Understanding Success Criterion 1.4.1: Use of Color, W3C",
+          "href": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "The WebAIM Million, WebAIM, 2026",
+          "href": "https://webaim.org/projects/million/"
+        }
+      ]
+    }
+  ],
+  "servicePages": {
+    "label": "Leistungen",
+    "pages": [
+      {
+        "slug": "web-design",
+        "title": "Webdesign für NGOs und internationale Organisationen",
+        "description": "Forschungsbasiertes Webdesign für Organisationen, die in vielen Sprachen veröffentlichen: früh als Prototyp umgesetzt, geliefert als Designsystem, das in sechs Schriften funktioniert. Eine Website ab CHF 35.000.",
+        "h1": "Webdesign",
+        "statement": "Design, das damit beginnt, wer die Website liest, und als System endet, das Ihr Entwicklungs- und Ihr Übersetzungsteam nutzen können.",
+        "intro": [
+          "Die meisten Organisationen, mit denen wir arbeiten, veröffentlichen in mehreren Sprachen für Menschen, die außer der Website nichts gemeinsam haben: eine Koordinatorin auf dem Smartphone im Feld, ein Berater eines Gebers in Genf, eine Journalistin, ein Ministerium. Design, das ihnen allen dient, kann nicht bei einem Look beginnen. Es beginnt mit einer Übersicht darüber, für wen die Website da ist und was jede Gruppe dort tun muss.",
+          "Deshalb recherchieren wir zuerst: Fragebögen für Stakeholder und Zielgruppen und eine Auswertung der eigenen Datenbank der aktuellen Website statt eines Crawls. Bei The Collective Service zeigte diese Zählung, dass der größte Teil der Bibliothek aus den Jahren 2020 bis 2022 stammte, und das änderte den Plan, bevor eine Seite gezeichnet war.",
+          "Dann bauen wir früh einen Prototyp der echten Website. Sie prüfen funktionierende Seiten auf echten Bildschirmen, heften Kommentare daran und geben einen Prototyp frei, den Sie durchgeklickt haben, bevor etwas gebaut wird. Entscheidungen fallen an einer Oberfläche, nicht an Bildern davon.",
+          "Sie erhalten ein Designsystem: Farb-Tokens, Typografie, Komponenten und ihre Zustände, so dokumentiert, dass die Entwicklung es ohne Interpretation umsetzt und dass es in sechs Schriften funktioniert, auch von rechts nach links. The Collective Service betreibt 30 Seitenvorlagen aus einem solchen System."
+        ],
+        "sections": [
+          {
+            "kind": "rows",
+            "label": "Was Sie erhalten",
+            "rows": [
+              {
+                "title": "Zielgruppen-Übersicht",
+                "text": "Wen die Website bedient, was jede Gruppe tun muss und welche Seiten das leisten, vereinbart vor Designbeginn."
+              },
+              {
+                "title": "Prototyp",
+                "text": "Ein klickbarer Prototyp der echten Seiten, auf echten Bildschirmen geprüft, mit Kommentaren direkt auf der Seite. Sie geben ihn vor der Umsetzung frei."
+              },
+              {
+                "title": "Designsystem",
+                "text": "Tokens, Komponenten und Zustände, für die Entwicklung dokumentiert und in sechs Schriften gesetzt, auch auf Arabisch."
+              },
+              {
+                "title": "Jede Breite",
+                "text": "Jede Vorlage geprüft von 320 bis 1.920 Pixel, damit auf dem Smartphone nichts seitlich scrollt."
+              },
+              {
+                "title": "Inhalte an Ort und Stelle",
+                "text": "Echte Inhalte ab dem ersten Prototyp, Seitengewicht und Lesereihenfolge werden im Design mitentschieden."
+              }
+            ]
+          },
+          {
+            "kind": "note",
+            "label": "Preise",
+            "text": "Das Design wird mit der Umsetzung kalkuliert: eine Website ab CHF 35.000, Website und Marke ab CHF 60.000. An den Leistungsumfang gebunden, vor Arbeitsbeginn vereinbart und in Schweizer Franken abgerechnet.",
+            "link": {
+              "text": "Alle Preise →",
+              "href": "/#fees"
+            }
+          },
+          {
+            "kind": "facts",
+            "label": "Belegt",
+            "items": [
+              "30 Seitenvorlagen aus einem Designsystem (The Collective Service)",
+              "Jede Vorlage geprüft von 320 bis 1.920 Pixel",
+              "Geprüft an echten Seiten, nicht an Bildern, nur freigegebene Seiten wurden nach WordPress übernommen (Global Girls Foundation)"
+            ]
+          },
+          {
+            "kind": "work",
+            "label": "Aus den Projekten",
+            "project": "global-girls-foundation",
+            "line": "Stiftung · 2026 · Zwei Wege auf dem ersten Bildschirm: jetzt spenden oder ein Gespräch beginnen."
+          },
+          {
+            "kind": "questions",
+            "label": "Fragen an uns",
+            "items": [
+              {
+                "q": "Können wir das Design sehen, bevor wir uns für die Umsetzung entscheiden?",
+                "a": "Ja. Die Designfreigabe ist der zweite der vier Freigabepunkte, und dort fällt auch die zweite Rechnung an. Vorher wird nichts gebaut."
+              },
+              {
+                "q": "Wir haben bereits Markenrichtlinien. Arbeiten Sie damit?",
+                "a": "Ja. Wir gestalten innerhalb dieser Richtlinien und sagen Ihnen im Angebot, wo sie die Kontrastanforderungen nicht erfüllen oder in einer anderen Schrift nicht funktionieren.",
+                "link": {
+                  "text": "Zum Branding →",
+                  "href": "/services/branding"
+                }
+              },
+              {
+                "q": "Wer übersetzt?",
+                "a": "Ihre Übersetzerinnen und Übersetzer oder solche, die Sie benennen. Das Designsystem gibt ihnen Raum: Jede Beschriftung ist für Text ausgelegt, der ein Drittel länger ist als das Englische, und die Darstellung von rechts nach links wird getestet, nicht vorausgesetzt."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "web-development",
+        "title": "Webentwicklung für langsame Verbindungen und WCAG-Konformität",
+        "description": "Websites, gebaut nach einem vor dem Design festgelegten Performance-Budget, nach WCAG getestet mit Tools und von Hand, mit einem Redaktionssystem, das Ihr Team betreibt. Eine Website ab CHF 35.000, zum Festpreis.",
+        "h1": "Webentwicklung",
+        "statement": "Gebaut für die Bedingungen Ihrer Leserschaft, vor dem Launch getestet und danach von Ihrem eigenen Team betrieben.",
+        "intro": [
+          "Eine Feldkoordinatorin öffnet Ihre Website auf dem Smartphone, bei schwachem Signal, mitten in etwas anderem. Die mediane Startseite auf dem Smartphone lag 2025 bei 2,56 MB, was bei 400 Kilobit pro Sekunde etwa 51 Sekunden dauert. Dauert ein Dokument eine Minute, wird es nicht gelesen.",
+          "Deshalb kommt das Performance-Budget zuerst. Wir legen vor Designbeginn eine Grenze fest, in der Regel 500 KB pro Seite, und jede Vorlage wird danach gebaut und bei jedem Release daran gemessen. Die Startseite von The Collective Service öffnet mit 283 KB.",
+          "Barrierefreiheit wird ebenso getestet: mit Tools, nämlich axe-core und Lighthouse, und von Hand, über die Tastatur und den Sprunglink, mit Methode und Ergebnissen in einer veröffentlichten Erklärung für Ihre Unterlagen. Die Live-Startseite und die Spendenseite der Global Girls Foundation erreichen bei der Lighthouse-Barrierefreiheit 100.",
+          "Dann geht die Website an Ihr Team. Ein Formular für jede Inhaltsart, jedes mit der Angabe, was vor der Veröffentlichung einer Seite noch fehlt, und eine Schritt-für-Schritt-Anleitung im Redaktionsbereich. Jede Vorlage, Weiterleitung und Dokumentenmigration wird im Rahmen der Umsetzung erledigt, damit am Launch-Tag keine Ihrer Adressen ins Leere läuft."
+        ],
+        "sections": [
+          {
+            "kind": "rows",
+            "label": "Was Sie erhalten",
+            "rows": [
+              {
+                "title": "Performance-Budget",
+                "text": "Vor dem Design festgelegt und ins Angebot geschrieben; gemessen beim Öffnen jeder Seite, bis zum Ende gescrollt und auf einem Smartphone mit hoher Pixeldichte."
+              },
+              {
+                "title": "WCAG-Konformität",
+                "text": "Vor dem Launch mit Tools und von Hand getestet und in einer Erklärung zur Barrierefreiheit mit Methode und Datum festgehalten."
+              },
+              {
+                "title": "Redaktionssystem",
+                "text": "Meist WordPress mit eigenem Theme: ein Formular pro Inhaltsart, Prüfungen vor der Veröffentlichung, eine Anleitung im Adminbereich."
+              },
+              {
+                "title": "Migration",
+                "text": "Jede Seite und jedes Dokument über ein wiederholbares Importwerkzeug übernommen und jede alte Adresse ihrem neuen Ort zugeordnet."
+              },
+              {
+                "title": "Launch",
+                "text": "Ein Crawl aller Seiten und Links vor dem Go-live, am Tag selbst bestätigte Weiterleitungen und eine Beobachtung während der ersten 48 Stunden."
+              },
+              {
+                "title": "Unterlagen",
+                "text": "Die Erklärung zur Barrierefreiheit, der Sicherheitshinweis und die Performance-Werte, datiert, für Ihre Unterlagen und die Ihres Gebers."
+              }
+            ]
+          },
+          {
+            "kind": "note",
+            "label": "Preise",
+            "text": "Eine Website ab CHF 35.000, an den Leistungsumfang gebunden und in Schweizer Franken abgerechnet: bei Unterzeichnung, bei der Designfreigabe und zum Launch. Evidenzsysteme werden gesondert kalkuliert.",
+            "link": {
+              "text": "Zu den Evidenzsystemen →",
+              "href": "/services/evidence-intelligence"
+            }
+          },
+          {
+            "kind": "facts",
+            "label": "Belegt",
+            "items": [
+              "Startseite 283 KB bei einem Budget von 500 KB (The Collective Service, 24. Oktober 2026)",
+              "Lighthouse-Wert für Barrierefreiheit 100 auf Live-Seiten (Global Girls Foundation, 4. November 2026)",
+              "1.593 alte Adressen der neuen Website zugeordnet",
+              "21 Seiten und 23 Weiterleitungen am Launch-Tag korrekt"
+            ]
+          },
+          {
+            "kind": "work",
+            "label": "Aus den Projekten",
+            "project": "collective-service",
+            "line": "Partnerschaft · 2026 · 30 Seitenvorlagen, 155 Dokumente geholt und vorgehalten, jede Seite unter 500 KB."
+          },
+          {
+            "kind": "questions",
+            "label": "Fragen an uns",
+            "items": [
+              {
+                "q": "Welches Redaktionssystem?",
+                "a": "Meist WordPress mit eigenem Theme, weil Ihr Team dafür überall Redaktions- und Entwicklungskräfte findet. Beide Fallstudien laufen damit. Wenn Ihre Organisation einen Standard hat, nennen Sie ihn im Briefing, und das Angebot geht darauf ein."
+              },
+              {
+                "q": "Wem gehören die Konten?",
+                "a": "Ihnen. Hosting, Domain, Zahlungen und das Redaktionssystem werden auf Ihre Organisation registriert, und wir werden als Nutzer hinzugefügt. Wir sind nie die Einzigen mit den Schlüsseln."
+              },
+              {
+                "q": "Wo wird gehostet?",
+                "a": "Dort, wo Ihre Regeln es erlauben. Die Global Girls Foundation wird in Belgien gehostet; wenn Ihre Daten in einer Region bleiben müssen, nennt das Angebot den Host und das Land."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "evidence-intelligence",
+        "title": "Evidenzsysteme: Ihr institutionelles Wissen, abfragbar und überprüfbar",
+        "description": "Eine Wissensbasis aus allem, was Ihre Organisation besitzt, befragt in klarer Sprache, jede Antwort bis zu ihrer Quelle zurückverfolgt. Mit veröffentlichtem Benchmark, gehostet auf unserer oder Ihrer Infrastruktur. Ab CHF 75.000.",
+        "h1": "Evidenzsysteme",
+        "statement": "Ihr institutionelles Wissen: abfragbar, überprüfbar und stetig wachsend.",
+        "intro": [
+          "Jede Organisation, mit der wir arbeiten, besitzt mehr, als sie finden kann: jahrelange Leitlinien, Evaluationen, Forschung, Aufzeichnungen und die Signale, die jede Woche eintreffen. Die Suche hilft nur denen, die die richtigen Wörter schon kennen. Eine neue Koordinatorin bei einem Ausbruch kennt sie nicht.",
+          "Ein Evidenzsystem ist eine Wissensbasis aus allem, was Ihre Organisation besitzt. Leserinnen und Leser beschreiben eine Situation in eigenen Worten und erhalten eine Antwort, die ausschließlich aus Ihrem Material stammt, wobei jede Aussage bis zu der Textstelle zurückverfolgt wird, aus der sie kommt. Hat Ihr Material keine Antwort, sagt das System das.",
+          "Genauigkeit wird gemessen, nicht behauptet. Vor dem Launch wird ein Satz von Fragen mit bekannten Antworten unabhängig bewertet, und das Ergebnis wird mit dem System veröffentlicht. Neues Material wird laufend eingelesen, und der Benchmark wird wiederholt, wenn die Bibliothek wächst.",
+          "Es läuft auf unserer oder auf Ihrer Infrastruktur. Müssen Ihre Daten in einem bestimmten Land oder auf Ihren eigenen Servern bleiben, ist das eine Option, die im Angebot mit einem Preis ausgewiesen wird, nie eine Voraussetzung.",
+          "Und es wächst weiter: Dieselbe Wissensbasis lässt sich auf Bereiche für Arbeitsgruppen, Monitoring und Lageberichte, Berichte an Geber und Schulungen ausweiten, sodass das Material jedes Monats die Antworten des nächsten Monats verbessert. Die erste Umsetzung, die Knowledge bank für The Collective Service, hat 279 Dokumente eingelesen und befindet sich in der Testphase."
+        ],
+        "sections": [
+          {
+            "kind": "rows",
+            "label": "Was es leistet",
+            "rows": [
+              {
+                "title": "Liest alles, was Sie besitzen",
+                "text": "Dokumente, Daten, Aufzeichnungen und eingehende Signale, eingelesen, sobald sie eintreffen."
+              },
+              {
+                "title": "Antwortet in klarer Sprache",
+                "text": "Leserinnen und Leser beschreiben die Situation in eigenen Worten; der Rat stammt ausschließlich aus Ihrem Material."
+              },
+              {
+                "title": "Belegt jede Aussage",
+                "text": "Jeder Punkt wird bis zu seiner Quelle zurückverfolgt, sodass man die Textstelle öffnen und prüfen kann."
+              },
+              {
+                "title": "Sagt, wenn es keine Antwort gibt",
+                "text": "Nichts kommt von außerhalb Ihres Materials. Steht es dort nicht, sagt die Antwort das."
+              },
+              {
+                "title": "Wird gemessen und veröffentlicht",
+                "text": "Fragen mit bekannten Antworten, vor dem Launch unabhängig bewertet und wiederholt, wenn Material hinzukommt."
+              },
+              {
+                "title": "Läuft dort, wo Sie entscheiden",
+                "text": "Auf unserer Infrastruktur oder Ihren eigenen Servern; den Zugang legen Sie fest, von Ihrem Team bis zur Öffentlichkeit."
+              }
+            ]
+          },
+          {
+            "kind": "rows",
+            "label": "Wie es weitergeht",
+            "rows": [
+              {
+                "title": "Bereiche für Arbeitsgruppen",
+                "text": "Mitglieder, Dokumente und Diskussionen an einem Ort, mit Antworten aus demselben Material."
+              },
+              {
+                "title": "Monitoring und Lageberichte",
+                "text": "Neue Signale, eingelesen, sobald sie eintreffen, mit einer Zusammenfassung für alle, die sie brauchen."
+              },
+              {
+                "title": "Berichte an Geber",
+                "text": "Was mit dem Geld finanziert wurde, aus den Unterlagen entnommen statt aus dem Gedächtnis neu geschrieben."
+              },
+              {
+                "title": "Schulung für den Betrieb",
+                "text": "Ihr Team lernt, das System zu betreiben, zu ergänzen und seinen Benchmark zu lesen."
+              }
+            ],
+            "note": "Jeder dieser Schritte wird als eigene Phase definiert und kalkuliert."
+          },
+          {
+            "kind": "note",
+            "label": "Preise",
+            "text": "Ein Evidenzsystem ab CHF 75.000, an den Leistungsumfang gebunden und in Schweizer Franken abgerechnet. Nach dem Launch liest der Wartungsplan Platform, ab CHF 5.800 pro Monat, neues Material ein, wiederholt den Benchmark und verschickt eine monatliche Zusammenfassung.",
+            "link": {
+              "text": "Alle Preise →",
+              "href": "/#fees"
+            }
+          },
+          {
+            "kind": "facts",
+            "label": "Belegt",
+            "items": [
+              "279 in die Knowledge bank eingelesene Dokumente (The Collective Service, 4. November 2026)",
+              "Jede Antwort mit Quellenangabe aus den eigenen Dokumenten der Bibliothek",
+              "Sagt es, wenn die Bibliothek keine Antwort hat"
+            ]
+          },
+          {
+            "kind": "work",
+            "label": "Aus den Projekten",
+            "project": "collective-service",
+            "line": "Partnerschaft · 2026 · Die Knowledge bank, in der Testphase: Rat ausschließlich aus der Bibliothek, jeder Punkt belegt."
+          },
+          {
+            "kind": "questions",
+            "label": "Fragen an uns",
+            "items": [
+              {
+                "q": "Woher wissen wir, dass die Antworten stimmen?",
+                "a": "Sie messen es. Vor dem Launch vereinbaren wir Fragen mit bekannten Antworten aus Ihrem Material; sie werden unabhängig bewertet und veröffentlicht und im Plan Platform monatlich wiederholt."
+              },
+              {
+                "q": "Wo liegen unsere Daten?",
+                "a": "Auf unserer oder auf Ihrer Infrastruktur. Müssen sie in einem Land oder auf Ihren Servern bleiben, weist das Angebot den Preis für diese Option aus."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "branding",
+        "title": "Branding für Organisationen, Programme und Kampagnen",
+        "description": "Identitätssysteme, die bei 16 Pixel, in einer Reihe von Partnerlogos und in sechs Schriften funktionieren, geliefert als Richtlinien, die Partner ohne uns anwenden. Website und Marke ab CHF 60.000.",
+        "h1": "Branding",
+        "statement": "Eine Identität, die bei 16 Pixel, in einer Reihe von Partnerlogos und in einer Schrift lesbar bleibt, die Sie nicht schreiben.",
+        "intro": [
+          "Die Bildmarke einer NGO lebt an schwierigen Orten: in einem Browser-Tab, als App-Symbol, als fünftes Logo in einer Reihe auf dem Bericht eines Partners, auf einem Banner in einer Sprache, die die Designerin oder der Designer nicht liest. Die meisten Bildmarken werden für ein Titelblatt gezeichnet und versagen überall sonst. Das alte Logo von The Collective Service funktionierte unterhalb von etwa 100 Pixel Breite nicht mehr.",
+          "Wir gestalten Identitätssysteme für Organisationen, Programme und Kampagnen und testen sie dort, wo sie eingesetzt werden. Die Bildmarke wird so gezeichnet, dass sie bei 16 Pixel funktioniert und in einer Reihe von Partnerlogos bestehen kann, ohne sich zu verlieren. Die Palette gibt jeder Farbe eine Aufgabe, sodass Fließtext 4,5:1 erreicht und die Farben, für die Sie bekannt sind, der Großschrift vorbehalten bleiben. Die Typografie wird für die Sprachen gewählt, in denen Sie veröffentlichen, auch für Arabisch, Chinesisch und Kyrillisch, damit eine übersetzte Seite weiterhin nach Ihnen aussieht.",
+          "Sie erhalten Richtlinien, die Partner und Länderbüros ohne uns anwenden: Regeln für Farbe, Schutzzone, Mindestgröße und Schrift, samt Kontrasttabelle, damit die nächste Kampagnenseite nach der Organisation aussieht, ohne dass jemand im Studio anrufen muss."
+        ],
+        "sections": [
+          {
+            "kind": "rows",
+            "label": "Was Sie erhalten",
+            "rows": [
+              {
+                "title": "Bildmarke",
+                "text": "So gezeichnet, dass sie bei 16 Pixel und in einer Reihe von Partnerlogos lesbar ist, mit Regeln für Schutzzone und Mindestgröße."
+              },
+              {
+                "title": "Palette",
+                "text": "Jede Farbe erhält eine Aufgabe: Text, Großschrift, Fläche oder Dekoration, und jede Paarung wird an 4,5:1 und 3:1 gemessen."
+              },
+              {
+                "title": "Typografie",
+                "text": "Schriften, gewählt für die Schriftsysteme, in denen Sie veröffentlichen, mit Größen und Stärken, die in allen funktionieren."
+              },
+              {
+                "title": "Richtlinien",
+                "text": "Veröffentlicht als Seite, die Partner überall öffnen können, samt Kontrasttabelle, damit sie nicht in einer Schublade veraltet."
+              },
+              {
+                "title": "Einführung",
+                "text": "Vorlagen für die Seiten und Dokumente, die Sie am häufigsten erstellen, damit alle die Identität gleich anwenden."
+              }
+            ]
+          },
+          {
+            "kind": "note",
+            "label": "Preise",
+            "text": "Website und Marke ab CHF 60.000, an den Leistungsumfang gebunden und in Schweizer Franken abgerechnet. Eine Identität allein, für ein Programm oder eine Kampagne, wird im Angebot auf Grundlage Ihres Briefings kalkuliert.",
+            "link": {
+              "text": "Alle Preise →",
+              "href": "/#fees"
+            }
+          },
+          {
+            "kind": "facts",
+            "label": "Belegt",
+            "items": [
+              "Eine vorgeschlagene Bildmarke, lesbar bei 16 Pixel (The Collective Service, gezeigt mit Erlaubnis der Partnerschaft)",
+              "Unsere eigene Palette aus sechs Farben: Fließtext bei 7,23:1 oder besser, Markenfarben der Großschrift vorbehalten",
+              "Richtlinien mit Farbe, Schutzzone und Mindestgröße"
+            ]
+          },
+          {
+            "kind": "work",
+            "label": "Aus den Projekten",
+            "project": "collective-service",
+            "line": "Partnerschaft · 2026 · Eine vorgeschlagene Identität für eigenständige Organisationen, die als ein Service handeln, lesbar bei 16 Pixel."
+          },
+          {
+            "kind": "questions",
+            "label": "Fragen an uns",
+            "items": [
+              {
+                "q": "Wir können unser Logo nicht ändern. Können Sie trotzdem helfen?",
+                "a": "Ja. Die meisten Paletten scheitern nicht; bestimmte Paarungen scheitern. Wir behalten die Bildmarke bei, geben jeder Farbe eine Aufgabe und schreiben die Tabelle in Ihre Richtlinien.",
+                "link": {
+                  "text": "So funktioniert das →",
+                  "href": "/insights/accessible-colour"
+                }
+              },
+              {
+                "q": "Wem gehört die Identität?",
+                "a": "Ihnen. Die Quelldateien und die Richtlinien gehören ab dem Launch Ihnen, ohne Rücklizenz an uns."
+              },
+              {
+                "q": "Funktioniert das auf Arabisch?",
+                "a": "Ja, und Sie sehen es auf Arabisch, bevor Sie es freigeben. Jede Identität wird in den Schriften gesetzt, in denen Sie veröffentlichen, auch von rechts nach links."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "web-maintenance",
+        "title": "Website-Wartung und Wartungspläne",
+        "description": "Laufender Betrieb der Websites, die wir bauen oder übernehmen: Updates zuerst in der Testumgebung, tägliche Backups mit getesteter Wiederherstellung, Monitoring, ein Monatsbericht, eine namentlich benannte Ansprechperson. Vier Pläne ab CHF 1.200 pro Monat.",
+        "h1": "Website-Wartung",
+        "statement": "Eine Website ist nur aktuell, wenn jemand sie aktuell hält. Vier Pläne, eine namentlich benannte Ansprechperson, jeden Monat ein Bericht.",
+        "intro": [
+          "Eine Bibliothek, die niemand pflegt, ist innerhalb eines Jahres veraltet, und eine Website, die niemand aktualisiert, ist innerhalb eines Monats ein Sicherheitsrisiko. Die Websites, die wir bauen, und die Websites, die wir nach einem Audit übernehmen, werden von Menschen betrieben, die sie kennen.",
+          "Jedes Update geht in die Testumgebung, bevor es live geht. Ab Standard wird jedes Release mit dem freigegebenen Design verglichen, damit ein Plugin-Update nicht unbemerkt eine Seite verändern kann. Backups werden täglich erstellt, und eine Wiederherstellung wird jedes Quartal getestet, denn ein Backup, das nie wiederhergestellt wurde, ist eine Hoffnung, kein Backup. Verfügbarkeit, Fehler und Sicherheit werden überwacht, Admin-Konten werden überprüft, und einmal im Monat erhalten Sie einen Bericht, der sagt, was getan wurde, was gefunden wurde und was als Nächstes ansteht.",
+          "Eine namentlich benannte Person antwortet: bei Essential am nächsten Geschäftstag, bei Standard am selben Geschäftstag, bei Extended und Platform innerhalb von vier Geschäftsstunden, mit einer Notfallnummer. Änderungen im Rahmen der Stunden Ihres Plans werden auf Anfrage vorgenommen; größere Arbeiten werden zuerst zum Festpreis angeboten.",
+          "Die Pläne werden monatlich, vierteljährlich 5 % günstiger oder jährlich 10 % günstiger abgerechnet, mit einer Mindestlaufzeit von drei Monaten, danach fortlaufend. Wenn Sie gehen, nehmen Sie die Website, die Konten und das letzte Backup mit."
+        ],
+        "sections": [
+          {
+            "kind": "care",
+            "id": "care-plans",
+            "label": "Wartungspläne",
+            "statement": "Eine einseitige Website und eine Bibliothek mit tausend Seiten sind nicht dieselbe Aufgabe. Der Plan wird in der Analysephase nach Seitenzahl, Sprachen, Integrationen, Traffic und Größe des Redaktionsteams festgelegt; die folgenden Zahlen sind Ausgangswerte.",
+            "includes": "Jeder Plan enthält: Updates zuerst in der Testumgebung, dann live · tägliche Backups, geprüft durch einen Wiederherstellungstest in jedem Quartal · Überwachung von Verfügbarkeit und Fehlern · Sicherheitsscans und Admin-Prüfung · eine namentlich benannte Person, die die Website kennt.",
+            "plans": [
+              "Essential",
+              "Standard",
+              "Extended",
+              "Platform"
+            ],
+            "rows": [
+              {
+                "label": "Ausgelegt für",
+                "values": [
+                  "Bis etwa 25 Seiten, ein oder zwei Sprachen, nur Formulare",
+                  "Bis etwa 200 Seiten, mehrere Sprachen, Integrationen wie CRM, Newsletter und Spenden",
+                  "Mehr als 200 Seiten, Dokumentenbibliotheken, mehrere Sprachen, hoher Traffic, mehrere Personen in der Redaktion",
+                  "Evidenzsysteme und individuelle Plattformen"
+                ]
+              },
+              {
+                "label": "Visueller Regressionstest gegen das freigegebene Design",
+                "values": [
+                  "—",
+                  "Ja",
+                  "Ja",
+                  "Ja"
+                ]
+              },
+              {
+                "label": "Performance gemessen am Budget der Website",
+                "values": [
+                  "—",
+                  "Ja",
+                  "Ja",
+                  "Ja"
+                ]
+              },
+              {
+                "label": "Monatsbericht für Ihre Unterlagen",
+                "values": [
+                  "Eine Statusnotiz",
+                  "Der vollständige Bericht",
+                  "Der vollständige Bericht",
+                  "Der vollständige Bericht"
+                ]
+              },
+              {
+                "label": "Stunden für Änderungen pro Monat",
+                "values": [
+                  "3",
+                  "6",
+                  "12",
+                  "16"
+                ]
+              },
+              {
+                "label": "Antwort von einer namentlich benannten Person",
+                "values": [
+                  "Am nächsten Geschäftstag",
+                  "Am selben Geschäftstag",
+                  "Innerhalb von vier Geschäftsstunden, mit Notfallnummer",
+                  "Innerhalb von vier Geschäftsstunden, mit Notfallnummer"
+                ]
+              },
+              {
+                "label": "Nur Platform",
+                "values": [
+                  "—",
+                  "—",
+                  "—",
+                  "Neues Material wird mit der Veröffentlichung eingelesen · Genauigkeits-Benchmark wird monatlich wiederholt und veröffentlicht · eine monatliche Zusammenfassung · Upgrades des Systems und seiner Methode werden vor der Auslieferung getestet"
+                ]
+              },
+              {
+                "label": "Ab, pro Monat",
+                "values": [
+                  "CHF 1.200",
+                  "CHF 2.200",
+                  "CHF 4.200",
+                  "CHF 5.800"
+                ]
+              },
+              {
+                "label": "Quartalsplan, 5 % günstiger, pro Monat",
+                "values": [
+                  "CHF 1.140",
+                  "CHF 2.090",
+                  "CHF 3.990",
+                  "CHF 5.510"
+                ]
+              },
+              {
+                "label": "Jahresplan, 10 % günstiger, pro Monat",
+                "values": [
+                  "CHF 1.080",
+                  "CHF 1.980",
+                  "CHF 3.780",
+                  "CHF 5.220"
+                ]
+              }
+            ],
+            "notes": [
+              "Nicht genutzte Stunden werden einen Monat übertragen. Weitere Stunden zu CHF 200 pro Stunde, vor ihrer Nutzung vereinbart.",
+              "Konditionen: eine Monatspauschale, ein Quartalsplan 5 % günstiger oder ein Jahresplan 10 % günstiger, abgerechnet in Schweizer Franken. Mindestlaufzeit drei Monate, danach fortlaufend. Keine Einrichtungsgebühr für von uns gebaute Websites. Ein kurzes Audit zum Festpreis, bevor wir eine von anderen gebaute Website übernehmen."
+            ]
+          },
+          {
+            "kind": "note",
+            "label": "Übernahme einer fremden Website",
+            "text": "Zuerst kommt das Audit: worauf die Website läuft, was veraltet ist, was die Backups tatsächlich enthalten und was eine Wiederherstellung erfordert. Die Ergebnisse gehören Ihnen, egal welchen Plan Sie wählen, auch wenn Sie keinen wählen."
+          },
+          {
+            "kind": "facts",
+            "label": "Belegt",
+            "items": [
+              "Gehostet in Belgien bei WP Engine, HTTPS mit HSTS, tägliche Backup-Punkte (Global Girls Foundation)",
+              "332 Seiten und 634 externe Links gecrawlt, keiner defekt (The Collective Service, 23. Oktober 2026)",
+              "Eine namentlich benannte Person antwortet noch am selben Geschäftstag"
+            ]
+          },
+          {
+            "kind": "questions",
+            "label": "Fragen an uns",
+            "items": [
+              {
+                "q": "Können wir kündigen?",
+                "a": "Ja. Nach den ersten drei Monaten läuft der Plan fortlaufend weiter, und Sie können ihn zum Ende jedes Abrechnungszeitraums beenden. Sie behalten die Website, die Konten und das letzte Backup."
+              },
+              {
+                "q": "Was gilt als Änderung?",
+                "a": "Inhalts-, Layout- und Plugin-Arbeiten im Rahmen der Stunden Ihres Plans. Alles Größere, etwa eine neue Vorlage oder die Anbindung an ein anderes System, wird zuerst zum Festpreis angeboten."
+              },
+              {
+                "q": "Können wir zwischen den Plänen wechseln?",
+                "a": "Ja, zum Ende jedes Abrechnungszeitraums oder früher, wenn die Website wächst: Eine neue Sprache oder eine Dokumentenbibliothek bringt eine Website meist einen Plan höher."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

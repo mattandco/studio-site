@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Nestvested · Websites and brands for NGOs and international organisations",
-    "description": "Nestvested designs and builds websites and brands for NGOs and international organisations: fast, accessible sites your own team can update, built for slow and unstable connections."
+    "title": "Nestvested · Websites, brands and evidence intelligence for NGOs and international organisations",
+    "description": "Web design, development, branding and evidence intelligence for NGOs, foundations and UN-system agencies. Fixed fees in Swiss francs, a proposal within five working days."
   },
   "common": {
     "skip": "Skip to content",
@@ -9,7 +9,9 @@
     "breadcrumb": "Breadcrumb",
     "languages": "Languages",
     "discuss": "Discuss a project",
-    "tellUs": "Tell us what you’re building."
+    "tellUs": "Send us the brief.",
+    "ctaLabel": "Contact",
+    "ctaText": "A rough brief or a terms of reference is enough. Matthew Bowman replies the same business day, and you have a fixed-fee proposal within five working days."
   },
   "nav": {
     "work": "Work",
@@ -24,7 +26,14 @@
     "title": "Websites and brands for NGOs and international organisations.",
     "seeWork": "See the work",
     "pause": "Pause",
-    "play": "Play"
+    "play": "Play",
+    "statement": "Research-led design, sites that load on 3G, and evidence intelligence that answers from your own documents with every source cited. Fixed fees, agreed before work starts.",
+    "facts": [
+      "Formed 2018",
+      "A registered company",
+      "Fixed fees in Swiss francs",
+      "Proposal within five working days"
+    ]
   },
   "home": {
     "selectedWork": "Selected work",
@@ -32,63 +41,178 @@
     "whatWeDo": "What we do",
     "services": [
       {
+        "slug": "web-design",
         "name": "Web design",
-        "text": "Research, prototypes your team can comment on, and design systems that hold up in every language."
+        "text": "Research-led design, prototyped early, delivered as a design system that holds in every language and script."
       },
       {
+        "slug": "web-development",
         "name": "Web development",
-        "text": "Fast, accessible sites your own team can update, built for slow and unstable connections."
+        "text": "Sites built to a performance budget and tested to WCAG before launch, on an editing layer your own team runs."
       },
       {
-        "name": "Branding",
-        "text": "Identities for organisations, programmes and campaigns, with guidelines partners actually follow."
-      },
-      {
+        "slug": "evidence-intelligence",
         "name": "Evidence intelligence",
-        "text": "Systems that read your documents, data and feedback and turn them into answers people can act on — every one traced to its source, running where your data is allowed to be."
+        "text": "A knowledge layer built on everything your organisation holds, queried in natural language, every answer traced to its source. Hosted on our infrastructure or yours; accuracy benchmarked and published."
       },
       {
+        "slug": "branding",
+        "name": "Branding",
+        "text": "Identity systems that work at 16 pixels and across languages, delivered as guidelines partners can apply without us."
+      },
+      {
+        "slug": "web-maintenance",
         "name": "Web maintenance",
-        "text": "We look after sites after launch: updates, security, backups and fixes, on a monthly retainer."
+        "text": "Continuous operation on a retainer — monthly, quarterly or yearly: updates, security, backups verified by restore, a report every month."
       }
     ],
     "about": "About",
     "aboutLine": "The people you meet do the work.",
-    "aboutLead": "Nestvested is a web design, development and AI studio, formed in 2018.",
     "aboutText": [
-      "Its founder has worked with NGOs such as the IFRC since 2010, with teams in Geneva and on global operations.",
+      "Nestvested is a web design and development studio, formed in 2018 and registered in Kingston, Jamaica. Founder and project lead Matthew Bowman has worked with NGOs such as the IFRC since 2010, with teams in Geneva and on global operations.",
       "Every project is run by the whole team rather than handed down a chain: design, engineering, content and delivery working on the same problem."
     ],
     "workingWithUs": "Working with us",
-    "workingLine": "Ready for your procurement team.",
+    "workingLine": "Ready for your procurement team, with the fees up front.",
     "working": [
       {
         "term": "A registered company",
-        "text": "Contracts and invoices from Nestvested Limited, with references and company documents ready to send."
+        "text": "Contracts and invoices from Nestvested Limited, Kingston, Jamaica. Company documents and references ready to send with the proposal."
       },
       {
-        "term": "Fixed fees",
-        "text": "Agreed before work starts and invoiced in Swiss francs. Fees are fixed to scope, not to hours."
+        "term": "Fixed fees in Swiss francs",
+        "text": "Agreed before work starts and fixed to scope, not hours. Invoiced on signing, at design sign-off and at launch."
       },
       {
-        "term": "Retainers",
-        "text": "For ongoing maintenance and support, we also work on a monthly retainer."
+        "term": "Care plans",
+        "text": "Four plans for sites we build or take on, from CHF 1,200 a month, sized to the site at discovery. Monthly, quarterly or yearly."
       },
       {
         "term": "Evidence, published",
-        "text": "An accessibility statement with its test method, and a security note for every site we run."
+        "text": "An accessibility statement with its test method, performance measured against a budget, and a security note for every site we run. For knowledge systems, the accuracy benchmark."
       },
       {
         "term": "Senior people only",
-        "text": "The people in the first meeting do the work. Any partner is named in the proposal."
+        "text": "The people in the first meeting do the work. Any partner is named in the proposal, with their part of the work."
       }
     ],
-    "replyLine": "A named person replies the same business day.",
-    "bookCall": "Book a 30-minute call"
+    "bookCall": "Book a 30-minute call",
+    "workStatement": "Two projects shown in full, with every number measured and dated. What has not launched says so.",
+    "workNote": "The founder’s earlier work, with the IFRC and teams in Geneva since 2010, was done inside those teams and is not published here. References are available on request and are named in the proposal.",
+    "servicesStatement": "Five services from one team, each at a fixed fee and each with evidence you can file: a design system, test results, a benchmark, a monthly report.",
+    "scopeAndFees": "Scope and fees →",
+    "aboutFacts": [
+      "Formed 2018",
+      "Nestvested Limited, Kingston, Jamaica",
+      "Fully remote",
+      "Six working languages: English, French, Russian, Spanish, Arabic and Chinese"
+    ],
+    "people": [
+      {
+        "name": "Matthew Bowman",
+        "text": "Founder and project lead. Humanitarian information management since 2010, with the IFRC and teams in Geneva. Writes every proposal and leads every project from the first call to launch."
+      }
+    ],
+    "fees": {
+      "label": "Fees",
+      "statement": "Typical fees, so you can shortlist us before the first call. Every site is different: the fixed fee is set at proposal, from your brief.",
+      "rows": [
+        {
+          "title": "A website",
+          "fee": "from CHF 35,000",
+          "text": "Research, design, build, testing and launch, on an editing layer your team runs."
+        },
+        {
+          "title": "A website and brand",
+          "fee": "from CHF 60,000",
+          "text": "The website above, with an identity system and guidelines partners can apply."
+        },
+        {
+          "title": "A knowledge system",
+          "fee": "from CHF 75,000",
+          "text": "Evidence intelligence built on your material, benchmarked and published, on our infrastructure or yours."
+        },
+        {
+          "title": "A discovery engagement",
+          "fee": "from CHF 8,000",
+          "text": "When the brief cannot be priced yet: questionnaires, a site audit and a project plan you can put out to tender."
+        }
+      ],
+      "note": "Every fee is fixed to the scope in the proposal, not to hours, and invoiced in Swiss francs in three parts: on signing, at design sign-off and at launch. No hourly rates."
+    },
+    "carePlans": {
+      "label": "Care plans",
+      "statement": "A one-page site and a thousand-page library are not the same job. Four plans, from CHF 1,200 a month, sized at discovery from page count, languages, integrations, traffic and editors.",
+      "facts": [
+        "Essential, Standard, Extended, Platform",
+        "Updates on staging first, daily backups, monitoring, a named person",
+        "Monthly, quarterly at 5% less or yearly at 10% less",
+        "Three-month minimum, then rolling"
+      ],
+      "link": {
+        "text": "See the four plans →",
+        "href": "/services/web-maintenance#care-plans"
+      }
+    },
+    "process": {
+      "label": "How a project runs",
+      "statement": "Three stages and four approval points. Nothing is built before you have clicked through a prototype.",
+      "rows": [
+        {
+          "title": "Proposal",
+          "text": "Send the brief or terms of reference. Within five working days you have a fixed-fee proposal with the timeline and the team named. If it cannot be priced yet, we propose a short discovery instead."
+        },
+        {
+          "title": "Discovery",
+          "text": "Stakeholder and audience questionnaires, a site audit when there is a site, and a discovery document that ends in the project plan: scope, timeline and who approves what."
+        },
+        {
+          "title": "Delivery",
+          "text": "Design, then a clickable prototype before anything is built, then build, launch and care. A weekly 30-minute call, with notes the same day."
+        }
+      ],
+      "facts": [
+        "Four approval points: proposal, design, demo, go-live",
+        "A named team from the first call",
+        "Weekly 30-minute call, notes the same day",
+        "Accessibility and performance tested before launch and written up for your records",
+        "Typical timeline 14 weeks"
+      ]
+    },
+    "questions": [
+      {
+        "q": "Can we have references?",
+        "a": "Yes. References from client teams are sent with the proposal or on request, and you may contact them directly.",
+        "link": {
+          "text": "Two projects are shown in full in the work →",
+          "href": "/#work"
+        }
+      },
+      {
+        "q": "How do you handle our data?",
+        "a": "Your material stays yours. We sign your data-protection terms, hold only what the work needs, host where your rules require, and hand back or delete everything at the end of the project."
+      },
+      {
+        "q": "Which documents can you send for vendor registration?",
+        "a": "Company registration, bank and tax details, references, the accessibility statement and a security note, as one pack with the proposal or on request."
+      },
+      {
+        "q": "Who will actually do the work?",
+        "a": "Matthew Bowman leads every project. Specialists in design, engineering, content and accessibility are named in the proposal with their part of the work, and no one joins without being named to you first."
+      },
+      {
+        "q": "What happens after launch?",
+        "a": "The first 30 days of fixes are covered by the project fee. Then a care plan, or a clean handover: documentation, every account in your name, and training for your team."
+      },
+      {
+        "q": "Which time zone do you work in?",
+        "a": "Kingston, Jamaica, UTC−5. Our mornings are Geneva’s afternoons and New York’s mornings, and the weekly call is set in your hours."
+      }
+    ]
   },
   "footer": {
     "tested": "WCAG 2.1 AA, tested 4 November 2026",
-    "statement": "Accessibility statement"
+    "statement": "Accessibility statement →"
   },
   "caseStudy": {
     "work": "Work",
@@ -114,13 +238,15 @@
     "projectLead": "Project lead",
     "clientTeam": "Client team",
     "carryNext": "What this platform could carry next",
-    "nextCase": "Next case study"
+    "nextCase": "Next case study",
+    "proves": "What this proves"
   },
   "insightsPage": {
     "title": "Insights",
-    "intro": "A few substantial pieces a year on building accessible, multilingual websites for international organisations.",
+    "intro": "Short, sourced pieces for the people who write the brief, hold the budget or own the palette. Each cites the standard or the study it rests on, so you can put it in your own terms of reference.",
     "minRead": "{n} min read",
-    "read": "Read →"
+    "read": "Read →",
+    "note": "Writing a brief now? Send it as it is, and we will tell you what is missing before we price it."
   },
   "post": {
     "inShort": "In short",
@@ -136,7 +262,7 @@
     "intro": "This statement covers nestvested.co. We aim for WCAG 2.1 level AA. We last tested the site on 4 November 2026.",
     "howTested": "How it was tested",
     "tested": [
-      "Every page type was tested: home, case study, insights list, article and this page.",
+      "Every page type was tested: home, service page, case study, insights list, article, the page-not-found page and this page.",
       "Automated: axe-core, with its WCAG 2.0, 2.1 and 2.2 A and AA rules, and Lighthouse.",
       "Keyboard: scripted key presses through the skip link, the menu, the contact form and the hero’s pause button, with a check that focus stays visible.",
       "Widths from 320 to 1,920 pixels, checked for sideways scrolling.",
@@ -154,8 +280,11 @@
   },
   "notFound": {
     "title": "Page not found",
-    "text": "That address does not match a page on this site.",
-    "home": "Go to the home page"
+    "text": "The address may have changed when this site was rebuilt. If you followed a link from a proposal or an email, tell us at {email} and we will fix the link the same business day.",
+    "home": "Home →",
+    "work": "See the work →",
+    "services": "Services →",
+    "insights": "Insights →"
   },
   "form": {
     "title": "Discuss a project",
@@ -163,20 +292,29 @@
     "doneTitle": "Your email app should now be open.",
     "doneText": "Your message is filled in and addressed to {name}. Press send there and it reaches a person. If nothing opened, write to {email}.",
     "writeAnother": "Write another message",
-    "reply": "A named person replies the same business day.",
-    "name": "Your name",
+    "name": "Name",
     "organisation": "Organisation",
     "email": "Work email",
-    "budget": "Budget",
-    "chooseRange": "Choose a range",
-    "over": "Over CHF 150,000",
-    "notKnown": "Not known yet",
-    "message": "What do you need?",
+    "budget": "Budget range",
+    "message": "What you are building",
     "send": "Send",
     "errorName": "Please enter your name.",
     "errorOrganisation": "Please enter your organisation.",
     "errorEmail": "Please enter your work email.",
-    "errorEmailFormat": "Please check the email address."
+    "errorEmailFormat": "Please check the email address.",
+    "statement": "Send the brief or terms of reference (TOR), or describe what you are building. Matthew Bowman replies the same business day, and a fixed-fee proposal follows within five working days.",
+    "messageHelp": "A rough brief is fine. Page types, languages, what has to move and any deadline all help us price it.",
+    "errorMessage": "Please tell us what you are building.",
+    "budgetHelp": "Optional. A range tells us what level of work to propose.",
+    "budgetNotDecided": "Not decided yet",
+    "budgetUnder": "Under CHF 10,000",
+    "budgetA": "CHF 10,000 to 35,000",
+    "budgetB": "CHF 35,000 to 60,000",
+    "budgetC": "CHF 60,000 to 100,000",
+    "budgetOver": "Over CHF 100,000",
+    "link": "Link to the brief or TOR",
+    "linkHelp": "A shared document link. Or attach it to an email to {email}.",
+    "privacy": "Your message goes to a person and is used only to reply and to write the proposal."
   },
   "authorNote": "Written by Matthew Bowman, founder of Nestvested, who has worked in the humanitarian sector since 2010.",
   "projects": [
@@ -185,21 +323,21 @@
       "name": "The Collective Service",
       "type": "Partnership",
       "year": "2026",
-      "scope": "Website audit, complete rebuild, brand identity and document library",
-      "line": "Partnership · 2026 · Complete rebuild and new identity, in testing before relaunch",
+      "scope": "Website audit, complete rebuild, proposed brand identity and document library",
+      "line": "Partnership · 2026 · Complete rebuild, proposed identity and a Knowledge bank that answers from 279 documents. In testing before relaunch.",
       "languages": "English first, more planned",
       "status": {
         "label": "Status",
         "text": "In testing. Not yet launched"
       },
-      "summary": "How a health-emergency partnership’s website was rebuilt from the ground up, with a new identity, so that people on slow connections can reach current guidance. Now in testing before its relaunch.",
+      "summary": "A health-emergency partnership’s library, rebuilt from the ground up so a coordinator on a slow connection reaches current guidance in seconds, with a proposed identity and a Knowledge bank that answers from the library itself. In testing before relaunch.",
       "cardImage": {
         "src": "/work/collective-service-knowledge-bank.jpg"
       },
       "detailImage": {
         "src": "/work/collective-service-documents.jpg",
         "alt": "The Knowledge bank page: a box for describing a situation above a picture of the library’s documents grouped by theme.",
-        "caption": "The Knowledge bank on the new site, an experimental part of the build."
+        "caption": "The Knowledge bank on the new site, in testing."
       },
       "figures": [
         {
@@ -250,7 +388,11 @@
         },
         {
           "title": "Try a new way into the library",
-          "text": "Search only helps people who know the right words. The Knowledge bank lets a reader describe a situation in their own words and get advice drawn only from the library’s documents, with every point cited. When the library has no answer, it says so. It is an experimental part of the build."
+          "text": "Search only helps people who know the right words. The Knowledge bank lets a reader describe a situation in their own words and get advice drawn only from the library’s documents, with every point cited. When the library has no answer, it says so.",
+          "link": {
+            "text": "It is in testing, and it is the first build of the service we now offer as evidence intelligence →",
+            "href": "/services/evidence-intelligence"
+          }
         }
       ],
       "brand": {
@@ -291,7 +433,7 @@
         "guidelines": [
           "The identity goes further than the mark. The voice is plain, concrete, calm and honest, because jargon is a barrier to someone in the middle of a crisis. Colour has a job: ink for text, sand for backgrounds, and coral only for what is live now and the one action that matters.",
           "All of this is set out in a 57-page design and brand document, shared with the partnership in October 2026. Part A makes the case and sets the guidelines: the evidence, the side-by-side tests, the cost and risk of changing, voice and tone, construction, clear space and minimum sizes, colour, type, photography, four language versions, use beside the partners and the rules. Part B is the design standard for the website, and every rule in it carries its reason and the kind of support behind it: the terms of reference, published evidence, a computed value, a standard or our own judgement.",
-          "The new mark is a proposal. The decision rests with the partners, and the new site carries it in the meantime."
+          "The identity is proposed and is shared here with the partnership’s permission; adopting it is the partnership’s decision."
         ]
       },
       "beforeAfter": [
@@ -318,7 +460,7 @@
         {
           "label": "The logo",
           "before": "The name alone, in English",
-          "after": "A proposed mark that works in any language and at any size"
+          "after": "A proposed mark, legible at 16 pixels, shared with the partnership’s permission"
         },
         {
           "label": "Old addresses",
@@ -355,7 +497,29 @@
         }
       ],
       "clientTeam": "The Collective Service Secretariat",
-      "next": "Questions asked and answered in French, Spanish and Arabic, from the same library, with every answer still cited to its source."
+      "next": "Questions asked and answered in French, Spanish and Arabic, from the same library, with every answer still cited to its source.",
+      "proves": [
+        {
+          "title": "We count before we design.",
+          "text": "Reading the site’s own database found 1,593 old addresses and a library mostly from 2020 to 2022. Every address is mapped, and the plan changed before a page was drawn."
+        },
+        {
+          "title": "We build to a budget and publish the figure.",
+          "text": "500 KB a page was set first. The home page opens at 283 KB, measured 24 October 2026."
+        },
+        {
+          "title": "We hand the site to your editors.",
+          "text": "One form per kind of content, a built-in guide, and a document’s format, size and page count filled in from its address."
+        },
+        {
+          "title": "We say what has not happened.",
+          "text": "The site is in testing, the identity is proposed, and there are no visitor results until there are visitors."
+        },
+        {
+          "title": "Evidence intelligence works on a real library.",
+          "text": "The Knowledge bank answers from 279 documents, cites every point and says when the library has no answer."
+        }
+      ]
     },
     {
       "slug": "global-girls-foundation",
@@ -363,14 +527,14 @@
       "type": "Foundation",
       "year": "2026",
       "scope": "Website redesign, WordPress build and fundraising platform integration",
-      "line": "Foundation · 2026 · Website redesign and fundraising platform integration",
+      "line": "Foundation · 2026 · Website redesign and gifts in three currencies. Live since 9 October 2026.",
       "languages": "English",
       "status": {
         "label": "Live site",
         "text": "globalgirlsfoundation.org",
         "href": "https://globalgirlsfoundation.org"
       },
-      "summary": "How a Swiss foundation created by Plan International got a website of its own, built to speak to philanthropists and to take gifts in three currencies.",
+      "summary": "A Swiss foundation created by Plan International needed a site that reads as an institution to a philanthropist’s adviser and takes a card gift in three currencies. Live since 9 October 2026, every page and redirect correct on the day.",
       "cardImage": {
         "src": "/work/global-girls-foundation-home.jpg"
       },
@@ -480,7 +644,29 @@
         }
       ],
       "clientTeam": "Global Girls Foundation staff",
-      "next": "Pages in German and French, translated by machine and checked by the Foundation’s team before anything is published."
+      "next": "Pages in German and French, translated by machine and checked by the Foundation’s team before anything is published.",
+      "proves": [
+        {
+          "title": "We launch on the day we say.",
+          "text": "All 21 pages and 23 redirects answered correctly on 9 October 2026, and real one-time and monthly gifts were confirmed by 12 October."
+        },
+        {
+          "title": "Accessibility is measured, not promised.",
+          "text": "Lighthouse accessibility 100 on the live home and giving pages; an axe-core run across 16 pages found no confirmed violations."
+        },
+        {
+          "title": "Card details never touch the site.",
+          "text": "One-time gifts on the page and monthly gifts on Stripe’s hosted page, so the site holds no card data to protect."
+        },
+        {
+          "title": "We work with the other organisation’s IT team.",
+          "text": "The domain sat with Plan International. We sent the exact changes needed, and every old address reached its new home."
+        },
+        {
+          "title": "Your team runs it afterwards.",
+          "text": "Editors change text on the page itself, with a 31-step guide inside the admin. What is not done is written down too: no screen-reader test by a person is on record yet."
+        }
+      ]
     }
   ],
   "insights": [
@@ -713,5 +899,534 @@
         }
       ]
     }
-  ]
+  ],
+  "servicePages": {
+    "label": "Services",
+    "pages": [
+      {
+        "slug": "web-design",
+        "title": "Web design for NGOs and international organisations",
+        "description": "Research-led web design for organisations publishing in many languages: prototyped early, delivered as a design system that holds across six scripts. A website from CHF 35,000.",
+        "h1": "Web design",
+        "statement": "Design that starts with who reads the site and ends as a system your own engineers and translators can use.",
+        "intro": [
+          "Most organisations we work with publish in several languages to readers who have nothing in common except the site: a coordinator on a phone in the field, a donor’s adviser in Geneva, a journalist, a ministry. Design that serves all of them cannot start from a look. It starts from a map of who the site is for and what each of them needs to do.",
+          "So we research first: stakeholder and audience questionnaires, and a reading of the current site’s own database rather than a crawl. On The Collective Service that count showed most of the library belonged to 2020 to 2022, and it changed the plan before a page was drawn.",
+          "Then we prototype the real thing early. You review working pages on real screens, pin comments to them, and approve a prototype you have clicked through before anything is built. Decisions are made on an interface, not on pictures of one.",
+          "What you receive is a design system: colour tokens, type, components and their states, documented so that engineering implements it without interpretation and so that it holds across six scripts, including right-to-left. The Collective Service runs 30 page templates from one such system."
+        ],
+        "sections": [
+          {
+            "kind": "rows",
+            "label": "What you get",
+            "rows": [
+              {
+                "title": "Audience map",
+                "text": "Who the site serves, what each group needs to do and which pages carry that, agreed before design starts."
+              },
+              {
+                "title": "Prototype",
+                "text": "A clickable prototype of the real pages, reviewed on real screens with comments pinned to the page. You approve it before build."
+              },
+              {
+                "title": "Design system",
+                "text": "Tokens, components and states, documented for engineering and set in six scripts, including Arabic."
+              },
+              {
+                "title": "Every width",
+                "text": "Each template checked from 320 to 1,920 pixels, so nothing scrolls sideways on a phone."
+              },
+              {
+                "title": "Content in place",
+                "text": "Real content from the first prototype, with page weight and reading order decided as part of the design."
+              }
+            ]
+          },
+          {
+            "kind": "note",
+            "label": "Fees",
+            "text": "Design is priced with the build: a website from CHF 35,000, a website and brand from CHF 60,000. Fixed to scope, agreed before work starts and invoiced in Swiss francs.",
+            "link": {
+              "text": "All fees →",
+              "href": "/#fees"
+            }
+          },
+          {
+            "kind": "facts",
+            "label": "On the record",
+            "items": [
+              "30 page templates from one design system (The Collective Service)",
+              "Every template checked from 320 to 1,920 pixels",
+              "Reviewed on real pages, not pictures, with only approved pages moved to WordPress (Global Girls Foundation)"
+            ]
+          },
+          {
+            "kind": "work",
+            "label": "From the work",
+            "project": "global-girls-foundation",
+            "line": "Foundation · 2026 · Two routes on the first screen: give now, or start a conversation."
+          },
+          {
+            "kind": "questions",
+            "label": "Questions we are asked",
+            "items": [
+              {
+                "q": "Can we see the design before we commit to the build?",
+                "a": "Yes. Design sign-off is the second of the four approval points, and the second invoice falls there. Nothing is built before it."
+              },
+              {
+                "q": "We already have brand guidelines. Do you work within them?",
+                "a": "Yes. We design within them and tell you in the proposal where they will not meet contrast requirements or hold in another script.",
+                "link": {
+                  "text": "See Branding →",
+                  "href": "/services/branding"
+                }
+              },
+              {
+                "q": "Who does the translation?",
+                "a": "Your translators, or ones you name. The design system gives them room: every label is built for text a third longer than the English, and right-to-left is tested, not assumed."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "web-development",
+        "title": "Web development for slow connections and WCAG conformance",
+        "description": "Sites built to a performance budget set before design, tested to WCAG by tool and by hand, on an editing layer your team runs. A website from CHF 35,000, fixed fee.",
+        "h1": "Web development",
+        "statement": "Built for the conditions your readers are in, tested before launch, and run by your own team after it.",
+        "intro": [
+          "A field coordinator opens your site on a phone, on a weak signal, in the middle of something else. The median home page on a phone weighed 2.56 MB in 2025, which takes about 51 seconds at 400 kilobits per second. If a document takes a minute, it does not get read.",
+          "So the performance budget comes first. We set a limit, 500 KB a page as a rule, before design starts, and every template is built to it and measured against it on every release. The Collective Service home page opens at 283 KB.",
+          "Accessibility is tested the same way: by tool, with axe-core and Lighthouse, and by hand, through the keyboard and the skip link, with the method and the results published in a statement you can file. The Global Girls Foundation’s live home and giving pages score 100 on Lighthouse accessibility.",
+          "Then the site is handed to your team. One form for each kind of content, each listing what is missing before a page can be published, with a step-by-step guide kept inside the editing side. Every template, redirect and document migration is handled in the build, so no address you own breaks on launch day."
+        ],
+        "sections": [
+          {
+            "kind": "rows",
+            "label": "What you get",
+            "rows": [
+              {
+                "title": "Performance budget",
+                "text": "Set before design and written into the proposal; measured as each page opens, scrolled to the end and on a high-density phone."
+              },
+              {
+                "title": "WCAG conformance",
+                "text": "Tested by tool and by hand before launch, and written up in an accessibility statement with its method and date."
+              },
+              {
+                "title": "Editing layer",
+                "text": "Usually WordPress with a custom theme: one form per kind of content, checks before publishing, a guide inside the admin."
+              },
+              {
+                "title": "Migration",
+                "text": "Every page and document brought across through a repeatable importer, and every old address mapped to its new place."
+              },
+              {
+                "title": "Launch",
+                "text": "A crawl of every page and link before go-live, redirects confirmed on the day, and a watch over the first 48 hours."
+              },
+              {
+                "title": "Records",
+                "text": "The accessibility statement, the security note and the performance figures, dated, for your files and your donor’s."
+              }
+            ]
+          },
+          {
+            "kind": "note",
+            "label": "Fees",
+            "text": "A website from CHF 35,000, fixed to scope and invoiced in Swiss francs on signing, at design sign-off and at launch. Knowledge systems are priced separately.",
+            "link": {
+              "text": "See Evidence intelligence →",
+              "href": "/services/evidence-intelligence"
+            }
+          },
+          {
+            "kind": "facts",
+            "label": "On the record",
+            "items": [
+              "Home page 283 KB against a 500 KB budget (The Collective Service, 24 October 2026)",
+              "Lighthouse accessibility 100 on live pages (Global Girls Foundation, 4 November 2026)",
+              "1,593 old addresses mapped to the new site",
+              "21 pages and 23 redirects correct on launch day"
+            ]
+          },
+          {
+            "kind": "work",
+            "label": "From the work",
+            "project": "collective-service",
+            "line": "Partnership · 2026 · 30 page templates, 155 documents fetched and held, every page under 500 KB."
+          },
+          {
+            "kind": "questions",
+            "label": "Questions we are asked",
+            "items": [
+              {
+                "q": "Which editing system?",
+                "a": "Usually WordPress with a custom theme, because your team can find editors and developers for it anywhere. Both case studies run on it. If your organisation has a standard, say so in the brief and the proposal answers it."
+              },
+              {
+                "q": "Who holds the accounts?",
+                "a": "You do. Hosting, domain, payments and the editing system are registered to your organisation, with us added as a user. We are never the only one with the keys."
+              },
+              {
+                "q": "Where is it hosted?",
+                "a": "Where your rules allow. The Global Girls Foundation is hosted in Belgium; if your data has to stay in a region, the proposal names the host and the country."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "evidence-intelligence",
+        "title": "Evidence intelligence: your institutional knowledge, queryable and verifiable",
+        "description": "A knowledge layer built on everything your organisation holds, asked in plain language, every answer traced to its source. Benchmarked, published, hosted on our infrastructure or yours. From CHF 75,000.",
+        "h1": "Evidence intelligence",
+        "statement": "Your institutional knowledge, queryable, verifiable and compounding.",
+        "intro": [
+          "Every organisation we work with holds more than it can find: years of guidance, evaluations, research, records and the signals that arrive every week. Search only helps the person who already knows the right words. A new coordinator in an outbreak does not.",
+          "Evidence intelligence is a knowledge layer built on everything your organisation holds. A reader describes a situation in their own words and receives an answer drawn only from your material, with every statement traced to the passage it came from. When your material has no answer, it says so.",
+          "Accuracy is measured, not asserted. Before launch, a set of questions with known answers is scored independently and the result is published with the system. New material is read in continuously, and the benchmark is re-run as the library grows.",
+          "It runs on our infrastructure or on yours. If your data must stay in a particular country or on your own servers, that is an option the proposal prices, never a premise.",
+          "And it compounds: the same layer extends into working-group spaces, monitoring and briefings, donor reporting and training, so each month’s material makes the next month’s answers better. The first build, the Knowledge bank for The Collective Service, has read 279 documents and is in testing."
+        ],
+        "sections": [
+          {
+            "kind": "rows",
+            "label": "What it does",
+            "rows": [
+              {
+                "title": "Reads everything you hold",
+                "text": "Documents, data, records and incoming signals, read in as they arrive."
+              },
+              {
+                "title": "Answers in plain language",
+                "text": "A reader describes the situation in their own words; the advice is drawn only from your material."
+              },
+              {
+                "title": "Cites every statement",
+                "text": "Each point is traced to its source, so a reader can open the passage and check it."
+              },
+              {
+                "title": "Says when there is no answer",
+                "text": "Nothing comes from outside your material. If it is not there, the answer says so."
+              },
+              {
+                "title": "Is benchmarked and published",
+                "text": "Questions with known answers, scored independently before launch and re-run as material is added."
+              },
+              {
+                "title": "Lives where you decide",
+                "text": "On our infrastructure or your own servers; access set by you, from your team to the public."
+              }
+            ]
+          },
+          {
+            "kind": "rows",
+            "label": "Where it goes next",
+            "rows": [
+              {
+                "title": "Working-group spaces",
+                "text": "Members, documents and discussion in one place, answerable from the same material."
+              },
+              {
+                "title": "Monitoring and briefings",
+                "text": "New signals read in as they arrive, with a digest for the people who need it."
+              },
+              {
+                "title": "Donor reporting",
+                "text": "What the money bought, drawn from the record rather than rewritten from memory."
+              },
+              {
+                "title": "Operator training",
+                "text": "Your team taught to run it, add to it and read its benchmark."
+              }
+            ],
+            "note": "Each is scoped and priced as its own stage."
+          },
+          {
+            "kind": "note",
+            "label": "Fees",
+            "text": "A knowledge system from CHF 75,000, fixed to scope and invoiced in Swiss francs. After launch, the Platform care plan, from CHF 5,800 a month, reads in new material, re-runs the benchmark and sends a monthly digest.",
+            "link": {
+              "text": "All fees →",
+              "href": "/#fees"
+            }
+          },
+          {
+            "kind": "facts",
+            "label": "On the record",
+            "items": [
+              "279 documents read into the Knowledge bank (The Collective Service, 4 November 2026)",
+              "Every answer cited to the library’s own documents",
+              "Says so when the library has no answer"
+            ]
+          },
+          {
+            "kind": "work",
+            "label": "From the work",
+            "project": "collective-service",
+            "line": "Partnership · 2026 · The Knowledge bank, in testing: advice drawn only from the library, every point cited."
+          },
+          {
+            "kind": "questions",
+            "label": "Questions we are asked",
+            "items": [
+              {
+                "q": "How do we know the answers are right?",
+                "a": "You measure them. Before launch we agree questions with known answers from your material; they are scored independently and published, and re-run monthly on the Platform plan."
+              },
+              {
+                "q": "Where does our data live?",
+                "a": "On our infrastructure or on yours. If it must stay in a country or on your servers, the proposal prices that option."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "branding",
+        "title": "Branding for organisations, programmes and campaigns",
+        "description": "Identity systems that work at 16 pixels, in a row of partner logos and across six scripts, delivered as guidelines partners apply without us. A website and brand from CHF 60,000.",
+        "h1": "Branding",
+        "statement": "An identity that still reads at 16 pixels, in a row of partner logos and in a script you do not write.",
+        "intro": [
+          "An NGO’s mark lives in hard places: a browser tab, an app icon, the fifth logo in a row on a partner’s report, a banner printed in a language the designer does not read. Most marks are drawn for a cover page and fail everywhere else. The Collective Service’s old logo stopped working below about 100 pixels wide.",
+          "We design identity systems for organisations, programmes and campaigns, and we test them where they will be used. The mark is drawn to hold at 16 pixels and to sit in a row of partner logos without losing itself. The palette gives each colour a job, so that body text meets 4.5:1 and the colours you are known for are kept for display. The typography is chosen across the languages you publish in, including Arabic, Chinese and Cyrillic, so a translated page still looks like you.",
+          "What you receive is a set of guidelines that partners and country offices apply without us: rules for colour, clear space, minimum size and type, with the contrast table included, so the next campaign page looks like the organisation without a call to the studio."
+        ],
+        "sections": [
+          {
+            "kind": "rows",
+            "label": "What you get",
+            "rows": [
+              {
+                "title": "Mark",
+                "text": "Drawn to be legible at 16 pixels and in a row of partner logos, with rules for clear space and minimum size."
+              },
+              {
+                "title": "Palette",
+                "text": "Each colour given a job: text, display, fill or decoration, with every pairing measured against 4.5:1 and 3:1."
+              },
+              {
+                "title": "Typography",
+                "text": "Typefaces chosen for the scripts you publish in, with sizes and weights that hold across them."
+              },
+              {
+                "title": "Guidelines",
+                "text": "Published as a page partners can open anywhere, with the contrast table included, so it does not go out of date in a drawer."
+              },
+              {
+                "title": "Rollout",
+                "text": "Templates for the pages and documents you produce most, so the identity is applied the same way by everyone."
+              }
+            ]
+          },
+          {
+            "kind": "note",
+            "label": "Fees",
+            "text": "A website and brand from CHF 60,000, fixed to scope and invoiced in Swiss francs. An identity on its own, for a programme or a campaign, is priced in the proposal from your brief.",
+            "link": {
+              "text": "All fees →",
+              "href": "/#fees"
+            }
+          },
+          {
+            "kind": "facts",
+            "label": "On the record",
+            "items": [
+              "A proposed mark legible at 16 pixels (The Collective Service, shared with the partnership’s permission)",
+              "Our own six-colour palette: body text at 7.23:1 or better, brand colours kept for display",
+              "Guidelines with colour, clear space and minimum size"
+            ]
+          },
+          {
+            "kind": "work",
+            "label": "From the work",
+            "project": "collective-service",
+            "line": "Partnership · 2026 · A proposed identity for separate organisations acting as one service, legible at 16 pixels."
+          },
+          {
+            "kind": "questions",
+            "label": "Questions we are asked",
+            "items": [
+              {
+                "q": "We cannot change our logo. Can you still help?",
+                "a": "Yes. Most palettes do not fail; particular pairings fail. We keep the mark, give each colour a job and write the table into your guidelines.",
+                "link": {
+                  "text": "How that works →",
+                  "href": "/insights/accessible-colour"
+                }
+              },
+              {
+                "q": "Who owns the identity?",
+                "a": "You do. The source files and the guidelines are yours at launch, with no licence back to us."
+              },
+              {
+                "q": "Will it work in Arabic?",
+                "a": "Yes, and you will see it in Arabic before you approve it. Every identity is set in the scripts you publish in, including right-to-left."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "web-maintenance",
+        "title": "Web maintenance and care plans",
+        "description": "Continuous operation of the sites we build or take on: updates on staging first, daily backups with a tested restore, monitoring, a monthly report, a named person. Four plans from CHF 1,200 a month.",
+        "h1": "Web maintenance",
+        "statement": "A site is only current if someone keeps it current. Four plans, a named person, a report every month.",
+        "intro": [
+          "A library nobody maintains is out of date within a year, and a site nobody updates is a security risk within a month. The sites we build, and the sites we take on after an audit, are kept running by people who know them.",
+          "Every update goes to staging before production. On Standard and above, every release is compared against the approved design, so a plugin update cannot quietly change a page. Backups are taken daily and a restore is tested every quarter, because a backup that has never been restored is a hope, not a backup. Uptime, errors and security are monitored, admin accounts are reviewed, and once a month you receive a report that says what was done, what was found and what is next.",
+          "A named person replies: the next business day on Essential, the same business day on Standard, within four business hours on Extended and Platform, with an emergency line. Changes within your plan’s hours are made on request; larger work is proposed as a fixed fee first.",
+          "Plans are billed monthly, quarterly at 5% less or yearly at 10% less, with a three-month minimum and then rolling. If you leave, you leave with the site, the accounts and the last backup."
+        ],
+        "sections": [
+          {
+            "kind": "care",
+            "id": "care-plans",
+            "label": "Care plans",
+            "statement": "A one-page site and a thousand-page library are not the same job. The plan is set at discovery from page count, languages, integrations, traffic and the number of editors; the figures below are starting points.",
+            "includes": "Every plan includes: updates applied on staging before production · backups daily, verified by a restore test every quarter · uptime and error monitoring · security scanning and admin review · a named person who knows the site.",
+            "plans": [
+              "Essential",
+              "Standard",
+              "Extended",
+              "Platform"
+            ],
+            "rows": [
+              {
+                "label": "Sized for",
+                "values": [
+                  "Up to about 25 pages, one or two languages, forms only",
+                  "Up to about 200 pages, several languages, integrations such as CRM, newsletter and donations",
+                  "More than 200 pages, document libraries, several languages, high traffic, several editors",
+                  "Knowledge systems and custom platforms"
+                ]
+              },
+              {
+                "label": "Visual regression against the approved design",
+                "values": [
+                  "—",
+                  "Yes",
+                  "Yes",
+                  "Yes"
+                ]
+              },
+              {
+                "label": "Performance measured against the site’s budget",
+                "values": [
+                  "—",
+                  "Yes",
+                  "Yes",
+                  "Yes"
+                ]
+              },
+              {
+                "label": "Monthly report for your records",
+                "values": [
+                  "A status note",
+                  "The full report",
+                  "The full report",
+                  "The full report"
+                ]
+              },
+              {
+                "label": "Hours of changes each month",
+                "values": [
+                  "3",
+                  "6",
+                  "12",
+                  "16"
+                ]
+              },
+              {
+                "label": "Response from a named person",
+                "values": [
+                  "Next business day",
+                  "Same business day",
+                  "Within four business hours, with an emergency line",
+                  "Within four business hours, with an emergency line"
+                ]
+              },
+              {
+                "label": "Platform only",
+                "values": [
+                  "—",
+                  "—",
+                  "—",
+                  "New material read in as it is published · accuracy benchmark re-run and published monthly · a monthly digest · upgrades to the system and its method tested before they ship"
+                ]
+              },
+              {
+                "label": "From, per month",
+                "values": [
+                  "CHF 1,200",
+                  "CHF 2,200",
+                  "CHF 4,200",
+                  "CHF 5,800"
+                ]
+              },
+              {
+                "label": "Quarterly plan, 5% less, per month",
+                "values": [
+                  "CHF 1,140",
+                  "CHF 2,090",
+                  "CHF 3,990",
+                  "CHF 5,510"
+                ]
+              },
+              {
+                "label": "Yearly plan, 10% less, per month",
+                "values": [
+                  "CHF 1,080",
+                  "CHF 1,980",
+                  "CHF 3,780",
+                  "CHF 5,220"
+                ]
+              }
+            ],
+            "notes": [
+              "Unused hours roll over one month. Further hours at CHF 200 an hour, agreed before they are used.",
+              "Terms: a monthly retainer, a quarterly plan at 5% less or a yearly plan at 10% less, invoiced in Swiss francs. Three-month minimum, then rolling. No setup fee for sites we built. A short audit, at a fixed fee, before we take on a site built by someone else."
+            ]
+          },
+          {
+            "kind": "note",
+            "label": "Taking on a site we did not build",
+            "text": "The audit comes first: what the site runs on, what is out of date, what the backups actually contain and what a restore takes. Its findings are yours whichever plan you choose, or none."
+          },
+          {
+            "kind": "facts",
+            "label": "On the record",
+            "items": [
+              "Hosted in Belgium on WP Engine, HTTPS with HSTS, daily backup points (Global Girls Foundation)",
+              "332 pages and 634 outside links crawled, none broken (The Collective Service, 23 October 2026)",
+              "A named person replies the same business day"
+            ]
+          },
+          {
+            "kind": "questions",
+            "label": "Questions we are asked",
+            "items": [
+              {
+                "q": "Can we stop?",
+                "a": "Yes. After the first three months the plan rolls, and you can end it at the end of any billing period. You keep the site, the accounts and the last backup."
+              },
+              {
+                "q": "What counts as a change?",
+                "a": "Content, layout and plugin work within your plan’s hours. Anything larger, such as a new template or a connection to another system, is proposed as a fixed fee first."
+              },
+              {
+                "q": "Can we move between plans?",
+                "a": "Yes, at the end of any billing period, or sooner if the site grows: a new language or a document library usually moves a site up one plan."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

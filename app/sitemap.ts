@@ -4,11 +4,12 @@ import { SITE } from "@/content/site";
 import { LANGUAGES, localePath } from "@/lib/languages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const { projects, insights } = getContent("en");
+  const { projects, insights, servicePages } = getContent("en");
   const paths = [
     "/",
     "/insights",
     "/accessibility",
+    ...servicePages.pages.map(({ slug }) => `/services/${slug}`),
     ...projects.map(({ slug }) => `/work/${slug}`),
     ...insights.map(({ slug }) => `/insights/${slug}`),
   ];

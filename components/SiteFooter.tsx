@@ -11,7 +11,7 @@ export default function SiteFooter({ lang }: { lang: Lang }) {
       <LanguageButtons lang={lang} label={t.common.languages} />
       <div className="footer-row">
         <span dir="ltr">
-          © 2026 {SITE.name} · {SITE.legalName}, {SITE.address}
+          © 2026 {SITE.name} · {SITE.legalName}, {SITE.address} · <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
         </span>
         <span>
           {t.footer.tested} · <Link href={localePath(lang, "/accessibility")}>{t.footer.statement}</Link>

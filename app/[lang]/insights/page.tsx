@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ClosingCta } from "@/components/PageParts";
 import { getContent, readingMinutes } from "@/content/i18n";
 import { localePath, type Lang } from "@/lib/languages";
 import { alternates } from "@/lib/seo";
@@ -16,6 +17,7 @@ export default async function InsightsPage({ params }: Props) {
   const lang = (await params).lang as Lang;
   const t = getContent(lang);
   return (
+    <>
     <section aria-labelledby="insights-title" className="wrap page-top">
       <h1 id="insights-title" className="insights-title">
         {t.insightsPage.title}
@@ -40,6 +42,9 @@ export default async function InsightsPage({ params }: Props) {
           </li>
         ))}
       </ol>
+      <p className="note-line">{t.insightsPage.note}</p>
     </section>
+    <ClosingCta lang={lang} />
+    </>
   );
 }

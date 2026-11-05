@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import DiscussLink from "@/components/DiscussLink";
 import { getLanguage, localePath, stripLang, type Lang } from "@/lib/languages";
 
 export type NavText = {
@@ -33,7 +34,7 @@ export default function SiteNav({ lang, text, menu }: { lang: Lang; text: NavTex
         {text.insights}
       </Link>
       <Link href={to("/#procurement")}>{text.workingWithUs}</Link>
-      <Link href={to("/#contact")}>{text.contact}</Link>
+      <DiscussLink>{text.contact}</DiscussLink>
       <span className="read-in">
         {text.readIn} <a href="#languages">{readInName}</a>
       </span>

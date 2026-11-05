@@ -1,15 +1,15 @@
 // Checks that each translation has the same shape as en.json: the same keys, the
 // same list lengths, and identical values for fields that must not be translated.
-// Usage: node scripts/check-translations.mjs [fr es ru ar zh]
+// Usage: node scripts/check-translations.mjs [es fr de pt]
 import { readFileSync } from "node:fs";
 
 const dir = new URL("../content/translations/", import.meta.url);
 const read = (code) => JSON.parse(readFileSync(new URL(`${code}.json`, dir), "utf8"));
 const en = read("en");
-const codes = process.argv.slice(2).length ? process.argv.slice(2) : ["fr", "es", "ru", "ar", "zh"];
+const codes = process.argv.slice(2).length ? process.argv.slice(2) : ["es", "fr", "de", "pt"];
 
 // Fields that stay exactly as they are in English.
-const FIXED = new Set(["slug", "src", "href", "kind"]);
+const FIXED = new Set(["slug", "src", "href", "kind", "project", "id", "plans"]);
 const PLACEHOLDERS = /\{[a-z]+\}/g;
 let problems = 0;
 const report = (code, path, message) => {

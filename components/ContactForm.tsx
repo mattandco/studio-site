@@ -20,7 +20,7 @@ const ContactContext = createContext<{ open: () => void; href: string }>({
 
 export const useContactForm = () => useContext(ContactContext);
 
-type Errors = { name?: string; organisation?: string; email?: string };
+type Errors = { name?: string; organisation?: string; email?: string; message?: string };
 
 type FormText = {
   title: string;
@@ -28,20 +28,29 @@ type FormText = {
   doneTitle: string;
   doneText: string;
   writeAnother: string;
-  reply: string;
+  statement: string;
   name: string;
   organisation: string;
   email: string;
-  budget: string;
-  chooseRange: string;
-  over: string;
-  notKnown: string;
   message: string;
+  messageHelp: string;
+  budget: string;
+  budgetHelp: string;
+  budgetNotDecided: string;
+  budgetUnder: string;
+  budgetA: string;
+  budgetB: string;
+  budgetC: string;
+  budgetOver: string;
+  link: string;
+  linkHelp: string;
+  privacy: string;
   send: string;
   errorName: string;
   errorOrganisation: string;
   errorEmail: string;
   errorEmailFormat: string;
+  errorMessage: string;
 };
 
 export default function ContactFormProvider({
@@ -55,12 +64,12 @@ export default function ContactFormProvider({
 }) {
   // Values stay in English: they go into the email Nestvested receives.
   const budgets = [
-    ["", text.chooseRange],
-    ["CHF 15,000–40,000", "CHF 15,000–40,000"],
-    ["CHF 40,000–80,000", "CHF 40,000–80,000"],
-    ["CHF 80,000–150,000", "CHF 80,000–150,000"],
-    ["Over CHF 150,000", text.over],
-    ["Not known yet", text.notKnown],
+    ["Not decided yet", text.budgetNotDecided],
+    ["Under CHF 10,000", text.budgetUnder],
+    ["CHF 10,000 to 35,000", text.budgetA],
+    ["CHF 35,000 to 60,000", text.budgetB],
+    ["CHF 60,000 to 100,000", text.budgetC],
+    ["Over CHF 100,000", text.budgetOver],
   ];
   const dialog = useRef<HTMLDialogElement>(null);
   const [errors, setErrors] = useState<Errors>({});
@@ -96,10 +105,17 @@ export default function ContactFormProvider({
     if (!value("email")) found.email = text.errorEmail;
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value("email")))
       found.email = text.errorEmailFormat;
+    if (!value("message")) found.message = text.errorMessage;
 
     setErrors(found);
     if (Object.keys(found).length) {
-      const first = found.name ? "form-name" : found.organisation ? "form-organisation" : "form-email";
+      const first = found.name
+        ? "form-name"
+        : found.organisation
+          ? "form-organisation"
+          : found.email
+            ? "form-email"
+            : "form-message";
       document.getElementById(first)?.focus();
       return;
     }
@@ -111,6 +127,7 @@ export default function ContactFormProvider({
       `Organisation: ${value("organisation")}`,
       `Work email: ${value("email")}`,
       `Budget: ${value("budget") || "Not given"}`,
+      `Brief or TOR: ${value("link") || "Not given"}`,
       `Site language: ${lang}`,
       "",
       value("message"),
@@ -132,6 +149,7 @@ export default function ContactFormProvider({
   const context = useMemo(() => ({ open, href: localePath(lang, "/#contact") }), [open, lang]);
   const [doneStart, doneMiddle = "", doneEnd = ""] = text.doneText.split(/\{name\}|\{email\}/);
   const nameFirst = text.doneText.indexOf("{name}") < text.doneText.indexOf("{email}");
+  const [linkBefore, linkAfter = ""] = text.linkHelp.split("{email}");
   const mail = (
     <a href={`mailto:${SITE.email}`} dir="ltr" className="link">
       {SITE.email}
@@ -173,7 +191,7 @@ export default function ContactFormProvider({
             </div>
           ) : (
             <form onSubmit={submit} noValidate className="form">
-              <p className="mute">{text.reply}</p>
+              <p className="mute">{text.statement}</p>
               <Field id="name" label={text.name} autoComplete="name" error={errors.name} onInput={clearError} />
               <Field
                 id="organisation"
@@ -191,9 +209,28 @@ export default function ContactFormProvider({
                 error={errors.email}
                 onInput={clearError}
               />
+              <div className="field">
+                <label htmlFor="form-message">{text.message}</label>
+                <textarea
+                  id="form-message"
+                  name="message"
+                  rows={4}
+                  aria-invalid={errors.message ? true : undefined}
+                  aria-describedby="form-message-help form-message-error"
+                  className={errors.message ? "has-error" : undefined}
+                  onInput={() => clearError("message")}
+                />
+                <span id="form-message-help" className="field-help">
+                  {text.messageHelp}
+                </span>
+                <span id="form-message-error" className="field-error">
+                  {errors.message}
+                </span>
+              </div>
               <div className="field field-select">
                 <label htmlFor="form-budget">{text.budget}</label>
-                <select id="form-budget" name="budget" defaultValue="">
+                <div className="select-box">
+                <select id="form-budget" name="budget" defaultValue="Not decided yet" aria-describedby="form-budget-help">
                   {budgets.map(([value, label]) => (
                     <option key={label} value={value}>
                       {label}
@@ -203,11 +240,21 @@ export default function ContactFormProvider({
                 <span aria-hidden="true" className="field-arrow">
                   ▼
                 </span>
+                </div>
+                <span id="form-budget-help" className="field-help">
+                  {text.budgetHelp}
+                </span>
               </div>
               <div className="field">
-                <label htmlFor="form-message">{text.message}</label>
-                <textarea id="form-message" name="message" rows={4} />
+                <label htmlFor="form-link">{text.link}</label>
+                <input id="form-link" name="link" type="url" dir="ltr" aria-describedby="form-link-help" />
+                <span id="form-link-help" className="field-help">
+                  {linkBefore}
+                  <span dir="ltr">{SITE.email}</span>
+                  {linkAfter}
+                </span>
               </div>
+              <p className="mute form-privacy">{text.privacy}</p>
               <button type="submit" className="send">
                 {text.send}
               </button>

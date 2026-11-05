@@ -63,7 +63,15 @@ function Letters({
   );
 }
 
-type HeroText = { title: string; seeWork: string; pause: string; play: string; discuss: string };
+type HeroText = {
+  title: string;
+  statement: string;
+  facts: string[];
+  seeWork: string;
+  pause: string;
+  play: string;
+  discuss: string;
+};
 
 export default function Hero({ lang, text }: { lang: Lang; text: HeroText }) {
   // The display opens on the page's own language, then turns through the rest.
@@ -205,9 +213,12 @@ export default function Hero({ lang, text }: { lang: Lang; text: HeroText }) {
         </p>
       </div>
       <div className="hero-foot">
-        <h1 id="home-title" className="hero-title">
-          {text.title}
-        </h1>
+        <div className="hero-copy">
+          <h1 id="home-title" className="hero-title">
+            {text.title}
+          </h1>
+          <p className="hero-lede">{text.statement}</p>
+        </div>
         <div className="hero-links">
           <DiscussLink className="link">{text.discuss}</DiscussLink>
           <a href="#work" className="link-quiet">
@@ -215,6 +226,11 @@ export default function Hero({ lang, text }: { lang: Lang; text: HeroText }) {
           </a>
         </div>
       </div>
+      <ul className="fact-row hero-facts">
+        {text.facts.map((fact) => (
+          <li key={fact}>{fact}</li>
+        ))}
+      </ul>
     </section>
   );
 }

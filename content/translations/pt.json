@@ -1,0 +1,1432 @@
+{
+  "meta": {
+    "title": "Nestvested · Sites, marcas e respostas baseadas em evidências para ONG e organizações internacionais",
+    "description": "Design web, desenvolvimento, identidade de marca e respostas baseadas em evidências para ONG, fundações e agências do sistema das Nações Unidas. Honorários fixos em francos suíços e uma proposta no prazo de cinco dias úteis."
+  },
+  "common": {
+    "skip": "Saltar para o conteúdo",
+    "mainMenu": "Principal",
+    "breadcrumb": "Trilho de navegação",
+    "languages": "Línguas",
+    "discuss": "Falar de um projeto",
+    "tellUs": "Envie-nos a descrição do projeto.",
+    "ctaLabel": "Contacto",
+    "ctaText": "Basta uma descrição sumária ou uns termos de referência. Matthew Bowman responde no mesmo dia útil e, no prazo de cinco dias úteis, terá uma proposta com honorários fixos."
+  },
+  "nav": {
+    "work": "Projetos",
+    "services": "Serviços",
+    "about": "Sobre nós",
+    "insights": "Artigos",
+    "workingWithUs": "Trabalhar connosco",
+    "contact": "Contacto",
+    "readIn": "Ler em"
+  },
+  "hero": {
+    "title": "Sites e marcas para ONG e organizações internacionais.",
+    "seeWork": "Ver os projetos",
+    "pause": "Pausar",
+    "play": "Reproduzir",
+    "statement": "Design assente em investigação, sites que carregam em 3G e respostas baseadas em evidências, retiradas dos seus próprios documentos, com todas as fontes citadas. Honorários fixos, acordados antes do início do trabalho.",
+    "facts": [
+      "Constituída em 2018",
+      "Uma empresa registada",
+      "Honorários fixos em francos suíços",
+      "Proposta em cinco dias úteis"
+    ]
+  },
+  "home": {
+    "selectedWork": "Projetos selecionados",
+    "readCaseStudy": "Ler o estudo de caso →",
+    "whatWeDo": "O que fazemos",
+    "services": [
+      {
+        "slug": "web-design",
+        "name": "Design web",
+        "text": "Design assente em investigação, com protótipos desde cedo, entregue como um sistema de design que funciona em todas as línguas e sistemas de escrita."
+      },
+      {
+        "slug": "web-development",
+        "name": "Desenvolvimento web",
+        "text": "Sites construídos segundo um orçamento de desempenho e testados segundo as WCAG antes do lançamento, com uma camada de edição gerida pela sua própria equipa."
+      },
+      {
+        "slug": "evidence-intelligence",
+        "name": "Respostas baseadas em evidências",
+        "text": "Uma camada de conhecimento assente em tudo o que a sua organização detém, consultada em linguagem natural, com cada resposta ligada à sua fonte. Alojada na nossa infraestrutura ou na sua; exatidão avaliada e publicada."
+      },
+      {
+        "slug": "branding",
+        "name": "Identidade de marca",
+        "text": "Sistemas de identidade que funcionam a 16 pixels e em várias línguas, entregues como diretrizes que os parceiros podem aplicar sem nós."
+      },
+      {
+        "slug": "web-maintenance",
+        "name": "Manutenção web",
+        "text": "Funcionamento contínuo mediante pagamento recorrente — mensal, trimestral ou anual: atualizações, segurança, cópias de segurança verificadas por restauro, um relatório todos os meses."
+      }
+    ],
+    "about": "Sobre nós",
+    "aboutLine": "As pessoas que conhece são as que fazem o trabalho.",
+    "aboutText": [
+      "A Nestvested é um estúdio de design e desenvolvimento web, constituído em 2018 e registado em Kingston, na Jamaica. O fundador e líder de projeto, Matthew Bowman, trabalha com ONG como a IFRC desde 2010, com equipas em Genebra e em operações globais.",
+      "Cada projeto é conduzido por toda a equipa, em vez de passar de mão em mão: design, engenharia, conteúdos e entrega a trabalhar no mesmo problema."
+    ],
+    "workingWithUs": "Trabalhar connosco",
+    "workingLine": "Preparados para a sua equipa de aquisições, com os honorários indicados à partida.",
+    "working": [
+      {
+        "term": "Uma empresa registada",
+        "text": "Contratos e faturas emitidos pela Nestvested Limited, Kingston, Jamaica. Documentos da empresa e referências prontos a enviar com a proposta."
+      },
+      {
+        "term": "Honorários fixos em francos suíços",
+        "text": "Acordados antes do início do trabalho e fixados em função do âmbito, não das horas. Faturados na assinatura, na aprovação do design e no lançamento."
+      },
+      {
+        "term": "Planos de manutenção",
+        "text": "Quatro planos para os sites que construímos ou assumimos, desde CHF 1 200 por mês, dimensionados para o site na fase de diagnóstico. Mensais, trimestrais ou anuais."
+      },
+      {
+        "term": "Comprovativos publicados",
+        "text": "Uma declaração de acessibilidade com o respetivo método de teste, desempenho medido face a um limite e uma nota de segurança para cada site que gerimos. Para os sistemas de conhecimento, a avaliação de exatidão."
+      },
+      {
+        "term": "Só profissionais seniores",
+        "text": "As pessoas da primeira reunião são as que fazem o trabalho. Qualquer parceiro é indicado na proposta, com a sua parte do trabalho."
+      }
+    ],
+    "bookCall": "Marcar uma chamada de 30 minutos",
+    "workStatement": "Dois projetos apresentados na íntegra, com todos os números medidos e datados. O que ainda não foi lançado é assinalado como tal.",
+    "workNote": "O trabalho anterior do fundador, com a IFRC e equipas em Genebra desde 2010, foi feito dentro dessas equipas e não é publicado aqui. As referências estão disponíveis mediante pedido e são indicadas na proposta.",
+    "servicesStatement": "Cinco serviços de uma só equipa, cada um com honorários fixos e com comprovativos que pode arquivar: um sistema de design, resultados de testes, uma avaliação de exatidão, um relatório mensal.",
+    "scopeAndFees": "Âmbito e honorários →",
+    "aboutFacts": [
+      "Constituída em 2018",
+      "Nestvested Limited, Kingston, Jamaica",
+      "Trabalho totalmente remoto",
+      "Seis línguas de trabalho: inglês, francês, russo, espanhol, árabe e chinês"
+    ],
+    "people": [
+      {
+        "name": "Matthew Bowman",
+        "text": "Fundador e líder de projeto. Gestão de informação humanitária desde 2010, com a IFRC e equipas em Genebra. Redige todas as propostas e lidera todos os projetos, da primeira chamada ao lançamento."
+      }
+    ],
+    "fees": {
+      "label": "Honorários",
+      "statement": "Honorários habituais, para que possa incluir-nos numa lista restrita antes da primeira chamada. Cada site é diferente: os honorários fixos são definidos na proposta, a partir da descrição do projeto.",
+      "rows": [
+        {
+          "title": "Um site",
+          "fee": "desde CHF 35 000",
+          "text": "Investigação, design, construção, testes e lançamento, com uma camada de edição gerida pela sua equipa."
+        },
+        {
+          "title": "Um site e uma marca",
+          "fee": "desde CHF 60 000",
+          "text": "O site acima, com um sistema de identidade e diretrizes que os parceiros podem aplicar."
+        },
+        {
+          "title": "Um sistema de conhecimento",
+          "fee": "desde CHF 75 000",
+          "text": "Respostas baseadas em evidências a partir dos seus materiais, com exatidão avaliada e publicada, na nossa infraestrutura ou na sua."
+        },
+        {
+          "title": "Um diagnóstico",
+          "fee": "desde CHF 8 000",
+          "text": "Quando a descrição do projeto ainda não permite orçamentar: questionários, uma auditoria ao site e um plano de projeto que pode lançar a concurso."
+        }
+      ],
+      "note": "Todos os honorários são fixados em função do âmbito da proposta, não das horas, e faturados em francos suíços em três parcelas: na assinatura, na aprovação do design e no lançamento. Sem tarifas horárias."
+    },
+    "carePlans": {
+      "label": "Planos de manutenção",
+      "statement": "Um site de uma página e uma biblioteca de mil páginas não são o mesmo trabalho. Quatro planos, desde CHF 1 200 por mês, dimensionados na fase de diagnóstico com base no número de páginas, línguas, integrações, tráfego e editores.",
+      "facts": [
+        "Essential, Standard, Extended, Platform",
+        "Atualizações primeiro no ambiente de testes, cópias de segurança diárias, monitorização, uma pessoa designada",
+        "Mensal, trimestral com menos 5% ou anual com menos 10%",
+        "Mínimo de três meses, depois renovação automática"
+      ],
+      "link": {
+        "text": "Ver os quatro planos →",
+        "href": "/services/web-maintenance#care-plans"
+      }
+    },
+    "process": {
+      "label": "Como decorre um projeto",
+      "statement": "Três etapas e quatro pontos de aprovação. Nada é construído antes de ter experimentado um protótipo navegável.",
+      "rows": [
+        {
+          "title": "Proposta",
+          "text": "Envie a descrição do projeto ou os termos de referência. No prazo de cinco dias úteis, terá uma proposta com honorários fixos, com o calendário e a equipa indicados. Se ainda não for possível orçamentar, propomos antes um breve diagnóstico."
+        },
+        {
+          "title": "Diagnóstico",
+          "text": "Questionários às partes interessadas e aos públicos, uma auditoria ao site, quando existe, e um documento de diagnóstico que termina no plano do projeto: âmbito, calendário e quem aprova o quê."
+        },
+        {
+          "title": "Execução",
+          "text": "Design, depois um protótipo navegável antes de qualquer construção, depois construção, lançamento e manutenção. Uma chamada semanal de 30 minutos, com notas no mesmo dia."
+        }
+      ],
+      "facts": [
+        "Quatro pontos de aprovação: proposta, design, demonstração, lançamento",
+        "Uma equipa designada desde a primeira chamada",
+        "Chamada semanal de 30 minutos, notas no mesmo dia",
+        "Acessibilidade e desempenho testados antes do lançamento e documentados para os seus registos",
+        "Prazo habitual: 14 semanas"
+      ]
+    },
+    "questions": [
+      {
+        "q": "Podemos ter referências?",
+        "a": "Sim. As referências de equipas de clientes são enviadas com a proposta ou mediante pedido, e pode contactá-las diretamente.",
+        "link": {
+          "text": "Dois projetos são apresentados na íntegra em Projetos →",
+          "href": "/#work"
+        }
+      },
+      {
+        "q": "Como tratam os nossos dados?",
+        "a": "Os seus materiais continuam a ser seus. Assinamos os seus termos de proteção de dados, guardamos apenas o que o trabalho exige, alojamos onde as suas regras determinam e devolvemos ou eliminamos tudo no final do projeto."
+      },
+      {
+        "q": "Que documentos podem enviar para o registo de fornecedor?",
+        "a": "Registo da empresa, dados bancários e fiscais, referências, a declaração de acessibilidade e uma nota de segurança, num único dossiê com a proposta ou mediante pedido."
+      },
+      {
+        "q": "Quem vai realmente fazer o trabalho?",
+        "a": "Matthew Bowman lidera todos os projetos. Os especialistas em design, engenharia, conteúdos e acessibilidade são indicados na proposta, com a sua parte do trabalho, e ninguém entra sem lhe ser previamente indicado."
+      },
+      {
+        "q": "O que acontece depois do lançamento?",
+        "a": "Os primeiros 30 dias de correções estão cobertos pelos honorários do projeto. Depois, um plano de manutenção ou uma transferência organizada: documentação, todas as contas em seu nome e formação para a sua equipa."
+      },
+      {
+        "q": "Em que fuso horário trabalham?",
+        "a": "Kingston, Jamaica, UTC−5. As nossas manhãs são as tardes de Genebra e as manhãs de Nova Iorque, e a chamada semanal é marcada no seu horário."
+      }
+    ]
+  },
+  "footer": {
+    "tested": "WCAG 2.1 AA, testado a 4 de novembro de 2026",
+    "statement": "Declaração de acessibilidade →"
+  },
+  "caseStudy": {
+    "work": "Projetos",
+    "caseStudy": "Estudo de caso",
+    "type": "Tipo",
+    "year": "Year",
+    "scope": "Âmbito",
+    "languages": "Línguas",
+    "headlineFigures": "Números principais",
+    "onThisPage": "Nesta página",
+    "challenge": "O desafio",
+    "goals": "Os objetivos",
+    "decisions": "Decisões-chave",
+    "brand": "A marca",
+    "brandGuidelines": "As diretrizes da marca",
+    "beforeAfter": "Antes e depois",
+    "before": "Antes",
+    "after": "Depois",
+    "result": "O resultado",
+    "learned": "O que aprendemos",
+    "standards": "Normas cumpridas",
+    "team": "Equipa",
+    "projectLead": "Líder de projeto",
+    "clientTeam": "Equipa do cliente",
+    "carryNext": "O que esta plataforma poderá suportar a seguir",
+    "nextCase": "Estudo de caso seguinte",
+    "proves": "O que isto demonstra"
+  },
+  "insightsPage": {
+    "title": "Artigos",
+    "intro": "Textos curtos e com fontes para quem redige a descrição do projeto, gere o orçamento ou é responsável pela paleta. Cada um cita a norma ou o estudo em que se baseia, para que possa incluí-lo nos seus próprios termos de referência.",
+    "minRead": "{n} min de leitura",
+    "read": "Ler →",
+    "note": "Está a redigir a descrição de um projeto? Envie-a tal como está e dizemos-lhe o que falta antes de a orçamentarmos."
+  },
+  "post": {
+    "inShort": "Em resumo",
+    "sources": "Fontes",
+    "moreInsights": "Mais artigos",
+    "copyLink": "Copiar ligação",
+    "linkCopied": "Ligação copiada",
+    "shareLinkedIn": "Partilhar no LinkedIn ↗"
+  },
+  "accessibility": {
+    "title": "Declaração de acessibilidade",
+    "description": "Como o site da Nestvested foi testado segundo as WCAG 2.1 AA, o que foi encontrado e como comunicar um problema.",
+    "intro": "Esta declaração abrange nestvested.co. O nosso objetivo é o nível AA das WCAG 2.1. O último teste ao site foi feito a 4 de novembro de 2026.",
+    "howTested": "Como foi testado",
+    "tested": [
+      "Foram testados todos os tipos de página: página inicial, página de serviço, estudo de caso, lista de artigos, artigo, a página de erro “página não encontrada” e esta página.",
+      "Automatizado: axe-core, com as regras A e AA das WCAG 2.0, 2.1 e 2.2, e Lighthouse.",
+      "Teclado: sequências automatizadas de teclas na ligação para saltar para o conteúdo, no menu, no formulário de contacto e no botão de pausa da área de destaque, com verificação de que o foco se mantém visível.",
+      "Larguras de 320 a 1 920 pixels, com verificação de deslocamento lateral.",
+      "Com a redução de movimento ativada, a área de destaque mantém-se imóvel na sua primeira língua."
+    ],
+    "notDone": "O que sabemos que falta fazer",
+    "gaps": [
+      "O site não foi testado por uma pessoa a utilizar um leitor de ecrã.",
+      "A animação na área de destaque é decorativa e está oculta para os leitores de ecrã."
+    ],
+    "report": "Comunicar um problema",
+    "reportText": "Escreva para {email} e uma pessoa designada responderá.",
+    "security": "Nota de segurança",
+    "securityText": "O site funciona na Vercel e é servido através de HTTPS. Não tem contas nem ferramentas de análise. Não define cookies próprios. O formulário de contacto não guarda nada: abre uma mensagem na sua própria aplicação de e-mail."
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "text": "O endereço pode ter mudado quando este site foi reconstruído. Se seguiu uma ligação de uma proposta ou de um e-mail, avise-nos através de {email} e corrigiremos a ligação no mesmo dia útil.",
+    "home": "Página inicial →",
+    "work": "Ver os projetos →",
+    "services": "Serviços →",
+    "insights": "Artigos →"
+  },
+  "form": {
+    "title": "Falar de um projeto",
+    "close": "Fechar",
+    "doneTitle": "A sua aplicação de e-mail deverá estar aberta.",
+    "doneText": "A sua mensagem está preenchida e dirigida a {name}. Prima enviar nessa aplicação e a mensagem chegará a uma pessoa. Se nada abriu, escreva para {email}.",
+    "writeAnother": "Escrever outra mensagem",
+    "name": "Nome",
+    "organisation": "Organização",
+    "email": "E-mail profissional",
+    "budget": "Intervalo de orçamento",
+    "message": "O que está a construir",
+    "send": "Enviar",
+    "errorName": "Indique o seu nome.",
+    "errorOrganisation": "Indique a sua organização.",
+    "errorEmail": "Indique o seu e-mail profissional.",
+    "errorEmailFormat": "Verifique o endereço de e-mail.",
+    "statement": "Envie a descrição do projeto ou os termos de referência (TOR), ou descreva o que está a construir. Matthew Bowman responde no mesmo dia útil e segue-se uma proposta com honorários fixos no prazo de cinco dias úteis.",
+    "messageHelp": "Basta uma descrição sumária. Os tipos de página, as línguas, o que tem de ser migrado e eventuais prazos ajudam-nos a orçamentar.",
+    "errorMessage": "Diga-nos o que está a construir.",
+    "budgetHelp": "Opcional. Um intervalo indica-nos o nível de trabalho a propor.",
+    "budgetNotDecided": "Ainda não decidido",
+    "budgetUnder": "Menos de CHF 10 000",
+    "budgetA": "De CHF 10 000 a 35 000",
+    "budgetB": "De CHF 35 000 a 60 000",
+    "budgetC": "De CHF 60 000 a 100 000",
+    "budgetOver": "Mais de CHF 100 000",
+    "link": "Ligação para a descrição do projeto ou os TOR",
+    "linkHelp": "Uma ligação para um documento partilhado. Ou anexe-o a um e-mail para {email}.",
+    "privacy": "A sua mensagem chega a uma pessoa e é utilizada apenas para responder e redigir a proposta."
+  },
+  "authorNote": "Escrito por Matthew Bowman, fundador da Nestvested, que trabalha no setor humanitário desde 2010.",
+  "projects": [
+    {
+      "slug": "collective-service",
+      "name": "The Collective Service",
+      "type": "Parceria",
+      "year": "2026",
+      "scope": "Auditoria ao site, reconstrução completa, proposta de identidade de marca e biblioteca de documentos",
+      "line": "Parceria · 2026 · Reconstrução completa, identidade proposta e um Knowledge bank que responde com base em 279 documentos. Em testes antes do relançamento.",
+      "languages": "Inglês primeiro, outras línguas previstas",
+      "status": {
+        "label": "Estado",
+        "text": "Em testes. Ainda não lançado"
+      },
+      "summary": "A biblioteca de uma parceria para emergências de saúde, reconstruída de raiz para que um coordenador com uma ligação lenta chegue às orientações atuais em segundos, com uma identidade proposta e um Knowledge bank que responde a partir da própria biblioteca. Em testes antes do relançamento.",
+      "cardImage": {
+        "src": "/work/collective-service-knowledge-bank.jpg"
+      },
+      "detailImage": {
+        "src": "/work/collective-service-documents.jpg",
+        "alt": "A página do Knowledge bank: uma caixa para descrever uma situação, por cima de uma imagem dos documentos da biblioteca agrupados por tema.",
+        "caption": "O Knowledge bank no novo site, em testes."
+      },
+      "figures": [
+        {
+          "value": "283 KB",
+          "label": "Página inicial ao abrir num telemóvel, face a um limite de 500 KB. Medido a 24 de outubro de 2026"
+        },
+        {
+          "value": "30",
+          "label": "Modelos de página medidos segundo as WCAG 2.2 AA. Medido a 22 de outubro de 2026"
+        },
+        {
+          "value": "279",
+          "label": "Documentos integrados no Knowledge bank. Medido a 4 de novembro de 2026"
+        }
+      ],
+      "challenge": [
+        "The Collective Service é uma parceria mundial de comunicação de riscos e envolvimento comunitário em emergências de saúde. O seu site foi criado em 2020 como biblioteca central de orientações. Continua a ser a porta de entrada da parceria: o local a que coordenadores e equipas de resposta recorrem para obter ferramentas, formação e dados quando têm de chegar às comunidades durante um surto.",
+        "Seis anos depois, o site continuava moldado pela pandemia para a qual foi criado. A maior parte da biblioteca datava de 2020 a 2022, enquanto as emergências em que as pessoas trabalhavam já eram outras.",
+        "As pessoas que mais precisam dele são também as mais difíceis de alcançar. Num inquérito de 2022 a pessoas que partilhavam conteúdos de cursos sobre saúde em emergências, a má conectividade foi a dificuldade mais referida nos países de baixo rendimento, com 29%, contra 8% nos países de rendimento elevado. Em 2025, a página inicial mediana num telemóvel tinha 2,56 MB, o que demora cerca de 51 segundos a 400 quilobits por segundo. É demasiado tempo para um coordenador que precisa de um documento naquele momento.",
+        "A parceria tinha também um problema de reconhecimento. Uma avaliação de 2023 concluiu que o nome era confuso para alguns e que o seu objetivo era pouco comunicado. O logótipo era apenas o nome, por isso não podia ajudar."
+      ],
+      "goals": [
+        "Tornar cada página suficientemente leve para uma ligação lenta, com um limite de 500 KB por página.",
+        "Pôr em destaque as orientações atuais e retirar o que está desatualizado.",
+        "Criar uma biblioteca de documentos com pesquisa, kits de emergência e redirecionamentos de todos os endereços antigos.",
+        "Entregar o site aos próprios editores da parceria, com testes, formação e um relançamento."
+      ],
+      "decisions": [
+        {
+          "title": "Reconstruir de raiz",
+          "text": "Atualizar o site antigo página a página teria mantido a estrutura e o peso de que precisava de se libertar. Por isso, todas as páginas foram reconstruídas: um tema WordPress personalizado com 30 modelos de página, uma nova área de edição e conteúdos transferidos através de um importador repetível, que pode ser executado de novo e verificado."
+        },
+        {
+          "title": "Definir o limite de peso antes do design",
+          "text": "Uma regra orientou o design: quando os públicos entram em conflito, as equipas de resposta têm prioridade. Por isso, cada página tinha de ficar abaixo de 500 KB, cerca de 10 segundos a 400 quilobits por segundo, e esse limite foi definido primeiro, para que todos os modelos fossem construídos em função dele. Cada transferência indica também o formato e o tamanho antes de se clicar, para que ninguém gaste dados escassos num ficheiro que não esperava."
+        },
+        {
+          "title": "Guardar todos os documentos no site",
+          "text": "Muitos documentos estavam apenas ligados, pelo que deixariam de funcionar se a entidade que os publica mudasse uma página de lugar. Recolhemos 155 deles, e o site tem agora as suas próprias cópias, com versões em francês, português, espanhol e suaíli quando as entidades editoras as disponibilizam. Os documentos que surgiam duas, três ou quatro vezes aparecem agora uma só vez, com as outras línguas na mesma página."
+        },
+        {
+          "title": "Tratar a marca como parte do problema",
+          "text": "Um site melhor não conseguiria, por si só, explicar o que é o Serviço. Por isso, defendemos em paralelo uma nova identidade. As razões são apresentadas abaixo, em A marca."
+        },
+        {
+          "title": "Construir para quem vai gerir o site",
+          "text": "Uma biblioteca só se mantém atualizada se a sua própria equipa conseguir mantê-la assim. A área de edição tem um formulário para cada tipo de conteúdo, e cada formulário indica o que ainda falta antes de se poder publicar. Para adicionar um documento basta colar o seu endereço: o formato, o tamanho e o número de páginas preenchem-se sozinhos. Um guia integrado mostra aos editores cada tarefa, ecrã a ecrã."
+        },
+        {
+          "title": "Experimentar uma nova entrada na biblioteca",
+          "text": "A pesquisa só ajuda quem conhece as palavras certas. O Knowledge bank permite que o leitor descreva uma situação por palavras suas e receba conselhos retirados apenas dos documentos da biblioteca, com cada ponto citado. Quando a biblioteca não tem resposta, di-lo.",
+          "link": {
+            "text": "Está em testes e é a primeira versão do serviço que hoje oferecemos como Respostas baseadas em evidências →",
+            "href": "/services/evidence-intelligence"
+          }
+        }
+      ],
+      "brand": {
+        "intro": [
+          "A nova identidade partiu das evidências da própria parceria, não do logótipo. Uma avaliação independente de 2023, com base em 88 entrevistas, 98 respostas a inquéritos e quatro estudos de caso por país, considerou o nome “confuso para alguns” e apontou como ponto fraco a “comunicação limitada sobre o seu objetivo”. Concluiu também que 87% dos inquiridos achavam provável vir a precisar do Serviço numa futura emergência de saúde. Por isso, tinha de ser uma identidade feita para durar e que ajudasse a explicar o que é o Serviço.",
+          "O logótipo existente foi criado para dar um nome a uma resposta à pandemia, e cumpriu essa função. Não lhe tinha sido pedido mais. Um logótipo que é apenas o nome não pode explicar um nome que as pessoas consideram confuso, pelo que a identidade precisava de uma forma que transmitisse a ideia: organizações que agem como uma só, para que as comunidades sejam ouvidas numa emergência."
+        ],
+        "reasons": [
+          {
+            "title": "Diz o que é o Serviço",
+            "text": "Três partes separadas unem-se num só corpo: organizações distintas, desenhadas como iguais, que se tornam um único serviço. O leitor vê “juntos” antes de ler uma palavra, pelo que o símbolo responde à confusão identificada pela avaliação sempre que aparece."
+          },
+          {
+            "title": "Mantém os parceiros em pé de igualdade",
+            "text": "O Serviço é uma parceria entre iguais. Nenhuma parte do símbolo tem precedência, e uma única cor discreta permite-lhe ficar ao lado de quatro logótipos consagrados sem os sobrecarregar."
+          },
+          {
+            "title": "Corresponde à forma como os parceiros trabalham",
+            "text": "Cada parceiro associa um símbolo ao seu nome. O Serviço era o único membro da sua própria parceria sem símbolo."
+          },
+          {
+            "title": "Funciona em todas as línguas",
+            "text": "O Serviço publica em inglês, francês, português e espanhol, e grande parte do seu trabalho decorre na África francófona e lusófona. Um símbolo funciona em todas elas. O nome mantém-se em inglês e a linha por baixo é traduzida."
+          },
+          {
+            "title": "Funciona onde quer que o Serviço apareça",
+            "text": "O Serviço surge cada vez mais em feeds, separadores do navegador, conversas de grupo e telemóveis, onde um logótipo só com texto não se consegue ler. As formas sólidas resistem também aos carimbos, crachás e fotocópias dos materiais de terreno. O tamanho foi apenas um de oito testes. Ambos os logótipos foram testados quanto ao significado, tamanhos pequenos, partes reutilizáveis, convivência com os parceiros, adequação ao tom de voz, reprodução fiável, distintividade e possibilidade de serem regidos por regras."
+          },
+          {
+            "title": "Resiste a uma mudança de nome",
+            "text": "A avaliação recomendou que os parceiros ponderassem mudar o nome. Se o fizerem, o símbolo mantém-se e só mudam as palavras ao lado."
+          },
+          {
+            "title": "Assenta em evidências, com baixo risco",
+            "text": "Um estudo de 2019 publicado no Journal of Marketing Research, com seis experiências e 597 logótipos, concluiu que os logótipos mais descritivos são mais fáceis de assimilar e considerados mais autênticos, sobretudo no caso de marcas que as pessoas ainda não conhecem bem. O custo da mudança é baixo: o nome, onde reside o reconhecimento, mantém-se, e o símbolo é um pequeno ficheiro que usa tipos de letra que o site já carrega. O risco de não mudar é que as conclusões da avaliação fiquem sem resposta na camada mais visível."
+          }
+        ],
+        "guidelines": [
+          "A identidade vai além do símbolo. O tom de voz é simples, concreto, calmo e honesto, porque o jargão é uma barreira para quem está no meio de uma crise. A cor tem uma função: tinta para o texto, areia para os fundos e coral apenas para o que está ativo neste momento e para a única ação que importa.",
+          "Tudo isto está descrito num documento de design e marca de 57 páginas, partilhado com a parceria em outubro de 2026. A Parte A defende a proposta e define as diretrizes: as evidências, os testes lado a lado, o custo e o risco da mudança, voz e tom, construção, área de proteção e tamanhos mínimos, cor, tipografia, fotografia, quatro versões linguísticas, utilização ao lado dos parceiros e as regras. A Parte B é a norma de design do site, e cada regra indica a sua razão e o tipo de fundamento: os termos de referência, evidências publicadas, um valor calculado, uma norma ou o nosso próprio critério.",
+          "A identidade é uma proposta e é partilhada aqui com a autorização da parceria; a decisão de a adotar cabe à parceria."
+        ]
+      },
+      "beforeAfter": [
+        {
+          "label": "O site",
+          "before": "O site criado em 2020",
+          "after": "Reconstruído de raiz, com 30 modelos de página"
+        },
+        {
+          "label": "A biblioteca",
+          "before": "Sobretudo de 2020 a 2022",
+          "after": "Orientações atuais primeiro, sem material desatualizado"
+        },
+        {
+          "label": "Documentos",
+          "before": "Muitos apenas com ligação para outros sites",
+          "after": "Guardados no próprio site, incluindo 155 recolhidos junto das entidades editoras"
+        },
+        {
+          "label": "Entradas repetidas",
+          "before": "Alguns listados até quatro vezes",
+          "after": "Cada um listado uma só vez, com as suas línguas juntas"
+        },
+        {
+          "label": "O logótipo",
+          "before": "Apenas o nome, em inglês",
+          "after": "Um símbolo proposto, legível a 16 pixels, partilhado com a autorização da parceria"
+        },
+        {
+          "label": "Endereços antigos",
+          "before": "1 593 em todo o site antigo",
+          "after": "Todos associados a um lugar no novo site"
+        }
+      ],
+      "results": [
+        "O site ainda não foi lançado, pelo que ainda não há resultados de visitantes a comunicar. Até ao relançamento, o endereço público da parceria continua a mostrar o site antigo.",
+        "O que se pode comunicar é o que foi testado. A 23 de outubro de 2026, um rastreio de 332 páginas e 634 ligações para outros sites não encontrou nenhuma quebrada. Cada página é verificada de 320 a 1 920 pixels de largura. A medição de visitantes está integrada e só é carregada depois de o visitante dar o seu consentimento, para que o relançamento possa ser avaliado com base na utilização real."
+      ],
+      "lessons": [
+        "Contar antes de desenhar. Ler a própria base de dados do site, em vez de fazer estimativas a partir de um rastreio, mostrou quanto da biblioteca pertencia a outro tempo, e isso mudou o plano.",
+        "O peso é uma decisão de design. Se o limite for definido primeiro, todos os modelos são construídos em função dele.",
+        "Defender uma marca com evidências. Apresentar as conclusões, os testes e o custo da mudança permite que os parceiros decidam com base nos argumentos, não no gosto.",
+        "Mostrar páginas reais. Os revisores afixaram comentários no site funcional, pelo que cada ponto dizia respeito a algo que podiam ver e podia ser acompanhado até uma correção ou uma decisão."
+      ],
+      "standards": [
+        {
+          "label": "Acessibilidade",
+          "value": "WCAG 2.2 AA em todos os 30 modelos de página, através de testes automatizados em Chrome sem interface gráfica, com introdução real pelo teclado, em larguras de computador e de telemóvel. Excetuam-se os PDF e relatórios incorporados de outras organizações. Um teste com leitor de ecrã feito por uma pessoa faz parte da revisão final."
+        },
+        {
+          "label": "Línguas",
+          "value": "Inglês. Quando as entidades editoras as disponibilizam, os documentos incluem também as versões em francês, português, espanhol e suaíli."
+        },
+        {
+          "label": "Desempenho",
+          "value": "Limite de 500 KB, cerca de 10 segundos a 400 quilobits por segundo. A página inicial tem de 245 KB a 283 KB ao abrir num telemóvel e de 530 KB a 563 KB se percorrida até ao fim."
+        },
+        {
+          "label": "Segurança",
+          "value": "Três camadas de cópias de segurança: pontos de restauro do alojamento, uma cópia noturna da base de dados e o repositório de código, verificados por script."
+        }
+      ],
+      "clientTeam": "Secretariado de The Collective Service",
+      "next": "Perguntas feitas e respondidas em francês, espanhol e árabe, a partir da mesma biblioteca, com cada resposta sempre ligada à sua fonte.",
+      "proves": [
+        {
+          "title": "Contamos antes de desenhar.",
+          "text": "A leitura da própria base de dados do site revelou 1 593 endereços antigos e uma biblioteca sobretudo de 2020 a 2022. Todos os endereços foram mapeados e o plano mudou antes de se desenhar uma página."
+        },
+        {
+          "title": "Trabalhamos com um limite e publicamos o valor.",
+          "text": "Foi definido primeiro um limite de 500 KB por página. A página inicial abre com 283 KB, medidos a 24 de outubro de 2026."
+        },
+        {
+          "title": "Entregamos o site aos seus editores.",
+          "text": "Um formulário por tipo de conteúdo, um guia integrado e o formato, tamanho e número de páginas de um documento preenchidos a partir do seu endereço."
+        },
+        {
+          "title": "Dizemos o que ainda não aconteceu.",
+          "text": "O site está em testes, a identidade é uma proposta e não há resultados de visitantes enquanto não houver visitantes."
+        },
+        {
+          "title": "As Respostas baseadas em evidências funcionam numa biblioteca real.",
+          "text": "O Knowledge bank responde com base em 279 documentos, cita cada ponto e diz quando a biblioteca não tem resposta."
+        }
+      ]
+    },
+    {
+      "slug": "global-girls-foundation",
+      "name": "Global Girls Foundation",
+      "type": "Fundação",
+      "year": "2026",
+      "scope": "Redesenho do site, construção em WordPress e integração de plataforma de angariação de fundos",
+      "line": "Fundação · 2026 · Redesenho do site e donativos em três moedas. Em funcionamento desde 9 de outubro de 2026.",
+      "languages": "Inglês",
+      "status": {
+        "label": "Site em funcionamento",
+        "text": "globalgirlsfoundation.org",
+        "href": "https://globalgirlsfoundation.org"
+      },
+      "summary": "Uma fundação suíça criada pela Plan International precisava de um site que transmitisse ao consultor de um filantropo a imagem de uma instituição e que aceitasse donativos por cartão em três moedas. Em funcionamento desde 9 de outubro de 2026, com todas as páginas e redirecionamentos corretos nesse dia.",
+      "cardImage": {
+        "src": "/work/global-girls-foundation-home.jpg"
+      },
+      "detailImage": {
+        "src": "/work/global-girls-foundation-giving.jpg",
+        "alt": "Secção da página inicial da Global Girls Foundation com o título Three ways to invest in girls e três colunas: Annual Giving Fund, Designated Gifts e The Endowment.",
+        "caption": "As opções de donativo na página inicial da Fundação."
+      },
+      "figures": [
+        {
+          "value": "3",
+          "label": "Moedas para donativos pontuais e mensais: francos suíços, euros e dólares americanos"
+        },
+        {
+          "value": "100",
+          "label": "Pontuação de acessibilidade Lighthouse nas páginas inicial e de donativos em funcionamento. Medido a 4 de novembro de 2026"
+        },
+        {
+          "value": "14.0 s",
+          "label": "Página inicial em funcionamento totalmente carregada num perfil 3G de 400 kbit/s e 2 s de latência. Medido a 4 de novembro de 2026"
+        }
+      ],
+      "challenge": [
+        "A Global Girls Foundation é uma fundação suíça, criada em 2022 pela Plan International para financiar os seus programas para raparigas. O seu site tem de chegar aos filantropos e às pessoas que os rodeiam: gestores de património familiar, consultores e advogados, bem como fundações familiares e empresariais.",
+        "O site não estava à altura dessa ambição. Tinha 11 páginas na plataforma WordPress da Plan International, era difícil de gerir e de nele encontrar informação, e não dispunha de uma forma integrada de doar.",
+        "O novo site tinha duas funções que puxam em direções diferentes. Tinha de transmitir a imagem de uma instituição séria a quem pensa num legado ou num fundo patrimonial e, ainda assim, aceitar um donativo por cartão de quem quisesse doar nesse dia."
+      ],
+      "goals": [
+        "Dizer com clareza o que é a Fundação e porque deve um doador contribuir para ela.",
+        "Dar a cada tipo de doador um percurso claro, da primeira visita ao donativo.",
+        "Aceitar donativos pontuais e mensais seguros em mais de uma moeda.",
+        "Permitir que a própria equipa da Fundação edite todas as páginas sem estragar o design."
+      ],
+      "decisions": [
+        {
+          "title": "Oferecer uma conversa, além do pagamento",
+          "text": "Um grande donativo começa normalmente com uma conversa. Por isso, o primeiro ecrã oferece dois caminhos lado a lado: doar agora ou iniciar uma conversa. O Annual Giving Fund e o fundo patrimonial só são acessíveis através de uma conversa."
+        },
+        {
+          "title": "Deixar o doador definir o valor",
+          "text": "As primeiras versões ofereciam níveis de donativo predefinidos. Depois de os ver, a Fundação pediu que fossem retirados, pelo que o painel de donativos abre com uma única caixa vazia e não impõe um limite máximo próprio. Um donativo acima do que um cartão permite mostra, em vez disso, os dados bancários, e qualquer doador pode pedi-los, seja qual for o valor."
+        },
+        {
+          "title": "Manter os dados do cartão fora do site",
+          "text": "Os donativos pontuais são feitos na própria página e os mensais na página alojada pela Stripe, pelo que os dados do cartão são tratados pela Stripe e nunca pelo site. O painel continua a funcionar como um formulário simples se os scripts estiverem desativados."
+        },
+        {
+          "title": "Construir o editor em torno da página",
+          "text": "A equipa da Fundação precisava de gerir o site por conta própria. Os editores trabalham na página tal como vai aparecer: alteram o texto no próprio local, adicionam secções a partir de um menu de imagens, e o site verifica cada página face às suas regras antes de a publicar. A área de administração do WordPress foi adaptada ao visual da Fundação, com um guia de 31 passos integrado."
+        },
+        {
+          "title": "Rever páginas reais, não imagens",
+          "text": "O design foi construído como um site de revisão funcional, com comentários na página. A equipa da Fundação reviu páginas reais em ecrãs reais, e só as páginas aprovadas passaram para o WordPress."
+        },
+        {
+          "title": "Mudar sem perder os endereços antigos",
+          "text": "O domínio da Fundação estava com a Plan International, pelo que a mudança dependia da equipa de TI desta organização. Enviámos as alterações exatas necessárias e cada endereço antigo foi configurado para redirecionar para a sua nova localização. No dia do lançamento, as 21 páginas e os 23 redirecionamentos responderam corretamente."
+        }
+      ],
+      "beforeAfter": [
+        {
+          "label": "Páginas",
+          "before": "11",
+          "after": "21"
+        },
+        {
+          "label": "Onde está alojado",
+          "before": "Plataforma WordPress da Plan International",
+          "after": "O seu próprio site WordPress, alojado na Bélgica"
+        },
+        {
+          "label": "Donativos",
+          "before": "Sem forma integrada de doar",
+          "after": "Donativos pontuais e mensais em francos suíços, euros e dólares americanos"
+        },
+        {
+          "label": "Edição",
+          "before": "Difícil de gerir",
+          "after": "Editado na própria página pela equipa da Fundação"
+        }
+      ],
+      "results": [
+        "O site entrou em funcionamento a 9 de outubro de 2026, com as 21 páginas e os 23 redirecionamentos a responder corretamente nesse dia. Os donativos pontuais e mensais foram ambos confirmados com pagamentos reais até 12 de outubro.",
+        "Pela primeira vez, a Fundação pode receber um donativo no seu próprio site, e a sua equipa recebeu formação para gerir as páginas. Os totais de donativos pertencem à Fundação e não são publicados aqui."
+      ],
+      "lessons": [
+        "Decidir para quem é o site e deixar que isso resolva as discussões. Saber que o leitor era um filantropo tornou mais fácil responder à maioria das questões sobre redação e donativos.",
+        "Contar com alterações às regras dos donativos. Os níveis, os limites e as moedas mudaram todos perto do lançamento, pelo que o painel de donativos tinha de ser fácil de alterar.",
+        "Quando um lançamento depende da equipa de outra organização, enviar a alteração exata, não um pedido geral."
+      ],
+      "standards": [
+        {
+          "label": "Acessibilidade",
+          "value": "Acessibilidade Lighthouse de 100 nas páginas inicial e de donativos em funcionamento, 4 de novembro de 2026. Uma execução do axe-core em 16 páginas antes do lançamento não encontrou violações confirmadas. Ainda não há registo de um teste com leitor de ecrã feito por uma pessoa."
+        },
+        {
+          "label": "Línguas",
+          "value": "Inglês"
+        },
+        {
+          "label": "Desempenho",
+          "value": "Página inicial com 546 KB, página de donativos com 395 KB. No perfil 3G, a página inicial mostra o primeiro conteúdo aos 6,8 s e o conteúdo principal aos 12,5 s."
+        },
+        {
+          "label": "Segurança",
+          "value": "Alojado na Bélgica na WP Engine · HTTPS com HSTS · pontos de cópia de segurança diários · dados do cartão guardados pela Stripe"
+        }
+      ],
+      "clientTeam": "Equipa da Global Girls Foundation",
+      "next": "Páginas em alemão e francês, traduzidas automaticamente e verificadas pela equipa da Fundação antes de qualquer publicação.",
+      "proves": [
+        {
+          "title": "Lançamos no dia que anunciamos.",
+          "text": "As 21 páginas e os 23 redirecionamentos responderam corretamente a 9 de outubro de 2026, e foram confirmados donativos pontuais e mensais reais até 12 de outubro."
+        },
+        {
+          "title": "A acessibilidade é medida, não prometida.",
+          "text": "Acessibilidade Lighthouse de 100 nas páginas inicial e de donativos em funcionamento; uma execução do axe-core em 16 páginas não encontrou violações confirmadas."
+        },
+        {
+          "title": "Os dados do cartão nunca chegam ao site.",
+          "text": "Donativos pontuais na página e mensais na página alojada pela Stripe, pelo que o site não guarda dados de cartões que tenha de proteger."
+        },
+        {
+          "title": "Trabalhamos com a equipa de TI da outra organização.",
+          "text": "O domínio estava com a Plan International. Enviámos as alterações exatas necessárias e cada endereço antigo chegou à sua nova localização."
+        },
+        {
+          "title": "Depois, é a sua equipa que gere o site.",
+          "text": "Os editores alteram o texto na própria página, com um guia de 31 passos na área de administração. O que não está feito também fica escrito: ainda não há registo de um teste com leitor de ecrã feito por uma pessoa."
+        }
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "slug": "website-brief",
+      "title": "Como redigir uma descrição de site que as agências possam orçamentar com rigor",
+      "tag": "Aquisições",
+      "date": "novembro de 2026",
+      "summary": "O que contar, o que indicar e o que decidir antes de enviar a descrição de um site, para que as propostas recebidas possam ser comparadas.",
+      "inShort": [
+        "Quando os orçamentos recebidos são muito diferentes, em geral cada agência tentou adivinhar algo que a descrição omitiu.",
+        "Conte os tipos de página, os conteúdos a migrar, as línguas e as ligações a outros sistemas.",
+        "Indique o intervalo de orçamento e os critérios de pontuação na própria descrição."
+      ],
+      "lead": "Quando três propostas para o mesmo site são muito diferentes, raramente significa que duas agências estão erradas. Em geral, significa que cada uma tentou adivinhar algo que a descrição omitiu. Este texto destina-se ao técnico de programas ou de comunicação que tem de redigir os termos de referência e depois comparar o que recebe.",
+      "body": [
+        {
+          "kind": "h",
+          "text": "Para que servem os termos de referência"
+        },
+        {
+          "kind": "p",
+          "text": "O Manual de Aquisições das Nações Unidas descreve os termos de referência como “uma descrição do âmbito do trabalho para serviços, que indica geralmente o trabalho a realizar, o nível de qualidade e de esforço, o calendário e os resultados a entregar”. Acrescenta que o documento é muitas vezes a primeira e principal apresentação daquilo de que precisa a um fornecedor, e que termos claros limitam o risco para ambas as partes."
+        },
+        {
+          "kind": "p",
+          "text": "O Manual adverte nos dois sentidos. O excesso de especificação “pode aumentar os preços e/ou diminuir o número de propostas”. A falta de especificação é a falha oposta: fica de fora informação essencial. Num site, esta segunda falha é a que sai cara. Uma agência que não consegue ver quantos conteúdos têm de ser migrados ou acrescenta uma grande margem, ou apresenta um valor baixo e volta mais tarde."
+        },
+        {
+          "kind": "quote",
+          "text": "Quando dois orçamentos diferem, pergunte o que cada agência pressupôs. A diferença costuma estar na descrição."
+        },
+        {
+          "kind": "h",
+          "text": "O que contar antes de enviar"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Tipos de página, não páginas. Liste os modelos de que precisa: página inicial, artigo, documento, evento, país. O custo de design e construção depende do número de tipos, não do número de páginas.",
+            "O que tem de ser migrado. Quantas páginas e documentos há no site atual e quais podem ficar para trás. Conte-os a partir do sistema de conteúdos, se possível, porque um rastreio não deteta o que não tem ligações.",
+            "Línguas. Quais no lançamento, quais mais tarde, se alguma se lê da direita para a esquerda e quem faz a tradução.",
+            "Ligações. Indique cada sistema externo: pagamentos, lista de distribuição, painéis de dados, início de sessão único. Diga quem detém cada conta.",
+            "Editores. Quantas pessoas vão atualizar o site, com que frequência e de quanta formação precisam.",
+            "Normas. O nível de acessibilidade, um limite de peso das páginas, onde o site pode ser alojado e eventuais regras de proteção de dados."
+          ]
+        },
+        {
+          "kind": "h",
+          "text": "Diga como vai decidir"
+        },
+        {
+          "kind": "p",
+          "text": "O Manual determina que os documentos de concurso indiquem os critérios de avaliação e que o equilíbrio entre a pontuação técnica e a comercial seja definido antes de se lançar um pedido de propostas. Siga esta regra mesmo que as suas próprias normas não o exijam. As agências redigem melhores propostas quando sabem o que vai ser pontuado."
+        },
+        {
+          "kind": "p",
+          "text": "Depois, indique um intervalo de orçamento. Não enfraquece a sua posição. Diz a cada agência que nível de trabalho deve propor, para que compare respostas à mesma pergunta. Organize uma ronda de perguntas e partilhe todas as respostas com todos os concorrentes."
+        }
+      ],
+      "sources": [
+        {
+          "title": "United Nations Procurement Manual (DOS/2020.9), United Nations Department of Operational Support, 2020",
+          "href": "https://digitallibrary.un.org/record/3954918/files/Procurement_Manual_2020.pdf"
+        },
+        {
+          "title": "Web Content Accessibility Guidelines (WCAG) 2.2, W3C, 2023",
+          "href": "https://www.w3.org/TR/WCAG22/"
+        },
+        {
+          "title": "Performance budgets 101, web.dev",
+          "href": "https://web.dev/articles/performance-budgets-101"
+        }
+      ]
+    },
+    {
+      "slug": "performance-budget",
+      "title": "Um orçamento de desempenho para sites lidos em ligações lentas",
+      "tag": "Desenvolvimento",
+      "date": "novembro de 2026",
+      "summary": "Como definir um limite de peso das páginas antes de começar o design e como medi-lo para que o número tenha significado num telemóvel com sinal fraco.",
+      "inShort": [
+        "Defina um limite de peso das páginas antes de começar o design e trate-o como um requisito.",
+        "Trabalhamos com 500 KB por página: cerca de dez segundos a 400 quilobits por segundo.",
+        "Meça cada página ao abrir, percorrida até ao fim e num telemóvel de alta densidade."
+      ],
+      "lead": "O pessoal no terreno abre muitas vezes um site num telemóvel, com sinal fraco, a meio de outra tarefa. Se a página demorar um minuto, não é lida. Este texto destina-se às equipas que encomendam ou constroem um site para pessoas em contextos de baixa largura de banda, e explica como escolhemos um limite e o mantemos.",
+      "body": [
+        {
+          "kind": "h",
+          "text": "Escolher primeiro o número"
+        },
+        {
+          "kind": "p",
+          "text": "O web.dev define um orçamento de desempenho como “um conjunto de limites impostos às métricas que afetam o desempenho do site”. O ponto de partida que sugere é menos de 170 KB de recursos do caminho crítico e menos de cinco segundos até a página ficar interativa, calculados para dispositivos de referência numa rede 3G."
+        },
+        {
+          "kind": "p",
+          "text": "Compare-se isso com a web tal como é. O Web Almanac do HTTP Archive situou a página inicial mediana em 2025 em 2,86 MB no computador e 2,56 MB no telemóvel. Numa ligação lenta de 400 quilobits por segundo, 2,56 MB demoram cerca de 51 segundos a chegar, antes de qualquer atraso da própria rede."
+        },
+        {
+          "kind": "p",
+          "text": "Trabalhamos com 500 KB por página. São cerca de dez segundos à mesma velocidade: lento, mas utilizável. Deixa margem para uma boa fotografia e um conjunto de tipos de letra web, o que importa quando o site também tem de se parecer com a organização que o gere."
+        },
+        {
+          "kind": "quote",
+          "text": "Um orçamento que ninguém verifica é um desejo. Tem de ser medido, em cada versão, por alguém que possa travar essa versão."
+        },
+        {
+          "kind": "h",
+          "text": "Medir nas condições em que vai falhar"
+        },
+        {
+          "kind": "p",
+          "text": "Um único valor obtido num navegador de computador esconde a maior parte do problema. Estas são as verificações que detetaram excessos reais nos nossos projetos:"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Ao abrir. Use uma cache vazia e conte os bytes que circulam, não o tamanho dos ficheiros no servidor.",
+            "Percorrida até ao fim. O carregamento diferido atrasa as imagens, não as elimina. Uma página pode passar ao abrir e falhar quando se chega ao fundo.",
+            "Num telemóvel de alta densidade. Os ecrãs de densidade dupla e tripla pedem imagens maiores, pelo que a mesma página pode pesar muito mais do que num computador portátil.",
+            "Com o JavaScript desativado. O carregamento diferido que depende de um script deixa de funcionar e todas as imagens da página podem carregar de uma só vez."
+          ]
+        },
+        {
+          "kind": "h",
+          "text": "Incluir no contrato"
+        },
+        {
+          "kind": "p",
+          "text": "Inclua o limite na descrição do projeto, com o método de medição. Assim, cada nova funcionalidade tem um preço que toda a equipa pode ver. Quando algo ultrapassa o limite, o web.dev apresenta as três opções honestas: otimizar, retirar ou não adicionar."
+        },
+        {
+          "kind": "p",
+          "text": "Esta disciplina compensa na primeira emergência que levar um novo público ao site, em telemóveis e com más ligações. Nessa altura, já é tarde para começar."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Performance budgets 101, web.dev",
+          "href": "https://web.dev/articles/performance-budgets-101"
+        },
+        {
+          "title": "Page Weight, Web Almanac 2025, HTTP Archive",
+          "href": "https://almanac.httparchive.org/en/2025/page-weight"
+        }
+      ]
+    },
+    {
+      "slug": "accessible-colour",
+      "title": "Cor acessível que mantém uma marca reconhecível",
+      "tag": "Acessibilidade",
+      "date": "novembro de 2026",
+      "summary": "Porque é que a maioria das paletas de marca falha apenas em certas combinações, e como atribuir uma função a cada cor preserva a marca e o rácio de contraste.",
+      "inShort": [
+        "As cores de marca raramente falham em todo o lado. Falham em tamanhos pequenos e em certas combinações.",
+        "O texto corrido precisa de 4,5:1. O texto grande e os elementos de interface precisam de 3:1.",
+        "Atribua uma função a cada cor e teste todas as combinações em que vai aparecer."
+      ],
+      "lead": "A acessibilidade e a identidade de marca são muitas vezes colocadas em oposição, como se uma tivesse de ceder. O verdadeiro problema é muito mais restrito. Este texto destina-se às equipas de comunicação e aos designers responsáveis por uma paleta a quem disseram que ela falha.",
+      "body": [
+        {
+          "kind": "h",
+          "text": "O que a norma exige"
+        },
+        {
+          "kind": "p",
+          "text": "As WCAG 2.2 exigem um rácio de contraste de, pelo menos, 4,5:1 para o texto e 3:1 para o texto grande, que definem como tendo, pelo menos, 18 pontos, ou 14 pontos a negrito. Os componentes de interface e os gráficos com significado precisam de 3:1 face ao que têm ao lado. A cor também não pode ser a única forma de transmitir informação. O texto que faz parte de um logótipo ou de um nome de marca não tem requisito de contraste."
+        },
+        {
+          "kind": "p",
+          "text": "Esta é a falha mais comum que existe. O estudo de 2026 da WebAIM sobre o milhão de páginas iniciais mais visitadas encontrou texto de baixo contraste em 83,9% delas, com uma média de 34 ocorrências por página."
+        },
+        {
+          "kind": "quote",
+          "text": "A maioria das paletas não falha. Falham certas combinações."
+        },
+        {
+          "kind": "h",
+          "text": "Como isto se traduz numa paleta real"
+        },
+        {
+          "kind": "p",
+          "text": "O nosso próprio logótipo usa seis cores, uma para cada língua da animação no topo da nossa página inicial. Sobre branco, o azul mede 6,16:1, o violeta 5,72:1 e o rosa 4,84:1, pelo que os três podem ser usados em texto corrido. O laranja mede 4,30:1, o verde 4,38:1 e o âmbar 3,65:1. Estes três falham no texto pequeno e passam no texto grande."
+        },
+        {
+          "kind": "p",
+          "text": "Não mudámos as cores. Mudámos as suas funções. As seis aparecem em tamanho de destaque e no logótipo. Todo o texto pequeno do site é quase preto ou cinzento-escuro, com 7,23:1 ou mais, mesmo a pequena legenda imediatamente acima da animação colorida. A marca mantém a sua cor e ninguém tem de ler âmbar de 14 pixels."
+        },
+        {
+          "kind": "h",
+          "text": "Como verificar uma paleta"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Liste todas as combinações: cada cor de texto em cada fundo onde vai aparecer, incluindo estados de passagem do cursor e texto sobre fotografias.",
+            "Assinale cada combinação como boa para texto corrido, boa apenas para texto grande ou reprovada.",
+            "Atribua a cada cor uma função a partir dessa tabela: texto, destaque, preenchimento ou decoração.",
+            "Quando uma cor tiver de ser usada em texto pequeno, escureça-a ligeiramente em vez de a substituir. Os leitores reconhecem a tonalidade, não o valor exato.",
+            "Identifique o que é transmitido apenas pela cor, como ligações, erros e linhas de gráficos, e acrescente um sublinhado, um ícone ou uma etiqueta."
+          ]
+        },
+        {
+          "kind": "h",
+          "text": "Deixar por escrito"
+        },
+        {
+          "kind": "p",
+          "text": "Uma paleta sobrevive à transferência quando as diretrizes dizem o que cada cor pode fazer, e não apenas qual é o seu valor. Inclua a tabela no guia da marca. A próxima pessoa que construir uma página de campanha não terá de descobrir tudo de novo, e a marca continuará a parecer ela própria."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Understanding Success Criterion 1.4.3: Contrast (Minimum), W3C",
+          "href": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "Understanding Success Criterion 1.4.11: Non-text Contrast, W3C",
+          "href": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html"
+        },
+        {
+          "title": "Understanding Success Criterion 1.4.1: Use of Color, W3C",
+          "href": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "The WebAIM Million, WebAIM, 2026",
+          "href": "https://webaim.org/projects/million/"
+        }
+      ]
+    }
+  ],
+  "servicePages": {
+    "label": "Serviços",
+    "pages": [
+      {
+        "slug": "web-design",
+        "title": "Design web para ONG e organizações internacionais",
+        "description": "Design web assente em investigação para organizações que publicam em várias línguas: protótipos desde cedo, entregue como um sistema de design que funciona em seis sistemas de escrita. Um site desde CHF 35 000.",
+        "h1": "Design web",
+        "statement": "Um design que parte de quem lê o site e termina num sistema que os seus engenheiros e tradutores podem utilizar.",
+        "intro": [
+          "A maioria das organizações com que trabalhamos publica em várias línguas para leitores que nada têm em comum além do site: um coordenador no terreno com um telemóvel, o consultor de um doador em Genebra, um jornalista, um ministério. Um design que sirva todos não pode partir de um aspeto visual. Parte de um mapa de quem é o público do site e do que cada um precisa de fazer.",
+          "Por isso, começamos pela investigação: questionários às partes interessadas e aos públicos, e uma leitura da própria base de dados do site atual, em vez de um rastreio. No caso de The Collective Service, essa contagem mostrou que a maior parte da biblioteca era de 2020 a 2022, o que mudou o plano antes de se desenhar uma página.",
+          "Depois, criamos cedo um protótipo real. Revê páginas funcionais em ecrãs reais, afixa comentários nelas e aprova um protótipo que já experimentou antes de qualquer construção. As decisões são tomadas sobre uma interface, não sobre imagens dela.",
+          "O que recebe é um sistema de design: tokens de cor, tipografia, componentes e respetivos estados, documentados para que a engenharia os implemente sem interpretação e para que funcionem em seis sistemas de escrita, incluindo da direita para a esquerda. The Collective Service funciona com 30 modelos de página a partir de um sistema deste tipo."
+        ],
+        "sections": [
+          {
+            "kind": "rows",
+            "label": "O que recebe",
+            "rows": [
+              {
+                "title": "Mapa de públicos",
+                "text": "Quem o site serve, o que cada grupo precisa de fazer e que páginas o asseguram, acordado antes de começar o design."
+              },
+              {
+                "title": "Protótipo",
+                "text": "Um protótipo navegável das páginas reais, revisto em ecrãs reais com comentários afixados na página. Aprova-o antes da construção."
+              },
+              {
+                "title": "Sistema de design",
+                "text": "Tokens, componentes e estados, documentados para a engenharia e compostos em seis sistemas de escrita, incluindo o árabe."
+              },
+              {
+                "title": "Todas as larguras",
+                "text": "Cada modelo verificado de 320 a 1 920 pixels, para que nada se desloque para os lados num telemóvel."
+              },
+              {
+                "title": "Conteúdo no lugar",
+                "text": "Conteúdo real desde o primeiro protótipo, com o peso da página e a ordem de leitura decididos como parte do design."
+              }
+            ]
+          },
+          {
+            "kind": "note",
+            "label": "Honorários",
+            "text": "O design é orçamentado com a construção: um site desde CHF 35 000, um site e uma marca desde CHF 60 000. Fixado em função do âmbito, acordado antes do início do trabalho e faturado em francos suíços.",
+            "link": {
+              "text": "Todos os honorários →",
+              "href": "/#fees"
+            }
+          },
+          {
+            "kind": "facts",
+            "label": "Para registo",
+            "items": [
+              "30 modelos de página a partir de um único sistema de design (The Collective Service)",
+              "Todos os modelos verificados de 320 a 1 920 pixels",
+              "Revisto em páginas reais, não em imagens, e só as páginas aprovadas passaram para o WordPress (Global Girls Foundation)"
+            ]
+          },
+          {
+            "kind": "work",
+            "label": "Dos nossos projetos",
+            "project": "global-girls-foundation",
+            "line": "Fundação · 2026 · Dois caminhos no primeiro ecrã: doar agora ou iniciar uma conversa."
+          },
+          {
+            "kind": "questions",
+            "label": "Perguntas que nos fazem",
+            "items": [
+              {
+                "q": "Podemos ver o design antes de nos comprometermos com a construção?",
+                "a": "Sim. A aprovação do design é o segundo dos quatro pontos de aprovação, e é aí que é emitida a segunda fatura. Nada é construído antes disso."
+              },
+              {
+                "q": "Já temos diretrizes de marca. Trabalham dentro delas?",
+                "a": "Sim. Fazemos o design dentro delas e indicamos na proposta onde não cumprem os requisitos de contraste ou não funcionam noutro sistema de escrita.",
+                "link": {
+                  "text": "Ver Identidade de marca →",
+                  "href": "/services/branding"
+                }
+              },
+              {
+                "q": "Quem faz a tradução?",
+                "a": "Os seus tradutores, ou os que indicar. O sistema de design dá-lhes espaço: cada etiqueta é concebida para um texto um terço mais longo do que o inglês, e a escrita da direita para a esquerda é testada, não presumida."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "web-development",
+        "title": "Desenvolvimento web para ligações lentas e conformidade com as WCAG",
+        "description": "Sites construídos segundo um orçamento de desempenho definido antes do design, testados segundo as WCAG com ferramentas e manualmente, com uma camada de edição gerida pela sua equipa. Um site desde CHF 35 000, com honorários fixos.",
+        "h1": "Desenvolvimento web",
+        "statement": "Construído para as condições dos seus leitores, testado antes do lançamento e gerido pela sua própria equipa depois dele.",
+        "intro": [
+          "Um coordenador no terreno abre o seu site num telemóvel, com sinal fraco, a meio de outra tarefa. Em 2025, a página inicial mediana num telemóvel tinha 2,56 MB, o que demora cerca de 51 segundos a 400 quilobits por segundo. Se um documento demorar um minuto, não é lido.",
+          "Por isso, o orçamento de desempenho vem primeiro. Definimos um limite, em regra 500 KB por página, antes de começar o design, e todos os modelos são construídos em função dele e medidos face a ele em cada versão. A página inicial de The Collective Service abre com 283 KB.",
+          "A acessibilidade é testada da mesma forma: com ferramentas, axe-core e Lighthouse, e manualmente, através do teclado e da ligação para saltar para o conteúdo, com o método e os resultados publicados numa declaração que pode arquivar. As páginas inicial e de donativos em funcionamento da Global Girls Foundation obtêm 100 em acessibilidade no Lighthouse.",
+          "Depois, o site é entregue à sua equipa. Um formulário para cada tipo de conteúdo, cada um com a lista do que falta antes de se poder publicar uma página, e um guia passo a passo integrado na área de edição. Todos os modelos, redirecionamentos e migrações de documentos são tratados na construção, para que nenhum endereço seu deixe de funcionar no dia do lançamento."
+        ],
+        "sections": [
+          {
+            "kind": "rows",
+            "label": "O que recebe",
+            "rows": [
+              {
+                "title": "Orçamento de desempenho",
+                "text": "Definido antes do design e incluído na proposta; medido ao abrir cada página, percorrida até ao fim e num telemóvel de alta densidade."
+              },
+              {
+                "title": "Conformidade com as WCAG",
+                "text": "Testada com ferramentas e manualmente antes do lançamento, e descrita numa declaração de acessibilidade com o método e a data."
+              },
+              {
+                "title": "Camada de edição",
+                "text": "Normalmente WordPress com um tema personalizado: um formulário por tipo de conteúdo, verificações antes da publicação e um guia na área de administração."
+              },
+              {
+                "title": "Migração",
+                "text": "Todas as páginas e documentos transferidos através de um importador repetível, e cada endereço antigo associado ao seu novo lugar."
+              },
+              {
+                "title": "Lançamento",
+                "text": "Um rastreio de todas as páginas e ligações antes do lançamento, redirecionamentos confirmados no próprio dia e acompanhamento nas primeiras 48 horas."
+              },
+              {
+                "title": "Registos",
+                "text": "A declaração de acessibilidade, a nota de segurança e os valores de desempenho, datados, para os seus arquivos e os do seu doador."
+              }
+            ]
+          },
+          {
+            "kind": "note",
+            "label": "Honorários",
+            "text": "Um site desde CHF 35 000, fixado em função do âmbito e faturado em francos suíços na assinatura, na aprovação do design e no lançamento. Os sistemas de conhecimento são orçamentados à parte.",
+            "link": {
+              "text": "Ver Respostas baseadas em evidências →",
+              "href": "/services/evidence-intelligence"
+            }
+          },
+          {
+            "kind": "facts",
+            "label": "Para registo",
+            "items": [
+              "Página inicial com 283 KB face a um limite de 500 KB (The Collective Service, 24 de outubro de 2026)",
+              "Acessibilidade Lighthouse de 100 em páginas em funcionamento (Global Girls Foundation, 4 de novembro de 2026)",
+              "1 593 endereços antigos associados ao novo site",
+              "21 páginas e 23 redirecionamentos corretos no dia do lançamento"
+            ]
+          },
+          {
+            "kind": "work",
+            "label": "Dos nossos projetos",
+            "project": "collective-service",
+            "line": "Parceria · 2026 · 30 modelos de página, 155 documentos recolhidos e guardados, todas as páginas abaixo de 500 KB."
+          },
+          {
+            "kind": "questions",
+            "label": "Perguntas que nos fazem",
+            "items": [
+              {
+                "q": "Que sistema de edição?",
+                "a": "Normalmente WordPress com um tema personalizado, porque a sua equipa encontra editores e programadores em qualquer lugar. Ambos os estudos de caso funcionam com ele. Se a sua organização tiver uma norma, indique-a na descrição do projeto e a proposta dá-lhe resposta."
+              },
+              {
+                "q": "Quem detém as contas?",
+                "a": "A sua organização. O alojamento, o domínio, os pagamentos e o sistema de edição ficam registados em nome da sua organização, e nós somos adicionados como utilizadores. Nunca somos os únicos com as chaves."
+              },
+              {
+                "q": "Onde fica alojado?",
+                "a": "Onde as suas regras permitirem. A Global Girls Foundation está alojada na Bélgica; se os seus dados tiverem de ficar numa região, a proposta indica o fornecedor de alojamento e o país."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "evidence-intelligence",
+        "title": "Respostas baseadas em evidências: o seu conhecimento institucional, consultável e verificável",
+        "description": "Uma camada de conhecimento assente em tudo o que a sua organização detém, consultada em linguagem simples, com cada resposta ligada à sua fonte. Avaliada, publicada, alojada na nossa infraestrutura ou na sua. Desde CHF 75 000.",
+        "h1": "Respostas baseadas em evidências",
+        "statement": "O seu conhecimento institucional, consultável, verificável e cumulativo.",
+        "intro": [
+          "Todas as organizações com que trabalhamos detêm mais do que conseguem encontrar: anos de orientações, avaliações, investigação, registos e os sinais que chegam todas as semanas. A pesquisa só ajuda quem já conhece as palavras certas. Um novo coordenador num surto não as conhece.",
+          "O serviço Respostas baseadas em evidências é uma camada de conhecimento assente em tudo o que a sua organização detém. O leitor descreve uma situação por palavras suas e recebe uma resposta retirada apenas dos materiais da sua organização, com cada afirmação ligada à passagem de onde veio. Quando esses materiais não têm resposta, o sistema di-lo.",
+          "A exatidão é medida, não afirmada. Antes do lançamento, um conjunto de perguntas com respostas conhecidas é pontuado de forma independente e o resultado é publicado com o sistema. O novo material é integrado continuamente e a avaliação é repetida à medida que a biblioteca cresce.",
+          "Funciona na nossa infraestrutura ou na sua. Se os seus dados tiverem de ficar num determinado país ou nos seus próprios servidores, essa é uma opção orçamentada na proposta, nunca uma premissa.",
+          "E o valor acumula-se: a mesma camada estende-se a espaços de grupos de trabalho, monitorização e notas informativas, relatórios a doadores e formação, pelo que o material de cada mês melhora as respostas do mês seguinte. A primeira versão, o Knowledge bank para The Collective Service, já leu 279 documentos e está em testes."
+        ],
+        "sections": [
+          {
+            "kind": "rows",
+            "label": "O que faz",
+            "rows": [
+              {
+                "title": "Lê tudo o que detém",
+                "text": "Documentos, dados, registos e sinais recebidos, integrados à medida que chegam."
+              },
+              {
+                "title": "Responde em linguagem simples",
+                "text": "O leitor descreve a situação por palavras suas; o conselho é retirado apenas dos materiais da sua organização."
+              },
+              {
+                "title": "Cita cada afirmação",
+                "text": "Cada ponto está ligado à sua fonte, para que o leitor possa abrir a passagem e verificá-la."
+              },
+              {
+                "title": "Diz quando não há resposta",
+                "text": "Nada vem de fora dos seus materiais. Se não estiver lá, a resposta di-lo."
+              },
+              {
+                "title": "É avaliado e publicado",
+                "text": "Perguntas com respostas conhecidas, pontuadas de forma independente antes do lançamento e repetidas à medida que se acrescenta material."
+              },
+              {
+                "title": "Fica onde decidir",
+                "text": "Na nossa infraestrutura ou nos seus próprios servidores; acesso definido por si, da sua equipa ao público."
+              }
+            ]
+          },
+          {
+            "kind": "rows",
+            "label": "Próximas etapas",
+            "rows": [
+              {
+                "title": "Espaços de grupos de trabalho",
+                "text": "Membros, documentos e discussão num só lugar, com respostas a partir dos mesmos materiais."
+              },
+              {
+                "title": "Monitorização e notas informativas",
+                "text": "Novos sinais integrados à medida que chegam, com um resumo para as pessoas que dele precisam."
+              },
+              {
+                "title": "Relatórios a doadores",
+                "text": "O que o dinheiro comprou, com base nos registos e não reescrito de memória."
+              },
+              {
+                "title": "Formação de operadores",
+                "text": "A sua equipa aprende a gerir o sistema, a acrescentar-lhe conteúdos e a ler a avaliação de exatidão."
+              }
+            ],
+            "note": "Cada uma tem âmbito e orçamento próprios, como etapa autónoma."
+          },
+          {
+            "kind": "note",
+            "label": "Honorários",
+            "text": "Um sistema de conhecimento desde CHF 75 000, fixado em função do âmbito e faturado em francos suíços. Após o lançamento, o plano de manutenção Platform, desde CHF 5 800 por mês, integra novo material, repete a avaliação e envia um resumo mensal.",
+            "link": {
+              "text": "Todos os honorários →",
+              "href": "/#fees"
+            }
+          },
+          {
+            "kind": "facts",
+            "label": "Para registo",
+            "items": [
+              "279 documentos integrados no Knowledge bank (The Collective Service, 4 de novembro de 2026)",
+              "Todas as respostas citam os documentos da própria biblioteca",
+              "Diz quando a biblioteca não tem resposta"
+            ]
+          },
+          {
+            "kind": "work",
+            "label": "Dos nossos projetos",
+            "project": "collective-service",
+            "line": "Parceria · 2026 · O Knowledge bank, em testes: conselhos retirados apenas da biblioteca, com cada ponto citado."
+          },
+          {
+            "kind": "questions",
+            "label": "Perguntas que nos fazem",
+            "items": [
+              {
+                "q": "Como sabemos que as respostas estão certas?",
+                "a": "Medindo-as. Antes do lançamento, acordamos perguntas com respostas conhecidas a partir dos seus materiais; são pontuadas de forma independente e publicadas, e repetidas mensalmente no plano Platform."
+              },
+              {
+                "q": "Onde ficam os nossos dados?",
+                "a": "Na nossa infraestrutura ou na sua. Se tiverem de ficar num país ou nos seus servidores, a proposta orçamenta essa opção."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "branding",
+        "title": "Identidade de marca para organizações, programas e campanhas",
+        "description": "Sistemas de identidade que funcionam a 16 pixels, numa fila de logótipos de parceiros e em seis sistemas de escrita, entregues como diretrizes que os parceiros aplicam sem nós. Um site e uma marca desde CHF 60 000.",
+        "h1": "Identidade de marca",
+        "statement": "Uma identidade que continua legível a 16 pixels, numa fila de logótipos de parceiros e num sistema de escrita que não domina.",
+        "intro": [
+          "O símbolo de uma ONG vive em sítios difíceis: um separador do navegador, um ícone de aplicação, o quinto logótipo de uma fila no relatório de um parceiro, uma faixa impressa numa língua que o designer não lê. A maioria dos símbolos é desenhada para uma capa e falha em todos os outros sítios. O antigo logótipo de The Collective Service deixava de funcionar abaixo de cerca de 100 pixels de largura.",
+          "Concebemos sistemas de identidade para organizações, programas e campanhas, e testamo-los onde vão ser utilizados. O símbolo é desenhado para se manter a 16 pixels e para ficar numa fila de logótipos de parceiros sem se perder. A paleta atribui uma função a cada cor, para que o texto corrido cumpra 4,5:1 e as cores pelas quais é conhecido fiquem reservadas para destaque. A tipografia é escolhida para as línguas em que publica, incluindo o árabe, o chinês e o cirílico, para que uma página traduzida continue a parecer sua.",
+          "O que recebe é um conjunto de diretrizes que os parceiros e os escritórios nacionais aplicam sem nós: regras de cor, área de proteção, tamanho mínimo e tipografia, com a tabela de contraste incluída, para que a próxima página de campanha se pareça com a organização sem ser preciso ligar ao estúdio."
+        ],
+        "sections": [
+          {
+            "kind": "rows",
+            "label": "O que recebe",
+            "rows": [
+              {
+                "title": "Símbolo",
+                "text": "Desenhado para ser legível a 16 pixels e numa fila de logótipos de parceiros, com regras de área de proteção e tamanho mínimo."
+              },
+              {
+                "title": "Paleta",
+                "text": "A cada cor é atribuída uma função: texto, destaque, preenchimento ou decoração, com todas as combinações medidas face a 4,5:1 e 3:1."
+              },
+              {
+                "title": "Tipografia",
+                "text": "Tipos de letra escolhidos para os sistemas de escrita em que publica, com tamanhos e pesos que funcionam em todos eles."
+              },
+              {
+                "title": "Diretrizes",
+                "text": "Publicadas como uma página que os parceiros podem abrir em qualquer lugar, com a tabela de contraste incluída, para não ficarem desatualizadas numa gaveta."
+              },
+              {
+                "title": "Implementação",
+                "text": "Modelos para as páginas e os documentos que mais produz, para que a identidade seja aplicada da mesma forma por todos."
+              }
+            ]
+          },
+          {
+            "kind": "note",
+            "label": "Honorários",
+            "text": "Um site e uma marca desde CHF 60 000, fixados em função do âmbito e faturados em francos suíços. Uma identidade isolada, para um programa ou uma campanha, é orçamentada na proposta a partir da descrição do projeto.",
+            "link": {
+              "text": "Todos os honorários →",
+              "href": "/#fees"
+            }
+          },
+          {
+            "kind": "facts",
+            "label": "Para registo",
+            "items": [
+              "Um símbolo proposto, legível a 16 pixels (The Collective Service, partilhado com a autorização da parceria)",
+              "A nossa própria paleta de seis cores: texto corrido a 7,23:1 ou mais, cores de marca reservadas para destaque",
+              "Diretrizes com cor, área de proteção e tamanho mínimo"
+            ]
+          },
+          {
+            "kind": "work",
+            "label": "Dos nossos projetos",
+            "project": "collective-service",
+            "line": "Parceria · 2026 · Uma identidade proposta para organizações separadas que agem como um só serviço, legível a 16 pixels."
+          },
+          {
+            "kind": "questions",
+            "label": "Perguntas que nos fazem",
+            "items": [
+              {
+                "q": "Não podemos mudar o nosso logótipo. Ainda assim podem ajudar?",
+                "a": "Sim. A maioria das paletas não falha; falham certas combinações. Mantemos o símbolo, atribuímos uma função a cada cor e incluímos a tabela nas suas diretrizes.",
+                "link": {
+                  "text": "Como funciona →",
+                  "href": "/insights/accessible-colour"
+                }
+              },
+              {
+                "q": "A quem pertence a identidade?",
+                "a": "A si. Os ficheiros-fonte e as diretrizes são seus a partir do lançamento, sem qualquer licença a nosso favor."
+              },
+              {
+                "q": "Funcionará em árabe?",
+                "a": "Sim, e vai vê-la em árabe antes de a aprovar. Cada identidade é composta nos sistemas de escrita em que publica, incluindo da direita para a esquerda."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "web-maintenance",
+        "title": "Manutenção web e planos mensais",
+        "description": "Funcionamento contínuo dos sites que construímos ou assumimos: atualizações primeiro no ambiente de testes, cópias de segurança diárias com restauro testado, monitorização, um relatório mensal e uma pessoa designada. Quatro planos desde CHF 1 200 por mês.",
+        "h1": "Manutenção web",
+        "statement": "Um site só está atualizado se alguém o mantiver atualizado. Quatro planos, uma pessoa designada, um relatório todos os meses.",
+        "intro": [
+          "Uma biblioteca sem manutenção fica desatualizada no espaço de um ano, e um site que ninguém atualiza torna-se um risco de segurança no espaço de um mês. Os sites que construímos, e os que assumimos após uma auditoria, são mantidos em funcionamento por pessoas que os conhecem.",
+          "Cada atualização passa pelo ambiente de testes antes de chegar à produção. A partir do plano Standard, cada versão é comparada com o design aprovado, para que uma atualização de plugin não possa alterar discretamente uma página. As cópias de segurança são feitas diariamente e um restauro é testado todos os trimestres, porque uma cópia de segurança que nunca foi restaurada é uma esperança, não uma cópia de segurança. O tempo de atividade, os erros e a segurança são monitorizados, as contas de administrador são revistas e, uma vez por mês, recebe um relatório que indica o que foi feito, o que foi encontrado e o que vem a seguir.",
+          "Responde uma pessoa designada: no dia útil seguinte no Essential, no mesmo dia útil no Standard, no prazo de quatro horas úteis no Extended e no Platform, com uma linha de emergência. As alterações dentro das horas do seu plano são feitas a pedido; os trabalhos maiores são primeiro propostos com honorários fixos.",
+          "Os planos são faturados mensalmente, trimestralmente com menos 5% ou anualmente com menos 10%, com um mínimo de três meses e depois renovação automática. Se sair, leva consigo o site, as contas e a última cópia de segurança."
+        ],
+        "sections": [
+          {
+            "kind": "care",
+            "id": "care-plans",
+            "label": "Planos de manutenção",
+            "statement": "Um site de uma página e uma biblioteca de mil páginas não são o mesmo trabalho. O plano é definido na fase de diagnóstico com base no número de páginas, línguas, integrações, tráfego e número de editores; os valores abaixo são pontos de partida.",
+            "includes": "Todos os planos incluem: atualizações aplicadas no ambiente de testes antes da produção · cópias de segurança diárias, verificadas por um teste de restauro todos os trimestres · monitorização do tempo de atividade e de erros · análise de segurança e revisão de administradores · uma pessoa designada que conhece o site.",
+            "plans": [
+              "Essential",
+              "Standard",
+              "Extended",
+              "Platform"
+            ],
+            "rows": [
+              {
+                "label": "Dimensionado para",
+                "values": [
+                  "Até cerca de 25 páginas, uma ou duas línguas, apenas formulários",
+                  "Até cerca de 200 páginas, várias línguas, integrações como CRM, boletim informativo e donativos",
+                  "Mais de 200 páginas, bibliotecas de documentos, várias línguas, tráfego elevado, vários editores",
+                  "Sistemas de conhecimento e plataformas personalizadas"
+                ]
+              },
+              {
+                "label": "Regressão visual face ao design aprovado",
+                "values": [
+                  "—",
+                  "Sim",
+                  "Sim",
+                  "Sim"
+                ]
+              },
+              {
+                "label": "Desempenho medido face ao limite do site",
+                "values": [
+                  "—",
+                  "Sim",
+                  "Sim",
+                  "Sim"
+                ]
+              },
+              {
+                "label": "Relatório mensal para os seus registos",
+                "values": [
+                  "Nota de estado",
+                  "Relatório completo",
+                  "Relatório completo",
+                  "Relatório completo"
+                ]
+              },
+              {
+                "label": "Horas de alterações por mês",
+                "values": [
+                  "3",
+                  "6",
+                  "12",
+                  "16"
+                ]
+              },
+              {
+                "label": "Resposta de uma pessoa designada",
+                "values": [
+                  "Dia útil seguinte",
+                  "Mesmo dia útil",
+                  "No prazo de quatro horas úteis, com linha de emergência",
+                  "No prazo de quatro horas úteis, com linha de emergência"
+                ]
+              },
+              {
+                "label": "Apenas Platform",
+                "values": [
+                  "—",
+                  "—",
+                  "—",
+                  "Novo material integrado à medida que é publicado · avaliação de exatidão repetida e publicada mensalmente · um resumo mensal · melhorias do sistema e do seu método testadas antes de serem aplicadas"
+                ]
+              },
+              {
+                "label": "Desde, por mês",
+                "values": [
+                  "CHF 1 200",
+                  "CHF 2 200",
+                  "CHF 4 200",
+                  "CHF 5 800"
+                ]
+              },
+              {
+                "label": "Plano trimestral, menos 5%, por mês",
+                "values": [
+                  "CHF 1 140",
+                  "CHF 2 090",
+                  "CHF 3 990",
+                  "CHF 5 510"
+                ]
+              },
+              {
+                "label": "Plano anual, menos 10%, por mês",
+                "values": [
+                  "CHF 1 080",
+                  "CHF 1 980",
+                  "CHF 3 780",
+                  "CHF 5 220"
+                ]
+              }
+            ],
+            "notes": [
+              "As horas não utilizadas transitam para o mês seguinte. Horas adicionais a CHF 200 por hora, acordadas antes de serem utilizadas.",
+              "Condições: uma mensalidade, um plano trimestral com menos 5% ou um plano anual com menos 10%, faturados em francos suíços. Mínimo de três meses, depois renovação automática. Sem custos de instalação para os sites que construímos. Uma auditoria breve, com honorários fixos, antes de assumirmos um site construído por terceiros."
+            ]
+          },
+          {
+            "kind": "note",
+            "label": "Assumir um site que não construímos",
+            "text": "A auditoria vem primeiro: em que assenta o site, o que está desatualizado, o que contêm realmente as cópias de segurança e o que implica um restauro. As conclusões são suas, seja qual for o plano que escolher, ou mesmo nenhum."
+          },
+          {
+            "kind": "facts",
+            "label": "Para registo",
+            "items": [
+              "Alojado na Bélgica na WP Engine, HTTPS com HSTS, pontos de cópia de segurança diários (Global Girls Foundation)",
+              "332 páginas e 634 ligações externas rastreadas, nenhuma quebrada (The Collective Service, 23 de outubro de 2026)",
+              "Uma pessoa designada responde no mesmo dia útil"
+            ]
+          },
+          {
+            "kind": "questions",
+            "label": "Perguntas que nos fazem",
+            "items": [
+              {
+                "q": "Podemos cancelar?",
+                "a": "Sim. Após os três primeiros meses, o plano renova-se automaticamente e pode terminá-lo no fim de qualquer período de faturação. Fica com o site, as contas e a última cópia de segurança."
+              },
+              {
+                "q": "O que conta como alteração?",
+                "a": "Trabalho de conteúdos, layout e plugins dentro das horas do seu plano. Tudo o que for maior, como um novo modelo ou uma ligação a outro sistema, é primeiro proposto com honorários fixos."
+              },
+              {
+                "q": "Podemos mudar de plano?",
+                "a": "Sim, no fim de qualquer período de faturação, ou antes se o site crescer: uma nova língua ou uma biblioteca de documentos costuma fazer subir um site um plano."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

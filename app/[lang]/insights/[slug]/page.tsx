@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import CopyLink from "@/components/CopyLink";
-import DiscussLink from "@/components/DiscussLink";
+import { ClosingCta } from "@/components/PageParts";
 import ReadingBar from "@/components/ReadingBar";
 import { getContent, getInsight, readingMinutes, type Block } from "@/content/i18n";
 import { SITE } from "@/content/site";
@@ -133,12 +133,7 @@ export default async function InsightPage({ params }: Props) {
         </ul>
       </section>
 
-      <section aria-labelledby="post-cta" className="wrap contact">
-        <h2 id="post-cta" className="type-cta">
-          {t.common.tellUs}
-        </h2>
-        <DiscussLink className="post-cta-link">{t.common.discuss}</DiscussLink>
-      </section>
+      <ClosingCta lang={lang} />
     </article>
   );
 }

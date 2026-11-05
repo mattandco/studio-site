@@ -175,13 +175,17 @@ export default function Motion({ view }: { view: string }) {
         }
       });
     };
+    const waiting = new Set<Element>();
+    const reveal = (element: Element) => {
+      if (!waiting.delete(element)) return;
+      observer.unobserve(element);
+      if (covered.current) pending.current.push({ el: element, animations: [] });
+      else play(element, 0);
+    };
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          observer.unobserve(entry.target);
-          if (covered.current) pending.current.push({ el: entry.target, animations: [] });
-          else play(entry.target, 0);
+          if (entry.isIntersecting) reveal(entry.target);
         });
       },
       { rootMargin: "0px 0px -8% 0px" }
@@ -192,9 +196,18 @@ export default function Motion({ view }: { view: string }) {
         // Above the fold, with nothing covering the page, content simply stays put.
         if (!covered.current && element.getBoundingClientRect().top < vh * 0.92) return;
         prepare(element, kind);
+        waiting.add(element);
         observer.observe(element);
       });
     });
+    // The last lines of a page can never rise past that 8% mark, so the end of the page shows whatever is left.
+    const atEnd = () => {
+      const end = document.documentElement.scrollHeight - window.innerHeight * 0.08;
+      if (window.scrollY + window.innerHeight >= end) waiting.forEach((element) => reveal(element));
+    };
+    window.addEventListener("scroll", atEnd, { passive: true });
+    window.addEventListener("resize", atEnd);
+    atEnd();
     const uncover = () => {
       covered.current = false;
       const list = pending.current.splice(0).filter(({ el }) => el.isConnected);
@@ -232,6 +245,8 @@ export default function Motion({ view }: { view: string }) {
       observer.disconnect();
       spy?.disconnect();
       window.removeEventListener("nv-uncover", uncover);
+      window.removeEventListener("scroll", atEnd);
+      window.removeEventListener("resize", atEnd);
       made.forEach((list) => list.forEach((animation) => animation.finish?.()));
     };
   }, [path]);

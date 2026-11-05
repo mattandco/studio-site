@@ -1,14 +1,13 @@
 import type { NextConfig } from "next";
 
-// The page's inline scripts need 'unsafe-inline' while the pages stay static. The only
-// outside addresses are Website Carbon's badge script and its result.
+// The page's inline scripts need 'unsafe-inline' while the pages stay static.
 const CSP = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://unpkg.com",
+  "script-src 'self' 'unsafe-inline'",
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data:",
   "font-src 'self'",
-  "connect-src 'self' https://api.websitecarbon.com",
+  "connect-src 'self'",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self' mailto:",

@@ -227,6 +227,8 @@
   "footer": {
     "tested": "WCAG 2.1 AA, getestet am 4. November 2026",
     "tls": "TLS: SSL Labs A+, getestet am 5. November 2026",
+    "carbon": "A+ · 0,04 g CO₂/Aufruf",
+    "carbonNote": "Startseite sauberer als 94 % der Webseiten, getestet am 5. November 2026",
     "statement": "Erklärung zur Barrierefreiheit →"
   },
   "caseStudy": {
@@ -291,7 +293,7 @@
     "report": "Problem melden",
     "reportText": "Schreiben Sie an {email}, und eine namentlich benannte Person antwortet Ihnen.",
     "security": "Sicherheitshinweis",
-    "securityText": "Die Website läuft auf Vercel und wird über HTTPS ausgeliefert. Sie hat keine Benutzerkonten und keine Webanalyse. Sie setzt keine eigenen Cookies. Das Kontaktformular speichert nichts: Es öffnet eine Nachricht in Ihrem eigenen E-Mail-Programm. Das CO₂-Badge in der Fußzeile ist das einzige externe Skript: Es wird von unpkg.com geladen und fragt bei jedem Besuch die Bewertung dieser Seite bei Website Carbon ab."
+    "securityText": "Die Website läuft auf Vercel und wird über HTTPS ausgeliefert. Sie hat keine Benutzerkonten und keine Webanalyse. Sie setzt keine eigenen Cookies. Das Kontaktformular speichert nichts: Es öffnet eine Nachricht in Ihrem eigenen E-Mail-Programm. Die Website lädt keine externen Skripte."
   },
   "notFound": {
     "title": "Seite nicht gefunden",

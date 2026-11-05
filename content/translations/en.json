@@ -227,6 +227,8 @@
   "footer": {
     "tested": "WCAG 2.1 AA, tested 4 November 2026",
     "tls": "TLS: SSL Labs A+, tested 5 November 2026",
+    "carbon": "A+ · 0.04g of CO₂/view",
+    "carbonNote": "Home page cleaner than 94% of web pages, tested 5 November 2026",
     "statement": "Accessibility statement →"
   },
   "caseStudy": {
@@ -291,7 +293,7 @@
     "report": "Report a problem",
     "reportText": "Write to {email} and a named person will reply.",
     "security": "Security note",
-    "securityText": "The site runs on Vercel and is served over HTTPS. It has no accounts and no analytics. It sets no cookies of its own. The contact form stores nothing: it opens a message in your own email app. The carbon badge in the footer is the one outside script: it loads from unpkg.com and asks Website Carbon for this page’s rating on each visit."
+    "securityText": "The site runs on Vercel and is served over HTTPS. It has no accounts and no analytics. It sets no cookies of its own. The contact form stores nothing: it opens a message in your own email app. The site loads no outside scripts."
   },
   "notFound": {
     "title": "Page not found",

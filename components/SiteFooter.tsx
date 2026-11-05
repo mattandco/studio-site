@@ -11,7 +11,7 @@ export default function SiteFooter({ lang }: { lang: Lang }) {
     <footer id="languages" className="site-footer">
       <div className="footer-top">
         <LanguageButtons lang={lang} label={t.common.languages} />
-        <CarbonBadge />
+        <CarbonBadge result={t.footer.carbon} note={t.footer.carbonNote} />
       </div>
       <div className="footer-row">
         <span dir="ltr">

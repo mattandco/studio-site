@@ -1254,9 +1254,44 @@ body {
   padding-top: 12px;
   border-top: 1px solid var(--line);
 }
-.site-footer #wcb.carbonbadge {
+/* Website Carbon's badge, drawn the way their script draws it, with the result typed in. */
+.carbon-badge {
   margin-inline-start: auto;
   text-align: end;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
+  line-height: 1.15;
+  color: #0e11a8;
+}
+.carbon-pill {
+  display: inline-flex;
+}
+.carbon-result,
+.carbon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.2em 0;
+  padding: 0.3em 0.5em;
+  border: 0.13em solid #00ffbc;
+}
+.carbon-result {
+  min-width: 8.2em;
+  border-right: 0;
+  border-radius: 0.3em 0 0 0.3em;
+  background: #fff;
+}
+.carbon-link {
+  border-color: #0e11a8;
+  border-left: 0;
+  border-radius: 0 0.3em 0.3em 0;
+  background: #0e11a8;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.carbon-note {
+  margin: 0.2em 0;
 }
 
 /* Long words in French, German and Portuguese must not push a phone screen wider. */

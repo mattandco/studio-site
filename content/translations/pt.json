@@ -227,6 +227,8 @@
   "footer": {
     "tested": "WCAG 2.1 AA, testado a 4 de novembro de 2026",
     "tls": "TLS: SSL Labs A+, testado a 5 de novembro de 2026",
+    "carbon": "A+ · 0,04 g de CO₂/visualização",
+    "carbonNote": "Página inicial mais limpa do que 94 % das páginas web, testada a 5 de novembro de 2026",
     "statement": "Declaração de acessibilidade →"
   },
   "caseStudy": {
@@ -291,7 +293,7 @@
     "report": "Comunicar um problema",
     "reportText": "Escreva para {email} e uma pessoa designada responderá.",
     "security": "Nota de segurança",
-    "securityText": "O site funciona na Vercel e é servido através de HTTPS. Não tem contas nem ferramentas de análise. Não define cookies próprios. O formulário de contacto não guarda nada: abre uma mensagem na sua própria aplicação de e-mail. O selo de carbono no rodapé é o único script externo: é carregado a partir de unpkg.com e pede à Website Carbon a classificação desta página em cada visita."
+    "securityText": "O site funciona na Vercel e é servido através de HTTPS. Não tem contas nem ferramentas de análise. Não define cookies próprios. O formulário de contacto não guarda nada: abre uma mensagem na sua própria aplicação de e-mail. O site não carrega scripts externos."
   },
   "notFound": {
     "title": "Página não encontrada",

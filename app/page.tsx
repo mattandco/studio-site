@@ -90,8 +90,8 @@ export default function Home() {
               <span className="mute">Founder</span>
             </p>
             <p className="mute">
-              Trained as a quantity surveyor and worked in humanitarian information management
-              before founding Nestvested. Leads every project, from the first call to handover.
+              A humanitarian information management specialist who now works in web design,
+              development and AI. Leads every project, from the first call to handover.
             </p>
             <p className="mute">Senior partners, named in every proposal, lead design and engineering.</p>
           </div>

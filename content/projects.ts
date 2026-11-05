@@ -14,6 +14,11 @@ export type Project = {
   challenge: string[];
   goals: string[];
   decisions: { title: string; text: string }[];
+  brand?: {
+    intro: string[];
+    reasons: { title: string; text: string }[];
+    guidelines: string[];
+  };
   beforeAfter: { label: string; before: string; after: string }[];
   results: string[];
   lessons: string[];
@@ -52,7 +57,7 @@ export const PROJECTS: Project[] = [
       "The Collective Service is a global partnership for risk communication and community engagement in health emergencies. Its website was set up in 2020 as a central library of guidance. It is still the partnership’s front door: the place coordinators and responders go for tools, training and data when they have to reach communities during an outbreak.",
       "Six years on, the site was still shaped by the pandemic it was built for. Most of its library dated from 2020 to 2022, while the emergencies people were working on had moved on.",
       "The people who most need it are also the hardest to reach. In a 2022 survey of people sharing emergency-health course content, poor connectivity was the most-cited difficulty in low-income countries, at 29%, against 8% in high-income countries. The median home page on a phone was 2.56 MB in 2025, which takes about 51 seconds at 400 kilobits per second. That is too long for a coordinator who needs a document now.",
-      "The partnership had a recognition problem too. A 2023 evaluation found its purpose under-communicated, and its logo was the name alone, with no symbol to carry it.",
+      "The partnership had a recognition problem too. A 2023 evaluation found its name confusing for some and its purpose under-communicated. Its logo was the name alone, so it could not help.",
     ],
     goals: [
       "Make every page light enough for a slow connection, with a budget of 500 KB a page.",
@@ -67,15 +72,15 @@ export const PROJECTS: Project[] = [
       },
       {
         title: "Set the weight limit before the design",
-        text: "Every page had to stay under 500 KB, about 10 seconds at 400 kilobits per second. Setting that limit first meant every template was built to it. Each download also states its format and size before it is pressed, so nobody spends scarce data on a file they did not expect.",
+        text: "One rule sat behind the design: when audiences conflict, responders win. So every page had to stay under 500 KB, about 10 seconds at 400 kilobits per second, and that limit was set first, so every template was built to it. Each download also states its format and size before it is pressed, so nobody spends scarce data on a file they did not expect.",
       },
       {
         title: "Hold every document on the site",
         text: "Many documents were only linked to, so they would stop working if a publisher moved a page. We fetched 155 of them, so the site now holds its own copies, with French, Portuguese, Spanish and Swahili versions where publishers offer them. Documents listed two, three or four times now appear once, with their other languages on the same page.",
       },
       {
-        title: "Propose a new identity, not only a new site",
-        text: "The old logo stopped working below about 100 pixels wide: in a browser tab, as an app icon or in a row of partner logos. We proposed a new mark that shows separate organisations acting as one service. It stays legible at 16 pixels and comes with rules for colour, clear space and minimum size. The name stays the same. The new site carries the identity, with new colours and type throughout.",
+        title: "Treat the brand as part of the problem",
+        text: "A better website could not, on its own, explain what the Service is. So we made the case for a new identity alongside it. The reasons are set out below, under The brand.",
       },
       {
         title: "Build for the people who will run it",
@@ -86,6 +91,47 @@ export const PROJECTS: Project[] = [
         text: "Search only helps people who know the right words. The Knowledge bank lets a reader describe a situation in their own words and get advice drawn only from the library’s documents, with every point cited. When the library has no answer, it says so. It is an experimental part of the build.",
       },
     ],
+    brand: {
+      intro: [
+        "The new identity began with the partnership’s own evidence, not with the logo. A 2023 independent evaluation, built on 88 interviews, 98 survey responses and four country case studies, found the name “confusing for some” and listed “limited communication about its purpose” as a weakness. It also found that 87% of respondents thought they were likely to need the Service in a future health emergency. So this had to be an identity built to last, and one that helps explain what the Service is.",
+        "The existing logo was made to put a name on a pandemic response, and it did that job. It had not been asked to do more. A logo that is only the name cannot explain a name people find confusing, so the identity needed a form that carries the idea: organisations acting as one, so that communities are listened to in an emergency.",
+      ],
+      reasons: [
+        {
+          title: "It says what the Service is",
+          text: "Three separate parts join one body: distinct organisations, drawn as equals, becoming one service. A reader sees “together” before reading a word, so the mark works on the confusion the evaluation found every time it appears.",
+        },
+        {
+          title: "It keeps the partners equal",
+          text: "The Service is a partnership of equals. No part of the mark takes precedence, and a single quiet colour lets it sit beside four established logos without crowding them.",
+        },
+        {
+          title: "It matches how the partners work",
+          text: "Each partner pairs a symbol with its name. The Service was the only member of its own partnership without one.",
+        },
+        {
+          title: "It works in every language",
+          text: "The Service publishes in English, French, Portuguese and Spanish, and much of its work is in francophone and lusophone Africa. A symbol works in all of them. The name stays in English and the line beneath it is translated.",
+        },
+        {
+          title: "It works wherever the Service appears",
+          text: "The Service is increasingly found in feeds, browser tabs, group chats and on phones, where a wordmark cannot be read. Solid shapes also survive the stamps, badges and photocopies of field materials. Size was only one test of eight. Both logos were tested on meaning, small sizes, reusable parts, sitting with the partners, matching the voice, reliable reproduction, distinctiveness and whether rules can govern them.",
+        },
+        {
+          title: "It survives a change of name",
+          text: "The evaluation recommended that the partners consider changing the name. If they do, the mark stays and only the words beside it change.",
+        },
+        {
+          title: "It rests on evidence, at low risk",
+          text: "A 2019 study in the Journal of Marketing Research, across six experiments and 597 logos, found that more descriptive logos are easier to take in and are judged more authentic, most of all for brands people do not yet know well. The cost of changing is low: the name, where the recognition lives, stays, and the mark is one small file using fonts the site already loads. The risk of not changing is that the evaluation’s findings stay unaddressed at the most visible layer.",
+        },
+      ],
+      guidelines: [
+        "The identity goes further than the mark. The voice is plain, concrete, calm and honest, because jargon is a barrier to someone in the middle of a crisis. Colour has a job: ink for text, sand for backgrounds, and coral only for what is live now and the one action that matters.",
+        "All of this is set out in a 57-page design and brand document, shared with the partnership in October 2026. Part A makes the case and sets the guidelines: the evidence, the side-by-side tests, the cost and risk of changing, voice and tone, construction, clear space and minimum sizes, colour, type, photography, four language versions, use beside the partners and the rules. Part B is the design standard for the website, and every rule in it carries its reason and the kind of support behind it: the terms of reference, published evidence, a computed value, a standard or our own judgement.",
+        "The new mark is a proposal. The decision rests with the partners, and the new site carries it in the meantime.",
+      ],
+    },
     beforeAfter: [
       {
         label: "The website",
@@ -109,8 +155,8 @@ export const PROJECTS: Project[] = [
       },
       {
         label: "The logo",
-        before: "The name alone",
-        after: "A proposed mark, legible at 16 pixels",
+        before: "The name alone, in English",
+        after: "A proposed mark that works in any language and at any size",
       },
       {
         label: "Old addresses",
@@ -125,6 +171,7 @@ export const PROJECTS: Project[] = [
     lessons: [
       "Count before you design. Reading the site’s own database, rather than estimating from a crawl, showed how much of the library belonged to another time, and that changed the plan.",
       "Weight is a design decision. Set the limit first and every template is built to it.",
+      "Make the case for a brand with evidence. Setting out the findings, the tests and the cost of change lets partners decide on the argument, not on taste.",
       "Show people real pages. Reviewers pinned comments to the working site, so each point was about something they could see and could be tracked to a fix or a decision.",
     ],
     standards: [

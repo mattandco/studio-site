@@ -29,6 +29,7 @@ const SECTIONS = [
   ["challenge", "The challenge"],
   ["goals", "The goals"],
   ["decisions", "Key decisions"],
+  ["brand", "The brand"],
   ["before-after", "Before and after"],
   ["result", "The result"],
   ["learned", "What we learned"],
@@ -107,7 +108,7 @@ export default async function CaseStudyPage({ params }: Props) {
       <div className="wrap case-body-wrap">
         <nav aria-label="On this page" className="on-this-page">
           <span>On this page</span>
-          {SECTIONS.map(([id, label]) => (
+          {SECTIONS.filter(([id]) => id !== "brand" || project.brand).map(([id, label]) => (
             <a key={id} href={`#${id}`}>
               {label}
             </a>
@@ -146,6 +147,28 @@ export default async function CaseStudyPage({ params }: Props) {
               </div>
             ))}
           </section>
+          {project.brand && (
+            <section id="brand" aria-labelledby="h-brand">
+              <h2 id="h-brand" className="body-heading">
+                The brand
+              </h2>
+              {project.brand.intro.map((text) => (
+                <p key={text}>{text}</p>
+              ))}
+              {project.brand.reasons.map(({ title, text }) => (
+                <div key={title} className="decision">
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </div>
+              ))}
+              <div className="decision">
+                <h3>The brand guidelines</h3>
+                {project.brand.guidelines.map((text) => (
+                  <p key={text}>{text}</p>
+                ))}
+              </div>
+            </section>
+          )}
           <section id="before-after" aria-labelledby="h-before-after">
             <h2 id="h-before-after" className="body-heading">
               Before and after

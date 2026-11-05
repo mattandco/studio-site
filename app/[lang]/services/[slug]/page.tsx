@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import CompareTable from "@/components/CompareTable";
 import { ClosingCta, FactRow, NumberedRows, Questions } from "@/components/PageParts";
+import PlanCards from "@/components/PlanCards";
 import { getContent, getProject, getServicePage, type ServiceSection } from "@/content/i18n";
 import { localePath, type Lang } from "@/lib/languages";
 import { alternates } from "@/lib/seo";
@@ -79,7 +79,7 @@ function Section({ lang, section }: { lang: Lang; section: ServiceSection }) {
       <>
         <p className="statement type-lg">{section.statement}</p>
         <Includes text={section.includes} />
-        <CompareTable section={section} notIncluded={t.common.notIncluded} text={t.common.compare} />
+        <PlanCards section={section} notIncluded={t.common.notIncluded} text={t.common.compare} />
         {section.notes.map((note) => (
           <p key={note} className="note-line">
             {note}

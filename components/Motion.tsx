@@ -19,7 +19,7 @@ const REVEALS: [string, string][] = [
   ["lines", ".hero-title, .statement, .procurement-line, .type-cta, .case-title, .case-summary, .insights-title, .insights-intro, .post-title, .next-capability, .post-body blockquote"],
   ["up", ".hero-lede, .hero-links, .work-lead-text, .work-second-text, .contact-row, .closing-text, .breadcrumb, .on-this-page, .body-heading, .note-line, .post-lead, .post-body > p, .post-author, .footer-row, .next-case-label, .service-note"],
   ["rows", ".services, .numbered, .standards, .insights-list, .more-list, .before-after, .questions"],
-  ["kids", ".about-text, .procurement-list, .team-list, .service-intro, .case-body section > p"],
+  ["kids", ".about-text, .procurement-list, .team-list, .service-intro, .case-body section > p, .plan-grid"],
   ["img", ".work-image, .slider"],
 ];
 

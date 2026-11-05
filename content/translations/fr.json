@@ -14,14 +14,14 @@
     "ctaText": "Un cahier des charges sommaire ou des termes de référence suffisent. Matthew Bowman répond le même jour ouvré, et vous recevez une proposition à honoraires forfaitaires sous cinq jours ouvrés.",
     "notIncluded": "Non inclus",
     "compare": {
-      "groups": [
-        "Périmètre",
-        "Contrôles qualité",
-        "Assistance",
-        "Facturation"
-      ],
       "choose": "Choisir {plan}",
-      "vat": "Les prix s’entendent hors TVA."
+      "vat": "Les prix s’entendent hors TVA.",
+      "billing": "Facturation",
+      "periods": [
+        "Mensuel",
+        "Trimestriel",
+        "Annuel"
+      ]
     },
     "drag": "Faites glisser la poignée pour comparer",
     "view": "Voir"

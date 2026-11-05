@@ -14,14 +14,14 @@
     "ctaText": "Basta uma descrição sumária ou uns termos de referência. Matthew Bowman responde no mesmo dia útil e, no prazo de cinco dias úteis, terá uma proposta com honorários fixos.",
     "notIncluded": "Não incluído",
     "compare": {
-      "groups": [
-        "Âmbito",
-        "Controlos de qualidade",
-        "Apoio",
-        "Faturação"
-      ],
       "choose": "Escolher {plan}",
-      "vat": "Os preços não incluem IVA."
+      "vat": "Os preços não incluem IVA.",
+      "billing": "Faturação",
+      "periods": [
+        "Mensal",
+        "Trimestral",
+        "Anual"
+      ]
     },
     "drag": "Arraste o controlo para comparar",
     "view": "Ver"

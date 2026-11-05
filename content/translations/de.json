@@ -14,14 +14,14 @@
     "ctaText": "Ein grobes Briefing oder eine Leistungsbeschreibung genügt. Matthew Bowman antwortet noch am selben Geschäftstag, und innerhalb von fünf Arbeitstagen haben Sie ein Festpreisangebot.",
     "notIncluded": "Nicht enthalten",
     "compare": {
-      "groups": [
-        "Umfang",
-        "Qualitätsprüfungen",
-        "Support",
-        "Abrechnung"
-      ],
       "choose": "{plan} wählen",
-      "vat": "Preise ohne Mehrwertsteuer."
+      "vat": "Preise ohne Mehrwertsteuer.",
+      "billing": "Abrechnung",
+      "periods": [
+        "Monatlich",
+        "Vierteljährlich",
+        "Jährlich"
+      ]
     },
     "drag": "Ziehen Sie den Regler, um zu vergleichen",
     "view": "Ansehen"

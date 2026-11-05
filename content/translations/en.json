@@ -14,14 +14,14 @@
     "ctaText": "A rough brief or a terms of reference is enough. Matthew Bowman replies the same business day, and you have a fixed-fee proposal within five working days.",
     "notIncluded": "Not included",
     "compare": {
-      "groups": [
-        "Scope",
-        "Quality checks",
-        "Support",
-        "Billing"
-      ],
       "choose": "Choose {plan}",
-      "vat": "Prices exclude VAT."
+      "vat": "Prices exclude VAT.",
+      "billing": "Billing",
+      "periods": [
+        "Monthly",
+        "Quarterly",
+        "Yearly"
+      ]
     },
     "drag": "Drag the handle to compare",
     "view": "View"

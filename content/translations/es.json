@@ -14,14 +14,14 @@
     "ctaText": "Basta con un pliego de requisitos aproximado o unos términos de referencia. Matthew Bowman responde el mismo día hábil, y en un plazo de cinco días hábiles recibirá una propuesta con honorarios fijos.",
     "notIncluded": "No incluido",
     "compare": {
-      "groups": [
-        "Alcance",
-        "Controles de calidad",
-        "Soporte",
-        "Facturación"
-      ],
       "choose": "Elegir {plan}",
-      "vat": "Los precios no incluyen el IVA."
+      "vat": "Los precios no incluyen el IVA.",
+      "billing": "Facturación",
+      "periods": [
+        "Mensual",
+        "Trimestral",
+        "Anual"
+      ]
     },
     "drag": "Arrastre el control para comparar",
     "view": "Ver"

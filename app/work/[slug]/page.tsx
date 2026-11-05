@@ -26,11 +26,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const SECTIONS = [
-  ["context", "Context"],
-  ["objectives", "Objectives"],
-  ["approach", "Approach"],
+  ["challenge", "The challenge"],
+  ["goals", "The goals"],
+  ["decisions", "Key decisions"],
+  ["before-after", "Before and after"],
+  ["result", "The result"],
+  ["learned", "What we learned"],
   ["standards", "Standards met"],
-  ["results", "Results"],
   ["team", "Team"],
 ];
 
@@ -112,20 +114,20 @@ export default async function CaseStudyPage({ params }: Props) {
           ))}
         </nav>
         <div className="case-body">
-          <section id="context" aria-labelledby="h-context">
-            <h2 id="h-context" className="body-heading">
-              Context
+          <section id="challenge" aria-labelledby="h-challenge">
+            <h2 id="h-challenge" className="body-heading">
+              The challenge
             </h2>
-            {project.context.map((text) => (
+            {project.challenge.map((text) => (
               <p key={text}>{text}</p>
             ))}
           </section>
-          <section id="objectives" aria-labelledby="h-objectives">
-            <h2 id="h-objectives" className="body-heading">
-              Objectives
+          <section id="goals" aria-labelledby="h-goals">
+            <h2 id="h-goals" className="body-heading">
+              The goals
             </h2>
             <ol className="numbered">
-              {project.objectives.map((text, index) => (
+              {project.goals.map((text, index) => (
                 <li key={text}>
                   <span aria-hidden="true">{`0${index + 1}`}</span>
                   <span>{text}</span>
@@ -133,13 +135,59 @@ export default async function CaseStudyPage({ params }: Props) {
               ))}
             </ol>
           </section>
-          <section id="approach" aria-labelledby="h-approach">
-            <h2 id="h-approach" className="body-heading">
-              Approach
+          <section id="decisions" aria-labelledby="h-decisions">
+            <h2 id="h-decisions" className="body-heading">
+              Key decisions
             </h2>
-            {project.approach.map((text) => (
+            {project.decisions.map(({ title, text }) => (
+              <div key={title} className="decision">
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </div>
+            ))}
+          </section>
+          <section id="before-after" aria-labelledby="h-before-after">
+            <h2 id="h-before-after" className="body-heading">
+              Before and after
+            </h2>
+            <ul className="before-after">
+              {project.beforeAfter.map(({ label, before, after }) => (
+                <li key={label}>
+                  <h3>{label}</h3>
+                  <dl>
+                    <div>
+                      <dt>Before</dt>
+                      <dd>{before}</dd>
+                    </div>
+                    <div>
+                      <dt>After</dt>
+                      <dd>{after}</dd>
+                    </div>
+                  </dl>
+                </li>
+              ))}
+            </ul>
+          </section>
+          <section id="result" aria-labelledby="h-result">
+            <h2 id="h-result" className="body-heading">
+              The result
+            </h2>
+            {project.results.map((text) => (
               <p key={text}>{text}</p>
             ))}
+          </section>
+          <section id="learned" aria-labelledby="h-learned">
+            <h2 id="h-learned" className="body-heading">
+              What we learned
+            </h2>
+            <ol className="numbered">
+              {project.lessons.map((text, index) => (
+                <li key={text}>
+                  <span aria-hidden="true">{`0${index + 1}`}</span>
+                  <span>{text}</span>
+                </li>
+              ))}
+            </ol>
           </section>
           <section id="standards" aria-labelledby="h-standards">
             <h2 id="h-standards" className="body-heading">
@@ -153,14 +201,6 @@ export default async function CaseStudyPage({ params }: Props) {
                 </div>
               ))}
             </dl>
-          </section>
-          <section id="results" aria-labelledby="h-results">
-            <h2 id="h-results" className="body-heading">
-              Results
-            </h2>
-            {project.results.map((text) => (
-              <p key={text}>{text}</p>
-            ))}
           </section>
         </div>
       </div>

@@ -11,23 +11,57 @@ import {
   type ReactNode,
 } from "react";
 import { SITE } from "@/content/site";
+import { localePath, type Lang } from "@/lib/languages";
 
-const ContactContext = createContext<{ open: () => void }>({ open: () => {} });
+const ContactContext = createContext<{ open: () => void; href: string }>({
+  open: () => {},
+  href: "/#contact",
+});
 
 export const useContactForm = () => useContext(ContactContext);
 
 type Errors = { name?: string; organisation?: string; email?: string };
 
-const BUDGETS = [
-  ["", "Choose a range"],
-  ["CHF 15,000–40,000", "CHF 15,000–40,000"],
-  ["CHF 40,000–80,000", "CHF 40,000–80,000"],
-  ["CHF 80,000–150,000", "CHF 80,000–150,000"],
-  ["Over CHF 150,000", "Over CHF 150,000"],
-  ["Not known yet", "Not known yet"],
-];
+type FormText = {
+  title: string;
+  close: string;
+  doneTitle: string;
+  doneText: string;
+  writeAnother: string;
+  reply: string;
+  name: string;
+  organisation: string;
+  email: string;
+  budget: string;
+  chooseRange: string;
+  over: string;
+  notKnown: string;
+  message: string;
+  send: string;
+  errorName: string;
+  errorOrganisation: string;
+  errorEmail: string;
+  errorEmailFormat: string;
+};
 
-export default function ContactFormProvider({ children }: { children: ReactNode }) {
+export default function ContactFormProvider({
+  lang,
+  text,
+  children,
+}: {
+  lang: Lang;
+  text: FormText;
+  children: ReactNode;
+}) {
+  // Values stay in English: they go into the email Nestvested receives.
+  const budgets = [
+    ["", text.chooseRange],
+    ["CHF 15,000–40,000", "CHF 15,000–40,000"],
+    ["CHF 40,000–80,000", "CHF 40,000–80,000"],
+    ["CHF 80,000–150,000", "CHF 80,000–150,000"],
+    ["Over CHF 150,000", text.over],
+    ["Not known yet", text.notKnown],
+  ];
   const dialog = useRef<HTMLDialogElement>(null);
   const [errors, setErrors] = useState<Errors>({});
   const [handedOver, setHandedOver] = useState(false);
@@ -41,7 +75,7 @@ export default function ContactFormProvider({ children }: { children: ReactNode 
     if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       element.animate(
         [
-          { transform: "translateX(40px)", opacity: 0 },
+          { transform: `translateX(${document.dir === "rtl" ? -40 : 40}px)`, opacity: 0 },
           { transform: "none", opacity: 1 },
         ],
         { duration: 420, easing: "cubic-bezier(.16,1,.3,1)" }
@@ -57,11 +91,11 @@ export default function ContactFormProvider({ children }: { children: ReactNode 
     const value = (key: string) => String(data.get(key) ?? "").trim();
 
     const found: Errors = {};
-    if (!value("name")) found.name = "Please enter your name.";
-    if (!value("organisation")) found.organisation = "Please enter your organisation.";
-    if (!value("email")) found.email = "Please enter your work email.";
+    if (!value("name")) found.name = text.errorName;
+    if (!value("organisation")) found.organisation = text.errorOrganisation;
+    if (!value("email")) found.email = text.errorEmail;
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value("email")))
-      found.email = "Please check the email address.";
+      found.email = text.errorEmailFormat;
 
     setErrors(found);
     if (Object.keys(found).length) {
@@ -77,6 +111,7 @@ export default function ContactFormProvider({ children }: { children: ReactNode 
       `Organisation: ${value("organisation")}`,
       `Work email: ${value("email")}`,
       `Budget: ${value("budget") || "Not given"}`,
+      `Site language: ${lang}`,
       "",
       value("message"),
     ].join("\n");
@@ -94,7 +129,14 @@ export default function ContactFormProvider({ children }: { children: ReactNode 
     });
   };
 
-  const context = useMemo(() => ({ open }), [open]);
+  const context = useMemo(() => ({ open, href: localePath(lang, "/#contact") }), [open, lang]);
+  const [doneStart, doneMiddle = "", doneEnd = ""] = text.doneText.split(/\{name\}|\{email\}/);
+  const nameFirst = text.doneText.indexOf("{name}") < text.doneText.indexOf("{email}");
+  const mail = (
+    <a href={`mailto:${SITE.email}`} dir="ltr" className="link">
+      {SITE.email}
+    </a>
+  );
 
   return (
     <ContactContext.Provider value={context}>
@@ -109,41 +151,40 @@ export default function ContactFormProvider({ children }: { children: ReactNode 
       >
         <div className="drawer-body">
           <div className="drawer-head">
-            <h2 id="form-title">Discuss a project</h2>
+            <h2 id="form-title">{text.title}</h2>
             <button type="button" onClick={close} className="text-button">
-              <span>Close</span>
+              <span>{text.close}</span>
             </button>
           </div>
 
           {handedOver ? (
             <div role="status" className="drawer-done">
-              <p className="drawer-done-title">Your email app should now be open.</p>
+              <p className="drawer-done-title">{text.doneTitle}</p>
               <p className="mute">
-                Your message is filled in and addressed to {SITE.founder}. Press send there and it
-                reaches a person. If nothing opened, write to{" "}
-                <a href={`mailto:${SITE.email}`} className="link">
-                  {SITE.email}
-                </a>
-                .
+                {doneStart}
+                {nameFirst ? SITE.founder : mail}
+                {doneMiddle}
+                {nameFirst ? mail : SITE.founder}
+                {doneEnd}
               </p>
               <button type="button" onClick={() => setHandedOver(false)} className="text-button">
-                <span>Write another message</span>
+                <span>{text.writeAnother}</span>
               </button>
             </div>
           ) : (
             <form onSubmit={submit} noValidate className="form">
-              <p className="mute">A named person replies the same business day.</p>
-              <Field id="name" label="Your name" autoComplete="name" error={errors.name} onInput={clearError} />
+              <p className="mute">{text.reply}</p>
+              <Field id="name" label={text.name} autoComplete="name" error={errors.name} onInput={clearError} />
               <Field
                 id="organisation"
-                label="Organisation"
+                label={text.organisation}
                 autoComplete="organization"
                 error={errors.organisation}
                 onInput={clearError}
               />
               <Field
                 id="email"
-                label="Work email"
+                label={text.email}
                 type="email"
                 dir="ltr"
                 autoComplete="email"
@@ -151,9 +192,9 @@ export default function ContactFormProvider({ children }: { children: ReactNode 
                 onInput={clearError}
               />
               <div className="field field-select">
-                <label htmlFor="form-budget">Budget</label>
+                <label htmlFor="form-budget">{text.budget}</label>
                 <select id="form-budget" name="budget" defaultValue="">
-                  {BUDGETS.map(([value, label]) => (
+                  {budgets.map(([value, label]) => (
                     <option key={label} value={value}>
                       {label}
                     </option>
@@ -164,11 +205,11 @@ export default function ContactFormProvider({ children }: { children: ReactNode 
                 </span>
               </div>
               <div className="field">
-                <label htmlFor="form-message">What do you need?</label>
+                <label htmlFor="form-message">{text.message}</label>
                 <textarea id="form-message" name="message" rows={4} />
               </div>
               <button type="submit" className="send">
-                Send
+                {text.send}
               </button>
             </form>
           )}

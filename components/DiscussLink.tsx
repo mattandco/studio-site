@@ -12,10 +12,10 @@ export default function DiscussLink({
   className?: string;
   children: ReactNode;
 }) {
-  const { open } = useContactForm();
+  const { open, href } = useContactForm();
   return (
     <Link
-      href="/#contact"
+      href={href}
       className={className}
       onClick={(event) => {
         event.preventDefault();

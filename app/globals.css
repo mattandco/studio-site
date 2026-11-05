@@ -34,11 +34,34 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
-:lang(ar) {
+/* Each page's language sets the body font. Arabic and Chinese words in the hero
+   and the language buttons on other pages use small subsets of just those letters. */
+html[lang="ru"] {
+  --font-body: var(--font-golos-cyrillic), var(--font-golos), system-ui, sans-serif;
+}
+html[lang="ar"] {
+  --font-body: var(--font-arabic), var(--font-golos), system-ui, sans-serif;
+}
+html[lang^="zh"] {
+  --font-body: var(--font-golos), "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Noto Sans SC", "Noto Sans CJK SC", system-ui, sans-serif;
+}
+.hero-display :lang(ar),
+.hero-caption-text :lang(ar),
+.language-row :lang(ar),
+.read-in :lang(ar) {
   font-family: var(--font-alexandria), var(--font-body);
 }
-:lang(zh) {
+.hero-display :lang(zh),
+.hero-caption-text :lang(zh),
+.language-row :lang(zh),
+.read-in :lang(zh) {
   font-family: var(--font-noto-sc), var(--font-body);
+}
+/* Arabic letters join, and tight tracking suits neither script. */
+html[lang="ar"] body :not(.hero-display, .hero-display *),
+html[lang^="zh"] body :not(.hero-display, .hero-display *) {
+  letter-spacing: 0 !important;
 }
 a {
   color: inherit;
@@ -70,7 +93,7 @@ textarea::placeholder {
   position: fixed;
   z-index: 90;
   top: 8px;
-  left: 8px;
+  inset-inline-start: 8px;
   padding: 10px 16px;
   background: var(--ink);
   color: #fff;
@@ -584,20 +607,17 @@ textarea::placeholder {
   padding-top: 12px;
   border-top: 1px solid var(--line);
 }
-.language-row button {
+.language-row a {
   display: inline-flex;
   align-items: center;
   min-height: 40px;
   padding: 0 16px;
-  border: 0;
   border-radius: 4px;
-  font: inherit;
   color: var(--ink);
-  cursor: pointer;
   text-underline-offset: 3px;
 }
-.language-row button:hover,
-.language-row button[aria-current="true"] {
+.language-row a:hover,
+.language-row a[aria-current="true"] {
   text-decoration: underline;
 }
 .footer-row a {
@@ -607,7 +627,8 @@ textarea::placeholder {
 /* ---------- contact form drawer ---------- */
 .drawer {
   position: fixed;
-  inset: 0 0 0 auto;
+  inset-block: 0;
+  inset-inline: auto 0;
   width: min(100%, 560px);
   max-width: 100%;
   height: 100%;
@@ -618,6 +639,9 @@ textarea::placeholder {
   background: #fff;
   color: var(--ink);
   box-shadow: -24px 0 60px -30px rgba(0, 0, 0, 0.35);
+}
+html[dir="rtl"] .drawer {
+  box-shadow: 24px 0 60px -30px rgba(0, 0, 0, 0.35);
 }
 .drawer::backdrop {
   background: rgba(36, 33, 38, 0.32);
@@ -692,7 +716,7 @@ textarea::placeholder {
   resize: vertical;
 }
 .field select {
-  padding-right: 28px;
+  padding-inline-end: 28px;
   appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
@@ -708,7 +732,7 @@ textarea::placeholder {
 }
 .field-arrow {
   position: absolute;
-  right: 2px;
+  inset-inline-end: 2px;
   bottom: 12px;
   font-size: 12px;
   pointer-events: none;
@@ -1002,6 +1026,9 @@ textarea::placeholder {
   background: var(--ink);
   transform-origin: left center;
   transform: scaleX(0);
+}
+html[dir="rtl"] .reading-bar {
+  transform-origin: right center;
 }
 .post-title {
   margin: clamp(20px, 2.4vw, 36px) 0 0;

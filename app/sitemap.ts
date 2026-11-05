@@ -1,20 +1,28 @@
 import type { MetadataRoute } from "next";
-import { INSIGHTS } from "@/content/insights";
-import { PROJECTS } from "@/content/projects";
+import { getContent } from "@/content/i18n";
 import { SITE } from "@/content/site";
+import { LANGUAGES, localePath } from "@/lib/languages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const { projects, insights } = getContent("en");
   const paths = [
-    "",
+    "/",
     "/insights",
     "/accessibility",
-    ...PROJECTS.map(({ slug }) => `/work/${slug}`),
-    ...INSIGHTS.map(({ slug }) => `/insights/${slug}`),
+    ...projects.map(({ slug }) => `/work/${slug}`),
+    ...insights.map(({ slug }) => `/insights/${slug}`),
   ];
-  return paths.map((path) => ({
-    url: `${SITE.url}${path}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: path === "" ? 1 : 0.7,
-  }));
+  const address = (code: (typeof LANGUAGES)[number]["code"], path: string) =>
+    `${SITE.url}${localePath(code, path) === "/" ? "" : localePath(code, path)}`;
+  return LANGUAGES.flatMap(({ code }) =>
+    paths.map((path) => ({
+      url: address(code, path),
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: path === "/" ? 1 : 0.7,
+      alternates: {
+        languages: Object.fromEntries(LANGUAGES.map((item) => [item.htmlLang, address(item.code, path)])),
+      },
+    }))
+  );
 }

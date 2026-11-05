@@ -9,6 +9,4 @@ export const SITE = {
   phone: "+1 876 881 8780",
   phoneHref: "tel:+18768818780",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://nestvested.co",
-  // The date the accessibility tests in app/accessibility were last run.
-  accessibilityTested: "4 November 2026",
 };

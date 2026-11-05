@@ -3,6 +3,7 @@
 import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import { HERO_LANGUAGES, setHeroIndex } from "@/lib/hero";
 import DiscussLink from "@/components/DiscussLink";
+import type { Lang } from "@/lib/languages";
 
 type Phase = "intro" | "in" | "out" | "none";
 
@@ -62,15 +63,19 @@ function Letters({
   );
 }
 
-export default function Hero() {
-  const [index, setIndex] = useState(0);
+type HeroText = { title: string; seeWork: string; pause: string; play: string; discuss: string };
+
+export default function Hero({ lang, text }: { lang: Lang; text: HeroText }) {
+  // The display opens on the page's own language, then turns through the rest.
+  const start = Math.max(0, HERO_LANGUAGES.findIndex(({ code }) => code === lang));
+  const [index, setIndex] = useState(start);
   const [phase, setPhase] = useState<Phase>("intro");
   const [generation, setGeneration] = useState(0);
   const [paused, setPaused] = useState(false);
 
   const section = useRef<HTMLElement>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
-  const live = useRef({ index: 0, phase: "intro" as Phase, paused: false, reduced: false, visible: true });
+  const live = useRef({ index: start, phase: "intro" as Phase, paused: false, reduced: false, visible: true });
   const stepRef = useRef<() => void>(() => {});
 
   const schedule = useCallback((ms: number) => {
@@ -107,6 +112,7 @@ export default function Hero() {
   }, [schedule, show]);
 
   useEffect(() => {
+    setHeroIndex(start);
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     live.current.reduced = reduced;
     if (reduced) {
@@ -121,13 +127,13 @@ export default function Hero() {
       { threshold: 0.2 }
     );
     if (section.current) observer.observe(section.current);
-    schedule(duration(0, "intro") + HOLD);
+    schedule(duration(start, "intro") + HOLD);
     return () => {
       clearTimeout(timer.current);
       observer.disconnect();
       setHeroIndex(0);
     };
-  }, [schedule]);
+  }, [schedule, start]);
 
   const toggle = () => {
     clearTimeout(timer.current);
@@ -169,7 +175,7 @@ export default function Hero() {
                 <span />
               </span>
             )}
-            <span>{paused ? "Play" : "Pause"}</span>
+            <span>{paused ? text.play : text.pause}</span>
           </button>
         </div>
         <p
@@ -200,12 +206,12 @@ export default function Hero() {
       </div>
       <div className="hero-foot">
         <h1 id="home-title" className="hero-title">
-          Websites and brands for NGOs and international organisations.
+          {text.title}
         </h1>
         <div className="hero-links">
-          <DiscussLink className="link">Discuss a project</DiscussLink>
+          <DiscussLink className="link">{text.discuss}</DiscussLink>
           <a href="#work" className="link-quiet">
-            See the work
+            {text.seeWork}
           </a>
         </div>
       </div>

@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { HERO_LANGUAGES, logoColours, useHeroIndex } from "@/lib/hero";
-import { useLanguage } from "@/lib/language";
+import { stripLang, type Lang } from "@/lib/languages";
 
 const DOTS = [
   [-3.6, -7.2],
@@ -13,12 +13,11 @@ const DOTS = [
   [3.6, 7.2],
 ];
 
-export default function LogoMark() {
-  const path = usePathname();
+export default function LogoMark({ lang }: { lang: Lang }) {
+  const path = stripLang(usePathname());
   const heroIndex = useHeroIndex();
-  const language = useLanguage();
-  // On the home page the logo turns with the hero. Elsewhere it shows the chosen language.
-  const chosen = HERO_LANGUAGES.findIndex(({ code }) => code === language.code);
+  // On the home page the logo turns with the hero. Elsewhere it shows the page's language.
+  const chosen = HERO_LANGUAGES.findIndex(({ code }) => code === lang);
   const colours = logoColours(path === "/" ? heroIndex : Math.max(0, chosen));
   return (
     <svg viewBox="-7 -10.5 14 21" aria-hidden="true" className="logo-mark">

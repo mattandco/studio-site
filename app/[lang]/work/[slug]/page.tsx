@@ -2,54 +2,59 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getProject, nextProject, PROJECTS } from "@/content/projects";
+import { getContent, getProject, nextProject } from "@/content/i18n";
 import { SITE } from "@/content/site";
+import { localePath, type Lang } from "@/lib/languages";
+import { alternates } from "@/lib/seo";
 
-type Props = { params: Promise<{ slug: string }> };
+type Props = { params: Promise<{ lang: string; slug: string }> };
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return PROJECTS.map(({ slug }) => ({ slug }));
+  return getContent("en").projects.map(({ slug }) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const project = getProject(slug);
+  const { slug, lang: code } = await params;
+  const lang = code as Lang;
+  const project = getProject(lang, slug);
   if (!project) return {};
   return {
     title: project.name,
     description: project.summary,
-    alternates: { canonical: `/work/${slug}` },
+    alternates: alternates(lang, `/work/${slug}`),
     openGraph: { title: project.name, description: project.summary },
   };
 }
 
-const SECTIONS = [
-  ["challenge", "The challenge"],
-  ["goals", "The goals"],
-  ["decisions", "Key decisions"],
-  ["brand", "The brand"],
-  ["before-after", "Before and after"],
-  ["result", "The result"],
-  ["learned", "What we learned"],
-  ["standards", "Standards met"],
-  ["team", "Team"],
-];
-
 export default async function CaseStudyPage({ params }: Props) {
-  const { slug } = await params;
-  const project = getProject(slug);
+  const { slug, lang: code } = await params;
+  const lang = code as Lang;
+  const project = getProject(lang, slug);
   if (!project) notFound();
-  const next = nextProject(slug);
+  const next = nextProject(lang, slug);
+  const { common } = getContent(lang);
+  const t = getContent(lang).caseStudy;
+  const sections = [
+    ["challenge", t.challenge],
+    ["goals", t.goals],
+    ["decisions", t.decisions],
+    ["brand", t.brand],
+    ["before-after", t.beforeAfter],
+    ["result", t.result],
+    ["learned", t.learned],
+    ["standards", t.standards],
+    ["team", t.team],
+  ];
 
   return (
     <article aria-labelledby="case-title">
       <div className="wrap page-top">
-        <nav aria-label="Breadcrumb" className="breadcrumb">
-          <Link href="/#work">Work</Link>
+        <nav aria-label={common.breadcrumb} className="breadcrumb">
+          <Link href={localePath(lang, "/#work")}>{t.work}</Link>
           <span aria-hidden="true">/</span>
-          <span>Case study</span>
+          <span>{t.caseStudy}</span>
         </nav>
         <h1 id="case-title" className="case-title">
           {project.name}
@@ -57,26 +62,26 @@ export default async function CaseStudyPage({ params }: Props) {
         <p className="case-summary type-md">{project.summary}</p>
         <dl className="case-facts">
           <div>
-            <dt>Type</dt>
+            <dt>{t.type}</dt>
             <dd>{project.type}</dd>
           </div>
           <div>
-            <dt>Year</dt>
+            <dt>{t.year}</dt>
             <dd>{project.year}</dd>
           </div>
           <div>
-            <dt>Scope</dt>
+            <dt>{t.scope}</dt>
             <dd>{project.scope}</dd>
           </div>
           <div>
-            <dt>Languages</dt>
+            <dt>{t.languages}</dt>
             <dd>{project.languages}</dd>
           </div>
           <div>
             <dt>{project.status.label}</dt>
             <dd>
               {project.status.href ? (
-                <a href={project.status.href} target="_blank" rel="noopener noreferrer" className="link">
+                <a href={project.status.href} target="_blank" rel="noopener noreferrer" dir="ltr" className="link">
                   {project.status.text} ↗
                 </a>
               ) : (
@@ -94,7 +99,7 @@ export default async function CaseStudyPage({ params }: Props) {
         <figcaption>{project.detailImage.caption}</figcaption>
       </figure>
 
-      <section aria-label="Headline figures" className="wrap figures">
+      <section aria-label={t.headlineFigures} className="wrap figures">
         <dl>
           {project.figures.map((figure) => (
             <div key={figure.label}>
@@ -106,9 +111,9 @@ export default async function CaseStudyPage({ params }: Props) {
       </section>
 
       <div className="wrap case-body-wrap">
-        <nav aria-label="On this page" className="on-this-page">
-          <span>On this page</span>
-          {SECTIONS.filter(([id]) => id !== "brand" || project.brand).map(([id, label]) => (
+        <nav aria-label={t.onThisPage} className="on-this-page">
+          <span>{t.onThisPage}</span>
+          {sections.filter(([id]) => id !== "brand" || project.brand).map(([id, label]) => (
             <a key={id} href={`#${id}`}>
               {label}
             </a>
@@ -117,7 +122,7 @@ export default async function CaseStudyPage({ params }: Props) {
         <div className="case-body">
           <section id="challenge" aria-labelledby="h-challenge">
             <h2 id="h-challenge" className="body-heading">
-              The challenge
+              {t.challenge}
             </h2>
             {project.challenge.map((text) => (
               <p key={text}>{text}</p>
@@ -125,7 +130,7 @@ export default async function CaseStudyPage({ params }: Props) {
           </section>
           <section id="goals" aria-labelledby="h-goals">
             <h2 id="h-goals" className="body-heading">
-              The goals
+              {t.goals}
             </h2>
             <ol className="numbered">
               {project.goals.map((text, index) => (
@@ -138,7 +143,7 @@ export default async function CaseStudyPage({ params }: Props) {
           </section>
           <section id="decisions" aria-labelledby="h-decisions">
             <h2 id="h-decisions" className="body-heading">
-              Key decisions
+              {t.decisions}
             </h2>
             {project.decisions.map(({ title, text }) => (
               <div key={title} className="decision">
@@ -150,7 +155,7 @@ export default async function CaseStudyPage({ params }: Props) {
           {project.brand && (
             <section id="brand" aria-labelledby="h-brand">
               <h2 id="h-brand" className="body-heading">
-                The brand
+                {t.brand}
               </h2>
               {project.brand.intro.map((text) => (
                 <p key={text}>{text}</p>
@@ -162,7 +167,7 @@ export default async function CaseStudyPage({ params }: Props) {
                 </div>
               ))}
               <div className="decision">
-                <h3>The brand guidelines</h3>
+                <h3>{t.brandGuidelines}</h3>
                 {project.brand.guidelines.map((text) => (
                   <p key={text}>{text}</p>
                 ))}
@@ -171,7 +176,7 @@ export default async function CaseStudyPage({ params }: Props) {
           )}
           <section id="before-after" aria-labelledby="h-before-after">
             <h2 id="h-before-after" className="body-heading">
-              Before and after
+              {t.beforeAfter}
             </h2>
             <ul className="before-after">
               {project.beforeAfter.map(({ label, before, after }) => (
@@ -179,11 +184,11 @@ export default async function CaseStudyPage({ params }: Props) {
                   <h3>{label}</h3>
                   <dl>
                     <div>
-                      <dt>Before</dt>
+                      <dt>{t.before}</dt>
                       <dd>{before}</dd>
                     </div>
                     <div>
-                      <dt>After</dt>
+                      <dt>{t.after}</dt>
                       <dd>{after}</dd>
                     </div>
                   </dl>
@@ -193,7 +198,7 @@ export default async function CaseStudyPage({ params }: Props) {
           </section>
           <section id="result" aria-labelledby="h-result">
             <h2 id="h-result" className="body-heading">
-              The result
+              {t.result}
             </h2>
             {project.results.map((text) => (
               <p key={text}>{text}</p>
@@ -201,7 +206,7 @@ export default async function CaseStudyPage({ params }: Props) {
           </section>
           <section id="learned" aria-labelledby="h-learned">
             <h2 id="h-learned" className="body-heading">
-              What we learned
+              {t.learned}
             </h2>
             <ol className="numbered">
               {project.lessons.map((text, index) => (
@@ -214,7 +219,7 @@ export default async function CaseStudyPage({ params }: Props) {
           </section>
           <section id="standards" aria-labelledby="h-standards">
             <h2 id="h-standards" className="body-heading">
-              Standards met
+              {t.standards}
             </h2>
             <dl className="standards">
               {project.standards.map(({ label, value }) => (
@@ -230,15 +235,15 @@ export default async function CaseStudyPage({ params }: Props) {
 
       <section id="team" aria-labelledby="h-team" className="wrap section">
         <h2 id="h-team" className="rule-label">
-          Team
+          {t.team}
         </h2>
         <dl className="team-list">
           <div>
-            <dt>Project lead</dt>
+            <dt>{t.projectLead}</dt>
             <dd>{SITE.founder}</dd>
           </div>
           <div>
-            <dt>Client team</dt>
+            <dt>{t.clientTeam}</dt>
             <dd>{project.clientTeam}</dd>
           </div>
         </dl>
@@ -246,14 +251,14 @@ export default async function CaseStudyPage({ params }: Props) {
 
       <section aria-labelledby="h-next" className="wrap section">
         <h2 id="h-next" className="rule-label">
-          What this platform could carry next
+          {t.carryNext}
         </h2>
         <p className="next-capability type-lg">{project.next}</p>
       </section>
 
       <nav aria-label="Next case study" className="wrap next-case">
-        <Link href={`/work/${next.slug}`}>
-          <span className="next-case-label">Next case study</span>
+        <Link href={localePath(lang, `/work/${next.slug}`)}>
+          <span className="next-case-label">{t.nextCase}</span>
           <span className="next-case-name">{next.name} →</span>
         </Link>
       </nav>

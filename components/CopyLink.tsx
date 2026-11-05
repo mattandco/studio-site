@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 
-export default function CopyLink() {
+export default function CopyLink({ copy: label, copied: done }: { copy: string; copied: string }) {
   const [copied, setCopied] = useState(false);
   const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
@@ -19,7 +19,7 @@ export default function CopyLink() {
 
   return (
     <button type="button" onClick={copy} className="text-button">
-      <span aria-live="polite">{copied ? "Link copied" : "Copy link"}</span>
+      <span aria-live="polite">{copied ? done : label}</span>
     </button>
   );
 }

@@ -1,0 +1,717 @@
+{
+  "meta": {
+    "title": "Nestvested · Sitios web y marcas para ONG y organizaciones internacionales",
+    "description": "Nestvested diseña y crea sitios web y marcas para ONG y organizaciones internacionales: sitios rápidos y accesibles que su propio equipo puede actualizar, pensados para conexiones lentas e inestables."
+  },
+  "common": {
+    "skip": "Saltar al contenido",
+    "mainMenu": "Principal",
+    "breadcrumb": "Ruta de navegación",
+    "languages": "Idiomas",
+    "discuss": "Hablemos de un proyecto",
+    "tellUs": "Cuéntenos qué está creando."
+  },
+  "nav": {
+    "work": "Proyectos",
+    "services": "Servicios",
+    "about": "Quiénes somos",
+    "insights": "Artículos",
+    "workingWithUs": "Trabajar con nosotros",
+    "contact": "Contacto",
+    "readIn": "Leer en"
+  },
+  "hero": {
+    "title": "Sitios web y marcas para ONG y organizaciones internacionales.",
+    "seeWork": "Ver los proyectos",
+    "pause": "Pausar",
+    "play": "Reproducir"
+  },
+  "home": {
+    "selectedWork": "Selección de proyectos",
+    "readCaseStudy": "Leer el estudio de caso →",
+    "whatWeDo": "Qué hacemos",
+    "services": [
+      {
+        "name": "Diseño web",
+        "text": "Investigación, prototipos que su equipo puede comentar y sistemas de diseño que funcionan en todos los idiomas."
+      },
+      {
+        "name": "Desarrollo web",
+        "text": "Sitios rápidos y accesibles que su propio equipo puede actualizar, pensados para conexiones lentas e inestables."
+      },
+      {
+        "name": "Imagen de marca",
+        "text": "Identidades para organizaciones, programas y campañas, con directrices que los socios cumplen de verdad."
+      },
+      {
+        "name": "Respuestas basadas en evidencia",
+        "text": "Sistemas que leen sus documentos, datos y comentarios y los convierten en respuestas con las que las personas pueden actuar, cada una vinculada a su fuente. Funcionan allí donde se permite que estén sus datos."
+      },
+      {
+        "name": "Mantenimiento web",
+        "text": "Cuidamos los sitios después del lanzamiento: actualizaciones, seguridad, copias de seguridad y correcciones, con una cuota mensual."
+      }
+    ],
+    "about": "Quiénes somos",
+    "aboutLine": "Las personas que usted conoce son las que hacen el trabajo.",
+    "aboutLead": "Nestvested es un estudio de diseño web, desarrollo e inteligencia artificial, creado en 2018.",
+    "aboutText": [
+      "Su fundador trabaja desde 2010 con ONG como la IFRC, junto a equipos en Ginebra y en operaciones de alcance mundial.",
+      "Cada proyecto lo lleva todo el equipo, en lugar de pasar de un eslabón a otro de una cadena: diseño, ingeniería, contenidos y ejecución trabajan sobre el mismo problema."
+    ],
+    "workingWithUs": "Trabajar con nosotros",
+    "workingLine": "Preparados para su equipo de adquisiciones.",
+    "working": [
+      {
+        "term": "Una empresa registrada",
+        "text": "Contratos y facturas de Nestvested Limited, con referencias y documentación de la empresa listas para enviar."
+      },
+      {
+        "term": "Honorarios fijos",
+        "text": "Se acuerdan antes de empezar el trabajo y se facturan en francos suizos. Los honorarios se fijan según el alcance, no según las horas."
+      },
+      {
+        "term": "Cuotas mensuales",
+        "text": "Para el mantenimiento y la asistencia continuos, también trabajamos con una cuota mensual."
+      },
+      {
+        "term": "Evidencia publicada",
+        "text": "Una declaración de accesibilidad con su método de prueba y una nota de seguridad para cada sitio que gestionamos."
+      },
+      {
+        "term": "Solo personal sénior",
+        "text": "Las personas de la primera reunión son las que hacen el trabajo. Si participa algún socio, su nombre figura en la propuesta."
+      }
+    ],
+    "replyLine": "Le responde una persona con nombre y apellido el mismo día hábil.",
+    "bookCall": "Reservar una llamada de 30 minutos"
+  },
+  "footer": {
+    "tested": "WCAG 2.1 AA, prueba realizada el 4 de noviembre de 2026",
+    "statement": "Declaración de accesibilidad"
+  },
+  "caseStudy": {
+    "work": "Proyectos",
+    "caseStudy": "Estudio de caso",
+    "type": "Tipo",
+    "year": "Año",
+    "scope": "Alcance",
+    "languages": "Idiomas",
+    "headlineFigures": "Cifras principales",
+    "onThisPage": "En esta página",
+    "challenge": "El desafío",
+    "goals": "Los objetivos",
+    "decisions": "Decisiones clave",
+    "brand": "La marca",
+    "brandGuidelines": "Las directrices de marca",
+    "beforeAfter": "Antes y después",
+    "before": "Antes",
+    "after": "Después",
+    "result": "El resultado",
+    "learned": "Qué aprendimos",
+    "standards": "Normas cumplidas",
+    "team": "Equipo",
+    "projectLead": "Dirección del proyecto",
+    "clientTeam": "Equipo del cliente",
+    "carryNext": "Qué podría incorporar esta plataforma a continuación",
+    "nextCase": "Siguiente estudio de caso"
+  },
+  "insightsPage": {
+    "title": "Artículos",
+    "intro": "Unos pocos artículos de fondo al año sobre cómo crear sitios web accesibles y multilingües para organizaciones internacionales.",
+    "minRead": "{n} min de lectura",
+    "read": "Leer →"
+  },
+  "post": {
+    "inShort": "En resumen",
+    "sources": "Fuentes",
+    "moreInsights": "Más artículos",
+    "copyLink": "Copiar enlace",
+    "linkCopied": "Enlace copiado",
+    "shareLinkedIn": "Compartir en LinkedIn ↗"
+  },
+  "accessibility": {
+    "title": "Declaración de accesibilidad",
+    "description": "Cómo se probó el sitio web de Nestvested con respecto a las WCAG 2.1 AA, qué se encontró y cómo informar de un problema.",
+    "intro": "Esta declaración se refiere a nestvested.co. Nuestro objetivo es el nivel AA de las WCAG 2.1. La última prueba del sitio se realizó el 4 de noviembre de 2026.",
+    "howTested": "Cómo se probó",
+    "tested": [
+      "Se probaron todos los tipos de página: inicio, estudio de caso, lista de artículos, artículo y esta página.",
+      "Pruebas automatizadas: axe-core, con sus reglas A y AA de las WCAG 2.0, 2.1 y 2.2, y Lighthouse.",
+      "Teclado: pulsaciones de teclas programadas por el enlace para saltar al contenido, el menú, el formulario de contacto y el botón de pausa de la cabecera, comprobando que el foco se mantiene visible.",
+      "Anchos de 320 a 1920 píxeles, comprobando que no haya desplazamiento horizontal.",
+      "Con el movimiento reducido activado, la cabecera permanece fija en su primer idioma."
+    ],
+    "notDone": "Lo que sabemos que falta por hacer",
+    "gaps": [
+      "El sitio no ha sido probado por una persona que use un lector de pantalla.",
+      "La animación de la cabecera es decorativa y está oculta para los lectores de pantalla."
+    ],
+    "report": "Informar de un problema",
+    "reportText": "Escriba a {email} y le responderá una persona con nombre y apellido.",
+    "security": "Nota de seguridad",
+    "securityText": "El sitio funciona en Vercel y se sirve por HTTPS. No tiene cuentas ni analítica. No instala cookies propias. El formulario de contacto no guarda nada: abre un mensaje en su propia aplicación de correo."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "text": "Esa dirección no corresponde a ninguna página de este sitio.",
+    "home": "Ir a la página de inicio"
+  },
+  "form": {
+    "title": "Hablemos de un proyecto",
+    "close": "Cerrar",
+    "doneTitle": "Su aplicación de correo debería haberse abierto.",
+    "doneText": "Su mensaje ya está redactado y dirigido a {name}. Pulse enviar en esa aplicación y llegará a una persona. Si no se abrió nada, escriba a {email}.",
+    "writeAnother": "Escribir otro mensaje",
+    "reply": "Le responde una persona con nombre y apellido el mismo día hábil.",
+    "name": "Su nombre",
+    "organisation": "Organización",
+    "email": "Correo electrónico de trabajo",
+    "budget": "Presupuesto",
+    "chooseRange": "Elija un rango",
+    "over": "Más de CHF 150 000",
+    "notKnown": "Aún no se sabe",
+    "message": "¿Qué necesita?",
+    "send": "Enviar",
+    "errorName": "Por favor, indique su nombre.",
+    "errorOrganisation": "Por favor, indique su organización.",
+    "errorEmail": "Por favor, indique su correo electrónico de trabajo.",
+    "errorEmailFormat": "Por favor, compruebe la dirección de correo electrónico."
+  },
+  "authorNote": "Escrito por Matthew Bowman, fundador de Nestvested, que trabaja en el sector humanitario desde 2010.",
+  "projects": [
+    {
+      "slug": "collective-service",
+      "name": "The Collective Service",
+      "type": "Alianza",
+      "year": "2026",
+      "scope": "Auditoría del sitio web, reconstrucción completa, identidad de marca y biblioteca de documentos",
+      "line": "Alianza · 2026 · Reconstrucción completa y nueva identidad, en pruebas antes del relanzamiento",
+      "languages": "Primero inglés; hay más idiomas previstos",
+      "status": {
+        "label": "Estado",
+        "text": "En pruebas. Aún no se ha lanzado"
+      },
+      "summary": "Cómo se reconstruyó desde cero el sitio web de una alianza para emergencias sanitarias, con una nueva identidad, para que las personas con conexiones lentas puedan acceder a las orientaciones vigentes. Actualmente en pruebas antes de su relanzamiento.",
+      "cardImage": {
+        "src": "/work/collective-service-knowledge-bank.jpg"
+      },
+      "detailImage": {
+        "src": "/work/collective-service-documents.jpg",
+        "alt": "La página del Knowledge bank: un cuadro para describir una situación, sobre una imagen de los documentos de la biblioteca agrupados por tema.",
+        "caption": "El Knowledge bank en el nuevo sitio, una parte experimental del desarrollo."
+      },
+      "figures": [
+        {
+          "value": "283 KB",
+          "label": "Página de inicio tal como se abre en un teléfono, frente a un presupuesto de 500 KB. Medido el 24 de octubre de 2026"
+        },
+        {
+          "value": "30",
+          "label": "Plantillas de página evaluadas según las WCAG 2.2 AA. Medido el 22 de octubre de 2026"
+        },
+        {
+          "value": "279",
+          "label": "Documentos incorporados al Knowledge bank. Medido el 4 de noviembre de 2026"
+        }
+      ],
+      "challenge": [
+        "Collective Service es una alianza mundial de comunicación de riesgos y participación comunitaria en emergencias sanitarias. Su sitio web se creó en 2020 como biblioteca central de orientaciones. Sigue siendo la puerta de entrada a la alianza: el lugar al que acuden los coordinadores y los equipos de respuesta en busca de herramientas, formación y datos cuando tienen que llegar a las comunidades durante un brote.",
+        "Seis años después, el sitio seguía marcado por la pandemia para la que se creó. La mayor parte de su biblioteca databa de 2020 a 2022, mientras que las emergencias en las que trabajaba la gente ya eran otras.",
+        "Las personas que más lo necesitan son también las más difíciles de alcanzar. En una encuesta de 2022 a personas que compartían contenidos de cursos sobre salud en emergencias, la mala conectividad fue la dificultad más citada en los países de ingresos bajos, con un 29 %, frente al 8 % en los países de ingresos altos. La mediana de la página de inicio en un teléfono era de 2,56 MB en 2025, lo que supone unos 51 segundos a 400 kilobits por segundo. Es demasiado para un coordinador que necesita un documento en ese momento.",
+        "La alianza también tenía un problema de reconocimiento. Una evaluación de 2023 concluyó que su nombre resultaba confuso para algunos y que su propósito no se comunicaba lo suficiente. Su logotipo era solo el nombre, así que no podía ayudar."
+      ],
+      "goals": [
+        "Hacer que cada página sea lo bastante ligera para una conexión lenta, con un presupuesto de 500 KB por página.",
+        "Poner en primer plano las orientaciones vigentes y retirar lo que esté desactualizado.",
+        "Crear una biblioteca de documentos con búsqueda, kits de emergencia y redirecciones desde todas las direcciones antiguas.",
+        "Entregar el sitio a los editores de la propia alianza, con pruebas, formación y un relanzamiento."
+      ],
+      "decisions": [
+        {
+          "title": "Reconstruir desde cero",
+          "text": "Actualizar el sitio antiguo página por página habría mantenido la estructura y el peso de los que debía desprenderse. Por eso se reconstruyeron todas las páginas: un tema de WordPress a medida con 30 plantillas de página, una nueva interfaz de edición y contenidos trasladados mediante un importador repetible que puede volver a ejecutarse y comprobarse."
+        },
+        {
+          "title": "Fijar el límite de peso antes del diseño",
+          "text": "Una regla guio el diseño: cuando los públicos entran en conflicto, prevalecen los equipos de respuesta. Por eso cada página debía mantenerse por debajo de 500 KB, unos 10 segundos a 400 kilobits por segundo, y ese límite se fijó primero, de modo que todas las plantillas se construyeron conforme a él. Cada descarga indica además su formato y tamaño antes de pulsarla, para que nadie gaste datos escasos en un archivo que no esperaba."
+        },
+        {
+          "title": "Conservar todos los documentos en el sitio",
+          "text": "Muchos documentos solo estaban enlazados, por lo que dejarían de funcionar si quien los publicaba movía una página. Descargamos 155 de ellos, de modo que el sitio conserva ahora sus propias copias, con versiones en francés, portugués, español y suajili cuando quienes los publican las ofrecen. Los documentos que figuraban dos, tres o cuatro veces ahora aparecen una sola vez, con sus otros idiomas en la misma página."
+        },
+        {
+          "title": "Tratar la marca como parte del problema",
+          "text": "Un sitio web mejor no podía explicar por sí solo qué es el Servicio. Por eso defendimos, junto con el sitio, la necesidad de una nueva identidad. Las razones se exponen más abajo, en La marca."
+        },
+        {
+          "title": "Construir para quienes lo van a gestionar",
+          "text": "Una biblioteca solo se mantiene al día si su propio equipo puede mantenerla al día. La interfaz de edición tiene un formulario para cada tipo de contenido, y cada formulario indica lo que aún falta antes de poder publicar. Para añadir un documento basta con pegar su dirección: el formato, el tamaño y el número de páginas se completan solos. Una guía integrada muestra a los editores cada tarea, pantalla por pantalla."
+        },
+        {
+          "title": "Probar una nueva vía de acceso a la biblioteca",
+          "text": "La búsqueda solo ayuda a quienes conocen las palabras adecuadas. El Knowledge bank permite al lector describir una situación con sus propias palabras y recibir orientación extraída únicamente de los documentos de la biblioteca, con cada punto citado. Cuando la biblioteca no tiene respuesta, lo dice. Es una parte experimental del desarrollo."
+        }
+      ],
+      "brand": {
+        "intro": [
+          "La nueva identidad partió de la evidencia de la propia alianza, no del logotipo. Una evaluación independiente de 2023, basada en 88 entrevistas, 98 respuestas a encuestas y cuatro estudios de caso por país, consideró el nombre “confuso para algunos” y señaló como debilidad la “escasa comunicación sobre su propósito”. También concluyó que el 87 % de los encuestados creía probable necesitar el Servicio en una futura emergencia sanitaria. Por eso debía ser una identidad hecha para durar, y que ayudara a explicar qué es el Servicio.",
+          "El logotipo existente se creó para poner nombre a la respuesta a una pandemia, y cumplió esa función. No se le había pedido más. Un logotipo que es solo el nombre no puede explicar un nombre que la gente encuentra confuso, por lo que la identidad necesitaba una forma que transmitiera la idea: organizaciones que actúan como una sola para que se escuche a las comunidades en una emergencia."
+        ],
+        "reasons": [
+          {
+            "title": "Dice qué es el Servicio",
+            "text": "Tres partes separadas se unen en un solo cuerpo: organizaciones distintas, dibujadas como iguales, que se convierten en un solo servicio. Quien lo mira ve “juntos” antes de leer una palabra, así que, cada vez que aparece, el símbolo actúa sobre la confusión que detectó la evaluación."
+          },
+          {
+            "title": "Mantiene la igualdad entre los socios",
+            "text": "El Servicio es una alianza entre iguales. Ninguna parte del símbolo tiene prioridad, y un único color discreto le permite situarse junto a cuatro logotipos consolidados sin restarles espacio."
+          },
+          {
+            "title": "Coincide con la forma de trabajar de los socios",
+            "text": "Cada socio combina un símbolo con su nombre. El Servicio era el único miembro de su propia alianza que no lo tenía."
+          },
+          {
+            "title": "Funciona en todos los idiomas",
+            "text": "El Servicio publica en inglés, francés, portugués y español, y gran parte de su trabajo se desarrolla en África francófona y lusófona. Un símbolo funciona en todos ellos. El nombre se mantiene en inglés y la línea que aparece debajo se traduce."
+          },
+          {
+            "title": "Funciona dondequiera que aparezca el Servicio",
+            "text": "El Servicio aparece cada vez más en flujos de publicaciones, pestañas del navegador, chats de grupo y teléfonos, donde un logotipo solo de texto no se puede leer. Las formas sólidas también resisten los sellos, las insignias y las fotocopias de los materiales de terreno. El tamaño fue solo una de ocho pruebas. Ambos logotipos se evaluaron en cuanto a significado, tamaños pequeños, piezas reutilizables, convivencia con los socios, coherencia con la voz, reproducción fiable, capacidad de distinción y posibilidad de regirlos con normas."
+          },
+          {
+            "title": "Sobrevive a un cambio de nombre",
+            "text": "La evaluación recomendó a los socios que consideraran cambiar el nombre. Si lo hacen, el símbolo se mantiene y solo cambian las palabras que lo acompañan."
+          },
+          {
+            "title": "Se apoya en evidencia, con bajo riesgo",
+            "text": "Un estudio de 2019 publicado en el Journal of Marketing Research, con seis experimentos y 597 logotipos, concluyó que los logotipos más descriptivos son más fáciles de asimilar y se consideran más auténticos, sobre todo en el caso de marcas que la gente aún no conoce bien. El costo de cambiar es bajo: el nombre, donde reside el reconocimiento, se mantiene, y el símbolo es un pequeño archivo que usa fuentes que el sitio ya carga. El riesgo de no cambiar es que las conclusiones de la evaluación sigan sin abordarse en la capa más visible."
+          }
+        ],
+        "guidelines": [
+          "La identidad va más allá del símbolo. La voz es sencilla, concreta, serena y honesta, porque la jerga es una barrera para alguien en plena crisis. El color cumple una función: tinta para el texto, arena para los fondos y coral solo para lo que está activo ahora y para la única acción que importa.",
+          "Todo esto se recoge en un documento de diseño y marca de 57 páginas, compartido con la alianza en octubre de 2026. La parte A presenta los argumentos y fija las directrices: la evidencia, las pruebas comparativas, el costo y el riesgo de cambiar, la voz y el tono, la construcción, el espacio de protección y los tamaños mínimos, el color, la tipografía, la fotografía, cuatro versiones lingüísticas, el uso junto a los socios y las normas. La parte B es la norma de diseño del sitio web, y cada regla incluida en ella indica su motivo y el tipo de respaldo que tiene: los términos de referencia, evidencia publicada, un valor calculado, una norma o nuestro propio criterio.",
+          "El nuevo símbolo es una propuesta. La decisión corresponde a los socios, y mientras tanto el nuevo sitio lo utiliza."
+        ]
+      },
+      "beforeAfter": [
+        {
+          "label": "El sitio web",
+          "before": "El sitio creado en 2020",
+          "after": "Reconstruido desde cero, con 30 plantillas de página"
+        },
+        {
+          "label": "La biblioteca",
+          "before": "Principalmente de 2020 a 2022",
+          "after": "Primero las orientaciones vigentes, sin el material desactualizado"
+        },
+        {
+          "label": "Documentos",
+          "before": "Muchos solo enlazados en otros sitios",
+          "after": "Alojados en el propio sitio, incluidos 155 descargados de quienes los publican"
+        },
+        {
+          "label": "Entradas repetidas",
+          "before": "Algunas figuraban hasta cuatro veces",
+          "after": "Cada una figura una vez, con sus idiomas juntos"
+        },
+        {
+          "label": "El logotipo",
+          "before": "Solo el nombre, en inglés",
+          "after": "Un símbolo propuesto que funciona en cualquier idioma y a cualquier tamaño"
+        },
+        {
+          "label": "Direcciones antiguas",
+          "before": "1593 en todo el sitio antiguo",
+          "after": "Cada una asignada a un lugar del nuevo sitio"
+        }
+      ],
+      "results": [
+        "El sitio aún no se ha lanzado, por lo que todavía no hay resultados de visitas que presentar. Hasta el relanzamiento, la dirección pública de la alianza sigue mostrando el sitio antiguo.",
+        "Lo que se puede presentar es lo que se ha probado. El 23 de octubre de 2026, un rastreo de 332 páginas y 634 enlaces a otros sitios no encontró ninguno roto. Cada página se comprueba con anchos de 320 a 1920 píxeles. La medición de visitas está integrada y solo se carga cuando el visitante da su consentimiento, de modo que el relanzamiento pueda evaluarse según el uso real."
+      ],
+      "lessons": [
+        "Cuente antes de diseñar. Leer la propia base de datos del sitio, en lugar de hacer una estimación a partir de un rastreo, mostró cuánto de la biblioteca pertenecía a otra época, y eso cambió el plan.",
+        "El peso es una decisión de diseño. Fije primero el límite y todas las plantillas se construirán conforme a él.",
+        "Defienda una marca con evidencia. Exponer las conclusiones, las pruebas y el costo del cambio permite a los socios decidir según los argumentos, no según el gusto.",
+        "Muestre páginas reales a las personas. Los revisores fijaron comentarios en el sitio en funcionamiento, de modo que cada observación se refería a algo que podían ver y podía seguirse hasta una corrección o una decisión."
+      ],
+      "standards": [
+        {
+          "label": "Accesibilidad",
+          "value": "WCAG 2.2 AA en las 30 plantillas de página, mediante pruebas programadas en Chrome sin interfaz gráfica con entrada real de teclado, en anchos de escritorio y de teléfono. Se exceptúan los PDF y los informes incrustados de otras organizaciones. Una prueba con lector de pantalla realizada por una persona forma parte de la revisión final."
+        },
+        {
+          "label": "Idiomas",
+          "value": "Inglés. Cuando quienes los publican las ofrecen, los documentos incluyen también sus versiones en francés, portugués, español y suajili."
+        },
+        {
+          "label": "Rendimiento",
+          "value": "Presupuesto de 500 KB, unos 10 segundos a 400 kilobits por segundo. La página de inicio pesa entre 245 KB y 283 KB tal como se abre en un teléfono, y entre 530 KB y 563 KB si se desplaza hasta el final."
+        },
+        {
+          "label": "Seguridad",
+          "value": "Tres niveles de copia de seguridad: puntos de restauración del proveedor de alojamiento, una copia nocturna de la base de datos y el repositorio de código, comprobados mediante un script."
+        }
+      ],
+      "clientTeam": "Secretaría de Collective Service",
+      "next": "Preguntas formuladas y respondidas en francés, español y árabe, a partir de la misma biblioteca y manteniendo la cita de la fuente en cada respuesta."
+    },
+    {
+      "slug": "global-girls-foundation",
+      "name": "Global Girls Foundation",
+      "type": "Fundación",
+      "year": "2026",
+      "scope": "Rediseño del sitio web, desarrollo en WordPress e integración de la plataforma de recaudación de fondos",
+      "line": "Fundación · 2026 · Rediseño del sitio web e integración de la plataforma de recaudación de fondos",
+      "languages": "Inglés",
+      "status": {
+        "label": "Sitio en línea",
+        "text": "globalgirlsfoundation.org",
+        "href": "https://globalgirlsfoundation.org"
+      },
+      "summary": "Cómo una fundación suiza creada por Plan International obtuvo un sitio web propio, pensado para dirigirse a filántropos y recibir donaciones en tres monedas.",
+      "cardImage": {
+        "src": "/work/global-girls-foundation-home.jpg"
+      },
+      "detailImage": {
+        "src": "/work/global-girls-foundation-giving.jpg",
+        "alt": "Una sección de la página de inicio de Global Girls Foundation titulada “Tres formas de invertir en las niñas”, con tres columnas: Fondo Anual de Donaciones, Donaciones Designadas y Fondo de Dotación.",
+        "caption": "Las opciones de donación en la página de inicio de la Fundación."
+      },
+      "figures": [
+        {
+          "value": "3",
+          "label": "Monedas para donaciones puntuales y mensuales: francos suizos, euros y dólares estadounidenses"
+        },
+        {
+          "value": "100",
+          "label": "Puntuación de accesibilidad en Lighthouse, páginas de inicio y de donaciones en línea. Medido el 4 de noviembre de 2026"
+        },
+        {
+          "value": "14.0 s",
+          "label": "Carga completa de la página de inicio en línea con un perfil 3G de 400 kbit/s y 2 s de latencia. Medido el 4 de noviembre de 2026"
+        }
+      ],
+      "challenge": [
+        "Global Girls Foundation es una fundación suiza, establecida en 2022 y creada por Plan International para financiar sus programas para niñas. Su sitio web tiene que llegar a los filántropos y a las personas de su entorno: oficinas de gestión de patrimonios familiares, asesores y abogados, así como fundaciones familiares y empresariales.",
+        "Su sitio web no estaba a la altura de esa ambición. Eran 11 páginas en la plataforma WordPress de Plan International, difíciles de gestionar y en las que costaba encontrar las cosas, y no tenía una forma integrada de donar.",
+        "El nuevo sitio tenía dos funciones que tiran en direcciones distintas. Debía transmitir la imagen de una institución seria a quien piensa en un legado o en un fondo de dotación y, aun así, recibir una donación con tarjeta de cualquier persona que quisiera donar ese mismo día."
+      ],
+      "goals": [
+        "Explicar con claridad qué es la Fundación y por qué un donante debería hacerle una donación.",
+        "Ofrecer a cada tipo de donante una ruta clara desde la primera visita hasta la donación.",
+        "Recibir donaciones puntuales y mensuales seguras en más de una moneda.",
+        "Permitir que el propio equipo de la Fundación edite cada página sin romper el diseño."
+      ],
+      "decisions": [
+        {
+          "title": "Ofrecer una conversación además del pago en línea",
+          "text": "Una gran donación suele empezar con una conversación. Por eso la primera pantalla ofrece dos rutas en paralelo: donar ahora o iniciar una conversación. Al Fondo Anual de Donaciones y al fondo de dotación solo se accede mediante una conversación."
+        },
+        {
+          "title": "Dejar que el donante indique el importe",
+          "text": "Las versiones anteriores ofrecían niveles de donación predefinidos. Tras verlos, la Fundación pidió que se eliminaran, así que el panel de donación se abre con una sola casilla vacía y no fija ningún límite superior propio. Una donación por encima de lo que admite una tarjeta muestra en su lugar los datos bancarios, y cualquier donante puede pedirlos para cualquier importe."
+        },
+        {
+          "title": "Mantener los datos de tarjeta fuera del sitio",
+          "text": "Las donaciones puntuales se reciben en la propia página y las mensuales en la página alojada por Stripe, de modo que los datos de tarjeta los gestiona Stripe y nunca el sitio. El panel sigue funcionando como un formulario sencillo si los scripts están desactivados."
+        },
+        {
+          "title": "Construir el editor en torno a la página",
+          "text": "El personal de la Fundación necesitaba gestionar el sitio por sí mismo. Los editores trabajan sobre la página tal como se verá: cambian el texto directamente en ella, añaden secciones desde un menú con imágenes, y el sitio comprueba cada página según sus reglas antes de publicarla. La administración de WordPress se rediseñó con la imagen propia de la Fundación e incluye una guía de 31 pasos."
+        },
+        {
+          "title": "Revisar páginas reales, no imágenes",
+          "text": "El diseño se construyó como un sitio de revisión en funcionamiento con comentarios en la página. El equipo de la Fundación revisó páginas reales en pantallas reales, y solo las páginas aprobadas pasaron a WordPress."
+        },
+        {
+          "title": "Migrar sin perder las direcciones antiguas",
+          "text": "El dominio de la Fundación dependía de Plan International, por lo que la migración estaba en manos de su equipo de TI. Enviamos los cambios exactos necesarios, y cada dirección antigua se configuró para redirigir a su nueva ubicación. El día del lanzamiento, las 21 páginas y las 23 redirecciones respondieron correctamente."
+        }
+      ],
+      "beforeAfter": [
+        {
+          "label": "Páginas",
+          "before": "11",
+          "after": "21"
+        },
+        {
+          "label": "Dónde está alojado",
+          "before": "La plataforma WordPress de Plan International",
+          "after": "Su propio sitio WordPress, alojado en Bélgica"
+        },
+        {
+          "label": "Donaciones",
+          "before": "Sin una forma integrada de donar",
+          "after": "Donaciones puntuales y mensuales en francos suizos, euros y dólares estadounidenses"
+        },
+        {
+          "label": "Edición",
+          "before": "Difícil de gestionar",
+          "after": "Editado en la página por el propio equipo de la Fundación"
+        }
+      ],
+      "results": [
+        "El sitio se puso en línea el 9 de octubre de 2026, y ese día las 21 páginas y las 23 redirecciones respondieron correctamente. Para el 12 de octubre, tanto las donaciones puntuales como las mensuales se habían confirmado con pagos reales.",
+        "Por primera vez, la Fundación puede recibir una donación en su propio sitio, y su personal ha recibido formación para gestionar las páginas por sí mismo. Los totales de donaciones pertenecen a la Fundación y no se publican aquí."
+      ],
+      "lessons": [
+        "Decida para quién es el sitio y deje que eso zanje las discusiones. Saber que el lector era un filántropo facilitó la respuesta a la mayoría de las preguntas sobre la redacción y las donaciones.",
+        "Cuente con que las reglas de donación cambiarán. Los niveles de donación, los límites y las monedas cambiaron poco antes del lanzamiento, por lo que el panel de donación tenía que ser fácil de modificar.",
+        "Cuando un lanzamiento dependa del equipo de otra organización, envíe el cambio exacto, no una solicitud general."
+      ],
+      "standards": [
+        {
+          "label": "Accesibilidad",
+          "value": "Puntuación de accesibilidad de 100 en Lighthouse en las páginas de inicio y de donaciones en línea, 4 de noviembre de 2026. Una ejecución de axe-core en 16 páginas antes del lanzamiento no encontró infracciones confirmadas. Aún no consta ninguna prueba con lector de pantalla realizada por una persona."
+        },
+        {
+          "label": "Idiomas",
+          "value": "Inglés"
+        },
+        {
+          "label": "Rendimiento",
+          "value": "Página de inicio 546 KB, página de donaciones 395 KB. Con el perfil 3G, la página de inicio muestra el primer contenido a los 6,8 s y su contenido principal a los 12,5 s."
+        },
+        {
+          "label": "Seguridad",
+          "value": "Alojado en Bélgica en WP Engine · HTTPS con HSTS · puntos de copia de seguridad diarios · datos de tarjeta en poder de Stripe"
+        }
+      ],
+      "clientTeam": "Personal de Global Girls Foundation",
+      "next": "Páginas en alemán y francés, traducidas automáticamente y revisadas por el equipo de la Fundación antes de publicar nada."
+    }
+  ],
+  "insights": [
+    {
+      "slug": "website-brief",
+      "title": "Cómo redactar un pliego de requisitos para un sitio web que las agencias puedan presupuestar con precisión",
+      "tag": "Adquisiciones",
+      "date": "noviembre de 2026",
+      "summary": "Qué contar, qué nombrar y qué decidir antes de enviar un pliego de requisitos para un sitio web, de modo que las propuestas que se reciban puedan compararse.",
+      "inShort": [
+        "Cuando los presupuestos recibidos difieren mucho, normalmente cada agencia ha hecho una suposición sobre algo que el pliego omitió.",
+        "Cuente los tipos de página, el contenido que hay que trasladar, los idiomas y las conexiones con otros sistemas.",
+        "Indique su rango de presupuesto y su sistema de puntuación en el propio pliego."
+      ],
+      "lead": "Cuando tres propuestas para el mismo sitio web llegan con grandes diferencias, rara vez significa que dos agencias estén equivocadas. Normalmente significa que cada una hizo una suposición sobre algo que el pliego omitió. Este artículo está dirigido al responsable de programas o de comunicación que tiene que redactar los términos de referencia y luego comparar lo que recibe.",
+      "body": [
+        {
+          "kind": "h",
+          "text": "Para qué sirven los términos de referencia"
+        },
+        {
+          "kind": "p",
+          "text": "El Manual de Adquisiciones de las Naciones Unidas describe los términos de referencia como “una descripción del alcance del trabajo de los servicios, que por lo general indica el trabajo que se debe realizar, el nivel de calidad y de esfuerzo, el calendario y los productos entregables”. Añade que ese documento suele ser la primera y principal vía por la que un proveedor conoce lo que usted necesita, y que unos términos claros limitan el riesgo para ambas partes."
+        },
+        {
+          "kind": "p",
+          "text": "El Manual advierte en ambos sentidos. La especificación excesiva “puede aumentar los precios, reducir el número de ofertas o ambas cosas”. La especificación insuficiente es el error contrario: se omite información esencial. En un sitio web, ese segundo error es el que sale caro. Una agencia que no puede ver cuánto contenido hay que trasladar añadirá un amplio margen por ello, o bien presupuestará bajo y volverá más tarde."
+        },
+        {
+          "kind": "quote",
+          "text": "Cuando dos presupuestos difieren, pregunte qué supuso cada agencia. La diferencia suele estar en el pliego."
+        },
+        {
+          "kind": "h",
+          "text": "Qué contar antes de enviarlo"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Tipos de página, no páginas. Enumere las plantillas que necesita: inicio, artículo, documento, evento, país. El costo de diseño y desarrollo depende del número de tipos, no del número de páginas.",
+            "Lo que hay que trasladar. Cuántas páginas y documentos tiene el sitio actual y cuáles pueden quedarse atrás. Cuéntelos desde el sistema de contenidos si puede, porque un rastreo no detecta lo que no está enlazado.",
+            "Idiomas. Cuáles en el lanzamiento, cuáles más adelante, si alguno se lee de derecha a izquierda y quién se encarga de la traducción.",
+            "Conexiones. Nombre cada sistema externo: pagos, lista de correo, paneles de datos, inicio de sesión único. Indique quién tiene cada cuenta.",
+            "Editores. Cuántas personas actualizarán el sitio, con qué frecuencia y cuánta formación necesitan.",
+            "Normas. El nivel de accesibilidad, un límite de peso de página, dónde puede alojarse el sitio y cualquier norma de protección de datos."
+          ]
+        },
+        {
+          "kind": "h",
+          "text": "Diga cómo va a decidir"
+        },
+        {
+          "kind": "p",
+          "text": "El Manual establece que los documentos de licitación deben indicar los criterios de evaluación, y que el equilibrio entre la puntuación técnica y la comercial debe fijarse antes de publicar una solicitud de propuestas. Siga esa pauta aunque sus propias normas no lo exijan. Las agencias redactan mejores propuestas cuando saben qué se va a puntuar."
+        },
+        {
+          "kind": "p",
+          "text": "Después, indique un rango de presupuesto. No debilita su posición. Le dice a cada agencia qué nivel de trabajo proponer, de modo que usted compare respuestas a la misma pregunta. Organice una ronda de preguntas y comparta cada respuesta con todos los licitadores."
+        }
+      ],
+      "sources": [
+        {
+          "title": "United Nations Procurement Manual (DOS/2020.9), United Nations Department of Operational Support, 2020",
+          "href": "https://digitallibrary.un.org/record/3954918/files/Procurement_Manual_2020.pdf"
+        },
+        {
+          "title": "Web Content Accessibility Guidelines (WCAG) 2.2, W3C, 2023",
+          "href": "https://www.w3.org/TR/WCAG22/"
+        },
+        {
+          "title": "Performance budgets 101, web.dev",
+          "href": "https://web.dev/articles/performance-budgets-101"
+        }
+      ]
+    },
+    {
+      "slug": "performance-budget",
+      "title": "Un presupuesto de rendimiento para sitios que se leen con conexiones lentas",
+      "tag": "Desarrollo",
+      "date": "noviembre de 2026",
+      "summary": "Cómo fijar un límite de peso de página antes de empezar el diseño y cómo medirlo para que la cifra tenga sentido en un teléfono con poca señal.",
+      "inShort": [
+        "Fije un límite de peso de página antes de empezar el diseño y trátelo como un requisito.",
+        "Trabajamos con 500 KB por página: unos diez segundos a 400 kilobits por segundo.",
+        "Mida cada página tal como se abre, desplazada hasta el final y en un teléfono de alta densidad."
+      ],
+      "lead": "El personal de terreno suele abrir un sitio web en un teléfono, con poca señal, en medio de otra tarea. Si la página tarda un minuto, no se lee. Este artículo está dirigido a los equipos que encargan o crean un sitio para personas en entornos de bajo ancho de banda, y explica cómo elegimos un límite y lo mantenemos.",
+      "body": [
+        {
+          "kind": "h",
+          "text": "Elija primero la cifra"
+        },
+        {
+          "kind": "p",
+          "text": "web.dev define un presupuesto de rendimiento como “un conjunto de límites impuestos a las métricas que afectan al rendimiento del sitio”. Su punto de partida sugerido es menos de 170 KB de recursos de la ruta crítica y menos de cinco segundos hasta que la página sea interactiva, calculados para dispositivos de referencia en una red 3G."
+        },
+        {
+          "kind": "p",
+          "text": "Compárelo con la web tal como es. El Web Almanac de HTTP Archive situó la mediana de la página de inicio en 2025 en 2,86 MB en escritorio y 2,56 MB en dispositivos móviles. Con una conexión lenta de 400 kilobits por segundo, 2,56 MB tardan unos 51 segundos en llegar, sin contar ningún retraso de la propia red."
+        },
+        {
+          "kind": "p",
+          "text": "Trabajamos con 500 KB por página. Eso son unos diez segundos a la misma velocidad: lento, pero utilizable. Deja espacio para una buena fotografía y un conjunto de fuentes web, lo que importa cuando el sitio también tiene que parecerse a la organización que lo gestiona."
+        },
+        {
+          "kind": "quote",
+          "text": "Un presupuesto que nadie comprueba es un deseo. Debe medirlo, en cada versión, alguien que pueda detener esa versión."
+        },
+        {
+          "kind": "h",
+          "text": "Mídalo tal como va a fallar"
+        },
+        {
+          "kind": "p",
+          "text": "Una sola cifra de un navegador de escritorio oculta la mayor parte del problema. Estas son las comprobaciones que han detectado excesos reales en nuestros proyectos:"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Al abrirse. Use una caché vacía y cuente los bytes que se transmiten, no el tamaño de los archivos en el servidor.",
+            "Desplazada hasta el final. La carga diferida retrasa las imágenes, no las elimina. Una página puede aprobar al abrirse y fallar al llegar al final.",
+            "En un teléfono de alta densidad. Las pantallas de doble y triple densidad solicitan imágenes más grandes, por lo que la misma página puede pesar mucho más que en un portátil.",
+            "Con JavaScript desactivado. La carga diferida que depende de un script se detiene, y todas las imágenes de la página pueden cargarse a la vez."
+          ]
+        },
+        {
+          "kind": "h",
+          "text": "Inclúyalo en el contrato"
+        },
+        {
+          "kind": "p",
+          "text": "Escriba el límite en el pliego, junto con el método para medirlo. Así, cada nueva función tiene un precio que todo el equipo puede ver. Cuando algo lo supera, web.dev ofrece las tres opciones honestas: optimizarlo, eliminarlo o no añadirlo."
+        },
+        {
+          "kind": "p",
+          "text": "Esta disciplina se amortiza en la primera emergencia que lleva a un nuevo público al sitio con teléfonos y conexiones deficientes. Para entonces ya es demasiado tarde para empezar."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Performance budgets 101, web.dev",
+          "href": "https://web.dev/articles/performance-budgets-101"
+        },
+        {
+          "title": "Page Weight, Web Almanac 2025, HTTP Archive",
+          "href": "https://almanac.httparchive.org/en/2025/page-weight"
+        }
+      ]
+    },
+    {
+      "slug": "accessible-colour",
+      "title": "Color accesible que mantiene una marca reconocible",
+      "tag": "Accesibilidad",
+      "date": "noviembre de 2026",
+      "summary": "Por qué la mayoría de las paletas de marca fallan solo en determinadas combinaciones, y cómo asignar una función a cada color permite conservar tanto la marca como la relación de contraste.",
+      "inShort": [
+        "Los colores de marca rara vez fallan en todas partes. Fallan en tamaños pequeños y en determinadas combinaciones.",
+        "El texto principal necesita 4,5:1. El texto grande y los elementos de interfaz necesitan 3:1.",
+        "Asigne una función a cada color y pruebe cada combinación en la que vaya a aparecer."
+      ],
+      "lead": "La accesibilidad y la imagen de marca suelen presentarse como opuestas, como si una tuviera que ceder ante la otra. El problema real es mucho más limitado. Este artículo está dirigido a los equipos de comunicación y a los diseñadores que son responsables de una paleta y a quienes se les ha dicho que no cumple.",
+      "body": [
+        {
+          "kind": "h",
+          "text": "Qué exige la norma"
+        },
+        {
+          "kind": "p",
+          "text": "Las WCAG 2.2 exigen una relación de contraste de al menos 4,5:1 para el texto y de 3:1 para el texto grande, que definen como al menos 18 puntos, o 14 puntos en negrita. Los componentes de la interfaz de usuario y los gráficos con significado necesitan 3:1 respecto a lo que tienen al lado. Además, el color no puede ser la única forma de mostrar la información. El texto que forma parte de un logotipo o de un nombre de marca no tiene requisito de contraste."
+        },
+        {
+          "kind": "p",
+          "text": "Es el fallo más común que existe. El estudio de WebAIM de 2026 sobre el millón de páginas de inicio principales encontró texto de bajo contraste en el 83,9 % de ellas, con un promedio de 34 casos por página."
+        },
+        {
+          "kind": "quote",
+          "text": "La mayoría de las paletas no fallan. Fallan determinadas combinaciones."
+        },
+        {
+          "kind": "h",
+          "text": "Cómo se ve eso en una paleta real"
+        },
+        {
+          "kind": "p",
+          "text": "Nuestro propio logotipo usa seis colores, uno por cada idioma de la animación de la parte superior de nuestra página de inicio. Sobre blanco, el azul mide 6,16:1, el violeta 5,72:1 y el rosa 4,84:1, por lo que los tres podrían usarse para texto principal. El naranja mide 4,30:1, el verde 4,38:1 y el ámbar 3,65:1. Esos tres fallan en texto pequeño y aprueban en texto grande."
+        },
+        {
+          "kind": "p",
+          "text": "No cambiamos los colores. Cambiamos sus funciones. Los seis aparecen a gran tamaño y en el logotipo. Todo el texto pequeño del sitio es casi negro o gris oscuro, con 7,23:1 o más, incluso la pequeña leyenda situada justo encima de la animación en color. La marca conserva su color, y nadie tiene que leer texto ámbar de 14 píxeles."
+        },
+        {
+          "kind": "h",
+          "text": "Cómo comprobar una paleta"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Enumere cada combinación: cada color de texto sobre cada fondo en el que vaya a aparecer, incluidos los estados al pasar el cursor y el texto sobre fotografías.",
+            "Marque cada combinación como válida para texto principal, válida solo para texto grande o no válida.",
+            "Asigne a cada color una función a partir de esa tabla: texto, gran formato, relleno o decoración.",
+            "Cuando un color tenga que usarse en texto pequeño, oscurézcalo ligeramente en lugar de sustituirlo. Los lectores reconocen el tono, no el valor exacto.",
+            "Identifique lo que solo indica el color, como enlaces, errores y líneas de gráficos, y añada un subrayado, un icono o una etiqueta."
+          ]
+        },
+        {
+          "kind": "h",
+          "text": "Déjelo por escrito"
+        },
+        {
+          "kind": "p",
+          "text": "Una paleta sobrevive a un traspaso cuando las directrices dicen qué puede hacer cada color, no solo cuál es su valor. Incluya la tabla en la guía de marca. La próxima persona que cree una página de campaña no tendrá que averiguarlo, y la marca seguirá pareciéndose a sí misma."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Understanding Success Criterion 1.4.3: Contrast (Minimum), W3C",
+          "href": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "Understanding Success Criterion 1.4.11: Non-text Contrast, W3C",
+          "href": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html"
+        },
+        {
+          "title": "Understanding Success Criterion 1.4.1: Use of Color, W3C",
+          "href": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "The WebAIM Million, WebAIM, 2026",
+          "href": "https://webaim.org/projects/million/"
+        }
+      ]
+    }
+  ]
+}

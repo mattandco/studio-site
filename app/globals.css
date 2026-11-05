@@ -1242,6 +1242,9 @@ body {
   border-color: transparent transparent transparent var(--ink);
 }
 
+.pack-link {
+  margin: clamp(24px, 3vw, 40px) 0 0;
+}
 .footer-top {
   display: flex;
   flex-wrap: wrap;

@@ -120,6 +120,11 @@ export default async function Home({ params }: Props) {
             </div>
           ))}
         </dl>
+        <p className="pack-link">
+          <a href="/nestvested-procurement-pack.pdf" className="link">
+            {h.packLink}
+          </a>
+        </p>
 
         <div id="fees" className="sub-section">
           <h3 className="rule-label">{h.fees.label}</h3>

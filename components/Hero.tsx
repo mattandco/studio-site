@@ -156,7 +156,7 @@ export default function Hero() {
         <div className="hero-caption">
           <span aria-hidden="true" className="hero-caption-text">
             <span className="tabular">{`0${index + 1} / 06`}</span>
-            <span lang={code} dir={ar ? "rtl" : "ltr"} style={{ color: language.colour }}>
+            <span lang={code} dir={ar ? "rtl" : "ltr"}>
               {language.name}
             </span>
           </span>

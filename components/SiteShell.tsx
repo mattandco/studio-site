@@ -1,4 +1,5 @@
 import ContactFormProvider from "@/components/ContactForm";
+import Motion from "@/components/Motion";
 import PageTransition from "@/components/PageTransition";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
@@ -15,6 +16,7 @@ export default function SiteShell({ lang, children }: { lang: Lang; children: Re
       <SiteHeader lang={lang} text={t.nav} menu={t.common.mainMenu} />
       <PageTransition>{children}</PageTransition>
       <SiteFooter lang={lang} />
+      <Motion />
     </ContactFormProvider>
   );
 }

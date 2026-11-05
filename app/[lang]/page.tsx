@@ -32,7 +32,9 @@ export default async function Home({ params }: Props) {
         <p className="statement type-lg">{h.workStatement}</p>
         <article aria-labelledby="work-lead" className="work-lead">
           <Link href={caseHref(lead.slug)} className="work-image" tabIndex={-1} aria-hidden="true">
-            <Image src={lead.cardImage.src} alt="" fill sizes="(max-width: 1512px) 100vw, 1384px" />
+            <span className="px">
+              <Image src={lead.cardImage.src} alt="" fill sizes="(max-width: 1512px) 100vw, 1384px" />
+            </span>
           </Link>
           <div className="work-lead-text">
             <h3 id="work-lead" className="work-title">
@@ -46,7 +48,9 @@ export default async function Home({ params }: Props) {
         </article>
         <article aria-labelledby="work-second" className="work-second">
           <Link href={caseHref(second.slug)} className="work-image" tabIndex={-1} aria-hidden="true">
-            <Image src={second.cardImage.src} alt="" fill sizes="(max-width: 760px) 100vw, 66vw" />
+            <span className="px">
+              <Image src={second.cardImage.src} alt="" fill sizes="(max-width: 760px) 100vw, 66vw" />
+            </span>
           </Link>
           <div className="work-second-text">
             <h3 id="work-second" className="work-title">
@@ -81,7 +85,11 @@ export default async function Home({ params }: Props) {
           {h.about}
         </h2>
         <div className="about">
-          <p className="about-line type-xl">{h.aboutLine}</p>
+          <p className="about-line type-xl">
+            {h.aboutLine.split(" ").map((word, index) => (
+              <span key={index}>{word} </span>
+            ))}
+          </p>
           <div className="about-text">
             {h.aboutText.map((text) => (
               <p key={text}>{text}</p>

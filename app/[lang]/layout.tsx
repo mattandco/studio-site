@@ -3,6 +3,7 @@ import SiteShell from "@/components/SiteShell";
 import { getContent } from "@/content/i18n";
 import { SITE } from "@/content/site";
 import { fontClasses } from "@/lib/fonts";
+import { introScript } from "@/lib/intro";
 import { getLanguage, LANGUAGES, localePath, type Lang } from "@/lib/languages";
 import { alternates } from "@/lib/seo";
 import "../globals.css";
@@ -69,6 +70,7 @@ export default async function RootLayout({
         />
       </head>
       <body>
+        <script dangerouslySetInnerHTML={{ __html: introScript }} />
         <SiteShell lang={lang}>{children}</SiteShell>
       </body>
     </html>

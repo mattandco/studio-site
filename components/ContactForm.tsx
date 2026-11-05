@@ -82,6 +82,17 @@ export default function ContactFormProvider({
     element.showModal();
     document.getElementById("form-name")?.focus();
     if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      element.querySelectorAll(".form > *").forEach((node, index) => {
+        node.animate(
+          [
+            { opacity: 0, transform: "translateY(20px)" },
+            { opacity: 1, transform: "none" },
+          ],
+          { duration: 700, delay: 120 + index * 45, easing: "cubic-bezier(.16,1,.3,1)", fill: "backwards" }
+        );
+      });
+    }
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       element.animate(
         [
           { transform: `translateX(${document.dir === "rtl" ? -40 : 40}px)`, opacity: 0 },

@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CarePlans, ClosingCta, FactRow, NumberedRows, Questions } from "@/components/PageParts";
+import CompareTable from "@/components/CompareTable";
+import { ClosingCta, FactRow, NumberedRows, Questions } from "@/components/PageParts";
 import { getContent, getProject, getServicePage, type ServiceSection } from "@/content/i18n";
 import { localePath, type Lang } from "@/lib/languages";
 import { alternates } from "@/lib/seo";
@@ -26,6 +27,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: alternates(lang, `/services/${slug}`),
     openGraph: { title: page.title, description: page.description },
   };
+}
+
+// The list of what every plan includes, written in the copy as one line.
+function Includes({ text }: { text: string }) {
+  const [, lead, rest] = text.match(/^(.*?)\s*[:：]\s*(.*)$/) ?? [null, "", text];
+  return (
+    <div className="includes">
+      {lead && <p>{lead}:</p>}
+      <ul>
+        {rest.replace(/[.。]$/, "").split(" · ").map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 function Section({ lang, section }: { lang: Lang; section: ServiceSection }) {
@@ -62,8 +78,8 @@ function Section({ lang, section }: { lang: Lang; section: ServiceSection }) {
     return (
       <>
         <p className="statement type-lg">{section.statement}</p>
-        <p className="service-note">{section.includes}</p>
-        <CarePlans section={section} />
+        <Includes text={section.includes} />
+        <CompareTable section={section} notIncluded={t.common.notIncluded} />
         {section.notes.map((note) => (
           <p key={note} className="note-line">
             {note}
@@ -78,7 +94,9 @@ function Section({ lang, section }: { lang: Lang; section: ServiceSection }) {
   return (
     <article aria-label={project.name} className="work-second">
       <Link href={href} className="work-image" tabIndex={-1} aria-hidden="true">
-        <Image src={project.cardImage.src} alt="" fill sizes="(max-width: 760px) 100vw, 66vw" />
+        <span className="px">
+          <Image src={project.cardImage.src} alt="" fill sizes="(max-width: 760px) 100vw, 66vw" />
+        </span>
       </Link>
       <div className="work-second-text">
         <h3 className="work-title">{project.name}</h3>

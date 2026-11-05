@@ -11,7 +11,8 @@
     "discuss": "Projekt besprechen",
     "tellUs": "Senden Sie uns Ihr Briefing.",
     "ctaLabel": "Kontakt",
-    "ctaText": "Ein grobes Briefing oder eine Leistungsbeschreibung genügt. Matthew Bowman antwortet noch am selben Geschäftstag, und innerhalb von fünf Arbeitstagen haben Sie ein Festpreisangebot."
+    "ctaText": "Ein grobes Briefing oder eine Leistungsbeschreibung genügt. Matthew Bowman antwortet noch am selben Geschäftstag, und innerhalb von fünf Arbeitstagen haben Sie ein Festpreisangebot.",
+    "notIncluded": "Nicht enthalten"
   },
   "nav": {
     "work": "Projekte",

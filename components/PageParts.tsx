@@ -1,6 +1,6 @@
 import Link from "next/link";
 import DiscussLink from "@/components/DiscussLink";
-import { getContent, type CareSection, type Question } from "@/content/i18n";
+import { getContent, type Question } from "@/content/i18n";
 import { SITE } from "@/content/site";
 import { localePath, type Lang } from "@/lib/languages";
 
@@ -67,56 +67,6 @@ export function Questions({ lang, items }: { lang: Lang; items: Question[] }) {
         </details>
       ))}
     </div>
-  );
-}
-
-/** The care plans: a table on wide screens, one plan under another on narrow ones. */
-export function CarePlans({ section }: { section: CareSection }) {
-  const { plans, rows } = section;
-  return (
-    <>
-      <table className="care-table">
-        <thead>
-          <tr>
-            <td />
-            {plans.map((plan) => (
-              <th key={plan} scope="col" lang="en" dir="ltr">
-                {plan}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map(({ label, values }) => (
-            <tr key={label}>
-              <th scope="row">{label}</th>
-              {values.map((value, index) => (
-                <td key={plans[index]}>{value}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <div className="care-cards">
-        {plans.map((plan, index) => (
-          <section key={plan} aria-label={plan}>
-            <h3 className="type-lg" lang="en" dir="ltr">
-              {plan}
-            </h3>
-            <dl className="standards">
-              {rows
-                .filter(({ values }) => values[index] !== "—")
-                .map(({ label, values }) => (
-                  <div key={label}>
-                    <dt>{label}</dt>
-                    <dd>{values[index]}</dd>
-                  </div>
-                ))}
-            </dl>
-          </section>
-        ))}
-      </div>
-    </>
   );
 }
 

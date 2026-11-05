@@ -11,7 +11,8 @@
     "discuss": "Discuss a project",
     "tellUs": "Send us the brief.",
     "ctaLabel": "Contact",
-    "ctaText": "A rough brief or a terms of reference is enough. Matthew Bowman replies the same business day, and you have a fixed-fee proposal within five working days."
+    "ctaText": "A rough brief or a terms of reference is enough. Matthew Bowman replies the same business day, and you have a fixed-fee proposal within five working days.",
+    "notIncluded": "Not included"
   },
   "nav": {
     "work": "Work",

@@ -26,7 +26,10 @@ export default async function InsightsPage({ params }: Props) {
       <ol className="insights-list">
         {t.insights.map((insight, index) => (
           <li key={insight.slug}>
-            <Link href={localePath(lang, `/insights/${insight.slug}`)}>
+            <Link
+              href={localePath(lang, `/insights/${insight.slug}`)}
+              style={{ "--dot": ["#D9480F", "#2457D6", "#138A55"][index % 3] } as React.CSSProperties}
+            >
               <span aria-hidden="true" className="insights-number">
                 {`0${index + 1}`}
               </span>

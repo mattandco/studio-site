@@ -114,6 +114,7 @@ export default async function CaseStudyPage({ params }: Props) {
       <div className="wrap case-body-wrap">
         <nav aria-label={t.onThisPage} className="on-this-page">
           <span>{t.onThisPage}</span>
+          <i aria-hidden="true" className="toc-dot" />
           {sections.filter(([id]) => id !== "brand" || project.brand).map(([id, label]) => (
             <a key={id} href={`#${id}`}>
               {label}

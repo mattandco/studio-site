@@ -1,13 +1,12 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
-import { HERO_LANGUAGES, logoColours } from "@/lib/hero";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
+import { HERO_LANGUAGES } from "@/lib/hero";
 import { startPaper } from "@/lib/paper";
 
 const EO = "cubic-bezier(.16,1,.3,1)";
 const EW = "cubic-bezier(.77,0,.18,1)";
-const EIO = "cubic-bezier(.76,0,.24,1)";
 const WIPE = [{ clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)" }];
 const UP = [
   { opacity: 0, transform: "translateY(44px)" },
@@ -34,15 +33,10 @@ function tintFor(path: string) {
 /** All the site's movement in one place. Everything is skipped for reduced motion. */
 export default function Motion({ view }: { view: string }) {
   const path = usePathname();
-  const router = useRouter();
   const canvas = useRef<HTMLCanvasElement>(null);
   const cursor = useRef<HTMLDivElement>(null);
-  const curtain = useRef<HTMLDivElement>(null);
-  const [curtainTitle, setCurtainTitle] = useState("");
-  const [curtainColour, setCurtainColour] = useState(HERO_LANGUAGES[0].colour);
   const pending = useRef<Pending[]>([]);
   const covered = useRef(false);
-  const lifting = useRef<(() => void) | null>(null);
 
   // The paper background, the header and the "View" cursor live for the whole visit.
   useEffect(() => {
@@ -212,7 +206,6 @@ export default function Motion({ view }: { view: string }) {
       const list = pending.current.splice(0).filter(({ el }) => el.isConnected);
       list.forEach(({ el }, index) => play(el, index * 110));
     };
-    lifting.current = uncover;
     window.addEventListener("nv-uncover", uncover);
 
     // The contents list marks where you are.
@@ -249,88 +242,11 @@ export default function Motion({ view }: { view: string }) {
     };
   }, [path]);
 
-  // The coloured curtain between pages.
-  const colourIndex = useRef(0);
-  const opened = useRef(false);
-  useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const onClick = (event: MouseEvent) => {
-      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      const link = (event.target as Element | null)?.closest?.("a");
-      if (!link || link.target || link.hasAttribute("download") || link.closest(".language-row")) return;
-      const url = new URL(link.href, location.href);
-      if (url.origin !== location.origin || url.pathname === location.pathname) return;
-      const panelRoot = curtain.current;
-      if (!panelRoot || opened.current) return;
-      event.preventDefault();
-      event.stopPropagation();
-      opened.current = true;
-      covered.current = true;
-      const heading = link.closest("article, li")?.querySelector("h3, .insights-name, .more-name")?.textContent;
-      const title = (heading || link.textContent || "").replace(/[→←↗]/g, "").trim();
-      colourIndex.current = (colourIndex.current + 1) % HERO_LANGUAGES.length;
-      setCurtainTitle(title);
-      setCurtainColour(HERO_LANGUAGES[colourIndex.current].colour);
-      const band = panelRoot.querySelector("[data-k=band]") as HTMLElement;
-      const panel = panelRoot.querySelector("[data-k=panel]") as HTMLElement;
-      const text = panelRoot.querySelector("[data-k=title]") as HTMLElement;
-      panelRoot.getAnimations({ subtree: true }).forEach((animation) => animation.cancel());
-      band.animate([{ transform: "translateY(101%)" }, { transform: "none" }], { duration: 720, easing: EIO, fill: "forwards" });
-      const cover = panel.animate([{ transform: "translateY(101%)" }, { transform: "none" }], { duration: 720, delay: 110, easing: EIO, fill: "forwards" });
-      text.animate([{ transform: "translateY(110%)" }, { transform: "none" }], { duration: 900, delay: 460, easing: EO, fill: "both" });
-      const go = () => router.push(url.pathname + url.search + url.hash);
-      cover.finished.then(go, go);
-    };
-    document.addEventListener("click", onClick, true);
-    return () => document.removeEventListener("click", onClick, true);
-  }, [router]);
-
-  useEffect(() => {
-    if (!opened.current || !curtain.current) return;
-    const root = curtain.current;
-    const timer = setTimeout(() => {
-      const band = root.querySelector("[data-k=band]") as HTMLElement;
-      const panel = root.querySelector("[data-k=panel]") as HTMLElement;
-      const text = root.querySelector("[data-k=title]") as HTMLElement;
-      panel.animate([{ transform: "none" }, { transform: "translateY(-101%)" }], { duration: 900, easing: EIO, fill: "forwards" });
-      text.animate([{ transform: "none", opacity: 1 }, { transform: "translateY(-40%)", opacity: 0 }], { duration: 630, easing: EIO, fill: "forwards" });
-      const leave = band.animate([{ transform: "none" }, { transform: "translateY(-101%)" }], { duration: 900, delay: 120, easing: EIO, fill: "forwards" });
-      setTimeout(() => lifting.current?.(), 360);
-      const done = () => {
-        root.getAnimations({ subtree: true }).forEach((animation) => animation.cancel());
-        opened.current = false;
-      };
-      leave.finished.then(done, done);
-    }, 440);
-    return () => clearTimeout(timer);
-  }, [path]);
-
-  const colours = logoColours(0);
   return (
     <>
       <canvas ref={canvas} aria-hidden="true" className="paper" />
       <div ref={cursor} aria-hidden="true" className="view-cursor">
         {view}
-      </div>
-      <div ref={curtain} aria-hidden="true" className="curtain">
-        <div data-k="band" className="curtain-layer" style={{ background: curtainColour }} />
-        <div data-k="panel" className="curtain-layer curtain-panel">
-          <div className="curtain-top">
-            <svg viewBox="-7 -10.5 14 21" className="logo-mark">
-              {[[-3.6, -7.2], [-3.6, 0], [-3.6, 7.2], [3.6, -7.2], [3.6, 0], [3.6, 7.2]].map(([x, y], index) => (
-                <circle key={index} cx={x} cy={y} r={2.88} style={{ fill: colours[index] }} />
-              ))}
-            </svg>
-            <span>Nestvested</span>
-          </div>
-          <div className="curtain-foot">
-            <span className="curtain-mask">
-              <span data-k="title" className="curtain-title">
-                {curtainTitle}
-              </span>
-            </span>
-          </div>
-        </div>
       </div>
     </>
   );

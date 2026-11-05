@@ -985,58 +985,6 @@ body {
   opacity: 0;
   transition: translate 0.7s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
 }
-.curtain {
-  position: fixed;
-  inset: 0;
-  z-index: 90;
-  overflow: hidden;
-  pointer-events: none;
-}
-.curtain-layer {
-  position: absolute;
-  inset: 0;
-  transform: translateY(101%);
-}
-.curtain-panel {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: var(--ink);
-  color: #fff;
-}
-.curtain-top,
-.curtain-foot {
-  width: 100%;
-  max-width: 1512px;
-  margin: 0 auto;
-  padding-inline: var(--gutter);
-}
-.curtain-top {
-  padding-top: 28px;
-  display: flex;
-  align-items: baseline;
-  gap: 0.24em;
-  font-size: 32px;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-}
-.curtain-foot {
-  padding-bottom: clamp(32px, 4vw, 64px);
-}
-.curtain-mask {
-  display: block;
-  overflow: hidden;
-  padding: 0.1em 0 0.2em;
-  margin: -0.1em 0 -0.2em;
-}
-.curtain-title {
-  display: block;
-  max-width: 16em;
-  font-size: clamp(36px, 5.4vw, 96px);
-  line-height: 1.05;
-  letter-spacing: -0.045em;
-  text-wrap: balance;
-}
 .sr-only {
   position: absolute;
   width: 1px;

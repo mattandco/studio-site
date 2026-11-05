@@ -9,6 +9,7 @@ const SERVICES = [
   ["Web design", "Research, prototypes your team can comment on, and design systems that hold up in every language."],
   ["Web development", "Fast, accessible sites your own team can update, built for slow and unstable connections."],
   ["Branding", "Identities for organisations, programmes and campaigns, with guidelines partners actually follow."],
+  ["Evidence intelligence", "Systems that read your documents, data and feedback and turn them into answers people can act on — every one traced to its source, running where your data is allowed to be."],
   ["Web maintenance", "We look after sites after launch: updates, security, backups and fixes, on a monthly retainer."],
 ];
 

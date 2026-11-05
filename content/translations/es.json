@@ -289,7 +289,7 @@
     "report": "Informar de un problema",
     "reportText": "Escriba a {email} y le responderá una persona con nombre y apellido.",
     "security": "Nota de seguridad",
-    "securityText": "El sitio funciona en Vercel y se sirve por HTTPS. No tiene cuentas ni analítica. No instala cookies propias. El formulario de contacto no guarda nada: abre un mensaje en su propia aplicación de correo."
+    "securityText": "El sitio funciona en Vercel y se sirve por HTTPS. No tiene cuentas ni analítica. No instala cookies propias. El formulario de contacto no guarda nada: abre un mensaje en su propia aplicación de correo. La insignia de carbono del pie de página es el único script externo: se carga desde unpkg.com y solicita a Website Carbon la calificación de esta página en cada visita."
   },
   "notFound": {
     "title": "Página no encontrada",

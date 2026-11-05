@@ -1253,6 +1253,10 @@ body {
   border-color: transparent transparent transparent var(--ink);
 }
 
+.site-footer #wcb.carbonbadge {
+  text-align: start;
+}
+
 /* Long words in French, German and Portuguese must not push a phone screen wider. */
 @media (max-width: 480px) {
   h1,

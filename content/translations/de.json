@@ -289,7 +289,7 @@
     "report": "Problem melden",
     "reportText": "Schreiben Sie an {email}, und eine namentlich benannte Person antwortet Ihnen.",
     "security": "Sicherheitshinweis",
-    "securityText": "Die Website läuft auf Vercel und wird über HTTPS ausgeliefert. Sie hat keine Benutzerkonten und keine Webanalyse. Sie setzt keine eigenen Cookies. Das Kontaktformular speichert nichts: Es öffnet eine Nachricht in Ihrem eigenen E-Mail-Programm."
+    "securityText": "Die Website läuft auf Vercel und wird über HTTPS ausgeliefert. Sie hat keine Benutzerkonten und keine Webanalyse. Sie setzt keine eigenen Cookies. Das Kontaktformular speichert nichts: Es öffnet eine Nachricht in Ihrem eigenen E-Mail-Programm. Das CO₂-Badge in der Fußzeile ist das einzige externe Skript: Es wird von unpkg.com geladen und fragt bei jedem Besuch die Bewertung dieser Seite bei Website Carbon ab."
   },
   "notFound": {
     "title": "Seite nicht gefunden",

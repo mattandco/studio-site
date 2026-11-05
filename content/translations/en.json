@@ -289,7 +289,7 @@
     "report": "Report a problem",
     "reportText": "Write to {email} and a named person will reply.",
     "security": "Security note",
-    "securityText": "The site runs on Vercel and is served over HTTPS. It has no accounts and no analytics. It sets no cookies of its own. The contact form stores nothing: it opens a message in your own email app."
+    "securityText": "The site runs on Vercel and is served over HTTPS. It has no accounts and no analytics. It sets no cookies of its own. The contact form stores nothing: it opens a message in your own email app. The carbon badge in the footer is the one outside script: it loads from unpkg.com and asks Website Carbon for this page’s rating on each visit."
   },
   "notFound": {
     "title": "Page not found",

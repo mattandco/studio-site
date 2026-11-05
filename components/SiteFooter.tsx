@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CarbonBadge from "@/components/CarbonBadge";
 import LanguageButtons from "@/components/LanguageButtons";
 import { getContent } from "@/content/i18n";
 import { SITE } from "@/content/site";
@@ -9,6 +10,7 @@ export default function SiteFooter({ lang }: { lang: Lang }) {
   return (
     <footer id="languages" className="site-footer">
       <LanguageButtons lang={lang} label={t.common.languages} />
+      <CarbonBadge />
       <div className="footer-row">
         <span dir="ltr">
           © 2026 {SITE.name} · {SITE.legalName}, {SITE.address} · <a href={`mailto:${SITE.email}`}>{SITE.email}</a>

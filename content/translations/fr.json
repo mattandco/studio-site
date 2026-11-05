@@ -289,7 +289,7 @@
     "report": "Signaler un problème",
     "reportText": "Écrivez à {email} : une personne identifiée vous répondra.",
     "security": "Note de sécurité",
-    "securityText": "Le site fonctionne sur Vercel et est servi en HTTPS. Il n’a ni comptes ni outil de mesure d’audience. Il ne dépose aucun cookie qui lui soit propre. Le formulaire de contact n’enregistre rien : il ouvre un message dans votre propre application de messagerie."
+    "securityText": "Le site fonctionne sur Vercel et est servi en HTTPS. Il n’a ni comptes ni outil de mesure d’audience. Il ne dépose aucun cookie qui lui soit propre. Le formulaire de contact n’enregistre rien : il ouvre un message dans votre propre application de messagerie. Le badge carbone en pied de page est le seul script externe : il se charge depuis unpkg.com et demande à Website Carbon la note de cette page à chaque visite."
   },
   "notFound": {
     "title": "Page introuvable",

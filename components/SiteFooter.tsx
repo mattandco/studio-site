@@ -18,7 +18,7 @@ export default function SiteFooter({ lang }: { lang: Lang }) {
           © 2026 {SITE.name} · {SITE.legalName}, {SITE.address} · <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
         </span>
         <span>
-          {t.footer.tested} · <Link href={localePath(lang, "/accessibility")}>{t.footer.statement}</Link>
+          {t.footer.tested} · {t.footer.tls} · <Link href={localePath(lang, "/accessibility")}>{t.footer.statement}</Link>
         </span>
       </div>
     </footer>

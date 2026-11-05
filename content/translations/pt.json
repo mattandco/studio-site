@@ -225,6 +225,7 @@
   },
   "footer": {
     "tested": "WCAG 2.1 AA, testado a 4 de novembro de 2026",
+    "tls": "TLS: SSL Labs A+, testado a 5 de novembro de 2026",
     "statement": "Declaração de acessibilidade →"
   },
   "caseStudy": {

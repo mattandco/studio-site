@@ -1,7 +1,36 @@
 import type { NextConfig } from "next";
 
+// The page's inline scripts need 'unsafe-inline' while the pages stay static. The only
+// outside addresses are Website Carbon's badge script and its result.
+const CSP = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' https://unpkg.com",
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data:",
+  "font-src 'self'",
+  "connect-src 'self' https://api.websitecarbon.com",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self' mailto:",
+  "frame-ancestors 'none'",
+].join("; ");
+
 const nextConfig: NextConfig = {
   experimental: { globalNotFound: true },
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "Content-Security-Policy", value: CSP },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "X-Frame-Options", value: "DENY" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+        ],
+      },
+    ];
+  },
   // English stays at the plain addresses; other languages are at /es, /fr, /de and /pt.
   async redirects() {
     return [

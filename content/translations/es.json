@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Nestvested · Sitios web, marcas y respuestas basadas en evidencia para ONG y organizaciones internacionales",
-    "description": "Diseño web, desarrollo, imagen de marca y respuestas basadas en evidencia para ONG, fundaciones y organismos del sistema de las Naciones Unidas. Honorarios fijos en francos suizos y una propuesta en un plazo de cinco días hábiles."
+    "description": "Diseño web, desarrollo, imagen de marca y respuestas basadas en evidencia para ONG, fundaciones y organismos del sistema de la ONU. Honorarios fijos en francos suizos y una propuesta en un plazo de cinco días hábiles."
   },
   "common": {
     "skip": "Saltar al contenido",
@@ -12,7 +12,19 @@
     "tellUs": "Envíenos el pliego de requisitos.",
     "ctaLabel": "Contacto",
     "ctaText": "Basta con un pliego de requisitos aproximado o unos términos de referencia. Matthew Bowman responde el mismo día hábil, y en un plazo de cinco días hábiles recibirá una propuesta con honorarios fijos.",
-    "notIncluded": "No incluido"
+    "notIncluded": "No incluido",
+    "compare": {
+      "groups": [
+        "Alcance",
+        "Controles de calidad",
+        "Soporte",
+        "Facturación"
+      ],
+      "choose": "Elegir {plan}",
+      "vat": "Los precios no incluyen el IVA."
+    },
+    "drag": "Arrastre el control para comparar",
+    "view": "Ver"
   },
   "nav": {
     "work": "Proyectos",
@@ -99,7 +111,7 @@
     ],
     "bookCall": "Reservar una llamada de 30 minutos ↗",
     "workStatement": "Dos proyectos presentados en su totalidad, con cada cifra medida y fechada. Lo que aún no se ha lanzado lo indica.",
-    "workNote": "El trabajo anterior del fundador, con la IFRC y con equipos en Ginebra desde 2010, se realizó dentro de esos equipos y no se publica aquí. Las referencias están disponibles previa solicitud y figuran con su nombre en la propuesta.",
+    "workNote": "El trabajo anterior del fundador, con equipos en Ginebra desde 2010, se realizó dentro de esos equipos y no se publica aquí. Las referencias están disponibles previa solicitud y figuran con su nombre en la propuesta.",
     "servicesStatement": "Cinco servicios de un mismo equipo, cada uno con honorarios fijos y con evidencia que usted puede archivar: un sistema de diseño, resultados de pruebas, una prueba de precisión, un informe mensual.",
     "scopeAndFees": "Alcance y honorarios →",
     "aboutFacts": [

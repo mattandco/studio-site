@@ -21,7 +21,7 @@ const REVEALS: [string, string][] = [
   ["up", ".hero-lede, .hero-links, .work-lead-text, .work-second-text, .contact-row, .closing-text, .breadcrumb, .on-this-page, .body-heading, .note-line, .post-lead, .post-body > p, .post-author, .footer-row, .next-case-label, .service-note"],
   ["rows", ".services, .numbered, .standards, .insights-list, .more-list, .before-after, .questions"],
   ["kids", ".about-text, .procurement-list, .team-list, .service-intro, .case-body section > p"],
-  ["img", ".work-image"],
+  ["img", ".work-image, .slider"],
 ];
 
 type Pending = { el: Element; animations: Animation[] };
@@ -32,7 +32,7 @@ function tintFor(path: string) {
 }
 
 /** All the site's movement in one place. Everything is skipped for reduced motion. */
-export default function Motion() {
+export default function Motion({ view }: { view: string }) {
   const path = usePathname();
   const router = useRouter();
   const canvas = useRef<HTMLCanvasElement>(null);
@@ -310,7 +310,7 @@ export default function Motion() {
     <>
       <canvas ref={canvas} aria-hidden="true" className="paper" />
       <div ref={cursor} aria-hidden="true" className="view-cursor">
-        View
+        {view}
       </div>
       <div ref={curtain} aria-hidden="true" className="curtain">
         <div data-k="band" className="curtain-layer" style={{ background: curtainColour }} />

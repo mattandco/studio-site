@@ -1,20 +1,35 @@
 "use client";
 
 import { useState } from "react";
+import { useContactForm } from "@/components/ContactForm";
 import type { CareSection } from "@/content/i18n";
+
+// Which rows of the care plans sit under each group heading.
+const GROUPS = [[0], [1, 2], [3, 4, 5, 6], [8, 9]];
 
 // The care plans as a comparison table. Below 720px it becomes two plans side by
 // side, each with a select, so long features never squeeze the columns.
 export default function CompareTable({
   section,
   notIncluded,
+  text: labels,
 }: {
   section: CareSection;
   notIncluded: string;
+  text: { groups: string[]; choose: string; vat: string };
 }) {
+  const { open } = useContactForm();
   const { plans, rows, label } = section;
   const price = rows.find(({ values }) => values.every((value) => value.includes("CHF"))) ?? rows[0];
-  const body = rows.filter((row) => row !== price);
+  const groups = GROUPS.map((indexes, index) => ({
+    label: labels.groups[index],
+    rows: indexes.map((row) => rows[row]),
+  }));
+  const choose = (plan: string, index: number) => (
+    <button key={plan} type="button" onClick={open} className={index === marked ? "choose is-ink" : "choose"}>
+      {labels.choose.replace("{plan}", plan)}
+    </button>
+  );
   const yes = rows.find(({ values }) => values[0] === "—" && values[1] === values[2])?.values[1];
   const marked = 1;
   const [left, setLeft] = useState(1);
@@ -71,18 +86,35 @@ export default function CompareTable({
             ))}
           </tr>
         </thead>
-        <tbody>
-          {body.map((row) => (
-            <tr key={row.label}>
-              <th scope="row">{row.label}</th>
-              {row.values.map((text, index) => (
-                <td key={plans[index]} className={index === marked ? "is-marked" : undefined}>
-                  {value(text)}
-                </td>
-              ))}
+        {groups.map((group) => (
+          <tbody key={group.label}>
+            <tr>
+              <th scope="rowgroup" colSpan={5} className="compare-group">
+                {group.label}
+              </th>
             </tr>
-          ))}
-        </tbody>
+            {group.rows.map((row) => (
+              <tr key={row.label}>
+                <th scope="row">{row.label}</th>
+                {row.values.map((text, index) => (
+                  <td key={plans[index]} className={index === marked ? "is-marked" : undefined}>
+                    {value(text)}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        ))}
+        <tfoot>
+          <tr>
+            <td className="compare-note">{labels.vat}</td>
+            {plans.map((plan, index) => (
+              <td key={plan} className={index === marked ? "is-marked" : undefined}>
+                {choose(plan, index)}
+              </td>
+            ))}
+          </tr>
+        </tfoot>
       </table>
 
       <div className="compare-phone">
@@ -113,15 +145,25 @@ export default function CompareTable({
             </div>
           ))}
         </div>
-        {body.map((row) => (
-          <div key={row.label} className="compare-row">
-            <span className="compare-feature">{row.label}</span>
-            <div className="compare-values">
-              <div>{value(row.values[left])}</div>
-              <div>{value(row.values[right])}</div>
-            </div>
+        {groups.map((group) => (
+          <div key={group.label}>
+            <p className="compare-group">{group.label}</p>
+            {group.rows.map((row) => (
+              <div key={row.label} className="compare-row">
+                <span className="compare-feature">{row.label}</span>
+                <div className="compare-values">
+                  <div>{value(row.values[left])}</div>
+                  <div>{value(row.values[right])}</div>
+                </div>
+              </div>
+            ))}
           </div>
         ))}
+        <div className="compare-values compare-actions">
+          <div>{choose(plans[left], left)}</div>
+          <div>{choose(plans[right], right)}</div>
+        </div>
+        <p className="compare-note">{labels.vat}</p>
       </div>
     </>
   );

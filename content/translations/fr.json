@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Nestvested · Sites web, identités de marque et réponses fondées sur les preuves pour les ONG et les organisations internationales",
-    "description": "Conception web, développement, image de marque et réponses fondées sur les preuves pour les ONG, les fondations et les agences du système des Nations Unies. Honoraires forfaitaires en francs suisses, proposition sous cinq jours ouvrés."
+    "description": "Conception web, développement, image de marque et réponses fondées sur les preuves pour les ONG, les fondations et les agences du système de l’ONU. Honoraires forfaitaires en francs suisses, proposition sous cinq jours ouvrés."
   },
   "common": {
     "skip": "Aller au contenu",
@@ -12,7 +12,19 @@
     "tellUs": "Envoyez-nous le cahier des charges.",
     "ctaLabel": "Contact",
     "ctaText": "Un cahier des charges sommaire ou des termes de référence suffisent. Matthew Bowman répond le même jour ouvré, et vous recevez une proposition à honoraires forfaitaires sous cinq jours ouvrés.",
-    "notIncluded": "Non inclus"
+    "notIncluded": "Non inclus",
+    "compare": {
+      "groups": [
+        "Périmètre",
+        "Contrôles qualité",
+        "Assistance",
+        "Facturation"
+      ],
+      "choose": "Choisir {plan}",
+      "vat": "Les prix s’entendent hors TVA."
+    },
+    "drag": "Faites glisser la poignée pour comparer",
+    "view": "Voir"
   },
   "nav": {
     "work": "Réalisations",
@@ -99,7 +111,7 @@
     ],
     "bookCall": "Réserver un appel de 30 minutes ↗",
     "workStatement": "Deux projets présentés en entier, chaque chiffre étant mesuré et daté. Ce qui n’a pas été lancé est indiqué comme tel.",
-    "workNote": "Les travaux antérieurs du fondateur, avec l’IFRC et des équipes à Genève depuis 2010, ont été réalisés au sein de ces équipes et ne sont pas publiés ici. Des références sont disponibles sur demande et sont nommées dans la proposition.",
+    "workNote": "Les travaux antérieurs du fondateur, avec des équipes à Genève depuis 2010, ont été réalisés au sein de ces équipes et ne sont pas publiés ici. Des références sont disponibles sur demande et sont nommées dans la proposition.",
     "servicesStatement": "Cinq services assurés par une seule équipe, chacun à honoraires forfaitaires et chacun accompagné de preuves que vous pouvez archiver : un système de design, des résultats de tests, un test de référence, un rapport mensuel.",
     "scopeAndFees": "Périmètre et honoraires →",
     "aboutFacts": [

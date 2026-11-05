@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import BeforeAfter from "@/components/BeforeAfter";
 import { ClosingCta, NumberedRows } from "@/components/PageParts";
 import { getContent, getProject, nextProject } from "@/content/i18n";
 import { SITE } from "@/content/site";
@@ -109,6 +110,22 @@ export default async function CaseStudyPage({ params }: Props) {
             </div>
           ))}
         </dl>
+      </section>
+
+      <section aria-labelledby="h-slider" className="wrap section">
+        <h2 id="h-slider" className="rule-label slider-label">
+          <span>{t.beforeAfter}</span>
+          <span>{common.drag}</span>
+        </h2>
+        <BeforeAfter
+          before={`/work/${slug}-before.jpg`}
+          after={`/work/${slug}-after.jpg`}
+          beforeLabel={t.before}
+          afterLabel={t.after}
+          label={t.beforeAfter}
+          beforeAlt={`${project.name} · ${t.before}`}
+          afterAlt={`${project.name} · ${t.after}`}
+        />
       </section>
 
       <div className="wrap case-body-wrap">

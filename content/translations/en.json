@@ -12,7 +12,19 @@
     "tellUs": "Send us the brief.",
     "ctaLabel": "Contact",
     "ctaText": "A rough brief or a terms of reference is enough. Matthew Bowman replies the same business day, and you have a fixed-fee proposal within five working days.",
-    "notIncluded": "Not included"
+    "notIncluded": "Not included",
+    "compare": {
+      "groups": [
+        "Scope",
+        "Quality checks",
+        "Support",
+        "Billing"
+      ],
+      "choose": "Choose {plan}",
+      "vat": "Prices exclude VAT."
+    },
+    "drag": "Drag the handle to compare",
+    "view": "View"
   },
   "nav": {
     "work": "Work",
@@ -99,7 +111,7 @@
     ],
     "bookCall": "Book a 30-minute call ↗",
     "workStatement": "Two projects shown in full, with every number measured and dated. What has not launched says so.",
-    "workNote": "The founder’s earlier work, with the IFRC and teams in Geneva since 2010, was done inside those teams and is not published here. References are available on request and are named in the proposal.",
+    "workNote": "The founder’s earlier work, with teams in Geneva since 2010, was done inside those teams and is not published here. References are available on request and are named in the proposal.",
     "servicesStatement": "Five services from one team, each at a fixed fee and each with evidence you can file: a design system, test results, a benchmark, a monthly report.",
     "scopeAndFees": "Scope and fees →",
     "aboutFacts": [

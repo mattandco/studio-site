@@ -79,7 +79,7 @@ function Section({ lang, section }: { lang: Lang; section: ServiceSection }) {
       <>
         <p className="statement type-lg">{section.statement}</p>
         <Includes text={section.includes} />
-        <CompareTable section={section} notIncluded={t.common.notIncluded} />
+        <CompareTable section={section} notIncluded={t.common.notIncluded} text={t.common.compare} />
         {section.notes.map((note) => (
           <p key={note} className="note-line">
             {note}

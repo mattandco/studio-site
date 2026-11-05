@@ -1198,6 +1198,146 @@ body {
   }
 }
 
+.compare-group {
+  margin: 0;
+  padding: 28px 0 8px;
+  border-bottom: 1px solid var(--ink);
+  text-align: start;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--mute);
+}
+.compare tbody .compare-group {
+  padding: 28px 0 8px;
+  border-bottom: 1px solid var(--ink);
+}
+.compare tfoot td {
+  padding: 20px 16px 16px;
+  vertical-align: top;
+}
+.compare tfoot .compare-note,
+.compare-phone .compare-note {
+  padding-inline-start: 0;
+  font-size: 14px;
+  color: var(--mute);
+}
+.choose {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.choose:hover,
+.choose.is-ink {
+  background: var(--ink);
+  color: #fff;
+}
+.compare-actions {
+  margin-top: 20px;
+}
+.compare-phone .compare-note {
+  margin: 14px 0 0;
+}
+.slider-label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 24px;
+}
+.slider {
+  position: relative;
+  margin-top: clamp(20px, 2.4vw, 32px);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--tint);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+}
+.slider-side {
+  position: absolute;
+  inset: 0;
+}
+.slider-side img {
+  object-fit: cover;
+  object-position: top center;
+}
+.slider-before {
+  clip-path: inset(0 calc(100% - var(--ba, 50%)) 0 0);
+}
+.slider-after {
+  clip-path: inset(0 0 0 var(--ba, 50%));
+}
+.slider-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 2px 10px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.6;
+  pointer-events: none;
+}
+.slider-tag-after {
+  left: auto;
+  right: 16px;
+  background: var(--ink);
+  color: #fff;
+}
+.slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--ba, 50%);
+  width: 64px;
+  margin-left: -32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: ew-resize;
+  outline-offset: -8px;
+}
+.slider-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background: #fff;
+}
+.slider-knob {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 6px 24px rgba(36, 33, 38, 0.18);
+}
+.slider-knob span {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 7px 5px 0;
+  border-color: transparent var(--ink) transparent transparent;
+}
+.slider-knob span:last-child {
+  border-width: 5px 0 5px 7px;
+  border-color: transparent transparent transparent var(--ink);
+}
+
 /* Long words in French, German and Portuguese must not push a phone screen wider. */
 @media (max-width: 480px) {
   h1,

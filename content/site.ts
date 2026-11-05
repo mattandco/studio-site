@@ -3,7 +3,7 @@
 export const SITE = {
   name: "Nestvested",
   legalName: "Nestvested Limited",
-  address: "35 Lady Musgrave Road, Building 18, Kingston, Jamaica",
+  addressLines: ["35 Lady Musgrave Road, Building 18", "Kingston, Jamaica"],
   founder: "Matthew Bowman",
   email: "hello@nestvested.co",
   phone: "+1 876 881 8780",

@@ -579,10 +579,21 @@ textarea::placeholder {
   color: var(--mute);
 }
 .footer-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 6px 32px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 32px;
+  margin-top: 24px;
+}
+.footer-row p {
+  margin: 0;
+}
+.footer-row .footer-link {
+  margin-top: 12px;
+}
+@media (max-width: 640px) {
+  .footer-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 .language-row {
   display: flex;

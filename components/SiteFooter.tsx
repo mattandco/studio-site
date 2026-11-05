@@ -14,12 +14,22 @@ export default function SiteFooter({ lang }: { lang: Lang }) {
         <CarbonBadge result={t.footer.carbon} note={t.footer.carbonNote} />
       </div>
       <div className="footer-row">
-        <span dir="ltr">
-          © 2026 {SITE.name} · {SITE.legalName}, {SITE.address} · <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
-        </span>
-        <span>
-          {t.footer.tested} · {t.footer.tls} · <Link href={localePath(lang, "/accessibility")}>{t.footer.statement}</Link>
-        </span>
+        <div dir="ltr">
+          <p>© 2026 {SITE.legalName}</p>
+          {SITE.addressLines.map((line) => (
+            <p key={line}>{line}</p>
+          ))}
+          <p className="footer-link">
+            <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+          </p>
+        </div>
+        <div>
+          <p>{t.footer.tested}</p>
+          <p>{t.footer.tls}</p>
+          <p className="footer-link">
+            <Link href={localePath(lang, "/accessibility")}>{t.footer.statement}</Link>
+          </p>
+        </div>
       </div>
     </footer>
   );

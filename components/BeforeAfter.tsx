@@ -13,6 +13,7 @@ export default function BeforeAfter({
   label,
   beforeAlt,
   afterAlt,
+  frame,
 }: {
   before: string;
   after: string;
@@ -21,6 +22,7 @@ export default function BeforeAfter({
   label: string;
   beforeAlt: string;
   afterAlt: string;
+  frame: string;
 }) {
   const box = useRef<HTMLDivElement>(null);
   const dragging = useRef(false);
@@ -73,7 +75,7 @@ export default function BeforeAfter({
     <div
       ref={box}
       className="slider"
-      style={{ "--ba": `${value.toFixed(2)}%` } as CSSProperties}
+      style={{ "--ba": `${value.toFixed(2)}%`, "--frame": frame } as CSSProperties}
       onPointerDown={onDown}
       onPointerMove={(event) => {
         if (event.buttons) moveTo(event.clientX);

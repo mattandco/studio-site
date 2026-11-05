@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,6 +11,12 @@ import { localePath, type Lang } from "@/lib/languages";
 import { alternates } from "@/lib/seo";
 
 type Props = { params: Promise<{ lang: string; slug: string }> };
+
+// Each frame matches its screenshot exactly, so nothing is cut off and no strip shows.
+const FRAMES: Record<string, { image: string; slider: string }> = {
+  "collective-service": { image: "1800 / 934", slider: "2 / 1" },
+  "global-girls-foundation": { image: "1800 / 1012", slider: "1800 / 1012" },
+};
 
 export const dynamicParams = false;
 
@@ -95,7 +102,7 @@ export default async function CaseStudyPage({ params }: Props) {
       </div>
 
       <figure className="wrap case-image">
-        <span className="work-image">
+        <span className="work-image" style={{ "--frame": FRAMES[slug].image } as CSSProperties}>
           <Image src={project.detailImage.src} alt={project.detailImage.alt} fill sizes="(max-width: 1512px) 100vw, 1384px" />
         </span>
         <figcaption>{project.detailImage.caption}</figcaption>
@@ -125,6 +132,7 @@ export default async function CaseStudyPage({ params }: Props) {
           label={t.beforeAfter}
           beforeAlt={`${project.name} · ${t.before}`}
           afterAlt={`${project.name} · ${t.after}`}
+          frame={FRAMES[slug].slider}
         />
       </section>
 

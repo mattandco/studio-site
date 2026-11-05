@@ -589,8 +589,6 @@ textarea::placeholder {
   flex-wrap: wrap;
   align-items: center;
   gap: 4px;
-  padding-top: 12px;
-  border-top: 1px solid var(--line);
 }
 .language-row a {
   display: inline-flex;
@@ -883,15 +881,6 @@ body {
   position: absolute;
   inset: 0;
   display: block;
-  scale: 1.06;
-  /* Grows to the right, so headlines near the left edge of a screenshot stay whole. */
-  transform-origin: left center;
-}
-.work-image img {
-  transition: scale 1.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.work-image:hover img {
-  scale: 1.06;
 }
 .view-cursor {
   position: fixed;
@@ -1169,7 +1158,7 @@ body {
 .slider {
   position: relative;
   margin-top: clamp(20px, 2.4vw, 32px);
-  aspect-ratio: 16 / 9;
+  aspect-ratio: var(--frame, 16 / 9);
   overflow: hidden;
   background: var(--tint);
   user-select: none;
@@ -1192,7 +1181,7 @@ body {
 }
 .slider-tag {
   position: absolute;
-  top: 16px;
+  bottom: 16px;
   left: 16px;
   padding: 2px 10px;
   background: #fff;
@@ -1253,8 +1242,18 @@ body {
   border-color: transparent transparent transparent var(--ink);
 }
 
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
 .site-footer #wcb.carbonbadge {
-  text-align: start;
+  margin-inline-start: auto;
+  text-align: end;
 }
 
 /* Long words in French, German and Portuguese must not push a phone screen wider. */
@@ -1429,7 +1428,7 @@ html[dir="rtl"] .drawer {
   padding-top: clamp(56px, 6vw, 96px);
 }
 .case-image .work-image {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: var(--frame, 16 / 9);
 }
 .case-image figcaption {
   margin-top: 10px;

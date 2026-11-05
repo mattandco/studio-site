@@ -67,12 +67,6 @@ export default function Motion({ view }: { view: string }) {
       }
       if (reduced) return;
       const vh = window.innerHeight;
-      document.querySelectorAll<HTMLElement>(".px").forEach((layer) => {
-        const box = layer.parentElement?.getBoundingClientRect();
-        if (!box || box.bottom < -80 || box.top > vh + 80) return;
-        const progress = (box.top + box.height / 2 - vh / 2) / (vh / 2 + box.height / 2);
-        layer.style.translate = `0 ${(progress * box.height * -0.05).toFixed(1)}px`;
-      });
       const display = hero();
       if (display) display.style.translate = `0 ${(-Math.min(y, vh) * 0.12).toFixed(1)}px`;
       document.querySelectorAll<HTMLElement>(".about-line").forEach((line) => {
@@ -166,7 +160,7 @@ export default function Motion({ view }: { view: string }) {
       if (kind === "img") {
         make(element, [{ clipPath: "inset(100% 0 0 0)" }, { clipPath: "inset(0% 0 0 0)" }], { duration: 2100, easing: EW });
         const layer = element.querySelector(".px");
-        if (layer) make(layer, [{ scale: "1.4" }, { scale: "1.06" }], { duration: 3200, easing: EO });
+        if (layer) make(layer, [{ scale: "1.4" }, { scale: "1" }], { duration: 3200, easing: EO });
       }
       made.set(element, list);
     };

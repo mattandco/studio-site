@@ -9,8 +9,10 @@ export default function SiteFooter({ lang }: { lang: Lang }) {
   const t = getContent(lang);
   return (
     <footer id="languages" className="site-footer">
-      <LanguageButtons lang={lang} label={t.common.languages} />
-      <CarbonBadge />
+      <div className="footer-top">
+        <LanguageButtons lang={lang} label={t.common.languages} />
+        <CarbonBadge />
+      </div>
       <div className="footer-row">
         <span dir="ltr">
           © 2026 {SITE.name} · {SITE.legalName}, {SITE.address} · <a href={`mailto:${SITE.email}`}>{SITE.email}</a>

@@ -84,16 +84,15 @@ export default function Home() {
         <div className="about">
           <p className="about-line type-xl">The people you meet do the work.</p>
           <div className="about-text">
-            <p>
-              {SITE.founder}
-              <br />
-              <span className="mute">Founder</span>
+            <p>Nestvested is a web design, development and AI studio, formed in 2018.</p>
+            <p className="mute">
+              Its founder has worked with NGOs such as the IFRC since 2010, with teams in Geneva and
+              on global operations.
             </p>
             <p className="mute">
-              A humanitarian information management specialist who now works in web design,
-              development and AI. Leads every project, from the first call to handover.
+              Every project is run by the whole team rather than handed down a chain: design,
+              engineering, content and delivery working on the same problem.
             </p>
-            <p className="mute">Senior partners, named in every proposal, lead design and engineering.</p>
           </div>
         </div>
       </section>

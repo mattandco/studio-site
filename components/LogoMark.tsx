@@ -1,6 +1,8 @@
 "use client";
 
-import { logoColours, useHeroIndex } from "@/lib/hero";
+import { usePathname } from "next/navigation";
+import { HERO_LANGUAGES, logoColours, useHeroIndex } from "@/lib/hero";
+import { useLanguage } from "@/lib/language";
 
 const DOTS = [
   [-3.6, -7.2],
@@ -12,7 +14,12 @@ const DOTS = [
 ];
 
 export default function LogoMark() {
-  const colours = logoColours(useHeroIndex());
+  const path = usePathname();
+  const heroIndex = useHeroIndex();
+  const language = useLanguage();
+  // On the home page the logo turns with the hero. Elsewhere it shows the chosen language.
+  const chosen = HERO_LANGUAGES.findIndex(({ code }) => code === language.code);
+  const colours = logoColours(path === "/" ? heroIndex : Math.max(0, chosen));
   return (
     <svg viewBox="-7 -10.5 14 21" aria-hidden="true" className="logo-mark">
       {DOTS.map(([cx, cy], index) => (

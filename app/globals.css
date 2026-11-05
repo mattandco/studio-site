@@ -271,6 +271,13 @@ textarea::placeholder {
 .site-nav a {
   border-bottom: 1px solid transparent;
 }
+.read-in {
+  color: var(--mute);
+}
+.site-nav .read-in a {
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
 .site-nav a:hover,
 .site-nav a.is-current {
   border-bottom-color: var(--ink);
@@ -569,9 +576,29 @@ textarea::placeholder {
   justify-content: space-between;
   gap: 6px 32px;
 }
-.footer-rule {
+.language-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
   padding-top: 12px;
   border-top: 1px solid var(--line);
+}
+.language-row button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 4px;
+  font: inherit;
+  color: var(--ink);
+  cursor: pointer;
+  text-underline-offset: 3px;
+}
+.language-row button:hover,
+.language-row button[aria-current="true"] {
+  text-decoration: underline;
 }
 .footer-row a {
   border-bottom: 1px solid var(--mute);

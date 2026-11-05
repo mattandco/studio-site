@@ -1,10 +1,12 @@
 import Link from "next/link";
+import LanguageButtons from "@/components/LanguageButtons";
 import { SITE } from "@/content/site";
 
 export default function SiteFooter() {
   return (
-    <footer className="site-footer">
-      <div className="footer-row footer-rule">
+    <footer id="languages" className="site-footer">
+      <LanguageButtons />
+      <div className="footer-row">
         <span>
           © 2026 {SITE.name} · {SITE.legalName}, {SITE.address}
         </span>

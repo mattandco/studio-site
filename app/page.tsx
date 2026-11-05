@@ -9,11 +9,13 @@ const SERVICES = [
   ["Web design", "Research, prototypes your team can comment on, and design systems that hold up in every language."],
   ["Web development", "Fast, accessible sites your own team can update, built for slow and unstable connections."],
   ["Branding", "Identities for organisations, programmes and campaigns, with guidelines partners actually follow."],
+  ["Web maintenance", "We look after sites after launch: updates, security, backups and fixes, on a monthly retainer."],
 ];
 
 const WORKING_WITH_US = [
   ["A registered company", `Contracts and invoices from ${SITE.legalName}, with references and company documents ready to send.`],
-  ["Fixed fees", "Agreed before work starts and invoiced in Swiss francs or US dollars. Fees are fixed to scope, not to hours."],
+  ["Fixed fees", "Agreed before work starts and invoiced in Swiss francs. Fees are fixed to scope, not to hours."],
+  ["Retainers", "For ongoing maintenance and support, we also work on a monthly retainer."],
   ["Evidence, published", "An accessibility statement with its test method, and a security note for every site we run."],
   ["Senior people only", "The people in the first meeting do the work. Any partner is named in the proposal."],
 ];

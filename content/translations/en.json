@@ -345,11 +345,11 @@
       },
       "summary": "A health-emergency partnership’s library, rebuilt from the ground up so a coordinator on a slow connection reaches current guidance in seconds, with a proposed identity and a Knowledge bank that answers from the library itself. In testing before relaunch.",
       "cardImage": {
-        "src": "/work/collective-service-knowledge-bank.jpg"
+        "src": "/work/collective-service-home.jpg"
       },
       "detailImage": {
         "src": "/work/collective-service-documents.jpg",
-        "alt": "The Knowledge bank page: a box for describing a situation above a picture of the library’s documents grouped by theme.",
+        "alt": "The Knowledge bank page: a box for describing a situation or asking a question.",
         "caption": "The Knowledge bank on the new site, in testing."
       },
       "figures": [

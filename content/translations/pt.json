@@ -345,11 +345,11 @@
       },
       "summary": "A biblioteca de uma parceria para emergências de saúde, reconstruída de raiz para que um coordenador com uma ligação lenta chegue às orientações atuais em segundos, com uma identidade proposta e um Knowledge bank que responde a partir da própria biblioteca. Em testes antes do relançamento.",
       "cardImage": {
-        "src": "/work/collective-service-knowledge-bank.jpg"
+        "src": "/work/collective-service-home.jpg"
       },
       "detailImage": {
         "src": "/work/collective-service-documents.jpg",
-        "alt": "A página do Knowledge bank: uma caixa para descrever uma situação, por cima de uma imagem dos documentos da biblioteca agrupados por tema.",
+        "alt": "A página do Knowledge bank: uma caixa para descrever uma situação ou fazer uma pergunta.",
         "caption": "O Knowledge bank no novo site, em testes."
       },
       "figures": [

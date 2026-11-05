@@ -166,7 +166,7 @@ export default function Motion({ view }: { view: string }) {
       if (kind === "img") {
         make(element, [{ clipPath: "inset(100% 0 0 0)" }, { clipPath: "inset(0% 0 0 0)" }], { duration: 2100, easing: EW });
         const layer = element.querySelector(".px");
-        if (layer) make(layer, [{ scale: "1.5" }, { scale: "1.12" }], { duration: 3200, easing: EO });
+        if (layer) make(layer, [{ scale: "1.4" }, { scale: "1.06" }], { duration: 3200, easing: EO });
       }
       made.set(element, list);
     };

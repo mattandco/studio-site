@@ -883,7 +883,7 @@ body {
   position: absolute;
   inset: 0;
   display: block;
-  scale: 1.12;
+  scale: 1.06;
 }
 .work-image img {
   transition: scale 1.6s cubic-bezier(0.16, 1, 0.3, 1);

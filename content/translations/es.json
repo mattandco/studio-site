@@ -345,11 +345,11 @@
       },
       "summary": "La biblioteca de una alianza para emergencias sanitarias, reconstruida desde cero para que un coordinador con una conexión lenta llegue a las orientaciones vigentes en segundos, con una identidad propuesta y un Knowledge bank que responde a partir de la propia biblioteca. En pruebas antes del relanzamiento.",
       "cardImage": {
-        "src": "/work/collective-service-knowledge-bank.jpg"
+        "src": "/work/collective-service-home.jpg"
       },
       "detailImage": {
         "src": "/work/collective-service-documents.jpg",
-        "alt": "La página del Knowledge bank: un cuadro para describir una situación, sobre una imagen de los documentos de la biblioteca agrupados por tema.",
+        "alt": "La página del Knowledge bank: un cuadro para describir una situación o hacer una pregunta.",
         "caption": "El Knowledge bank en el nuevo sitio, en pruebas."
       },
       "figures": [

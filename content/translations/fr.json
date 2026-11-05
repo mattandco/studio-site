@@ -345,11 +345,11 @@
       },
       "summary": "La bibliothèque d’un partenariat consacré aux urgences sanitaires, entièrement reconstruite pour qu’un coordinateur disposant d’une connexion lente accède aux orientations actuelles en quelques secondes, avec une identité proposée et une Knowledge bank qui répond à partir de la bibliothèque elle-même. En phase de test avant le relancement.",
       "cardImage": {
-        "src": "/work/collective-service-knowledge-bank.jpg"
+        "src": "/work/collective-service-home.jpg"
       },
       "detailImage": {
         "src": "/work/collective-service-documents.jpg",
-        "alt": "La page de la Knowledge bank : un champ pour décrire une situation, au-dessus d’une image des documents de la bibliothèque regroupés par thème.",
+        "alt": "La page de la Knowledge bank : un champ pour décrire une situation ou poser une question.",
         "caption": "La Knowledge bank sur le nouveau site, en phase de test."
       },
       "figures": [

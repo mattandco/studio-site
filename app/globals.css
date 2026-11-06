@@ -438,6 +438,10 @@ textarea::placeholder {
   grid-row: 1;
   aspect-ratio: 4 / 3;
 }
+/* These cards use the full screenshot, so nothing is cut from either side. */
+.work-more .work-image {
+  aspect-ratio: 16 / 9;
+}
 .work-second-text {
   grid-column: 1;
   grid-row: 1;

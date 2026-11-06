@@ -18,7 +18,7 @@ export default async function Home({ params }: Props) {
   const lang = (await params).lang as Lang;
   const t = getContent(lang);
   const h = t.home;
-  const [lead, second] = t.projects;
+  const [lead, second, ...more] = t.projects;
   const caseHref = (slug: string) => localePath(lang, `/work/${slug}`);
 
   return (
@@ -62,6 +62,24 @@ export default async function Home({ params }: Props) {
             </Link>
           </div>
         </article>
+        {more.map((project) => (
+          <article key={project.slug} aria-labelledby={`work-${project.slug}`} className="work-second work-more">
+            <Link href={caseHref(project.slug)} className="work-image" tabIndex={-1} aria-hidden="true">
+              <span className="px">
+                <Image src={project.cardImage.src} alt="" fill sizes="(max-width: 760px) 100vw, 66vw" />
+              </span>
+            </Link>
+            <div className="work-second-text">
+              <h3 id={`work-${project.slug}`} className="work-title">
+                {project.name}
+              </h3>
+              <p className="mute">{project.line}</p>
+              <Link href={caseHref(project.slug)} className="link">
+                {h.readCaseStudy}
+              </Link>
+            </div>
+          </article>
+        ))}
         <p className="note-line">{h.workNote}</p>
       </section>
 

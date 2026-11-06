@@ -111,7 +111,7 @@
     ],
     "packLink": "Beschaffungsunterlagen herunterladen (PDF, auf Englisch)",
     "bookCall": "30-minütiges Gespräch buchen ↗",
-    "workStatement": "Zwei Projekte in voller Länge, jede Zahl gemessen und datiert. Was noch nicht gestartet ist, ist auch so gekennzeichnet.",
+    "workStatement": "Vier Projekte in voller Länge, jede Zahl gemessen und datiert. Was noch nicht gestartet ist, ist auch so gekennzeichnet.",
     "workNote": "Die frühere Arbeit des Gründers, seit 2010 mit Teams in Genf, entstand innerhalb dieser Teams und wird hier nicht veröffentlicht. Referenzen sind auf Anfrage verfügbar und werden im Angebot genannt.",
     "servicesStatement": "Fünf Leistungen aus einem Team, jede zum Festpreis und jede mit Nachweisen für Ihre Unterlagen: ein Designsystem, Testergebnisse, ein Benchmark, ein Monatsbericht.",
     "scopeAndFees": "Leistungsumfang und Preise →",
@@ -198,7 +198,7 @@
         "q": "Können wir Referenzen bekommen?",
         "a": "Ja. Referenzen von Kundenteams senden wir mit dem Angebot oder auf Anfrage, und Sie können sie direkt kontaktieren.",
         "link": {
-          "text": "Zwei Projekte zeigen wir vollständig unter Projekte →",
+          "text": "Vier Projekte zeigen wir vollständig unter Projekte →",
           "href": "/#work"
         }
       },
@@ -853,6 +853,343 @@
           "text": "Das Redaktionsteam ändert Text direkt auf der Seite, mit einer Anleitung in 31 Schritten im Adminbereich. Auch was noch nicht erledigt ist, steht schriftlich fest: Ein Screenreader-Test durch eine Person ist bisher nicht dokumentiert."
         }
       ]
+    },
+    {
+      "slug": "community-trust-index",
+      "name": "Community Trust Index",
+      "type": "Forschungsplattform",
+      "year": "2024",
+      "scope": "Website-Design, WordPress-Umsetzung, interaktive Karte und Seiten mit Länderdaten",
+      "line": "Forschungsplattform · 2024 · Von Grund auf neu gebaut, mit einer Weltkarte, einem Seitendesign für jedes Land und vier Sprachen.",
+      "languages": "Englisch, Französisch, Spanisch und Portugiesisch",
+      "status": {
+        "label": "Live-Website",
+        "text": "trust.communityengagementhub.org",
+        "href": "https://trust.communityengagementhub.org"
+      },
+      "summary": "Ein Maß für das Vertrauen von Gemeinschaften lag in einer Tabelle, die nur Forschende lesen konnten. Wir haben ihm von Grund auf ein eigenes Zuhause entworfen und gebaut, mit einer Weltkarte, einem Seitendesign für jedes Land und vier Sprachen.",
+      "cardImage": {
+        "src": "/work/community-trust-index-countries.jpg"
+      },
+      "detailImage": {
+        "src": "/work/community-trust-index-countries.jpg",
+        "alt": "Die Seite Countries des Community Trust Index: eine graue Weltkarte mit roten Markierungen und oben rechts ein Zähler mit 17 Ländern.",
+        "caption": "Die Seite Countries öffnet mit der Karte, sodass Leserinnen und Leser zuerst die Reichweite der Arbeit sehen."
+      },
+      "figures": [
+        {
+          "value": "14",
+          "label": "Länderberichte auf der Website, gegenüber mindestens fünf Seiten im August 2024, alle im selben Seitendesign"
+        },
+        {
+          "value": "2",
+          "label": "Studientypen, Institutional und Early Warning, auf einer gemeinsamen Seite, sodass ein Land an einem Ort bleibt"
+        },
+        {
+          "value": "4",
+          "label": "Sprachen, damit die Ergebnisse auch Teams erreichen, die nicht auf Englisch arbeiten"
+        }
+      ],
+      "origin": [
+        "Vertrauen entscheidet darüber, ob Menschen danach handeln, was humanitäre Organisationen ihnen sagen. Der Community Trust Index misst dieses Vertrauen. Er wurde von der Einheit Community Engagement and Accountability der IFRC als evidenzbasiertes Werkzeug für Organisationen und die Gemeinschaften entwickelt, denen sie dienen.",
+        "Anfang 2024 wurden die Ergebnisse in einer Tabelle erfasst. Das funktionierte für das Forschungsteam und für niemanden sonst. Die Nationalen Gesellschaften führen die Umfrage durch, aber Programmteams und Führungskräfte müssen die Ergebnisse lesen und danach handeln, und das kann eine Tabelle nicht leisten.",
+        "Der Index brauchte ein eigenes Zuhause, deshalb haben wir eines von Grund auf entworfen und gebaut."
+      ],
+      "research": {
+        "intro": [
+          "Die Struktur der Website ergibt sich aus der Methode, die sie erklären muss. Bevor wir eine Seite zeichneten, mussten wir verstehen, wie ein Vertrauenswert entsteht und wer ihn liest."
+        ],
+        "items": [
+          {
+            "title": "Wie der Wert entsteht",
+            "text": "Die Antworten auf mehrere Fragen der Umfrage werden auf eine gemeinsame Skala von 1 bis 10 umgerechnet, wobei 10 für das höchste Vertrauen steht. Antworten mit „Don’t know“ werden weggelassen, damit sie das Ergebnis nicht beeinflussen. Die Fragenbereiche werden dann zu einer Zahl zusammengefasst, wobei die zentraleren Aspekte von Vertrauen stärker gewichtet werden. Deshalb muss die Website diese eine Zahl zeigen und auch das, was dahintersteht."
+          },
+          {
+            "title": "Warum eine Zahl nicht reicht",
+            "text": "Vertrauen wird über Kompetenzen und Werte gemessen, deshalb darf eine Seite nicht bei einer einzelnen Zahl stehen bleiben. Leserinnen und Leser müssen sehen, welcher Teil des Vertrauens stark ist und welcher schwach."
+          },
+          {
+            "title": "Warum Länder mehr als eine Studie brauchen",
+            "text": "Manche Länder messen das Vertrauen in die Institution. Andere messen das Vertrauen in Frühwarnsysteme, über vier Säulen von der Risikokenntnis bis zur Reaktion. Ein Land kann beides haben, deshalb musste die Seite mehr als eine Studie aufnehmen können."
+          },
+          {
+            "title": "Warum Zeit eine Rolle spielt",
+            "text": "Umfragen wiederholen sich, deshalb braucht ein Land mehr als ein Jahr auf einer Seite und eine Möglichkeit, die Veränderung zwischen den Jahren zu sehen."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "Das Design musste zwei Dinge leisten: eine Forschungsmethode lesbar machen und deutlich zeigen, dass dieses Werkzeug zu der Bewegung gehört, die es nutzt."
+        ],
+        "items": [
+          {
+            "title": "Warum die Karte an erster Stelle steht",
+            "text": "Die erste Frage von Leserinnen und Lesern ist, ob ihr Land dabei ist, und als Erstes muss ein globaler Index seine Reichweite belegen. Die Seite Countries folgt der Reihenfolge, die der Informatiker Ben Shneiderman 1996 für das Lesen großer Informationsmengen beschrieben hat: zuerst der Überblick, dann Zoomen und Filtern, dann Details auf Abruf. Die Karte gibt den Überblick, der Filter grenzt ihn auf einen Studientyp ein, und jede Länderseite enthält die Details. Auf dem Smartphone wird eine Weltkarte zu klein, um noch nützlich zu sein, deshalb beginnt die Seite dort stattdessen mit der Liste der Berichte."
+          },
+          {
+            "title": "Warum jedes Land dieselbe Seite nutzt",
+            "text": "Überblick, wichtigste Erkenntnisse, Gesamtwert, dann die Details, jedes Mal in dieser Reihenfolge. Die Arbeit von Edward Tufte zu wiederholten Designs erklärt, warum: Wenn das Layout gleich bleibt, hören Leserinnen und Leser auf, die Seite zu lernen, und beginnen, die Daten wahrzunehmen. Wer Sambia gelesen hat, kann auch Nepal lesen, und die Unterschiede, die dabei auffallen, sind Unterschiede im Vertrauen, nicht im Design."
+          },
+          {
+            "title": "Warum ein Schalter und keine zweite Seite",
+            "text": "Nepal hat sowohl eine Institutional- als auch eine Early-Warning-Studie. Ein einfacher Schalter wechselt zwischen ihnen, mit Tabs für jedes Jahr und für Trends, sodass ein Land an einem Ort bleibt, während seine Belege wachsen."
+          },
+          {
+            "title": "Warum Marineblau und Rot",
+            "text": "Die Farben stellen den Index in eine Reihe mit dem Roten Kreuz und der IFRC, sodass Leserinnen und Leser innerhalb der Bewegung ihn als ihren eigenen erkennen. Rot bleibt der Betonung vorbehalten: den Schlüsselwörtern einer Überschrift und den Markierungen auf der Karte. Marineblau auf Weiß erreicht einen Kontrast von 14,6 zu 1 und Fließtext 5,6 zu 1, beide deutlich über den 4,5 zu 1, die WCAG AA verlangt. Das Rot erreicht 4,1 zu 1, was die 3 zu 1 für großen Text erfüllt, deshalb bleibt es auf großen Überschriften und trägt nie Fließtext."
+          },
+          {
+            "title": "Warum Menschen zuerst kommen, in einer weichen Form",
+            "text": "Die Startseite öffnet mit einem Menschen, nicht mit einem Diagramm, denn bei Vertrauen geht es um Menschen. Das Foto sitzt in einem Bogen statt in einem harten Rahmen. In einer Studie von 2006 stellten Moshe Bar und Maital Neta fest, dass Menschen gebogene Objekte gegenüber spitzwinkligen bevorzugen, was zu einer Seite über Vertrauen passt."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "Die Erkenntnisse wurden gemeinsam mit dem Forschungsteam geschrieben, zum Teil aus den Daten in den Tabellen."
+        ],
+        "items": [
+          {
+            "title": "Warum Erkenntnisse Sätze sind",
+            "text": "Es sind Aussagen, keine Diagrammbeschriftungen: „Transparency is the clear trust gap“ und „Receiving support does not automatically translate into high trust“. Eine Führungskraft kann einen solchen Satz in einer Sitzung wiederholen, und wer die Seite nur überfliegt, nimmt die Erkenntnis trotzdem mit."
+          },
+          {
+            "title": "Warum die Website ihre Leserschaft benennt",
+            "text": "Die Startseite spricht zwei Gruppen direkt an: „For programs & operations“ und „For leadership“. Beide finden, was für sie gedacht ist, ohne zuerst die Methode zu lesen."
+          }
+        ]
+      },
+      "decisions": [
+        {
+          "title": "Ein eigenes Theme bauen",
+          "text": "Die Website läuft auf einem eigenen WordPress-Theme, nicht auf einer Vorlage. Eine Karte, Länderdaten und Module sind zu speziell für ein fertig gekauftes Theme."
+        },
+        {
+          "title": "Inhalte in strukturierten Formularen halten",
+          "text": "Länder, Module und Erkenntnisse werden in Felder eingetragen, nicht in Seitendesigns, sodass jeder neue Bericht ohne Designarbeit dieselbe Form annimmt."
+        },
+        {
+          "title": "Die vorhandene Tabelle auslesen",
+          "text": "Das Google Sheet des Forschungsteams enthielt bereits alle Daten, deshalb lesen die Diagramme direkt daraus. Nichts musste neu aufgebaut oder doppelt eingegeben werden, was die Kosten niedrig hielt."
+        },
+        {
+          "title": "Die Karte aus Geodaten zeichnen",
+          "text": "Jedes Land auf der Karte hat eine Markierung und einen Link zu seiner Seite, sodass die Karte als wichtigster Einstieg in die Website dient."
+        }
+      ],
+      "results": [
+        "Die Website ist ohne Redesign gewachsen. Eine öffentliche Archivkopie zeigt im August 2024 mindestens fünf Länderseiten. Heute gibt es 14 Länderberichte und 17 Länder auf dem Zähler.",
+        "Die Website wird aktiv genutzt: Sieben der 14 Berichte sind zwischen November 2025 und Juni 2026 datiert, von der Slowakei bis Madagaskar. Early Warning kam mit derselben Seitenstruktur zu Institutional hinzu, und Nepal führt jetzt beide.",
+        "Die Belege dahinter sind umfangreich und konkret. In Nepal nahmen 5.309 Menschen an der Early-Warning-Umfrage teil, und 4.958 flossen in die Analyse ein."
+      ],
+      "lessons": [
+        "Nutzen Sie, was schon vorhanden ist. Die eigene Tabelle des Teams auszulesen sparte Geld, und die Forschenden konnten in einem Werkzeug weiterarbeiten, das sie kannten.",
+        "Behalten Sie eine Kopie von allem, wovon Sie abhängen. Eine Website, die eine externe Datei liest, übernimmt deren Risiken. Beim nächsten Aufbau würde die Website regelmäßig eine eigene Kopie der Daten vorhalten.",
+        "Gestalten Sie für die nächste Studie, nicht für diese. Eine um eine einzelne Studie gebaute Seite hätte neu gebaut werden müssen. Eine um ein Land gebaute Seite nahm eine zweite Studie problemlos auf."
+      ],
+      "standards": [
+        {
+          "label": "Textkontrast",
+          "value": "Berechnet aus den eigenen Farben der Website: Marineblau auf Weiß 14,6 zu 1, Fließtext 5,6 zu 1 und Rot 4,1 zu 1, nur für großen Text verwendet."
+        },
+        {
+          "label": "Sprachen",
+          "value": "Englisch, Französisch, Spanisch und Portugiesisch."
+        },
+        {
+          "label": "Redaktion",
+          "value": "Länder, Studien und Erkenntnisse werden in Formularen auf einem eigenen WordPress-Theme eingegeben."
+        },
+        {
+          "label": "Automatisierte Werte",
+          "value": "Keine dokumentiert. Die Firewall der Website blockiert automatisierte Testwerkzeuge."
+        }
+      ],
+      "clientTeam": "IFRC Community Engagement Hub",
+      "next": "Eine gespeicherte Kopie der Daten auf der Website selbst und neue Studientypen auf derselben Länderseite.",
+      "proves": [
+        {
+          "title": "Wir nutzen, was schon funktioniert.",
+          "text": "Die Tabelle des Forschungsteams enthielt die Daten bereits, deshalb liest die Website sie direkt, und nichts wurde neu aufgebaut."
+        },
+        {
+          "title": "Wir gestalten für das, was als Nächstes kommt.",
+          "text": "Ein Seitendesign nahm einen zweiten Studientyp auf und trägt jetzt 14 Länderberichte."
+        },
+        {
+          "title": "Wir machen aus Zahlen Sätze.",
+          "text": "Jede Länderseite sagt in einfachen Worten, was die Ergebnisse bedeuten, geschrieben gemeinsam mit dem Forschungsteam."
+        }
+      ]
+    },
+    {
+      "slug": "dual-diploma-switzerland",
+      "name": "Dual Diploma Switzerland",
+      "type": "Bildung",
+      "year": "2025",
+      "scope": "Website-Design, WordPress-Umsetzung und ein mehrstufiges Bewerbungsformular",
+      "line": "Bildung · 2025 · Von Grund auf neu gebaut, in vier Sprachen, mit einem Bewerbungsformular in fünf Schritten.",
+      "languages": "Englisch, Deutsch, Französisch und Italienisch",
+      "status": {
+        "label": "Live-Website",
+        "text": "dualdiploma-switzerland.ch",
+        "href": "https://dualdiploma-switzerland.ch"
+      },
+      "summary": "Ein amerikanisches Diplomprogramm musste für Schweizer Familien verständlich werden. Wir haben die Website von Grund auf entworfen und gebaut, in vier Sprachen, mit einem Bewerbungsformular, das der offiziellen Struktur des Programms folgt.",
+      "cardImage": {
+        "src": "/work/dual-diploma-switzerland-site.jpg"
+      },
+      "detailImage": {
+        "src": "/work/dual-diploma-switzerland-site.jpg",
+        "alt": "Die Startseite von Dual Diploma Switzerland: der Begrüßungstext auf tiefem Grün neben einem Foto von drei Schülerinnen und Schülern, die gemeinsam lachen.",
+        "caption": "Der erste Bildschirm: die beiden Diplome in Gelb auf Grün, daneben die Schülerinnen und Schüler."
+      },
+      "figures": [
+        {
+          "value": "4",
+          "label": "Sprachen, weil Schweizer Familien Deutsch, Französisch, Italienisch und Englisch lesen"
+        },
+        {
+          "value": "5",
+          "label": "Kurze Schritte im Bewerbungsformular, statt einer langen Seite mit rund 40 Angaben"
+        },
+        {
+          "value": "18/24",
+          "label": "Credits, die aus dem Schweizer Zeugnis anerkannt werden, die Rechnung, die die Website erklären muss"
+        }
+      ],
+      "origin": [
+        "Mit dem Dual Diploma können Schweizer Schülerinnen und Schüler das American High School Diploma neben der Schweizer Matura oder der Fachmatura erwerben. Academica, die amerikanische Bildungsgruppe dahinter, führt das Programm international durch.",
+        "Der Auftrag kam über eine Empfehlung zu uns. Die Schweiz brauchte eine eigene Website, weil das Angebot nur in Schweizer Begriffen verständlich ist: Kantone, Schuljahre und Schweizer Franken.",
+        "Es gab keine Website als Ausgangspunkt, deshalb haben wir eine von Grund auf entworfen und gebaut."
+      ],
+      "research": {
+        "intro": [
+          "Drei Dinge an der Zielgruppe prägten die Website."
+        ],
+        "items": [
+          {
+            "title": "Familien entscheiden gemeinsam und über lange Zeit",
+            "text": "Es geht um zwei bis vier Jahre zusätzliches Lernen neben der normalen Schule, deshalb muss die Website detaillierte Fragen beantworten, bevor sich jemand bewirbt."
+          },
+          {
+            "title": "Die Schweiz hat mehrere Schulsysteme",
+            "text": "Das Programm passt je nach Kanton anders, deshalb zeigt die Website Modelltabellen nach Kanton und Schuljahr."
+          },
+          {
+            "title": "Die Schweiz hat mehrere Sprachen",
+            "text": "2023 nannten 66 % der Einwohnerinnen und Einwohner Deutsch als Hauptsprache, 23 % Französisch und 8 % Italienisch, während 6 % Englisch nannten. Eine Website in einer Sprache würde die meisten ihrer Familien verfehlen."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "Eine Familie vertraut einer Schule Jahre der Ausbildung ihres Kindes an. Das Design musste etabliert wirken und ein kompliziertes Angebot schon auf dem ersten Bildschirm einfach machen."
+        ],
+        "items": [
+          {
+            "title": "Warum Grün und Gelb",
+            "text": "Die Farben stammen aus dem Wappen von Academica, sodass die Schweizer Website als Teil einer etablierten amerikanischen Institution erkennbar ist."
+          },
+          {
+            "title": "Warum Text und Foto nebeneinanderstehen",
+            "text": "Der erste Bildschirm teilt sich in zwei Hälften: das Versprechen auf vollem Grün, daneben die Schülerinnen und Schüler. Nichts steht über dem Foto, sodass die Wörter bei jedem Foto und auf jedem Bildschirm scharf bleiben. Weiß auf dem Grün erreicht einen Kontrast von 9,9 zu 1 und das Gelb 7,4 zu 1, beide über den 7 zu 1 der höchsten WCAG-Stufe."
+          },
+          {
+            "title": "Warum die beiden Diplome das Gelb bekommen",
+            "text": "Eine Zeile auf dem ersten Bildschirm ist farbig: das American High School Diploma und die Schweizer Matura. Das ist das ganze Angebot, deshalb sollen Besucherinnen und Besucher sich genau das merken."
+          },
+          {
+            "title": "Warum dieses Foto",
+            "text": "Das Programm wird online absolviert, und die natürliche Sorge von Eltern ist, dass online allein bedeutet. Deshalb zeigt das erste Bild drei Schülerinnen und Schüler, die gemeinsam lachen. In der Eye-Tracking-Forschung stellten Moran Cerf und Kollegen fest, dass Gesichter und Text den Blick weit stärker anziehen als andere Teile eines Bildes, deshalb enthält der erste Bildschirm genau diese beiden Dinge."
+          },
+          {
+            "title": "Warum die Rechnung ausgeschrieben wird",
+            "text": "24 Credits sind nötig, 18 werden aus dem Schweizer Zeugnis anerkannt, und 6 werden online erarbeitet. Die Seite führt Schritt für Schritt durch diese Rechnung, weil Eltern vor allem ihr glauben müssen."
+          },
+          {
+            "title": "Warum Apply Now immer da ist",
+            "text": "Die Schaltfläche sitzt im Kopfbereich jeder Seite, sodass eine Familie, die sich entschieden hat, nie danach suchen muss."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "Die Texte stammen vom Kunden, der die Familien und das Schweizer System kennt."
+        ],
+        "items": [
+          {
+            "title": "Warum die Website Schweizer Begriffe verwendet",
+            "text": "Sie schreibt Matura, Fachmatura, 10VP/VG und Kanton Waadt, weil das die Wörter sind, die Familien verwenden. Preise erscheinen zuerst in Schweizer Franken, daneben in US-Dollar."
+          },
+          {
+            "title": "Wie die vier Sprachen entstanden",
+            "text": "Die Übersetzungen wurden mit einem KI-Sprachmodell erstellt, danach wurden Deutsch und Italienisch von Muttersprachlerinnen und Muttersprachlern korrigiert."
+          }
+        ]
+      },
+      "decisions": [
+        {
+          "title": "Ein eigenes Theme bauen",
+          "text": "Mit einem eigenen WordPress-Theme kann der Kunde den Großteil der Website ohne Entwicklerin oder Entwickler aktualisieren."
+        },
+        {
+          "title": "Das Formular in fünf Schritte aufteilen",
+          "text": "Das Formular fragt rund 40 Angaben ab, deshalb ist es in fünf kurze Schritte aufgeteilt: Schülerin oder Schüler, Adresse, erste erziehungsberechtigte Person, zweite erziehungsberechtigte Person und Schulbildung. Forschung zum Goal-Gradient-Effekt (Kivetz und Kollegen, 2006) ergab, dass Menschen sich mehr anstrengen, je näher sie sich einem Ziel sehen, und jeder abgeschlossene Schritt ist sichtbarer Fortschritt."
+        },
+        {
+          "title": "Der offiziellen Struktur folgen",
+          "text": "Das Formular ging vom Google Form des Kunden aus und wurde im Oktober 2026 neu gebaut, um den Anforderungen von Academica International Studies zu entsprechen."
+        },
+        {
+          "title": "Bewerbungen an eine Schweizer Adresse senden",
+          "text": "Jede Bewerbung geht direkt in das eigene Schweizer Postfach des Programms."
+        },
+        {
+          "title": "Nach dem Launch dabeibleiben",
+          "text": "Seit dem Launch betreuen wir die Website weiter, mit Gebührentabellen, Social-Media-Links, Presseberichten und kantonalen Modelltabellen."
+        }
+      ],
+      "results": [
+        "Eine Live-Website in vier Sprachen, im Alltag vom Kunden betrieben, mit einem Bewerbungsformular, das nach der offiziellen Struktur des Programms gebaut ist.",
+        "Die Schweizer Zeitung La Côte hat über das Programm berichtet, und die Website verlinkt auf den Artikel."
+      ],
+      "lessons": [
+        "Bauen Sie für die Person, die die Website bearbeitet. Das Jahr im Formular war im Formular-Plugin fest hinterlegt, und die Gebührentabelle ließ sich nur mit einer Entwicklerin oder einem Entwickler ändern. Kleine Aktualisierungen, die jedes Jahr anfallen, sollten von Anfang an in den Händen des Kunden liegen.",
+        "Bauen Sie Formulare nach den offiziellen Regeln. Das Formular ging von dem aus, was der Kunde hatte. Als die offizielle Struktur eingehalten werden musste, wurden Felder verschoben und neue hinzugefügt. Hätten wir bei dieser Struktur begonnen, wäre der Neuaufbau nicht nötig gewesen.",
+        "KI-Übersetzung ist ein erster Entwurf. Sie gab der Website schnell und günstig vier Sprachen, aber Muttersprachlerinnen und Muttersprachler mussten sie trotzdem korrigieren. Jedes Übersetzungsbudget sollte diesen Schritt einschließen."
+      ],
+      "standards": [
+        {
+          "label": "Textkontrast",
+          "value": "Berechnet aus den eigenen Farben der Website: Weiß auf Grün 9,9 zu 1 und Gelb auf Grün 7,4 zu 1."
+        },
+        {
+          "label": "Sprachen",
+          "value": "Englisch, Deutsch, Französisch und Italienisch."
+        },
+        {
+          "label": "Redaktion",
+          "value": "Die Seiten werden vom Kunden in WordPress bearbeitet."
+        }
+      ],
+      "clientTeam": "Dual Diploma Switzerland",
+      "next": "Jährliche Termine und Gebührentabellen, die der Kunde ohne Entwicklerin oder Entwickler ändern kann, und neue Schulen und Kantone in den Modelltabellen.",
+      "proves": [
+        {
+          "title": "Wir erklären ein Angebot in lokalen Begriffen.",
+          "text": "Ein amerikanisches Programm liest sich wie ein schweizerisches: Kantone, Schuljahre und Schweizer Franken, in vier Sprachen."
+        },
+        {
+          "title": "Wir lassen lange Formulare kurz wirken.",
+          "text": "Aus rund 40 Angaben wurden fünf kurze Schritte, die der offiziellen Struktur des Programms folgen."
+        },
+        {
+          "title": "Wir bleiben auch nach dem Launch.",
+          "text": "Die Website hat sich mit dem Programm weiter verändert: Seit sie live ging, kamen Gebührentabellen, Formularänderungen und Presseberichte hinzu."
+        }
+      ]
     }
   ],
   "insights": [
@@ -1250,7 +1587,7 @@
             "items": [
               {
                 "q": "Welches Redaktionssystem?",
-                "a": "Meist WordPress mit eigenem Theme, weil Ihr Team dafür überall Redaktions- und Entwicklungskräfte findet. Beide Fallstudien laufen damit. Wenn Ihre Organisation einen Standard hat, nennen Sie ihn im Briefing, und das Angebot geht darauf ein."
+                "a": "Meist WordPress mit eigenem Theme, weil Ihr Team dafür überall Redaktions- und Entwicklungskräfte findet. Alle vier Fallstudien laufen damit. Wenn Ihre Organisation einen Standard hat, nennen Sie ihn im Briefing, und das Angebot geht darauf ein."
               },
               {
                 "q": "Wem gehören die Konten?",

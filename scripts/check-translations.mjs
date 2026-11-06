@@ -38,7 +38,7 @@ function compare(code, a, b, path) {
   const fixed =
     FIXED.has(key) ||
     /^\.projects\[\d+\]\.name$/.test(path) ||
-    /^\.projects\[1\]\.status\.text$/.test(path) ||
+    /^\.projects\[[1-3]\]\.status\.text$/.test(path) ||
     /\.figures\[\d+\]\.value$/.test(path) ||
     /\.sources\[\d+\]\.title$/.test(path) ||
     /^\.projects\[\d+\]\.year$/.test(path);

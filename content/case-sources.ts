@@ -48,4 +48,31 @@ export const CASE_SOURCES: Record<string, CaseSource[]> = {
     { title: "W3C, Web Content Accessibility Guidelines (WCAG) 2.2, 2023", href: "https://www.w3.org/TR/WCAG22/" },
     { title: "Bringhurst, The Elements of Typographic Style, 4th edition, 2012" },
   ],
+  "community-trust-index": [
+    {
+      title: "Shneiderman, The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations, IEEE Symposium on Visual Languages, 1996",
+      href: "https://drum.lib.umd.edu/items/cd983adb-568a-47d3-b43a-1d8d8b8c72f4/full",
+    },
+    { title: "Tufte, Envisioning Information, Graphics Press, 1990" },
+    {
+      title: "Bar and Neta, Humans prefer curved visual objects, Psychological Science 17(8), 2006",
+      href: "https://pubmed.ncbi.nlm.nih.gov/16913943/",
+    },
+    { title: "W3C, Web Content Accessibility Guidelines (WCAG) 2.2, 2023", href: "https://www.w3.org/TR/WCAG22/" },
+  ],
+  "dual-diploma-switzerland": [
+    {
+      title: "Swiss Federal Statistical Office figures for 2023, reported by SWI swissinfo.ch, 2025",
+      href: "https://www.swissinfo.ch/eng/demographics/english-and-other-foreign-languages-on-rise-in-switzerland/88890429",
+    },
+    {
+      title: "Cerf, Frady and Koch, Faces and text attract gaze independent of the task, Journal of Vision 9(12), 2009",
+      href: "https://resolver.caltech.edu/CaltechAUTHORS:20130816-103355264",
+    },
+    {
+      title: "Kivetz, Urminsky and Zheng, The Goal-Gradient Hypothesis Resurrected, Journal of Marketing Research 43, 2006",
+      href: "https://business.columbia.edu/faculty/research/goal-gradient-hypothesis-resurrected-purchase-acceleration-illusionary-goal",
+    },
+    { title: "W3C, Web Content Accessibility Guidelines (WCAG) 2.2, 2023", href: "https://www.w3.org/TR/WCAG22/" },
+  ],
 };

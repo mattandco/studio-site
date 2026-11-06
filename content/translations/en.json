@@ -111,7 +111,7 @@
     ],
     "packLink": "Download the procurement pack (PDF, in English)",
     "bookCall": "Book a 30-minute call ↗",
-    "workStatement": "Two projects shown in full, with every number measured and dated. What has not launched says so.",
+    "workStatement": "Four projects shown in full, with every number measured and dated. What has not launched says so.",
     "workNote": "The founder’s earlier work, with teams in Geneva since 2010, was done inside those teams and is not published here. References are available on request and are named in the proposal.",
     "servicesStatement": "Five services from one team, each at a fixed fee and each with evidence you can file: a design system, test results, a benchmark, a monthly report.",
     "scopeAndFees": "Scope and fees →",
@@ -198,7 +198,7 @@
         "q": "Can we have references?",
         "a": "Yes. References from client teams are sent with the proposal or on request, and you may contact them directly.",
         "link": {
-          "text": "Two projects are shown in full in the work →",
+          "text": "Four projects are shown in full in the work →",
           "href": "/#work"
         }
       },
@@ -853,6 +853,343 @@
           "text": "Editors change text on the page itself, with a 31-step guide inside the admin. What is not done is written down too: no screen-reader test by a person is on record yet."
         }
       ]
+    },
+    {
+      "slug": "community-trust-index",
+      "name": "Community Trust Index",
+      "type": "Research platform",
+      "year": "2024",
+      "scope": "Website design, WordPress build, interactive map and country data pages",
+      "line": "Research platform · 2024 · Built from scratch, with a world map, one page design for every country and four languages.",
+      "languages": "English, French, Spanish and Portuguese",
+      "status": {
+        "label": "Live site",
+        "text": "trust.communityengagementhub.org",
+        "href": "https://trust.communityengagementhub.org"
+      },
+      "summary": "A measure of community trust lived in a spreadsheet that only researchers could read. We designed and built its home from scratch, with a world map, one page design for every country and four languages.",
+      "cardImage": {
+        "src": "/work/community-trust-index-countries.jpg"
+      },
+      "detailImage": {
+        "src": "/work/community-trust-index-countries.jpg",
+        "alt": "The Countries page of the Community Trust Index: a grey world map with red markers, and a count of 17 countries at the top right.",
+        "caption": "The Countries page opens on the map, so a reader sees the reach of the work first."
+      },
+      "figures": [
+        {
+          "value": "14",
+          "label": "Country reports on the site, up from at least five pages in August 2024, all on the same page design"
+        },
+        {
+          "value": "2",
+          "label": "Study types, Institutional and Early Warning, sharing one page so a country stays in one place"
+        },
+        {
+          "value": "4",
+          "label": "Languages, so results can reach teams who don’t work in English"
+        }
+      ],
+      "origin": [
+        "Trust decides whether people act on what humanitarian organisations tell them. The Community Trust Index measures that trust. It was developed by the IFRC’s Community Engagement and Accountability unit as an evidence-based tool for organisations and the communities they serve.",
+        "By early 2024 the results were tracked in a spreadsheet. That worked for the research team and for nobody else. National Societies run the survey, but programme teams and leaders need to read the results and act on them, and a spreadsheet can’t do that.",
+        "The Index needed a home of its own, so we designed and built one from scratch."
+      ],
+      "research": {
+        "intro": [
+          "The site’s structure comes from the method it has to explain. Before drawing a page, we had to understand how a trust score is made and who reads it."
+        ],
+        "items": [
+          {
+            "title": "How the score works",
+            "text": "Answers from several survey questions convert to a common scale of 1 to 10, where 10 is the highest trust. “Don’t know” answers are left out so they don’t affect the result. Question areas then combine into one figure, with the more central aspects of trust given more weight. So the site has to show that single figure and also what sits behind it."
+          },
+          {
+            "title": "Why one number is not enough",
+            "text": "Trust is measured through competencies and values, so a page can’t stop at a score. A reader has to see which part of trust is strong and which is weak."
+          },
+          {
+            "title": "Why countries need more than one study",
+            "text": "Some countries measure trust in the institution. Others measure trust in early warning systems, across four pillars from risk knowledge to response. A country can have both, so the page had to hold more than one study."
+          },
+          {
+            "title": "Why time matters",
+            "text": "Surveys repeat, so a country needs more than one year on a page, and a way to see the change between them."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "The design had to do two things: make a research method readable, and make it clear that this tool belongs to the movement that uses it."
+        ],
+        "items": [
+          {
+            "title": "Why the map comes first",
+            "text": "The first question a reader has is whether their country is there, and the first thing a global index has to prove is its reach. The Countries page follows the order the computer scientist Ben Shneiderman set out in 1996 for reading large sets of information: overview first, then zoom and filter, then details on demand. The map gives the overview, the filter narrows it to one study type, and each country page holds the detail. On a phone a world map shrinks past the point of use, so the page leads with the list of reports instead."
+          },
+          {
+            "title": "Why every country uses the same page",
+            "text": "Overview, key insights, overall score, then the detail, in that order every time. Edward Tufte’s work on repeated designs explains why: when the layout stays constant, readers stop learning the page and start noticing the data. Someone who has read Zambia can read Nepal, and the differences they see are differences in trust, not in design."
+          },
+          {
+            "title": "Why a switch and not a second page",
+            "text": "Nepal has both an Institutional and an Early Warning study. A simple switch moves between them, with tabs for each year and for trends, so a country stays in one place as its evidence grows."
+          },
+          {
+            "title": "Why navy and red",
+            "text": "The colours align the Index with the Red Cross and the IFRC, so readers inside the movement recognise it as theirs. Red is kept for emphasis: the key words in a headline and the markers on the map. Navy on white reaches a contrast of 14.6 to 1 and body text 5.6 to 1, both well past the 4.5 to 1 that WCAG AA asks for. The red reaches 4.1 to 1, which meets the 3 to 1 for large text, so it stays on large headings and never carries body text."
+          },
+          {
+            "title": "Why people come first, in a soft shape",
+            "text": "The home page opens on a person, not a chart, because trust is about people. The photograph sits in an arch rather than a hard box. In a 2006 study, Moshe Bar and Maital Neta found that people prefer curved objects to sharp-angled ones, which suits a page about trust."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "The findings were written with the research team, partly from the data in the sheets."
+        ],
+        "items": [
+          {
+            "title": "Why findings are sentences",
+            "text": "They are statements, not chart labels: “Transparency is the clear trust gap” and “Receiving support does not automatically translate into high trust”. A leader can repeat a sentence like that in a meeting, and a reader who only skims the page still leaves with the finding."
+          },
+          {
+            "title": "Why the site names its readers",
+            "text": "The home page speaks to two groups directly: “For programs & operations” and “For leadership”. Each can find what is meant for them without reading the method first."
+          }
+        ]
+      },
+      "decisions": [
+        {
+          "title": "Build a custom theme",
+          "text": "The site runs on a custom WordPress theme, not a template. A map, country data and modules are too specific for a theme bought off the shelf."
+        },
+        {
+          "title": "Keep content in structured forms",
+          "text": "Countries, modules and findings go into fields, not page designs, so every new report takes the same shape without design work."
+        },
+        {
+          "title": "Read the spreadsheet that already exists",
+          "text": "The research team’s Google Sheet already held all the data, so the charts read from it directly. Nothing had to be rebuilt or entered twice, which kept the cost down."
+        },
+        {
+          "title": "Draw the map from geographic data",
+          "text": "Each country on the map has a marker and a link to its page, so the map works as the site’s main way in."
+        }
+      ],
+      "results": [
+        "The site grew without a redesign. A public archive copy shows at least five country pages in August 2024. There are 14 country reports today, and 17 countries on the counter.",
+        "It is in active use: seven of the 14 reports are dated between November 2025 and June 2026, from Slovakia to Madagascar. Early Warning joined Institutional with the same page structure, and Nepal now carries both.",
+        "The evidence behind it is large and specific. In Nepal, 5,309 people took part in the Early Warning survey, and 4,958 were included in the analysis."
+      ],
+      "lessons": [
+        "Use what already exists. Reading the team’s own spreadsheet saved money and kept the researchers working in a tool they knew.",
+        "Keep a copy of anything you depend on. A site that reads an outside file inherits that file’s risks. On the next build, the site would keep its own regular copy of the data.",
+        "Design for the next study, not this one. A page built around one study would have needed rebuilding. A page built around a country took a second study without trouble."
+      ],
+      "standards": [
+        {
+          "label": "Text contrast",
+          "value": "Calculated from the site’s own colours: navy on white 14.6 to 1, body text 5.6 to 1, and red 4.1 to 1, used for large text only."
+        },
+        {
+          "label": "Languages",
+          "value": "English, French, Spanish and Portuguese."
+        },
+        {
+          "label": "Editing",
+          "value": "Countries, studies and findings are entered in forms on a custom WordPress theme."
+        },
+        {
+          "label": "Automated scores",
+          "value": "None on record. The site’s firewall blocks automated test tools."
+        }
+      ],
+      "clientTeam": "IFRC Community Engagement Hub",
+      "next": "A stored copy of the data on the site itself, and new study types on the same country page.",
+      "proves": [
+        {
+          "title": "We use what already works.",
+          "text": "The research team’s spreadsheet already held the data, so the site reads it directly and nothing was rebuilt."
+        },
+        {
+          "title": "We design for what comes next.",
+          "text": "One page design took a second study type and now carries 14 country reports."
+        },
+        {
+          "title": "We turn numbers into sentences.",
+          "text": "Each country page says what the results mean in plain words, written with the research team."
+        }
+      ]
+    },
+    {
+      "slug": "dual-diploma-switzerland",
+      "name": "Dual Diploma Switzerland",
+      "type": "Education",
+      "year": "2025",
+      "scope": "Website design, WordPress build and a multi-step application form",
+      "line": "Education · 2025 · Built from scratch, in four languages, with a five-step application form.",
+      "languages": "English, German, French and Italian",
+      "status": {
+        "label": "Live site",
+        "text": "dualdiploma-switzerland.ch",
+        "href": "https://dualdiploma-switzerland.ch"
+      },
+      "summary": "An American diploma programme had to make sense to Swiss families. We designed and built the site from scratch, in four languages, with an application form that follows the programme’s official structure.",
+      "cardImage": {
+        "src": "/work/dual-diploma-switzerland-site.jpg"
+      },
+      "detailImage": {
+        "src": "/work/dual-diploma-switzerland-site.jpg",
+        "alt": "The Dual Diploma Switzerland home page: the welcome text on deep green beside a photograph of three students laughing together.",
+        "caption": "The first screen: the two diplomas in yellow on green, with the students beside them."
+      },
+      "figures": [
+        {
+          "value": "4",
+          "label": "Languages, because Swiss families read German, French, Italian and English"
+        },
+        {
+          "value": "5",
+          "label": "Short steps in the application form, in place of one long page of around 40 details"
+        },
+        {
+          "value": "18/24",
+          "label": "Credits validated from the Swiss transcript, the sum the site has to explain"
+        }
+      ],
+      "origin": [
+        "The Dual Diploma lets Swiss students earn the American High School Diploma alongside the Swiss Matura or Specialised School Certificate. Academica, the American education group behind it, runs the programme internationally.",
+        "The work came to us by referral. Switzerland needed a site of its own, because the offer only makes sense in Swiss terms: cantons, school years and Swiss francs.",
+        "There was no site to start from, so we designed and built one from scratch."
+      ],
+      "research": {
+        "intro": [
+          "Three things about the audience shaped the site."
+        ],
+        "items": [
+          {
+            "title": "Families decide together, over a long time",
+            "text": "This is two to four years of extra study alongside normal school, so the site has to answer detailed questions before anyone applies."
+          },
+          {
+            "title": "Switzerland has several school systems",
+            "text": "The programme fits differently by canton, so the site sets out model tables by canton and school year."
+          },
+          {
+            "title": "Switzerland has several languages",
+            "text": "In 2023, 66% of residents named German as a main language, 23% French and 8% Italian, while 6% named English. A site in one language would miss most of its families."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "A family is trusting a school with years of a child’s study. The design had to look established, and it had to make a complicated offer simple on the first screen."
+        ],
+        "items": [
+          {
+            "title": "Why green and yellow",
+            "text": "The colours come from the Academica crest, so the Swiss site reads as part of an established American institution."
+          },
+          {
+            "title": "Why text and photograph sit side by side",
+            "text": "The first screen splits in two: the promise on solid green, the students beside it. Nothing is printed over the photograph, so the words stay sharp on any photo and any screen. White on the green reaches a contrast of 9.9 to 1 and the yellow 7.4 to 1, both past the 7 to 1 of WCAG’s highest level."
+          },
+          {
+            "title": "Why the two diplomas get the yellow",
+            "text": "One line on the first screen is in colour: the American High School Diploma and the Swiss Matura. That is the whole offer, so it is what a visitor should remember."
+          },
+          {
+            "title": "Why this photograph",
+            "text": "The programme is studied online, and a parent’s natural fear is that online means alone. So the first picture is three students laughing together. In eye-tracking research, Moran Cerf and colleagues found that faces and text draw the eye far more than other parts of an image, so the first screen holds just those two things."
+          },
+          {
+            "title": "Why the sum is spelled out",
+            "text": "24 credits are needed, 18 are validated from the Swiss transcript, and 6 are studied online. The page walks through that sum because it is the main thing a parent has to believe."
+          },
+          {
+            "title": "Why Apply Now is always there",
+            "text": "The button sits in the header of every page, so a family that has decided never has to look for it."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "The words were written by the client, who knows the families and the Swiss system."
+        ],
+        "items": [
+          {
+            "title": "Why the site uses Swiss terms",
+            "text": "It says Matura, Specialised School Certificate, 10VP/VG and canton of Vaud, because those are the words families use. Prices appear in Swiss francs first, with US dollars beside them."
+          },
+          {
+            "title": "How the four languages were made",
+            "text": "The translations were produced with an AI language model, then the German and Italian were corrected by native speakers."
+          }
+        ]
+      },
+      "decisions": [
+        {
+          "title": "Build a custom theme",
+          "text": "A custom WordPress theme lets the client update most of the site without a developer."
+        },
+        {
+          "title": "Split the form into five steps",
+          "text": "The form asks for around 40 details, so it is split into five short steps: student, address, first guardian, second guardian and schooling. Research on the goal-gradient effect (Kivetz and colleagues, 2006) found that people put in more effort as they see themselves getting closer to a goal, and each finished step is visible progress."
+        },
+        {
+          "title": "Follow the official structure",
+          "text": "The form began from the client’s Google Form and was rebuilt in October 2026 to match what Academica International Studies requires."
+        },
+        {
+          "title": "Send applications to a Swiss address",
+          "text": "Every application goes straight to the programme’s own Swiss inbox."
+        },
+        {
+          "title": "Stay on after launch",
+          "text": "We have kept supporting the site since launch, with fee tables, social links, press coverage and canton model tables."
+        }
+      ],
+      "results": [
+        "A live site in four languages, run day to day by the client, with an application form built to the programme’s official structure.",
+        "The programme has been covered in the Swiss newspaper La Côte, and the site links to the article."
+      ],
+      "lessons": [
+        "Build for the person who edits the site. The year on the form was fixed inside the form plugin, and the fee table needed a developer to change. Small updates that come round every year should be in the client’s hands from the start.",
+        "Build forms from the official rules. The form began from what the client had. When the official structure had to be followed, fields moved and new ones were added. Starting from that structure would have saved the rebuild.",
+        "AI translation is a first draft. It gave the site four languages quickly and at low cost, but native speakers still had to correct it. Any translation budget should include that step."
+      ],
+      "standards": [
+        {
+          "label": "Text contrast",
+          "value": "Calculated from the site’s own colours: white on green 9.9 to 1, and yellow on green 7.4 to 1."
+        },
+        {
+          "label": "Languages",
+          "value": "English, German, French and Italian."
+        },
+        {
+          "label": "Editing",
+          "value": "Pages are edited in WordPress by the client."
+        }
+      ],
+      "clientTeam": "Dual Diploma Switzerland",
+      "next": "Yearly dates and fee tables the client can change without a developer, and new schools and cantons in the model tables.",
+      "proves": [
+        {
+          "title": "We explain an offer in local terms.",
+          "text": "An American programme reads as a Swiss one: cantons, school years and Swiss francs, in four languages."
+        },
+        {
+          "title": "We make long forms feel short.",
+          "text": "Around 40 details became five short steps that follow the programme’s official structure."
+        },
+        {
+          "title": "We stay after launch.",
+          "text": "The site has kept changing with the programme, with fee tables, form changes and press coverage added since it went live."
+        }
+      ]
     }
   ],
   "insights": [
@@ -1250,7 +1587,7 @@
             "items": [
               {
                 "q": "Which editing system?",
-                "a": "Usually WordPress with a custom theme, because your team can find editors and developers for it anywhere. Both case studies run on it. If your organisation has a standard, say so in the brief and the proposal answers it."
+                "a": "Usually WordPress with a custom theme, because your team can find editors and developers for it anywhere. All four case studies run on it. If your organisation has a standard, say so in the brief and the proposal answers it."
               },
               {
                 "q": "Who holds the accounts?",

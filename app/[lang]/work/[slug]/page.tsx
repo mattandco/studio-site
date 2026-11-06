@@ -14,9 +14,12 @@ import { alternates } from "@/lib/seo";
 type Props = { params: Promise<{ lang: string; slug: string }> };
 
 // Each frame matches its screenshot exactly, so nothing is cut off and no strip shows.
-const FRAMES: Record<string, { image: string; slider: string }> = {
+// Sites built from scratch have no earlier version, so they have no slider.
+const FRAMES: Record<string, { image: string; slider?: string }> = {
   "collective-service": { image: "1800 / 934", slider: "2 / 1" },
   "global-girls-foundation": { image: "1800 / 1012", slider: "1800 / 1012" },
+  "community-trust-index": { image: "16 / 9" },
+  "dual-diploma-switzerland": { image: "16 / 9" },
 };
 
 export const dynamicParams = false;
@@ -82,7 +85,7 @@ export default async function CaseStudyPage({ params }: Props) {
 
   // On the Collective Service study the before and after is the first image, on Matthew's instruction.
   const sliderFirst = slug === "collective-service";
-  const slider = (
+  const slider = FRAMES[slug].slider && (
         <section aria-labelledby="h-slider" className="wrap section">
           <h2 id="h-slider" className="rule-label slider-label">
             <span>{t.beforeAfter}</span>

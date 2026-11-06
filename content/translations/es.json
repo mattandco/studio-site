@@ -111,7 +111,7 @@
     ],
     "packLink": "Descargar el dosier de contratación (PDF, en inglés)",
     "bookCall": "Reservar una llamada de 30 minutos ↗",
-    "workStatement": "Dos proyectos presentados en su totalidad, con cada cifra medida y fechada. Lo que aún no se ha lanzado lo indica.",
+    "workStatement": "Cuatro proyectos presentados en su totalidad, con cada cifra medida y fechada. Lo que aún no se ha lanzado lo indica.",
     "workNote": "El trabajo anterior del fundador, con equipos en Ginebra desde 2010, se realizó dentro de esos equipos y no se publica aquí. Las referencias están disponibles previa solicitud y figuran con su nombre en la propuesta.",
     "servicesStatement": "Cinco servicios de un mismo equipo, cada uno con honorarios fijos y con evidencia que usted puede archivar: un sistema de diseño, resultados de pruebas, una prueba de precisión, un informe mensual.",
     "scopeAndFees": "Alcance y honorarios →",
@@ -198,7 +198,7 @@
         "q": "¿Pueden darnos referencias?",
         "a": "Sí. Las referencias de equipos de clientes se envían con la propuesta o previa solicitud, y usted puede ponerse en contacto con ellos directamente.",
         "link": {
-          "text": "Dos proyectos se presentan en su totalidad en Proyectos →",
+          "text": "Cuatro proyectos se presentan en su totalidad en Proyectos →",
           "href": "/#work"
         }
       },
@@ -853,6 +853,343 @@
           "text": "Los editores cambian el texto directamente en la página, con una guía de 31 pasos dentro de la administración. Lo que no se ha hecho también queda por escrito: aún no consta ninguna prueba con lector de pantalla realizada por una persona."
         }
       ]
+    },
+    {
+      "slug": "community-trust-index",
+      "name": "Community Trust Index",
+      "type": "Plataforma de investigación",
+      "year": "2024",
+      "scope": "Diseño del sitio web, desarrollo en WordPress, mapa interactivo y páginas de datos por país",
+      "line": "Plataforma de investigación · 2024 · Construida desde cero, con un mapa mundial, un mismo diseño de página para todos los países y cuatro idiomas.",
+      "languages": "Inglés, francés, español y portugués",
+      "status": {
+        "label": "Sitio en línea",
+        "text": "trust.communityengagementhub.org",
+        "href": "https://trust.communityengagementhub.org"
+      },
+      "summary": "Una medida de la confianza comunitaria estaba en una hoja de cálculo que solo podían leer los investigadores. Diseñamos y construimos su sitio desde cero, con un mapa mundial, un mismo diseño de página para todos los países y cuatro idiomas.",
+      "cardImage": {
+        "src": "/work/community-trust-index-countries.jpg"
+      },
+      "detailImage": {
+        "src": "/work/community-trust-index-countries.jpg",
+        "alt": "La página de países del Community Trust Index: un mapa mundial gris con marcadores rojos y un recuento de 17 países en la parte superior derecha.",
+        "caption": "La página de países se abre con el mapa, de modo que el lector ve primero el alcance del trabajo."
+      },
+      "figures": [
+        {
+          "value": "14",
+          "label": "Informes de país en el sitio, frente a al menos cinco páginas en agosto de 2024, todos con el mismo diseño de página"
+        },
+        {
+          "value": "2",
+          "label": "Tipos de estudio, Institutional y Early Warning, que comparten una página para que cada país permanezca en un solo lugar"
+        },
+        {
+          "value": "4",
+          "label": "Idiomas, para que los resultados lleguen a los equipos que no trabajan en inglés"
+        }
+      ],
+      "origin": [
+        "La confianza determina si las personas actúan según lo que les dicen las organizaciones humanitarias. El Community Trust Index mide esa confianza. Lo desarrolló la unidad de Participación Comunitaria y Rendición de Cuentas de la IFRC como una herramienta basada en evidencia para las organizaciones y las comunidades a las que sirven.",
+        "A principios de 2024, los resultados se registraban en una hoja de cálculo. Eso funcionaba para el equipo de investigación y para nadie más. Las Sociedades Nacionales realizan la encuesta, pero los equipos de programas y los responsables deben leer los resultados y actuar en consecuencia, y una hoja de cálculo no permite hacerlo.",
+        "El Índice necesitaba un sitio propio, así que diseñamos y construimos uno desde cero."
+      ],
+      "research": {
+        "intro": [
+          "La estructura del sitio procede del método que debe explicar. Antes de dibujar una página, teníamos que entender cómo se obtiene una puntuación de confianza y quién la lee."
+        ],
+        "items": [
+          {
+            "title": "Cómo funciona la puntuación",
+            "text": "Las respuestas a varias preguntas de la encuesta se convierten a una escala común de 1 a 10, en la que 10 es la máxima confianza. Las respuestas “Don’t know” se dejan fuera para que no afecten al resultado. Después, las áreas de preguntas se combinan en una sola cifra, en la que los aspectos más centrales de la confianza tienen más peso. Por eso el sitio tiene que mostrar esa cifra única y también lo que hay detrás de ella."
+          },
+          {
+            "title": "Por qué una sola cifra no basta",
+            "text": "La confianza se mide a través de competencias y valores, así que una página no puede quedarse en una puntuación. El lector tiene que ver qué parte de la confianza es fuerte y cuál es débil."
+          },
+          {
+            "title": "Por qué los países necesitan más de un estudio",
+            "text": "Algunos países miden la confianza en la institución. Otros miden la confianza en los sistemas de alerta temprana, en cuatro pilares que van del conocimiento del riesgo a la respuesta. Un país puede tener ambos, así que la página tenía que dar cabida a más de un estudio."
+          },
+          {
+            "title": "Por qué importa el tiempo",
+            "text": "Las encuestas se repiten, así que un país necesita más de un año en una página y una forma de ver el cambio entre ellos."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "El diseño debía hacer dos cosas: que un método de investigación se pudiera leer y que quedara claro que esta herramienta pertenece al movimiento que la usa."
+        ],
+        "items": [
+          {
+            "title": "Por qué el mapa va primero",
+            "text": "Lo primero que se pregunta un lector es si su país está ahí, y lo primero que debe demostrar un índice mundial es su alcance. La página de países sigue el orden que el informático Ben Shneiderman expuso en 1996 para leer grandes conjuntos de información: primero la visión general, después acercar y filtrar, y luego los detalles a petición. El mapa da la visión general, el filtro la reduce a un tipo de estudio y cada página de país contiene el detalle. En un teléfono, un mapa mundial se reduce tanto que deja de ser útil, por lo que la página empieza con la lista de informes."
+          },
+          {
+            "title": "Por qué todos los países usan la misma página",
+            "text": "Resumen, conclusiones clave, puntuación general y luego el detalle, siempre en ese orden. El trabajo de Edward Tufte sobre los diseños repetidos explica por qué: cuando la disposición se mantiene constante, los lectores dejan de aprender la página y empiezan a fijarse en los datos. Quien ha leído Zambia puede leer Nepal, y las diferencias que ve son diferencias de confianza, no de diseño."
+          },
+          {
+            "title": "Por qué un selector y no una segunda página",
+            "text": "Nepal tiene un estudio Institutional y otro Early Warning. Un selector sencillo permite pasar de uno a otro, con pestañas para cada año y para las tendencias, de modo que un país permanece en un solo lugar a medida que crece su evidencia."
+          },
+          {
+            "title": "Por qué azul marino y rojo",
+            "text": "Los colores alinean el Índice con la Cruz Roja y la IFRC, de modo que los lectores del movimiento lo reconocen como propio. El rojo se reserva para el énfasis: las palabras clave de un título y los marcadores del mapa. El azul marino sobre blanco alcanza un contraste de 14,6 a 1 y el texto principal de 5,6 a 1, ambos muy por encima del 4,5 a 1 que piden las WCAG AA. El rojo alcanza 4,1 a 1, lo que cumple el 3 a 1 del texto grande, por lo que se queda en los títulos grandes y nunca lleva texto principal."
+          },
+          {
+            "title": "Por qué las personas van primero, en una forma suave",
+            "text": "La página de inicio se abre con una persona, no con un gráfico, porque la confianza tiene que ver con las personas. La fotografía se sitúa en un arco, no en un recuadro rígido. En un estudio de 2006, Moshe Bar y Maital Neta observaron que las personas prefieren los objetos curvos a los de ángulos agudos, lo que encaja con una página sobre la confianza."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "Las conclusiones se redactaron con el equipo de investigación, en parte a partir de los datos de las hojas de cálculo."
+        ],
+        "items": [
+          {
+            "title": "Por qué las conclusiones son frases",
+            "text": "Son afirmaciones, no etiquetas de gráficos: “Transparency is the clear trust gap” y “Receiving support does not automatically translate into high trust”. Un responsable puede repetir una frase así en una reunión, y un lector que solo hojea la página se lleva igualmente la conclusión."
+          },
+          {
+            "title": "Por qué el sitio nombra a sus lectores",
+            "text": "La página de inicio se dirige directamente a dos grupos: “For programs & operations” y “For leadership”. Cada uno puede encontrar lo que le corresponde sin leer antes el método."
+          }
+        ]
+      },
+      "decisions": [
+        {
+          "title": "Construir un tema a medida",
+          "text": "El sitio funciona con un tema de WordPress a medida, no con una plantilla. Un mapa, datos de países y módulos son demasiado específicos para un tema comprado ya hecho."
+        },
+        {
+          "title": "Mantener el contenido en formularios estructurados",
+          "text": "Los países, los módulos y las conclusiones se introducen en campos, no en diseños de página, de modo que cada nuevo informe adopta la misma forma sin trabajo de diseño."
+        },
+        {
+          "title": "Leer la hoja de cálculo que ya existe",
+          "text": "La hoja de cálculo de Google del equipo de investigación ya contenía todos los datos, así que los gráficos se leen directamente de ella. No hubo que reconstruir nada ni introducirlo dos veces, lo que mantuvo bajo el costo."
+        },
+        {
+          "title": "Dibujar el mapa a partir de datos geográficos",
+          "text": "Cada país del mapa tiene un marcador y un enlace a su página, de modo que el mapa funciona como la principal vía de acceso al sitio."
+        }
+      ],
+      "results": [
+        "El sitio creció sin necesidad de un rediseño. Una copia pública archivada muestra al menos cinco páginas de país en agosto de 2024. Hoy hay 14 informes de país y 17 países en el contador.",
+        "Está en uso activo: siete de los 14 informes tienen fecha de entre noviembre de 2025 y junio de 2026, de Eslovaquia a Madagascar. Early Warning se sumó a Institutional con la misma estructura de página, y Nepal ahora incluye ambos.",
+        "La evidencia que lo respalda es amplia y específica. En Nepal, 5309 personas participaron en la encuesta Early Warning, y 4958 se incluyeron en el análisis."
+      ],
+      "lessons": [
+        "Use lo que ya existe. Leer la propia hoja de cálculo del equipo ahorró dinero y permitió a los investigadores seguir trabajando con una herramienta que conocían.",
+        "Conserve una copia de todo aquello de lo que dependa. Un sitio que lee un archivo externo hereda los riesgos de ese archivo. En el próximo desarrollo, el sitio conservaría su propia copia periódica de los datos.",
+        "Diseñe para el próximo estudio, no para este. Una página construida en torno a un estudio habría tenido que reconstruirse. Una página construida en torno a un país admitió un segundo estudio sin problemas."
+      ],
+      "standards": [
+        {
+          "label": "Contraste del texto",
+          "value": "Calculado a partir de los propios colores del sitio: azul marino sobre blanco 14,6 a 1, texto principal 5,6 a 1 y rojo 4,1 a 1, usado solo para texto grande."
+        },
+        {
+          "label": "Idiomas",
+          "value": "Inglés, francés, español y portugués."
+        },
+        {
+          "label": "Edición",
+          "value": "Los países, los estudios y las conclusiones se introducen en formularios de un tema de WordPress a medida."
+        },
+        {
+          "label": "Puntuaciones automatizadas",
+          "value": "No consta ninguna. El cortafuegos del sitio bloquea las herramientas de prueba automatizadas."
+        }
+      ],
+      "clientTeam": "IFRC Community Engagement Hub",
+      "next": "Una copia de los datos guardada en el propio sitio y nuevos tipos de estudio en la misma página de país.",
+      "proves": [
+        {
+          "title": "Usamos lo que ya funciona.",
+          "text": "La hoja de cálculo del equipo de investigación ya contenía los datos, así que el sitio los lee directamente y no se reconstruyó nada."
+        },
+        {
+          "title": "Diseñamos para lo que viene después.",
+          "text": "Un solo diseño de página admitió un segundo tipo de estudio y ahora incluye 14 informes de país."
+        },
+        {
+          "title": "Convertimos las cifras en frases.",
+          "text": "Cada página de país dice en palabras sencillas qué significan los resultados, con textos redactados junto al equipo de investigación."
+        }
+      ]
+    },
+    {
+      "slug": "dual-diploma-switzerland",
+      "name": "Dual Diploma Switzerland",
+      "type": "Educación",
+      "year": "2025",
+      "scope": "Diseño del sitio web, desarrollo en WordPress y un formulario de solicitud de varios pasos",
+      "line": "Educación · 2025 · Sitio construido desde cero, en cuatro idiomas, con un formulario de solicitud de cinco pasos.",
+      "languages": "Inglés, alemán, francés e italiano",
+      "status": {
+        "label": "Sitio en línea",
+        "text": "dualdiploma-switzerland.ch",
+        "href": "https://dualdiploma-switzerland.ch"
+      },
+      "summary": "Un programa de diploma estadounidense tenía que resultar comprensible para las familias suizas. Diseñamos y construimos el sitio desde cero, en cuatro idiomas, con un formulario de solicitud que sigue la estructura oficial del programa.",
+      "cardImage": {
+        "src": "/work/dual-diploma-switzerland-site.jpg"
+      },
+      "detailImage": {
+        "src": "/work/dual-diploma-switzerland-site.jpg",
+        "alt": "La página de inicio de Dual Diploma Switzerland: el texto de bienvenida sobre verde intenso junto a una fotografía de tres estudiantes riendo juntos.",
+        "caption": "La primera pantalla: los dos diplomas en amarillo sobre verde, con los estudiantes al lado."
+      },
+      "figures": [
+        {
+          "value": "4",
+          "label": "Idiomas, porque las familias suizas leen en alemán, francés, italiano e inglés"
+        },
+        {
+          "value": "5",
+          "label": "Pasos cortos en el formulario de solicitud, en lugar de una página larga con unos 40 datos"
+        },
+        {
+          "value": "18/24",
+          "label": "Créditos validados a partir del expediente académico suizo, el cálculo que el sitio tiene que explicar"
+        }
+      ],
+      "origin": [
+        "El Dual Diploma permite a los estudiantes suizos obtener el American High School Diploma junto con la Matura suiza o el Certificado de Escuela Especializada. Academica, el grupo educativo estadounidense que está detrás, gestiona el programa a escala internacional.",
+        "El trabajo nos llegó por recomendación. Suiza necesitaba un sitio propio, porque la oferta solo tiene sentido en términos suizos: cantones, cursos escolares y francos suizos.",
+        "No había ningún sitio del que partir, así que diseñamos y construimos uno desde cero."
+      ],
+      "research": {
+        "intro": [
+          "Tres aspectos del público dieron forma al sitio."
+        ],
+        "items": [
+          {
+            "title": "Las familias deciden juntas, a lo largo de mucho tiempo",
+            "text": "Son de dos a cuatro años de estudio adicional junto con la escuela normal, así que el sitio tiene que responder a preguntas detalladas antes de que nadie presente una solicitud."
+          },
+          {
+            "title": "Suiza tiene varios sistemas escolares",
+            "text": "El programa encaja de forma distinta según el cantón, así que el sitio presenta tablas modelo por cantón y curso escolar."
+          },
+          {
+            "title": "Suiza tiene varios idiomas",
+            "text": "En 2023, el 66 % de los residentes indicó el alemán como lengua principal, el 23 % el francés y el 8 % el italiano, mientras que el 6 % indicó el inglés. Un sitio en un solo idioma no llegaría a la mayoría de sus familias."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "Una familia confía a una escuela años de estudio de su hijo o hija. El diseño debía transmitir solidez y hacer que una oferta complicada resultara sencilla en la primera pantalla."
+        ],
+        "items": [
+          {
+            "title": "Por qué verde y amarillo",
+            "text": "Los colores proceden del escudo de Academica, de modo que el sitio suizo se percibe como parte de una institución estadounidense consolidada."
+          },
+          {
+            "title": "Por qué el texto y la fotografía van uno al lado del otro",
+            "text": "La primera pantalla se divide en dos: la promesa sobre verde sólido y los estudiantes a su lado. No hay nada impreso sobre la fotografía, de modo que las palabras se mantienen nítidas con cualquier foto y en cualquier pantalla. El blanco sobre el verde alcanza un contraste de 9,9 a 1 y el amarillo de 7,4 a 1, ambos por encima del 7 a 1 del nivel más alto de las WCAG."
+          },
+          {
+            "title": "Por qué los dos diplomas llevan el amarillo",
+            "text": "Una línea de la primera pantalla va en color: el American High School Diploma y la Matura suiza. Esa es toda la oferta, así que es lo que un visitante debe recordar."
+          },
+          {
+            "title": "Por qué esta fotografía",
+            "text": "El programa se cursa en línea, y el temor natural de un padre o una madre es que en línea signifique en soledad. Por eso la primera imagen muestra a tres estudiantes riendo juntos. En una investigación con seguimiento ocular, Moran Cerf y sus colegas observaron que los rostros y el texto atraen la mirada mucho más que otras partes de una imagen, por lo que la primera pantalla contiene solo esas dos cosas."
+          },
+          {
+            "title": "Por qué se detalla el cálculo",
+            "text": "Se necesitan 24 créditos, 18 se validan a partir del expediente académico suizo y 6 se cursan en línea. La página recorre ese cálculo porque es lo principal que un padre o una madre tiene que creer."
+          },
+          {
+            "title": "Por qué Apply Now está siempre ahí",
+            "text": "El botón está en la cabecera de todas las páginas, de modo que una familia que ya ha decidido nunca tiene que buscarlo."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "Los textos los redactó el cliente, que conoce a las familias y el sistema suizo."
+        ],
+        "items": [
+          {
+            "title": "Por qué el sitio usa términos suizos",
+            "text": "Dice Matura, Certificado de Escuela Especializada, 10VP/VG y cantón de Vaud, porque esas son las palabras que usan las familias. Los precios aparecen primero en francos suizos, con los dólares estadounidenses al lado."
+          },
+          {
+            "title": "Cómo se prepararon los cuatro idiomas",
+            "text": "Las traducciones se produjeron con un modelo de lenguaje de IA y, después, hablantes nativos corrigieron el alemán y el italiano."
+          }
+        ]
+      },
+      "decisions": [
+        {
+          "title": "Construir un tema a medida",
+          "text": "Un tema de WordPress a medida permite al cliente actualizar la mayor parte del sitio sin un desarrollador."
+        },
+        {
+          "title": "Dividir el formulario en cinco pasos",
+          "text": "El formulario pide unos 40 datos, así que se divide en cinco pasos cortos: estudiante, dirección, primer tutor, segundo tutor y escolaridad. La investigación sobre el efecto de gradiente de meta (Kivetz y colegas, 2006) observó que las personas se esfuerzan más a medida que se ven más cerca de un objetivo, y cada paso terminado es un avance visible."
+        },
+        {
+          "title": "Seguir la estructura oficial",
+          "text": "El formulario partió del Google Form del cliente y se reconstruyó en octubre de 2026 para ajustarse a lo que exige Academica International Studies."
+        },
+        {
+          "title": "Enviar las solicitudes a una dirección suiza",
+          "text": "Cada solicitud llega directamente a la bandeja de entrada suiza del propio programa."
+        },
+        {
+          "title": "Seguir después del lanzamiento",
+          "text": "Hemos seguido ocupándonos del sitio desde el lanzamiento, con tablas de tarifas, enlaces a redes sociales, cobertura de prensa y tablas modelo por cantón."
+        }
+      ],
+      "results": [
+        "Un sitio en línea en cuatro idiomas, gestionado a diario por el cliente, con un formulario de solicitud construido conforme a la estructura oficial del programa.",
+        "El programa ha aparecido en el periódico suizo La Côte, y el sitio enlaza al artículo."
+      ],
+      "lessons": [
+        "Construya para la persona que edita el sitio. El año del formulario estaba fijado dentro del plugin de formularios, y cambiar la tabla de tarifas requería un desarrollador. Las pequeñas actualizaciones que se repiten cada año deberían estar en manos del cliente desde el principio.",
+        "Construya los formularios a partir de las reglas oficiales. El formulario partió de lo que tenía el cliente. Cuando hubo que seguir la estructura oficial, unos campos cambiaron de lugar y se añadieron otros nuevos. Partir de esa estructura habría evitado la reconstrucción.",
+        "La traducción con IA es un primer borrador. Dio al sitio cuatro idiomas con rapidez y a bajo costo, pero aun así los hablantes nativos tuvieron que corregirla. Todo presupuesto de traducción debería incluir ese paso."
+      ],
+      "standards": [
+        {
+          "label": "Contraste del texto",
+          "value": "Calculado a partir de los propios colores del sitio: blanco sobre verde 9,9 a 1 y amarillo sobre verde 7,4 a 1."
+        },
+        {
+          "label": "Idiomas",
+          "value": "Inglés, alemán, francés e italiano."
+        },
+        {
+          "label": "Edición",
+          "value": "El cliente edita las páginas en WordPress."
+        }
+      ],
+      "clientTeam": "Dual Diploma Switzerland",
+      "next": "Fechas anuales y tablas de tarifas que el cliente pueda cambiar sin un desarrollador, y nuevas escuelas y cantones en las tablas modelo.",
+      "proves": [
+        {
+          "title": "Explicamos una oferta en términos locales.",
+          "text": "Un programa estadounidense se lee como uno suizo: cantones, cursos escolares y francos suizos, en cuatro idiomas."
+        },
+        {
+          "title": "Hacemos que los formularios largos parezcan cortos.",
+          "text": "Unos 40 datos se convirtieron en cinco pasos cortos que siguen la estructura oficial del programa."
+        },
+        {
+          "title": "Seguimos después del lanzamiento.",
+          "text": "El sitio ha seguido cambiando con el programa, con tablas de tarifas, cambios en el formulario y cobertura de prensa añadidos desde que se puso en línea."
+        }
+      ]
     }
   ],
   "insights": [
@@ -1250,7 +1587,7 @@
             "items": [
               {
                 "q": "¿Qué sistema de edición?",
-                "a": "Normalmente WordPress con un tema a medida, porque su equipo puede encontrar editores y desarrolladores para él en cualquier lugar. Los dos estudios de caso funcionan con él. Si su organización tiene un estándar, indíquelo en el pliego de requisitos y la propuesta responderá a él."
+                "a": "Normalmente WordPress con un tema a medida, porque su equipo puede encontrar editores y desarrolladores para él en cualquier lugar. Los cuatro estudios de caso funcionan con él. Si su organización tiene un estándar, indíquelo en el pliego de requisitos y la propuesta responderá a él."
               },
               {
                 "q": "¿Quién es el titular de las cuentas?",

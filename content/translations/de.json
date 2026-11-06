@@ -240,9 +240,11 @@
     "languages": "Sprachen",
     "headlineFigures": "Kennzahlen",
     "onThisPage": "Auf dieser Seite",
-    "challenge": "Die Aufgabe",
-    "goals": "Die Ziele",
-    "decisions": "Wichtige Entscheidungen",
+    "origin": "Wie es dazu kam",
+    "research": "Die Recherche",
+    "design": "Das Design",
+    "wording": "Die Formulierungen",
+    "build": "Die Umsetzung",
     "brand": "Die Marke",
     "brandGuidelines": "Die Markenrichtlinien",
     "beforeAfter": "Vorher und nachher",
@@ -359,45 +361,151 @@
       "figures": [
         {
           "value": "283 KB",
-          "label": "Startseite beim Öffnen auf dem Smartphone, bei einem Budget von 500 KB. Gemessen am 24. Oktober 2026"
+          "label": "Startseite beim Öffnen auf dem Smartphone, gemessen am 24. Oktober 2026. Die Grenze von 500 KB stand zuerst fest, weil eine langsame Verbindung diese Menge in etwa 10 Sekunden lädt"
         },
         {
           "value": "30",
-          "label": "Seitenvorlagen, geprüft nach WCAG 2.2 AA. Gemessen am 22. Oktober 2026"
+          "label": "Seitenvorlagen, geprüft nach WCAG 2.2 AA am 22. Oktober 2026, weil grelle Sonne, ein gesprungener Bildschirm und eine Hand im Handschuh im Feld echte Anforderungen an die Barrierefreiheit schaffen"
         },
         {
           "value": "279",
-          "label": "In die Knowledge bank eingelesene Dokumente. Gemessen am 4. November 2026"
+          "label": "Bis zum 4. November 2026 in die Knowledge bank eingelesene Dokumente, damit Leserinnen und Leser eine Situation beschreiben können, statt das richtige Suchwort zu erraten"
         }
       ],
-      "challenge": [
+      "origin": [
         "The Collective Service ist eine globale Partnerschaft für Risikokommunikation und Einbindung von Gemeinschaften in gesundheitlichen Notlagen. Ihre Website wurde 2020 als zentrale Bibliothek für Leitlinien eingerichtet. Sie ist bis heute das Eingangstor der Partnerschaft: der Ort, an dem Koordinatorinnen und Koordinatoren sowie Einsatzkräfte Werkzeuge, Schulungen und Daten finden, wenn sie während eines Ausbruchs Gemeinschaften erreichen müssen.",
-        "Sechs Jahre später war die Website noch immer von der Pandemie geprägt, für die sie gebaut worden war. Der größte Teil ihrer Bibliothek stammte aus den Jahren 2020 bis 2022, während die Notlagen, an denen die Menschen arbeiteten, längst andere waren.",
-        "Die Menschen, die sie am dringendsten brauchen, sind auch am schwersten zu erreichen. In einer Umfrage von 2022 unter Personen, die Kursinhalte zu gesundheitlichen Notlagen weitergeben, war eine schlechte Verbindung in Ländern mit niedrigem Einkommen mit 29 % die am häufigsten genannte Schwierigkeit, gegenüber 8 % in Ländern mit hohem Einkommen. Die mediane Startseite auf dem Smartphone lag 2025 bei 2,56 MB, was bei 400 Kilobit pro Sekunde etwa 51 Sekunden dauert. Das ist zu lang für jemanden in der Koordination, der sofort ein Dokument braucht.",
-        "Die Partnerschaft hatte außerdem ein Erkennungsproblem. Eine Evaluation von 2023 stellte fest, dass ihr Name für manche verwirrend sei und ihr Zweck zu wenig kommuniziert werde. Ihr Logo bestand nur aus dem Namen und konnte daher nicht helfen."
+        "Sechs Jahre später war die Website noch immer von der Pandemie geprägt, für die sie gebaut worden war. Der größte Teil ihrer Bibliothek stammte aus den Jahren 2020 bis 2022, während die Notlagen, an denen die Menschen arbeiteten, längst andere waren. Die Menschen, die sie am dringendsten brauchten, waren auch am schwersten zu erreichen, oft auf dem Smartphone und über eine langsame Verbindung.",
+        "Wir haben nicht mit einem Design begonnen. Wir haben mit dem Lesen begonnen: die eigene Datenbank der Website, eine unabhängige Evaluation der Partnerschaft und die veröffentlichte Forschung dazu, wie Menschen in Krisen Leitlinien finden und nutzen. Jede Regel der neuen Website geht auf diese Lektüre zurück, und bei jeder steht, welche Art von Grundlage sie hat, sodass alle sie hinterfragen können."
       ],
-      "goals": [
-        "Jede Seite leicht genug für eine langsame Verbindung machen, mit einem Budget von 500 KB pro Seite.",
-        "Aktuelle Leitlinien nach vorn holen und Veraltetes aussortieren.",
-        "Eine Dokumentenbibliothek mit Suche, Notfall-Kits und Weiterleitungen von jeder alten Adresse aufbauen.",
-        "Die Website an das Redaktionsteam der Partnerschaft übergeben, mit Tests, Schulung und Relaunch."
-      ],
+      "research": {
+        "intro": [
+          "Eine Auswertung vergleichbarer Plattformen und veröffentlichter Studien ergab dreizehn Befunde, die eine dreifache Prüfung jeder Aussage bestanden. Sie nannte auch ihre Grenzen: Keine Studie hat genau diese Koordinatorinnen und Koordinatoren untersucht, und nichts Geprüftes betraf Aussehen und Anmutung. Deshalb sagt das Design, wo es auf Belegen beruht und wo auf unserem Urteil, das offen ist für Widerspruch und für Tests mit Einsatzkräften."
+        ],
+        "items": [
+          {
+            "title": "Was bereits funktionierte",
+            "text": "Eine unabhängige Evaluation von 2023, gestützt auf 88 Interviews und 98 Umfrageantworten, ergab, dass die Online-Ressourcen der Website mit etwa 80 von 100 das am besten bewertete Produkt der Partnerschaft waren. Deshalb blieben die Bibliothek, die Kits und die Dashboards im Mittelpunkt. Wir haben geändert, wie Inhalte gefunden, datiert und gekennzeichnet werden, nicht, was die Website ist."
+          },
+          {
+            "title": "Langsame Verbindungen gibt es wirklich, aber nicht überall",
+            "text": "In einer Umfrage von 2022 unter Personen, die Kursinhalte zu gesundheitlichen Notlagen weitergeben, war eine schlechte Verbindung in Ländern mit niedrigem Einkommen mit 29 % die am häufigsten genannte Schwierigkeit, gegenüber 8 % in Ländern mit hohem Einkommen, während 47 % gar keine Schwierigkeit angaben. Die mediane Startseite auf dem Smartphone lag 2025 bei 2,56 MB, was bei 400 Kilobit pro Sekunde etwa 51 Sekunden dauert. Deshalb ist die Website zuerst für die langsame Verbindung gebaut: Die Seiten sind leicht, und ein Dokument lässt sich im Browser lesen, bevor jemand es herunterladen muss."
+          },
+          {
+            "title": "Menschen sagen, das Finden sei einfach, und beschweren sich dann über die Suche",
+            "text": "Ein vergleichbarer Hub berichtet, dass 92 % der Menschen Ressourcen leicht fanden, doch 18 % seiner offenen Kommentare betreffen die Benutzerfreundlichkeit, vor allem Suche, Navigation und Downloads. Ein Nutzertest eines anderen Hubs ergab, dass das Fehlen eines Suchfelds auf der Startseite eines seiner zwei großen Probleme war. Deshalb steht die Suche im Kopfbereich jeder Seite, und ein Zufriedenheitswert gilt nicht als Beweis."
+          },
+          {
+            "title": "Teams im Feld wollen weniger, nicht mehr",
+            "text": "Die Evaluation stellte fest, dass mehr Leitlinien entstanden, als die Länderteams aufnehmen konnten, und schlug weniger und kürzere Dokumente vor. Eine Studie mit Mitarbeitenden in drei von Krisen betroffenen Ländern ergab, dass kurze Dokumente bevorzugt wurden und ein Handbuch mit 140 Seiten als zu lang galt, um sich darin zurechtzufinden. Deshalb öffnet jedes Kit mit einer Auswahl „Start here“ von bis zu vier Dokumenten."
+          },
+          {
+            "title": "Leitlinien veralten, und Vertrauen hängt davon ab, die eigene Arbeit offenzulegen",
+            "text": "In einer Auswertung von 2020 zu 131 humanitären Leitliniendokumenten waren nur 18 % seit ihrer Veröffentlichung aktualisiert worden. Vertrauen gehört zu den Vorteilen, die Nutzerinnen und Nutzer vergleichbarer Hubs am häufigsten nennen. Deshalb zeigt jedes Dokument, wer es wann veröffentlicht hat, und jeder Link wird automatisch geprüft. Die Forschung zeigt noch nicht, welche Signale Vertrauen schaffen. Dies ist also unsere beste Lesart, und sie bleibt offen für Tests."
+          },
+          {
+            "title": "Menschen geben Inhalte weiter",
+            "text": "Von 819 Personen, die Kursinhalte weitergaben, teilten 60 % einen Link, 36 % nutzten WhatsApp und 26 % formatierten die Inhalte für SMS oder WhatsApp um. Deshalb kann die Website nicht der einzige Kanal sein. Jedes Dokument und jedes Kit hat eine kurze, stabile Adresse und eine Vorschau, die sich von selbst erklärt, wenn sie in einen Chat eingefügt wird."
+          },
+          {
+            "title": "Sprache ist eine wiederkehrende Lücke",
+            "text": "Alle 131 dieser Leitliniendokumente lagen auf Englisch vor, und nur 28 % auch auf Französisch. Deshalb erscheint jedes Dokument einmal, mit seinen weiteren Sprachen zusammen auf derselben Seite."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "Hinter dem Design stand eine Regel: Wenn Zielgruppen in Konflikt geraten, haben Einsatzkräfte Vorrang. Das meiste, was folgt, ergibt sich aus diesem Satz. Die Farben wurden mit einem wahrnehmungsbasierten Farbmodell und der WCAG-Kontrastformel berechnet, und Schrift, Abstände und Tippflächen wurden anhand veröffentlichter Forschung festgelegt. So hat jede Entscheidung unten einen Grund, der sich prüfen lässt."
+        ],
+        "items": [
+          {
+            "title": "Warum das Gewichtslimit zuerst kam",
+            "text": "Jede Seite musste unter 500 KB bleiben, etwa 10 Sekunden bei 400 Kilobit pro Sekunde. Diese Grenze wurde vor jedem Design festgelegt, sodass jede Vorlage danach gebaut wurde. Jeder Download nennt Format und Größe, bevor er angeklickt wird, denn eine Einsatzkraft mit begrenztem Datenvolumen entscheidet vor dem Klick, ob sie die Daten verbrauchen will, nicht danach."
+          },
+          {
+            "title": "Warum die Palette auf Helligkeit aufbaut",
+            "text": "Etwa 8 % der Männer haben eine Rot-Grün-Farbenblindheit, und ein Fotokopierer sieht überhaupt keine Farbe. Helligkeit übersteht beides. Deshalb liegt die Palette in drei getrennten Bereichen auf der OKLCH-Helligkeitsskala von 0 bis 100: dunkle Tintentöne bei 20 bis 46, Korallentöne bei 49 bis 76 und Seitenfarben bei 90 bis 100. In einer Simulation von Farbenblindheit wird Koralle olivgrün, aber eine Schaltfläche in Koralle auf Sand bleibt lesbar, weil der Helligkeitsunterschied bestehen bleibt."
+          },
+          {
+            "title": "Warum Koralle nur eine Sache bedeutet",
+            "text": "Tinte und Sand enthalten fast keine Farbe. Koralle enthält etwa fünfmal so viel, sodass das Auge sie überall zuerst findet. Dadurch kann Koralle eine Bedeutung tragen: das, was gerade aktuell ist, oder die eine Aktion, auf die es auf einer Seite ankommt. Die Entscheidungszeit wächst mit der Zahl gleichwertiger Optionen, ein Effekt, der als Hick’sches Gesetz bekannt ist. Deshalb setzt jede Ansicht Koralle nur für eine Aktion ein."
+          },
+          {
+            "title": "Warum die Seite Sand ist und der Text Tinte",
+            "text": "Eine Seite in Sand sendet etwa 7 % weniger Licht ins Auge als Weiß. Das mindert die Blendung bei langem Lesen, und Text darauf erreicht trotzdem einen Kontrast von 15 zu 1. Weiß bleibt Karten und Feldern vorbehalten, sodass ein weißer Kasten als der Ort zum Schreiben erkennbar ist. Der Text ist eine blauschwarze Tinte, kein reines Schwarz. So sind Text, dunkle Bänder und Foto-Überlagerungen eine Farbe in verschiedenen Stärken, kühl auf warmem Grund."
+          },
+          {
+            "title": "Warum jedes Farbpaar berechnet wurde",
+            "text": "Weißer Text auf einem Korallenton misst 3,63 zu 1 und verfehlt damit die 4,5 zu 1, die Fließtext braucht. Auf einem etwas dunkleren Korallenton erreicht er 4,89, deshalb verwenden die Schaltflächen diesen Ton. Jedes Paar aus Text und Hintergrund wurde auf dieselbe Weise berechnet. Dieselbe Sorgfalt hält die Identität von den eigenen Farben der Partner fern: Tinte enthält so wenig Farbe, dass sie neutral wirkt, und Koralle ist weder das Rot noch das Orange, das die Partner verwenden."
+          },
+          {
+            "title": "Warum Text 17 Pixel groß ist und Zeilen bei etwa 70 Zeichen enden",
+            "text": "Übersichtsarbeiten zur Leseforschung setzen die untere Grenze des flüssigen Lesens bei normalem Bildschirmabstand bei etwa 16 Pixel an, und eine Eye-Tracking-Studie mit 104 Personen ergab, dass das Verständnis mit größerer Schrift zunahm. Deshalb ist Fließtext 17 Pixel groß und auf dem Smartphone nie kleiner als 16. Am Bildschirm liest es sich bei etwa 45 bis 75 Zeichen pro Zeile am angenehmsten, deshalb fasst die Spalte etwa 66 bis 70. Der Zeilenabstand beträgt 1,55, knapp über den 1,5, die die British Dyslexia Association empfiehlt und die in WCAG als Prüfwert dienen."
+          },
+          {
+            "title": "Warum Überschriften Sätze sind, in einer Serifenschrift gesetzt",
+            "text": "Text in reinen Großbuchstaben wird 10 bis 20 % langsamer gelesen, weil Wortformen zu Rechtecken verflachen. Deshalb bleiben Großbuchstaben kurzen Labels und Badges vorbehalten. Überschriften sind als Sätze geschrieben, weil Lesende beim Überfliegen dann allein aus der Überschrift den Kern erfassen. Eine Serifenschrift für Überschriften und eine serifenlose Schrift für alles andere ergeben zwei klare Stimmen aus nur zwei Schriftfamilien. Das ist wichtig, weil Schriften die eine Ressource sind, die Text aufhalten kann."
+          },
+          {
+            "title": "Warum jede Tippfläche mindestens 44 Pixel groß ist",
+            "text": "Das Minimum des Barrierefreiheitsstandards liegt bei 24 Pixel. Wir haben 44 als Untergrenze gewählt, weil die Hauptzielgruppe die Website einhändig auf dem Smartphone nutzt, oft im Gehen oder in einem Fahrzeug. Eine Studie zur Daumenbedienung auf kleinen Touchscreens ergab, dass die Fehler bis etwa 9,2 Millimeter stark zurückgingen, das sind rund 44 Pixel."
+          },
+          {
+            "title": "Warum die Formen abgerundet sind",
+            "text": "Menschen empfinden gerundete Formen als angenehmer und weniger bedrohlich als spitze. Der Effekt ist klein, aber beständig, und eine Website für Menschen unter Stress sollte ihn nutzen. Die Form hat außerdem eine Aufgabe: Pillenformen gibt es nur für Dinge, die sich drücken lassen, Karten enthalten Lesestoff, und Felder sind eckiger, sodass ein Feld nie wie eine Schaltfläche aussieht."
+          },
+          {
+            "title": "Warum die Bewegung ruhig ist",
+            "text": "Bewegung hat drei Aufgaben: zu zeigen, woher etwas kam, zu bestätigen, dass ein Bedienelement reagiert hat, und zu signalisieren, dass ein Einsatz gerade läuft. Eine Reaktion wirkt bei etwa einer Zehntelsekunde sofort, und der Gedankenfluss bleibt bis etwa einer Sekunde ungebrochen. Deshalb bleibt Bewegung nahe an diesem Bereich. Wer auf dem eigenen Gerät weniger Bewegung einstellt, bekommt keine."
+          },
+          {
+            "title": "Warum die Fotos dokumentarisch sind",
+            "text": "Fotografie ist hier Beleg, nicht Dekoration. Die Marke verlangt echte Menschen bei der Arbeit, etwa ein Gespräch, einen Radiospot oder einen Schulungsraum, bei Tageslicht und auf Augenhöhe, so sorgfältig nachgewiesen wie ein zitiertes Dokument. Es gibt keine gestellten Metaphern wie Handschläge oder Globen und keine Nahaufnahmen von Leid."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "Alles, was der Service veröffentlicht, spricht mit einer Stimme und folgt vier Regeln: schlicht, konkret, ruhig und ehrlich. Es gibt sie für eine Person: jemanden mitten in einer Notlage, der keine Zeit hat, einen Satz zu entschlüsseln."
+        ],
+        "items": [
+          {
+            "title": "Warum die Sprache schlicht ist",
+            "text": "Kurze Sätze, Alltagswörter und aktive Verben, weil Fachjargon für jemanden mitten in einer Krise eine Hürde ist. Die Website sagt, was geschieht und was als Nächstes zu tun ist."
+          },
+          {
+            "title": "Warum dort Zahlen statt Adjektiven stehen",
+            "text": "Aussagen sind Zählungen. „39 documents are ready for this response“ überzeugt, „a wealth of resources“ nicht. Überschriften tragen eine Tatsache, nie ein Etikett wie „Our resources“."
+          },
+          {
+            "title": "Warum die Sprache ruhig bleibt",
+            "text": "Dringlichkeit entsteht durch Klarheit, nie durch Lautstärke. Es gibt keine Ausrufezeichen, keine Großbuchstaben zur Betonung und keine Alarmsprache außerhalb der Warnmeldung selbst. In einer aktiven Notlage werden die Worte kürzer, nicht lauter: zuerst Anweisungen und Zahlen, ohne Adjektive."
+          },
+          {
+            "title": "Warum manche Wörter nicht verwendet werden",
+            "text": "Die englischen Wörter beneficiaries, target audience, leverage, solutions, empower, comprehensive, world-class und innovative kommen alle nicht vor. Menschen sind Gemeinschaften mit eigener Handlungsfähigkeit, keine Empfänger, und ein Wort, das eine Pitch-Präsentation eröffnen könnte, gehört nicht hierher."
+          },
+          {
+            "title": "Warum sich der Ton von Seite zu Seite ändert",
+            "text": "Es gibt eine Stimme und vier Register. Eine aktive Notlage bekommt die kürzesten Sätze. Die Bibliothek ist sachlich. Die Seite About ist der einzige Ort für die Geschichte. Der Helpdesk spricht die Leserinnen und Leser direkt mit „you“ an, denn dort handeln sie."
+          },
+          {
+            "title": "Warum Schaltflächen sagen, was passieren wird",
+            "text": "„Open the kit“ und „Send the request“ sagen Leserinnen und Lesern, was als Nächstes kommt, „Submit“ und „Go“ nicht. Fehlermeldungen funktionieren genauso: Sie sagen, was falsch ist und was zu tun ist, etwa „The deadline is before today. Choose a later date.“"
+          },
+          {
+            "title": "Warum zugegeben wird, was fehlt",
+            "text": "Die Stimme kennzeichnet, was Entwurf ist oder fehlt, und lädt zur Korrektur ein: „Ask for something we are missing“ gehört zur Marke und ist keine Entschuldigung. Daten werden ausgeschrieben, wie in 4 Sep 2025, weil 04/09 auf zwei Kontinenten zwei verschiedene Tage bedeutet."
+          }
+        ]
+      },
       "decisions": [
         {
           "title": "Von Grund auf neu bauen",
           "text": "Die alte Website Seite für Seite zu aktualisieren, hätte die Struktur und das Gewicht erhalten, die sie loswerden musste. Deshalb wurde jede Seite neu gebaut: ein eigenes WordPress-Theme mit 30 Seitenvorlagen, ein neuer Redaktionsbereich und Inhalte, die über ein wiederholbares Importwerkzeug übernommen wurden, das sich erneut ausführen und prüfen lässt."
         },
         {
-          "title": "Das Gewichtslimit vor dem Design festlegen",
-          "text": "Hinter dem Design stand eine Regel: Wenn Zielgruppen in Konflikt geraten, haben Einsatzkräfte Vorrang. Deshalb musste jede Seite unter 500 KB bleiben, etwa 10 Sekunden bei 400 Kilobit pro Sekunde, und diese Grenze wurde zuerst festgelegt, sodass jede Vorlage danach gebaut wurde. Jeder Download nennt außerdem Format und Größe, bevor er angeklickt wird, damit niemand knappe Daten für eine unerwartete Datei verbraucht."
-        },
-        {
           "title": "Jedes Dokument auf der Website vorhalten",
           "text": "Viele Dokumente waren nur verlinkt und hätten nicht mehr funktioniert, sobald ein Herausgeber eine Seite verschoben hätte. Wir haben 155 davon geholt, sodass die Website nun eigene Kopien vorhält, mit französischen, portugiesischen, spanischen und Swahili-Fassungen, soweit die Herausgeber sie anbieten. Dokumente, die zwei-, drei- oder viermal gelistet waren, erscheinen jetzt einmal, mit ihren weiteren Sprachen auf derselben Seite."
-        },
-        {
-          "title": "Die Marke als Teil des Problems sehen",
-          "text": "Eine bessere Website allein konnte nicht erklären, was der Service ist. Deshalb haben wir parallel dazu die Argumente für eine neue Identität dargelegt. Die Gründe stehen weiter unten unter „Die Marke“."
         },
         {
           "title": "Für die Menschen bauen, die sie betreiben",
@@ -421,6 +529,10 @@
           {
             "title": "Sie sagt, was der Service ist",
             "text": "Drei getrennte Teile fügen sich zu einem Körper: eigenständige Organisationen, gleichrangig gezeichnet, werden zu einem Service. Wer die Bildmarke sieht, erkennt „gemeinsam“, bevor ein Wort gelesen ist. So wirkt sie bei jedem Auftritt gegen die Verwirrung, die die Evaluation festgestellt hat."
+          },
+          {
+            "title": "Sie ist eine Form, die der Sektor noch nicht verwendet hat",
+            "text": "Drei Balken und ein Block sind eindeutig und lassen sich als eigene Form besetzen. Sie sind kein Globus, keine Hand, kein Herz und kein Kreuz, die Formen, die der humanitäre Sektor schon verbraucht hat. Der verbundene Körper ist so breit gezeichnet wie die Teile, die ihn bilden, denn nichts kommt hinzu, wenn sich Organisationen zusammenschließen: Das Ganze sind die Teile, verbunden."
           },
           {
             "title": "Sie hält die Partner gleichrangig",
@@ -448,43 +560,11 @@
           }
         ],
         "guidelines": [
-          "Die Identität geht über die Bildmarke hinaus. Die Tonalität ist schlicht, konkret, ruhig und ehrlich, weil Fachjargon für jemanden mitten in einer Krise eine Hürde ist. Die Farbe hat eine Aufgabe: Tinte für Text, Sand für Hintergründe und Koralle nur für das, was gerade aktuell ist, und für die eine Aktion, auf die es ankommt.",
+          "Die Identität geht über die Bildmarke hinaus. Die oben beschriebene Tonalität, die Farben und die Fotografie gehören alle dazu.",
           "All das ist in einem 57-seitigen Design- und Markendokument dargelegt, das im Oktober 2026 mit der Partnerschaft geteilt wurde. Teil A begründet die Änderung und legt die Richtlinien fest: die Belege, die Vergleichstests, Kosten und Risiken der Änderung, Sprache und Ton, Konstruktion, Schutzzone und Mindestgrößen, Farbe, Schrift, Fotografie, vier Sprachfassungen, die Verwendung neben den Partnern und die Regeln. Teil B ist der Designstandard für die Website, und jede Regel darin nennt ihren Grund und die Art ihrer Grundlage: die Leistungsbeschreibung, veröffentlichte Belege, einen berechneten Wert, einen Standard oder unser eigenes Urteil.",
           "Die Identität ist ein Vorschlag und wird hier mit Erlaubnis der Partnerschaft gezeigt; über ihre Annahme entscheidet die Partnerschaft."
         ]
       },
-      "beforeAfter": [
-        {
-          "label": "Die Website",
-          "before": "Die 2020 eingerichtete Website",
-          "after": "Von Grund auf neu aufgebaut, mit 30 Seitenvorlagen"
-        },
-        {
-          "label": "Die Bibliothek",
-          "before": "Überwiegend aus den Jahren 2020 bis 2022",
-          "after": "Aktuelle Leitlinien zuerst, veraltetes Material nicht übernommen"
-        },
-        {
-          "label": "Dokumente",
-          "before": "Viele nur auf anderen Websites verlinkt",
-          "after": "Auf der Website selbst vorgehalten, darunter 155 von Herausgebern geholte"
-        },
-        {
-          "label": "Mehrfache Einträge",
-          "before": "Einige bis zu viermal gelistet",
-          "after": "Jedes einmal gelistet, mit seinen Sprachen an einem Ort"
-        },
-        {
-          "label": "Das Logo",
-          "before": "Nur der Name, auf Englisch",
-          "after": "Eine vorgeschlagene Bildmarke, lesbar bei 16 Pixel, gezeigt mit Erlaubnis der Partnerschaft"
-        },
-        {
-          "label": "Alte Adressen",
-          "before": "1.593 auf der alten Website",
-          "after": "Jede einer Stelle auf der neuen Website zugeordnet"
-        }
-      ],
       "results": [
         "Die Website ist noch nicht gestartet, daher gibt es noch keine Nutzungsdaten zu berichten. Bis zum Relaunch zeigt die öffentliche Adresse der Partnerschaft weiterhin die alte Website.",
         "Berichten lässt sich, was getestet wurde. Am 23. Oktober 2026 fand ein Crawl von 332 Seiten und 634 Links zu anderen Websites keinen defekten Link. Jede Seite wird bei Breiten von 320 bis 1.920 Pixel geprüft. Die Besuchermessung ist eingebaut und wird erst nach Einwilligung geladen, sodass der Relaunch an der tatsächlichen Nutzung gemessen werden kann."
@@ -563,32 +643,143 @@
       "figures": [
         {
           "value": "3",
-          "label": "Währungen für Einzel- und Monatsspenden: Schweizer Franken, Euro und US-Dollar"
+          "label": "Währungen für Einzel- und Monatsspenden: Schweizer Franken, Euro und US-Dollar, passend zu den eigenen Bankkonten der Stiftung"
         },
         {
           "value": "100",
-          "label": "Lighthouse-Wert für Barrierefreiheit, Live-Startseite und Spendenseite. Gemessen am 4. November 2026"
+          "label": "Lighthouse-Wert für Barrierefreiheit, Live-Startseite und Spendenseite, 4. November 2026. Das Markenhandbuch von Plan International verlangt von jeder Website mindestens AA"
         },
         {
-          "value": "14.0 s",
-          "label": "Live-Startseite vollständig geladen in einem 3G-Profil mit 400 kbit/s und 2 s Latenz. Gemessen am 4. November 2026"
+          "value": "10",
+          "label": "Textstile im Designstandard, reduziert von 56 Schriftgrößen im ersten Konzept, sodass das Redaktionsteam nur aus dem wählen kann, was funktioniert"
         }
       ],
-      "challenge": [
-        "Die Global Girls Foundation ist eine 2022 errichtete Schweizer Stiftung, die von Plan International geschaffen wurde, um deren Programme für Mädchen zu finanzieren. Ihre Website muss Philanthropinnen und Philanthropen und deren Umfeld erreichen: Family Offices, Beraterinnen und Berater, Anwältinnen und Anwälte sowie Familien- und Unternehmensstiftungen.",
-        "Ihre Website entsprach diesem Anspruch nicht. Sie bestand aus 11 Seiten auf der WordPress-Plattform von Plan International, war schwer zu verwalten, Inhalte waren schwer zu finden, und es gab keine integrierte Möglichkeit zu spenden.",
+      "origin": [
+        "Die Global Girls Foundation ist eine 2022 errichtete Schweizer Stiftung, die von Plan International geschaffen wurde, um deren Programme für Mädchen zu finanzieren. Sie beschreibt sich als Plattform für globale Philanthropinnen und Philanthropen und möchte, dass diese sich als Teil einer Mission fühlen, nicht einfach als Spendende an eine Hilfsorganisation.",
+        "Ihre Website sagte das nicht. Sie bestand aus 11 Seiten auf der gemeinsam genutzten WordPress-Plattform von Plan International, war schwer zu verwalten, und Inhalte waren schwer zu finden. Sie erzählte starke Geschichten, bot aber keinen klaren nächsten Schritt und keine integrierte Möglichkeit zu spenden.",
         "Die neue Website hatte zwei Aufgaben, die in verschiedene Richtungen ziehen. Sie musste für Menschen, die über ein Vermächtnis oder eine Zustiftung nachdenken, wie eine seriöse Institution wirken und zugleich eine Kartenspende von allen annehmen, die heute spenden möchten."
       ],
-      "goals": [
-        "Klar sagen, was die Stiftung ist und warum man an sie spenden sollte.",
-        "Jeder Spendergruppe einen klaren Weg vom ersten Besuch bis zur Spende bieten.",
-        "Sichere Einzel- und Monatsspenden in mehr als einer Währung annehmen.",
-        "Dem Team der Stiftung ermöglichen, jede Seite zu bearbeiten, ohne das Design zu beschädigen."
-      ],
+      "research": {
+        "intro": [
+          "Wir haben mit Fragen begonnen. Im Juni 2026 gingen drei Fragebögen hinaus, je einer an Spendende, Stakeholder und das Team der Stiftung. Die Antworten waren einheitlich genug, um darauf ein Design aufzubauen, sodass die geplanten Interviews nicht nötig waren."
+        ],
+        "items": [
+          {
+            "title": "Für wen die Website wirklich ist",
+            "text": "Zu Beginn wurden sechs Spendergruppen genannt, und eine stand an erster Stelle: Philanthropinnen und Philanthropen und deren Umfeld, etwa Family Offices, Beraterinnen und Berater oder Anwältinnen und Anwälte. Das haben wir festgehalten und jede Entscheidung daran gemessen. Für diese Leserschaft bedeutet Beweis: Governance, geprüfte Abschlüsse und das, was eine Spende im großen Maßstab bewirkt. Gewohnheiten aus dem Kleinspendenbereich wie Dringlichkeitsbanner würden das entwerten, deshalb wurden sie weggelassen."
+          },
+          {
+            "title": "Was die ersten Sekunden leisten müssen",
+            "text": "Eine Antwort setzte den Maßstab für die Startseite: Innerhalb von Sekunden sollen Besucherinnen und Besucher erkennen, wie viel Investitionen in Mädchen bewirken können. Eine andere zeigte die Lücke der alten Website: starkes Storytelling, aber kein klarer nächster Schritt. Deshalb musste die Seite schnell überzeugen und dann einen Weg anbieten."
+          },
+          {
+            "title": "Drei Wege, die Startseite zu eröffnen",
+            "text": "Wir haben drei funktionierende Startseiten gebaut, eine mit der Wirkung, eine mit der Geschichte eines Mädchens und eine mit einem Vorzeigeprogramm an der Spitze, und das Team der Stiftung und eine Jugendvertretung verglichen sie. Der Einstieg über die Wirkung schuf sofort Glaubwürdigkeit. Die Geschichte zog die Menschen hinein, wirkte aber am besten als Unterstützung. Ein Einstieg über ein einzelnes Programm barg das Risiko, die Stiftung wie eine einzelne Initiative aussehen zu lassen. Deshalb öffnet die endgültige Seite mit einer starken Aussage, bringt direkt danach die Zahlen und setzt Geschichten unterstützend ein."
+          },
+          {
+            "title": "Die Frage, die alle beim ersten Besuch stellen",
+            "text": "Das Team wies darauf hin, dass neue Besucherinnen und Besucher fragen würden: Warum diese Stiftung, und wie unterscheidet sie sich von Plan International? Deshalb steht die Zeile „The philanthropic arm of Plan International“ auf dem ersten Bildschirm, weil die Verbindung Glaubwürdigkeit schafft, und die Seite Why girls stellt die Frage offen: Warum dies und nicht eine allgemeine Spende?"
+          },
+          {
+            "title": "Die Markenregeln von Plan International",
+            "text": "Wir haben das 104-seitige Global Brand Manual von Plan gelesen und das Design daran geprüft. Das Handbuch nennt die Stiftung als Beispiel für eine externe Kampagne, die eine angeglichene Identität tragen darf, wobei das Logo von Plan führt. Jeder Punkt, an dem das Design vom Handbuch abweicht, ist in einem Register festgehalten, mit Begründung und Status, bereit zur Übergabe an das Markenteam von Plan."
+          },
+          {
+            "title": "Wie die eigenen nationalen Websites von Plan arbeiten",
+            "text": "Wir haben uns auch angesehen, was die stärksten Fundraising-Websites von Plan tatsächlich tun. Einige verwenden abgerundete Schaltflächen und Karten, und eine hat ein Spendenelement im Kopfbereich. Das zeigte, was für Spendende funktionieren kann und trotzdem zur Marke gehört."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "Das Design musste wie eine seriöse Institution wirken und trotzdem zu Plan International gehören. Jede Entscheidung unten stammt von der Leserschaft, aus den Markenregeln von Plan oder aus einem gemessenen Wert, und alles ist in einem Designstandard mit 19 Teilen festgelegt."
+        ],
+        "items": [
+          {
+            "title": "Warum der erste Bildschirm zwei Wege anbietet",
+            "text": "Eine Großspende beginnt meist mit einem Gespräch. Deshalb bietet der erste Bildschirm zwei Wege nebeneinander: jetzt spenden oder ein Gespräch beginnen. Der Jahresspendenfonds und das Stiftungskapital sind nur über ein Gespräch zugänglich, und das Spendenmodul nennt die Ansprechperson, weil diese Leserschaft eine Person erwartet, kein Formular."
+          },
+          {
+            "title": "Warum sich das Spenden über der Seite öffnet",
+            "text": "Das Spendenmodul öffnet sich auf jeder Seite aus dem Kopfbereich, statt die Menschen anderswohin zu schicken. Es ist immer erreichbar, und die Seite, die gerade gelesen wurde, bleibt dahinter stehen, sodass niemand die Stelle verliert."
+          },
+          {
+            "title": "Warum Plan Blue führt und Gelb Spenden bedeutet",
+            "text": "Das Handbuch von Plan sagt, dass sein Blau Vorrang hat und nicht mehr als drei Farben gleichzeitig erscheinen sollen. Gelb kann keinen Text tragen: Auf Weiß misst es 1,42 zu 1, weit unter den 4,5 zu 1, die Fließtext braucht. Deshalb ist Gelb immer nur Füllung oder Markierung, und die Spendenschaltfläche ist die Schaltfläche, die es trägt."
+          },
+          {
+            "title": "Warum weißer Text immer reines Weiß ist",
+            "text": "Auf Plan Blue misst reines Weiß 4,89 zu 1 und besteht. Bei einer Abschwächung auf 74 % fällt es auf etwa 3,4 zu 1 und besteht nicht. Deshalb entsteht die Hierarchie auf Blau durch Größe und Schriftstärke, nie durch Abschwächen des Textes."
+          },
+          {
+            "title": "Warum jede Schrift eine Aufgabe hat",
+            "text": "Poppins Bold trägt die Struktur und Arial das Lesen, wie das Handbuch von Plan es verlangt. Georgia kursiv bleibt Bildunterschriften und Quellen vorbehalten und erscheint nie in Überschriftengröße, weil sie auf dieser Website die Stimme eines Vorbehalts ist und ein Titel darin vorläufig wirken würde. Fließtext endet bei 68 Zeichen pro Zeile, innerhalb des gut lesbaren Bereichs von 45 bis 75."
+          },
+          {
+            "title": "Warum die Ecken abgerundet sind, entgegen dem Handbuch",
+            "text": "Das Handbuch von Plan empfiehlt rechtwinklige Ecken, aber die stärksten Fundraising-Websites von Plan verwenden abgerundete, und das Wort im Handbuch lautet „recommend“, nicht „must“. Deshalb folgt die Website dieser gelebten Praxis, hält die Abweichung fest und gibt den Ecken eine Regel: Pillenformen für Bedienelemente, weiche Ecken für Karten und rechtwinklige Ecken für Fotos, die an den Seitenrand stoßen, und für gelieferte Logos."
+          },
+          {
+            "title": "Warum die Fotos Mädchen beim Handeln zeigen",
+            "text": "Das Handbuch von Plan verlangt, dass Bilder Handlungsfähigkeit, Wissen und Widerstandskraft zeigen und Menschen nicht als Opfer darstellen. Deshalb lautet die Regel: Mädchen, die etwas tun, nicht Mädchen, denen geholfen wird, mit Gesichtern vollständig im Bild. Sichtbares Leid und Darstellungen von Rettung bleiben außen vor. Porträts sind quadratisch, nicht rund, weil ein Kreis den Kiefer abschneidet, und das Eröffnungsfoto hat für jede Bildschirmform einen eigenen Ausschnitt, sodass nie ein Gesicht angeschnitten wird."
+          },
+          {
+            "title": "Warum die Details in der Fußzeile stehen",
+            "text": "Beraterinnen und Berater suchen die Fakten: Registrierung, Prüfung, Bankdaten. Sie stehen in der Fußzeile jeder Seite, sodass der obere Teil jeder Seite frei bleibt und die Fakten immer nur einmal Scrollen entfernt sind. Details stehen unten, wo sie denen helfen, die sie suchen, und die anderen nicht überfordern."
+          },
+          {
+            "title": "Warum es nur zehn Textstile gibt",
+            "text": "Das erste Konzept war auf 56 Schriftgrößen angewachsen. Jede begann als vernünftige Einzelentscheidung, und die Zahl zeigt, was geschieht, wenn Einzelentscheidungen erlaubt sind. Der Standard reduzierte das auf zehn Textstile, sechs Textfarben und vier Eckenradien, und eigene Größen, Farben und Abstände sind in WordPress abgeschaltet, sodass das Redaktionsteam das Auseinanderdriften nicht zurückbringen kann."
+          },
+          {
+            "title": "Warum sich alles langsam bewegt",
+            "text": "Jedes Element bewegt sich auf dieselbe Weise, langsam genug, um gesehen zu werden, sodass die Website durchdacht wirkt, nicht statisch. Das hat Grenzen: Kein Gesicht bewegt sich, nichts folgt dem Cursor, und wer auf dem eigenen Gerät weniger Bewegung einstellt, bekommt keine."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "Die Stiftung hat bei ihren eigenen Worten das letzte Wort. Unser Teil war es, diesen Worten eine klare Logik zu geben und dafür zu sorgen, dass jeder Satz wahr blieb."
+        ],
+        "items": [
+          {
+            "title": "Warum die Website vom Investieren spricht",
+            "text": "Die Eröffnungszeile lautet „Investing in girls is the smartest thing the world can do.“ Diese Leserschaft und ihre Beraterinnen und Berater wägen eine Spende als Einsatz von Kapital ab, deshalb verwendet die Website diese Sprache: Kapital, Rendite, Zinseszins. Das Argument für das Spenden trägt die Überschrift „Be right, not just generous.“ Es grenzt die Stiftung von einem traditionellen Wohltätigkeitsmodell ab, wie ihr Team es gewünscht hat."
+          },
+          {
+            "title": "Warum „platform“ und nicht „community“",
+            "text": "In einer frühen Prüfung schlugen wir vor, die Stiftung als „community“ zu beschreiben. Die Stiftung wies darauf hin, dass dieses Wort im Deutschen simpel klingen kann und dass die Website eines Tages auch auf Deutsch erscheinen würde. Deshalb nennt die Eröffnungszeile sie „the platform for global philanthropists“. Das lässt keinen Raum für Missverständnisse und passt besser zu dieser Zielgruppe."
+          },
+          {
+            "title": "Warum jede Zahl ihre Quelle nennt",
+            "text": "Auf „133M girls are out of school worldwide“ folgen der Bericht und die Seite, aus denen die Zahl stammt. Beraterinnen und Berater werden das prüfen. Die Stiftung ist außerdem jung, sodass die meisten Zahlen von Plan International stammen oder aus veröffentlichter Forschung, und die Website sagt das."
+          },
+          {
+            "title": "Warum die Zahlen nicht das letzte Wort haben",
+            "text": "„The numbers make the case. She is the point.“ Das Team wollte Mädchen im Mittelpunkt der Website, und das Handbuch von Plan verlangt dasselbe. Deshalb führen die Belege, und der Text kehrt immer wieder zu einem Mädchen und einer Entscheidung zurück: ob sie wieder zur Schule geht, nachdem das Wasser zurückgegangen ist."
+          },
+          {
+            "title": "Warum der Name ausgeschrieben wird",
+            "text": "Die Website schreibt Global Girls Foundation immer aus, nie die Initialen, weil Besucherinnen und Besucher sie beim ersten Besuch nicht kennen."
+          },
+          {
+            "title": "Warum auf der Schaltfläche „Give now“ steht",
+            "text": "Auf den Schaltflächen stand zuerst „Start investing“. Die Stiftung bat um „Give now“, und das steht jetzt auf jeder Schaltfläche, die das Spendenmodul öffnet. Die Seite zum Stiftungskapital behielt ihre eigene Formulierung, weil das Modul dort keine Zahlung annimmt und „Give now“ unwahr gewesen wäre."
+          },
+          {
+            "title": "Warum nichts Unwahres hineinkommt",
+            "text": "Die Stiftung entscheidet, was sie sagt, mit einer Grenze: Ein Satz, der falsch wäre, wird nicht veröffentlicht. Als die Kartenobergrenze entfiel, wurde jeder Satz, der sie erwähnte, im selben Arbeitsschritt neu geschrieben. Die Website sagt trotzdem nicht, dass es keine Grenze gibt, weil Stripe und die eigene Bank der Spendenden eigene Grenzen haben."
+          },
+          {
+            "title": "Warum die Banküberweisung eine leise Zeile ist",
+            "text": "Kartengebühren sind bei einer sehr großen Spende echtes Geld. Deshalb steht bei jedem Betrag eine Zeile unter dem Betragsfeld: „Prefer to give by bank transfer?“ Das ist eine Wahl für die Spendenden, nie ein Drängen."
+          }
+        ]
+      },
       "decisions": [
         {
-          "title": "Neben der Kasse ein Gespräch anbieten",
-          "text": "Eine Großspende beginnt meist mit einem Gespräch. Deshalb bietet der erste Bildschirm zwei Wege nebeneinander: jetzt spenden oder ein Gespräch beginnen. Der Jahresspendenfonds und das Stiftungskapital sind nur über ein Gespräch zugänglich."
+          "title": "Der Stiftung eine eigene Website geben",
+          "text": "Die Plattform von Plan International bedient ein ganzes Netz von Websites, sodass eine strukturelle Änderung oder eine neue Integration zu allen passen muss. Die Stiftung brauchte ein eigenes Spendenmodul und einen eigenen Zahlungsanbieter, deshalb zog sie auf eine eigene WordPress-Website um. Marke, Safeguarding, Barrierefreiheit und Datenschutz blieben gleich."
         },
         {
           "title": "Den Betrag selbst bestimmen lassen",
@@ -611,28 +802,6 @@
           "text": "Die Domain der Stiftung lag bei Plan International, sodass der Umzug von dessen IT-Team abhing. Wir schickten die genauen erforderlichen Änderungen, und jede alte Adresse wurde auf ihr neues Ziel weitergeleitet. Am Launch-Tag antworteten alle 21 Seiten und 23 Weiterleitungen korrekt."
         }
       ],
-      "beforeAfter": [
-        {
-          "label": "Seiten",
-          "before": "11",
-          "after": "21"
-        },
-        {
-          "label": "Standort",
-          "before": "WordPress-Plattform von Plan International",
-          "after": "Eigene WordPress-Website, gehostet in Belgien"
-        },
-        {
-          "label": "Spenden",
-          "before": "Spenden nicht integriert",
-          "after": "Einzel- und Monatsspenden in Schweizer Franken, Euro und US-Dollar"
-        },
-        {
-          "label": "Bearbeitung",
-          "before": "Schwer zu verwalten",
-          "after": "Direkt auf der Seite vom Team der Stiftung bearbeitet"
-        }
-      ],
       "results": [
         "Die Website ging am 9. Oktober 2026 live, und alle 21 Seiten und 23 Weiterleitungen antworteten an diesem Tag korrekt. Einzel- und Monatsspenden wurden bis zum 12. Oktober beide mit echten Zahlungen bestätigt.",
         "Zum ersten Mal kann die Stiftung auf ihrer eigenen Website Spenden annehmen, und ihre Mitarbeitenden wurden geschult, die Seiten selbst zu betreiben. Die Spendensummen gehören der Stiftung und werden hier nicht veröffentlicht."
@@ -653,7 +822,7 @@
         },
         {
           "label": "Performance",
-          "value": "Startseite 546 KB, Spendenseite 395 KB. Im 3G-Profil zeigt die Startseite die ersten Inhalte nach 6,8 s und ihren Hauptinhalt nach 12,5 s."
+          "value": "Startseite 546 KB, Spendenseite 395 KB, gemessen am 4. November 2026. Im 3G-Profil mit 400 kbit/s und 2 s Latenz zeigt die Startseite die ersten Inhalte nach 6,8 s und ihren Hauptinhalt nach 12,5 s und ist nach 14,0 s vollständig geladen."
         },
         {
           "label": "Sicherheit",

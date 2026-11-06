@@ -240,9 +240,11 @@
     "languages": "Idiomas",
     "headlineFigures": "Cifras principales",
     "onThisPage": "En esta página",
-    "challenge": "El desafío",
-    "goals": "Los objetivos",
-    "decisions": "Decisiones clave",
+    "origin": "Cómo surgió",
+    "research": "La investigación",
+    "design": "El diseño",
+    "wording": "La redacción",
+    "build": "El desarrollo",
     "brand": "La marca",
     "brandGuidelines": "Las directrices de marca",
     "beforeAfter": "Antes y después",
@@ -359,45 +361,151 @@
       "figures": [
         {
           "value": "283 KB",
-          "label": "Página de inicio tal como se abre en un teléfono, frente a un presupuesto de 500 KB. Medido el 24 de octubre de 2026"
+          "label": "Página de inicio tal como se abre en un teléfono. Medido el 24 de octubre de 2026. El límite de 500 KB se fijó primero, porque una conexión lenta tarda unos 10 segundos en cargar ese peso"
         },
         {
           "value": "30",
-          "label": "Plantillas de página evaluadas según las WCAG 2.2 AA. Medido el 22 de octubre de 2026"
+          "label": "Plantillas de página evaluadas según las WCAG 2.2 AA el 22 de octubre de 2026, porque el sol intenso, una pantalla rota y una mano con guante crean necesidades reales de acceso sobre el terreno"
         },
         {
           "value": "279",
-          "label": "Documentos incorporados al Knowledge bank. Medido el 4 de noviembre de 2026"
+          "label": "Documentos incorporados al Knowledge bank hasta el 4 de noviembre de 2026, para que el lector pueda describir una situación en lugar de adivinar la palabra de búsqueda adecuada"
         }
       ],
-      "challenge": [
-        "Collective Service es una alianza mundial de comunicación de riesgos y participación comunitaria en emergencias sanitarias. Su sitio web se creó en 2020 como biblioteca central de orientaciones. Sigue siendo la puerta de entrada a la alianza: el lugar al que acuden los coordinadores y los equipos de respuesta en busca de herramientas, formación y datos cuando tienen que llegar a las comunidades durante un brote.",
-        "Seis años después, el sitio seguía marcado por la pandemia para la que se creó. La mayor parte de su biblioteca databa de 2020 a 2022, mientras que las emergencias en las que trabajaba la gente ya eran otras.",
-        "Las personas que más lo necesitan son también las más difíciles de alcanzar. En una encuesta de 2022 a personas que compartían contenidos de cursos sobre salud en emergencias, la mala conectividad fue la dificultad más citada en los países de ingresos bajos, con un 29 %, frente al 8 % en los países de ingresos altos. La mediana de la página de inicio en un teléfono era de 2,56 MB en 2025, lo que supone unos 51 segundos a 400 kilobits por segundo. Es demasiado para un coordinador que necesita un documento en ese momento.",
-        "La alianza también tenía un problema de reconocimiento. Una evaluación de 2023 concluyó que su nombre resultaba confuso para algunos y que su propósito no se comunicaba lo suficiente. Su logotipo era solo el nombre, así que no podía ayudar."
+      "origin": [
+        "Collective Service es una alianza mundial de comunicación de riesgos y participación comunitaria en emergencias sanitarias. Su sitio web se creó en 2020 como biblioteca central de orientaciones, y sigue siendo la puerta de entrada a la alianza: el lugar al que acuden los coordinadores y los equipos de respuesta en busca de herramientas, formación y datos cuando tienen que llegar a las comunidades durante un brote.",
+        "Seis años después, el sitio seguía marcado por la pandemia para la que se creó. La mayor parte de su biblioteca databa de 2020 a 2022, mientras que las emergencias en las que trabajaba la gente ya eran otras. Las personas que más lo necesitaban eran también las más difíciles de alcanzar, a menudo con un teléfono y una conexión lenta.",
+        "No empezamos por un diseño. Empezamos leyendo: la propia base de datos del sitio, una evaluación independiente de la alianza y la investigación publicada sobre cómo encuentran y usan las orientaciones las personas en crisis. Cada regla del nuevo sitio se remonta a esa lectura, y cada una indica el tipo de respaldo que tiene, para que cualquiera pueda cuestionarla."
       ],
-      "goals": [
-        "Hacer que cada página sea lo bastante ligera para una conexión lenta, con un presupuesto de 500 KB por página.",
-        "Poner en primer plano las orientaciones vigentes y retirar lo que esté desactualizado.",
-        "Crear una biblioteca de documentos con búsqueda, kits de emergencia y redirecciones desde todas las direcciones antiguas.",
-        "Entregar el sitio a los editores de la propia alianza, con pruebas, formación y un relanzamiento."
-      ],
+      "research": {
+        "intro": [
+          "Una revisión de plataformas comparables y de estudios publicados dio lugar a trece conclusiones que superaron una triple comprobación de cada afirmación. También expuso sus límites: ningún estudio examinó directamente a estos coordinadores, y nada de lo verificado abarcaba el aspecto visual ni la experiencia de uso. Por eso el diseño indica dónde se apoya en evidencia y dónde es nuestro criterio, abierto a cuestionamiento y a pruebas con los equipos de respuesta."
+        ],
+        "items": [
+          {
+            "title": "Qué ya funcionaba",
+            "text": "Una evaluación independiente de 2023, basada en 88 entrevistas y 98 respuestas a encuestas, concluyó que los recursos en línea del sitio eran el producto mejor valorado de la alianza, con unos 80 puntos sobre 100. Por eso la biblioteca, los kits y los paneles de datos siguieron en el centro. Cambiamos la forma de encontrar, fechar y etiquetar las cosas, no lo que es el sitio."
+          },
+          {
+            "title": "Las conexiones lentas son reales, pero no universales",
+            "text": "En una encuesta de 2022 a personas que compartían contenidos de cursos sobre salud en emergencias, la mala conectividad fue la dificultad más citada en los países de ingresos bajos, con un 29 %, frente al 8 % en los países de ingresos altos, mientras que el 47 % no señaló ninguna dificultad. La mediana de la página de inicio en un teléfono era de 2,56 MB en 2025, lo que supone unos 51 segundos a 400 kilobits por segundo. Por eso el sitio se construye primero para la conexión lenta: las páginas son ligeras, y un documento se puede leer en el navegador antes de tener que descargarlo."
+          },
+          {
+            "title": "La gente dice que encontrar las cosas es fácil y luego se queja de la búsqueda",
+            "text": "Un portal comparable informa de que el 92 % de las personas encontró los recursos con facilidad, pero el 18 % de sus comentarios abiertos trata de la usabilidad, sobre todo de la búsqueda, la navegación y las descargas. Una prueba con usuarios de otro portal concluyó que la falta de un cuadro de búsqueda en la página de inicio era uno de sus dos grandes problemas. Por eso la búsqueda está en la cabecera de todas las páginas, y una puntuación de satisfacción no se acepta como prueba."
+          },
+          {
+            "title": "Los equipos sobre el terreno quieren menos, no más",
+            "text": "La evaluación concluyó que se producían más orientaciones de las que los equipos de país podían asimilar, y propuso menos documentos y más breves. Un estudio con personal de tres países afectados por crisis concluyó que se preferían los documentos breves y que un manual de 140 páginas se consideraba demasiado largo para consultarlo. Por eso cada kit se abre con una selección “Start here” de hasta cuatro documentos."
+          },
+          {
+            "title": "Las orientaciones se quedan desactualizadas, y la confianza depende de mostrar cómo se ha llegado a ellas",
+            "text": "En una revisión de 2020 de 131 documentos de orientación humanitaria, solo el 18 % se había actualizado desde su publicación. La confianza figura entre los beneficios que más citan los usuarios de portales comparables. Por eso cada documento muestra quién lo publicó y cuándo, y cada enlace se comprueba automáticamente. La investigación aún no muestra qué señales generan confianza, así que esta es nuestra mejor interpretación, y sigue abierta a pruebas."
+          },
+          {
+            "title": "La gente comparte los contenidos",
+            "text": "Entre 819 personas que compartieron contenidos de cursos, el 60 % compartió un enlace, el 36 % usó WhatsApp y el 26 % les dio otro formato para SMS o WhatsApp. Por eso el sitio web no puede ser el único canal. Cada documento y cada kit tiene una dirección corta y estable, y una vista previa que se explica por sí sola al pegarla en un chat."
+          },
+          {
+            "title": "El idioma es una carencia recurrente",
+            "text": "Esos 131 documentos de orientación estaban todos en inglés, y solo el 28 % estaba también en francés. Por eso cada documento aparece una sola vez, con sus otros idiomas en la misma página."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "Una regla guio el diseño: cuando los públicos entran en conflicto, prevalecen los equipos de respuesta. Casi todo lo que sigue procede de esa frase. Los colores se calcularon con un modelo de color perceptual y la fórmula de contraste de las WCAG, y la tipografía, el espaciado y las zonas táctiles se fijaron según la investigación publicada, de modo que cada decisión que sigue tiene un motivo que se puede comprobar."
+        ],
+        "items": [
+          {
+            "title": "Por qué el límite de peso fue lo primero",
+            "text": "Cada página debía mantenerse por debajo de 500 KB, unos 10 segundos a 400 kilobits por segundo. Ese límite se fijó antes de cualquier diseño, de modo que todas las plantillas se construyeron conforme a él. Cada descarga indica su formato y tamaño antes de pulsarla, porque una persona de un equipo de respuesta con una conexión de datos limitados decide si gasta esos datos antes de pulsar, no después."
+          },
+          {
+            "title": "Por qué la paleta se basa en la luminosidad",
+            "text": "Alrededor del 8 % de los hombres tiene daltonismo rojo-verde, y una fotocopiadora no ve ningún color. La luminosidad resiste ambas cosas. Por eso la paleta se sitúa en tres franjas separadas de la escala de luminosidad OKLCH, de 0 a 100: tintas oscuras de 20 a 46, corales de 49 a 76 y colores de página de 90 a 100. En una simulación de daltonismo el coral se vuelve verde oliva, pero un botón coral sobre arena sigue siendo legible, porque se mantiene la diferencia de luminosidad."
+          },
+          {
+            "title": "Por qué el coral significa una sola cosa",
+            "text": "La tinta y la arena casi no tienen color. El coral tiene unas cinco veces más, así que, dondequiera que aparezca, el ojo lo encuentra primero. Eso permite que el coral tenga un significado: lo que está activo ahora, o la única acción que importa en una página. El tiempo de decisión aumenta con el número de opciones de igual peso, un efecto conocido como ley de Hick, por lo que cada vista reserva el coral para una sola acción."
+          },
+          {
+            "title": "Por qué la página es de color arena y el texto de color tinta",
+            "text": "Una página de color arena envía al ojo alrededor de un 7 % menos de luz que el blanco, lo que reduce el deslumbramiento en lecturas largas, y el texto sobre ella sigue alcanzando un contraste de 15 a 1. El blanco se reserva para tarjetas y campos, de modo que un recuadro blanco se entiende como el lugar donde escribir. El texto es una tinta negro azulada, no negro puro, de modo que el texto, las bandas oscuras y las capas sobre las fotos son un mismo color con distintas intensidades, frío sobre un fondo cálido."
+          },
+          {
+            "title": "Por qué se calculó cada par de colores",
+            "text": "El texto blanco sobre un coral mide 3,63 a 1, lo que no alcanza el 4,5 a 1 que necesita el texto principal. Sobre un coral algo más oscuro llega a 4,89, así que ese es el coral que usan los botones. Cada par de texto y fondo se calculó de la misma manera. El mismo cuidado mantiene la identidad alejada de los colores de los socios: la tinta tiene tan poco color que se percibe como neutra, y el coral no es ni el rojo ni el naranja que ellos usan."
+          },
+          {
+            "title": "Por qué el texto es de 17 píxeles y las líneas terminan en unos 70 caracteres",
+            "text": "Las revisiones de la investigación sobre lectura sitúan el límite inferior de la lectura fluida en torno a 16 píxeles a una distancia normal de la pantalla, y un estudio de seguimiento ocular con 104 personas concluyó que la comprensión mejoraba al aumentar el tamaño del texto. Por eso el texto principal es de 17 píxeles y nunca baja de 16 en un teléfono. La lectura en pantalla es más cómoda con unos 45 a 75 caracteres por línea, así que la columna admite unos 66 a 70. El interlineado es de 1,55, justo por encima del 1,5 que recomienda la British Dyslexia Association y que las WCAG usan como prueba."
+          },
+          {
+            "title": "Por qué los títulos son frases, con una fuente con serifa",
+            "text": "El texto escrito por completo en mayúsculas se lee entre un 10 % y un 20 % más despacio, porque la forma de las palabras se aplana en rectángulos, así que las mayúsculas se reservan para etiquetas breves e insignias. Los títulos se escriben como frases porque así un lector que ojea la página capta la idea solo con el título. Una fuente con serifa para los títulos y una sin serifa para todo lo demás dan dos voces claras con solo dos familias tipográficas, lo que importa porque las fuentes son el único recurso que puede retrasar el texto."
+          },
+          {
+            "title": "Por qué todo lo que se pulsa mide al menos 44 píxeles",
+            "text": "El mínimo de la norma de accesibilidad es de 24 píxeles. Tomamos 44 como mínimo, porque el público principal usa el sitio con una sola mano en un teléfono, a menudo caminando o en un vehículo. Un estudio sobre el uso del pulgar en pantallas táctiles pequeñas concluyó que los errores disminuían mucho hasta unos 9,2 milímetros, aproximadamente 44 píxeles."
+          },
+          {
+            "title": "Por qué las formas son redondeadas",
+            "text": "Las personas consideran las formas curvas más agradables y menos amenazantes que las angulosas. El efecto es pequeño pero constante, y un sitio creado para personas bajo estrés debe aprovecharlo. La forma también cumple una función: las píldoras son solo para lo que se puede pulsar, las tarjetas contienen lo que se lee y los campos son más cuadrados, de modo que un campo nunca parece un botón."
+          },
+          {
+            "title": "Por qué el movimiento es discreto",
+            "text": "El movimiento tiene tres funciones: mostrar de dónde viene algo, confirmar que un control ha respondido e indicar que una respuesta está activa. Una respuesta se percibe como instantánea con alrededor de una décima de segundo, y el pensamiento fluye sin interrupción hasta aproximadamente un segundo, así que el movimiento se mantiene cerca de ese intervalo. Quien pide a su dispositivo menos movimiento no recibe ninguno."
+          },
+          {
+            "title": "Por qué las fotografías son documentales",
+            "text": "Aquí la fotografía es evidencia, no decoración. La marca pide personas reales haciendo el trabajo, como una conversación, una cuña de radio o una sala de formación, con luz natural y a la altura de los ojos, con créditos tan cuidados como los de un documento citado. No hay metáforas escenificadas, como apretones de manos o globos terráqueos, ni primeros planos de sufrimiento."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "Todo lo que publica el Servicio habla con una sola voz, con cuatro reglas: sencilla, concreta, serena y honesta. Existen para un lector: alguien en plena emergencia que no tiene tiempo de descifrar una frase."
+        ],
+        "items": [
+          {
+            "title": "Por qué el lenguaje es sencillo",
+            "text": "Frases cortas, palabras cotidianas y verbos en voz activa, porque la jerga es una barrera para alguien en plena crisis. El sitio dice qué está pasando y qué hacer a continuación."
+          },
+          {
+            "title": "Por qué hay números en lugar de adjetivos",
+            "text": "Las afirmaciones son recuentos. “39 documents are ready for this response” convence; “a wealth of resources” no. Los títulos contienen un dato, nunca una etiqueta como “Our resources”."
+          },
+          {
+            "title": "Por qué mantiene la calma",
+            "text": "La urgencia procede de la claridad, nunca del volumen. No hay signos de exclamación, ni mayúsculas para enfatizar, ni lenguaje alarmista fuera de la propia alerta. En una emergencia activa, las palabras se acortan, no suben de tono: primero las instrucciones y los recuentos, sin adjetivos."
+          },
+          {
+            "title": "Por qué no se usan algunas palabras",
+            "text": "Se han dejado fuera las palabras inglesas beneficiaries, target audience, leverage, solutions, empower, comprehensive, world-class e innovative. Las personas son comunidades con capacidad de acción, no receptoras, y si una palabra podría abrir una presentación comercial, aquí no tiene cabida."
+          },
+          {
+            "title": "Por qué el tono cambia de una página a otra",
+            "text": "Hay una voz y cuatro registros. Una emergencia activa lleva las frases más cortas. La biblioteca es factual. La página About es el único lugar para la historia. El Helpdesk se dirige directamente al lector, con “you”, porque ahí es donde el lector actúa."
+          },
+          {
+            "title": "Por qué los botones dicen qué va a ocurrir",
+            "text": "“Open the kit” y “Send the request” dicen al lector qué viene después; “Submit” y “Go” no. Los mensajes de error funcionan igual: dicen qué falla y qué hacer, como “The deadline is before today. Choose a later date.”"
+          },
+          {
+            "title": "Por qué admite lo que falta",
+            "text": "La voz indica lo que es un borrador o lo que falta e invita a corregirlo: “Ask for something we are missing” forma parte de la marca, no es una disculpa. Las fechas se escriben con el mes en letras, como en 4 Sep 2025, porque 04/09 significa dos días distintos en dos continentes."
+          }
+        ]
+      },
       "decisions": [
         {
           "title": "Reconstruir desde cero",
           "text": "Actualizar el sitio antiguo página por página habría mantenido la estructura y el peso de los que debía desprenderse. Por eso se reconstruyeron todas las páginas: un tema de WordPress a medida con 30 plantillas de página, una nueva interfaz de edición y contenidos trasladados mediante un importador repetible que puede volver a ejecutarse y comprobarse."
         },
         {
-          "title": "Fijar el límite de peso antes del diseño",
-          "text": "Una regla guio el diseño: cuando los públicos entran en conflicto, prevalecen los equipos de respuesta. Por eso cada página debía mantenerse por debajo de 500 KB, unos 10 segundos a 400 kilobits por segundo, y ese límite se fijó primero, de modo que todas las plantillas se construyeron conforme a él. Cada descarga indica además su formato y tamaño antes de pulsarla, para que nadie gaste datos escasos en un archivo que no esperaba."
-        },
-        {
           "title": "Conservar todos los documentos en el sitio",
           "text": "Muchos documentos solo estaban enlazados, por lo que dejarían de funcionar si quien los publicaba movía una página. Descargamos 155 de ellos, de modo que el sitio conserva ahora sus propias copias, con versiones en francés, portugués, español y suajili cuando quienes los publican las ofrecen. Los documentos que figuraban dos, tres o cuatro veces ahora aparecen una sola vez, con sus otros idiomas en la misma página."
-        },
-        {
-          "title": "Tratar la marca como parte del problema",
-          "text": "Un sitio web mejor no podía explicar por sí solo qué es el Servicio. Por eso defendimos, junto con el sitio, la necesidad de una nueva identidad. Las razones se exponen más abajo, en La marca."
         },
         {
           "title": "Construir para quienes lo van a gestionar",
@@ -421,6 +529,10 @@
           {
             "title": "Dice qué es el Servicio",
             "text": "Tres partes separadas se unen en un solo cuerpo: organizaciones distintas, dibujadas como iguales, que se convierten en un solo servicio. Quien lo mira ve “juntos” antes de leer una palabra, así que, cada vez que aparece, el símbolo actúa sobre la confusión que detectó la evaluación."
+          },
+          {
+            "title": "Es una forma que el sector no ha usado",
+            "text": "Tres barras y un bloque son una forma concreta y propia. No es un globo terráqueo, una mano, un corazón ni una cruz, las formas que el sector humanitario ya ha agotado. El cuerpo unido se dibuja con el ancho de las partes que lo forman, porque nada se añade cuando las organizaciones se unen: el todo son las partes, unidas."
           },
           {
             "title": "Mantiene la igualdad entre los socios",
@@ -448,43 +560,11 @@
           }
         ],
         "guidelines": [
-          "La identidad va más allá del símbolo. La voz es sencilla, concreta, serena y honesta, porque la jerga es una barrera para alguien en plena crisis. El color cumple una función: tinta para el texto, arena para los fondos y coral solo para lo que está activo ahora y para la única acción que importa.",
+          "La identidad va más allá del símbolo. La voz, los colores y la fotografía descritos más arriba forman parte de ella.",
           "Todo esto se recoge en un documento de diseño y marca de 57 páginas, compartido con la alianza en octubre de 2026. La parte A presenta los argumentos y fija las directrices: la evidencia, las pruebas comparativas, el costo y el riesgo de cambiar, la voz y el tono, la construcción, el espacio de protección y los tamaños mínimos, el color, la tipografía, la fotografía, cuatro versiones lingüísticas, el uso junto a los socios y las normas. La parte B es la norma de diseño del sitio web, y cada regla incluida en ella indica su motivo y el tipo de respaldo que tiene: los términos de referencia, evidencia publicada, un valor calculado, una norma o nuestro propio criterio.",
           "La identidad es una propuesta y se comparte aquí con el permiso de la alianza; adoptarla es decisión de la alianza."
         ]
       },
-      "beforeAfter": [
-        {
-          "label": "El sitio web",
-          "before": "El sitio creado en 2020",
-          "after": "Reconstruido desde cero, con 30 plantillas de página"
-        },
-        {
-          "label": "La biblioteca",
-          "before": "Principalmente de 2020 a 2022",
-          "after": "Primero las orientaciones vigentes, sin el material desactualizado"
-        },
-        {
-          "label": "Documentos",
-          "before": "Muchos solo enlazados en otros sitios",
-          "after": "Alojados en el propio sitio, incluidos 155 descargados de quienes los publican"
-        },
-        {
-          "label": "Entradas repetidas",
-          "before": "Algunas figuraban hasta cuatro veces",
-          "after": "Cada una figura una vez, con sus idiomas juntos"
-        },
-        {
-          "label": "El logotipo",
-          "before": "Solo el nombre, en inglés",
-          "after": "Un símbolo propuesto, legible a 16 píxeles, compartido con el permiso de la alianza"
-        },
-        {
-          "label": "Direcciones antiguas",
-          "before": "1593 en todo el sitio antiguo",
-          "after": "Cada una asignada a un lugar del nuevo sitio"
-        }
-      ],
       "results": [
         "El sitio aún no se ha lanzado, por lo que todavía no hay resultados de visitas que presentar. Hasta el relanzamiento, la dirección pública de la alianza sigue mostrando el sitio antiguo.",
         "Lo que se puede presentar es lo que se ha probado. El 23 de octubre de 2026, un rastreo de 332 páginas y 634 enlaces a otros sitios no encontró ninguno roto. Cada página se comprueba con anchos de 320 a 1920 píxeles. La medición de visitas está integrada y solo se carga cuando el visitante da su consentimiento, de modo que el relanzamiento pueda evaluarse según el uso real."
@@ -563,32 +643,143 @@
       "figures": [
         {
           "value": "3",
-          "label": "Monedas para donaciones puntuales y mensuales: francos suizos, euros y dólares estadounidenses"
+          "label": "Monedas para donaciones puntuales y mensuales: francos suizos, euros y dólares estadounidenses, que coinciden con las cuentas bancarias de la propia Fundación"
         },
         {
           "value": "100",
-          "label": "Puntuación de accesibilidad en Lighthouse, páginas de inicio y de donaciones en línea. Medido el 4 de noviembre de 2026"
+          "label": "Puntuación de accesibilidad en Lighthouse, páginas de inicio y de donaciones en línea, 4 de noviembre de 2026. El manual de marca de Plan International pide al menos el nivel AA en todos los sitios web"
         },
         {
-          "value": "14.0 s",
-          "label": "Carga completa de la página de inicio en línea con un perfil 3G de 400 kbit/s y 2 s de latencia. Medido el 4 de noviembre de 2026"
+          "value": "10",
+          "label": "Estilos de texto en la norma de diseño, reducidos desde 56 tamaños de fuente en el primer concepto, para que un editor solo pueda elegir entre lo que funciona"
         }
       ],
-      "challenge": [
-        "Global Girls Foundation es una fundación suiza, establecida en 2022 y creada por Plan International para financiar sus programas para niñas. Su sitio web tiene que llegar a los filántropos y a las personas de su entorno: oficinas de gestión de patrimonios familiares, asesores y abogados, así como fundaciones familiares y empresariales.",
-        "Su sitio web no estaba a la altura de esa ambición. Eran 11 páginas en la plataforma WordPress de Plan International, difíciles de gestionar y en las que costaba encontrar las cosas, y no tenía una forma integrada de donar.",
+      "origin": [
+        "Global Girls Foundation es una fundación suiza, establecida en 2022 y creada por Plan International para financiar sus programas para niñas. Se describe como la plataforma para filántropos globales, y quiere que se sientan parte de una misión, no simples donantes de una organización benéfica.",
+        "Su sitio web no decía eso. Eran 11 páginas en la plataforma WordPress compartida de Plan International, difíciles de gestionar y en las que costaba encontrar las cosas. Contaba historias potentes, pero no ofrecía un siguiente paso claro, y no tenía una forma integrada de donar.",
         "El nuevo sitio tenía dos funciones que tiran en direcciones distintas. Debía transmitir la imagen de una institución seria a quien piensa en un legado o en un fondo de dotación y, aun así, recibir una donación con tarjeta de cualquier persona que quisiera donar ese mismo día."
       ],
-      "goals": [
-        "Explicar con claridad qué es la Fundación y por qué un donante debería hacerle una donación.",
-        "Ofrecer a cada tipo de donante una ruta clara desde la primera visita hasta la donación.",
-        "Recibir donaciones puntuales y mensuales seguras en más de una moneda.",
-        "Permitir que el propio equipo de la Fundación edite cada página sin romper el diseño."
-      ],
+      "research": {
+        "intro": [
+          "Empezamos preguntando. En junio de 2026 se enviaron tres cuestionarios, uno para donantes, otro para partes interesadas y otro para el equipo de la Fundación. Las respuestas fueron lo bastante coherentes para diseñar a partir de ellas, así que las entrevistas previstas no fueron necesarias."
+        ],
+        "items": [
+          {
+            "title": "Para quién es realmente el sitio",
+            "text": "Al principio se identificaron seis públicos de donantes, y uno iba primero: un filántropo y las personas de su entorno, como una oficina de gestión de patrimonios familiares, un asesor o un abogado. Lo dejamos por escrito y evaluamos cada decisión en función de ello. Para este lector, la prueba es la gobernanza, las cuentas auditadas y lo que una donación consigue a gran escala. Los hábitos propios de las pequeñas donaciones, como los avisos de urgencia, restarían valor a eso, así que se dejaron fuera."
+          },
+          {
+            "title": "Qué deben lograr los primeros segundos",
+            "text": "Una respuesta marcó el listón de la página de inicio: en cuestión de segundos, un visitante debía darse cuenta de cuánto puede lograr invertir en las niñas. Otra señaló la carencia del sitio antiguo: buenas historias, pero ningún siguiente paso claro. Por eso la página tenía que presentar los argumentos con rapidez y luego ofrecer adónde ir."
+          },
+          {
+            "title": "Tres formas de abrir la página de inicio",
+            "text": "Construimos tres páginas de inicio en funcionamiento, encabezadas por el impacto, por la historia de una niña y por un programa emblemático, y el equipo de la Fundación y una persona delegada de la juventud las compararon. La apertura centrada en el impacto generó credibilidad de inmediato. La historia atraía a la gente, pero funcionaba mejor como apoyo. Abrir con un solo programa corría el riesgo de que la Fundación pareciera una única iniciativa. Por eso la página final se abre con una afirmación contundente, incorpora las cifras justo después y usa las historias como apoyo."
+          },
+          {
+            "title": "La pregunta que hace todo visitante nuevo",
+            "text": "El equipo señaló que un visitante nuevo preguntaría: ¿por qué esta Fundación y en qué se diferencia de Plan International? Por eso la línea “The philanthropic arm of Plan International” está en la primera pantalla, porque esa relación genera credibilidad, y la página Why girls plantea la pregunta abiertamente: ¿por qué esto, y no una donación general?"
+          },
+          {
+            "title": "Las normas de marca de Plan International",
+            "text": "Leímos el Global Brand Manual de Plan, de 104 páginas, y comparamos el diseño con él. El manual cita a la Fundación como ejemplo de campaña externa que puede llevar una identidad alineada, con el logotipo de Plan en primer lugar. Cada punto en que el diseño se aparta del manual consta en un registro, con el motivo y su estado, listo para entregarlo al equipo de marca de Plan."
+          },
+          {
+            "title": "Cómo funcionan los propios sitios nacionales de Plan",
+            "text": "También examinamos lo que hacen en realidad los sitios de recaudación de fondos más sólidos de Plan. Algunos usan botones y tarjetas redondeados, y uno pone un control de donación en la cabecera. Eso mostró qué podía funcionar para un donante sin dejar de pertenecer a la marca."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "El diseño debía transmitir la imagen de una institución seria y seguir perteneciendo a Plan International. Cada decisión que sigue procede del lector, de las normas de marca de Plan o de un valor medido, y todo ello se recoge en una norma de diseño de 19 partes."
+        ],
+        "items": [
+          {
+            "title": "Por qué la primera pantalla ofrece dos rutas",
+            "text": "Una gran donación suele empezar con una conversación. Por eso la primera pantalla ofrece dos rutas en paralelo: donar ahora o iniciar una conversación. Al Fondo Anual de Donaciones y al fondo de dotación solo se accede mediante una conversación, y el panel de donación indica con quién hablar, porque este lector espera una persona, no un formulario."
+          },
+          {
+            "title": "Por qué el panel de donación se abre sobre la página",
+            "text": "El panel de donación se abre desde la cabecera en todas las páginas en lugar de enviar a la gente a otro lugar. Siempre está al alcance, y la página que el donante estaba leyendo queda detrás, de modo que nunca pierde el punto donde estaba."
+          },
+          {
+            "title": "Por qué Plan Blue va primero y el amarillo significa donar",
+            "text": "El manual de Plan dice que su azul tiene prioridad y que no deben aparecer más de tres colores a la vez. El amarillo no puede llevar texto: sobre blanco mide 1,42 a 1, muy por debajo del 4,5 a 1 que necesita el texto principal. Por eso el amarillo solo se usa como relleno o como marca, y el botón de donar es el botón que lo lleva."
+          },
+          {
+            "title": "Por qué el texto blanco es siempre blanco puro",
+            "text": "Sobre Plan Blue, el blanco puro mide 4,89 a 1, lo que cumple. Si se atenúa al 74 %, baja a unos 3,4 a 1, lo que no cumple. Por eso la jerarquía sobre azul procede del tamaño y del grosor, nunca de atenuar el texto."
+          },
+          {
+            "title": "Por qué cada tipografía tiene una sola función",
+            "text": "Poppins Bold lleva la estructura y Arial la lectura, como pide el manual de Plan. Georgia en cursiva se reserva para pies de foto y fuentes, y nunca se usa a tamaño de título, porque en este sitio es la voz de una salvedad y un título en ella se leería como provisional. El texto corrido se detiene en 68 caracteres por línea, dentro de la franja legible de 45 a 75."
+          },
+          {
+            "title": "Por qué las esquinas son redondeadas, en contra del manual",
+            "text": "El manual de Plan recomienda esquinas cuadradas, pero sus sitios de recaudación de fondos más sólidos usan esquinas redondeadas, y la palabra del manual es “recommend”, no “must”. Por eso el sitio sigue esa práctica real, deja constancia de la desviación y da una regla a las esquinas: píldoras para los controles, esquinas suaves para las tarjetas, y cuadradas para las fotografías que llegan al borde de la página y para los logotipos suministrados."
+          },
+          {
+            "title": "Por qué las fotografías muestran a niñas haciendo cosas",
+            "text": "El manual de Plan pide que las imágenes muestren capacidad de acción, conocimiento y resiliencia, y que no presenten a las personas como víctimas. Por eso la regla es que las niñas hagan algo, no que reciban ayuda, con el rostro completo en el encuadre. Se dejan fuera el sufrimiento visible y los planteamientos de rescate. Los retratos son cuadrados, no circulares, porque un círculo recorta la mandíbula, y la fotografía inicial tiene su propio recorte para cada forma de pantalla, de modo que nunca se corta un rostro."
+          },
+          {
+            "title": "Por qué los detalles están en el pie de página",
+            "text": "Un asesor busca los datos: registro, auditoría, datos bancarios. Están en el pie de todas las páginas, de modo que la parte superior de cada página queda despejada y los datos están siempre a un desplazamiento de distancia. Los detalles están abajo, donde ayudan a quien los busca y no abruman a quien no los busca."
+          },
+          {
+            "title": "Por qué solo hay diez estilos de texto",
+            "text": "El primer concepto había llegado a 56 tamaños de fuente. Cada uno empezó como una decisión local razonable, y esa cifra es lo que ocurre cuando se permiten las decisiones locales. La norma lo redujo a diez estilos de texto, seis colores de texto y cuatro radios de esquina, y los tamaños, colores y espaciados personalizados están desactivados en WordPress, de modo que un editor no puede volver a introducir esa dispersión."
+          },
+          {
+            "title": "Por qué todo se mueve despacio",
+            "text": "Cada elemento se mueve de una sola manera coherente, lo bastante despacio para que se vea, de modo que el sitio parece cuidado, no estático. Tiene límites: ningún rostro se mueve, nada sigue al cursor, y quien pide a su dispositivo menos movimiento no recibe ninguno."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "La Fundación tiene la última palabra sobre sus propios textos. Nuestra parte fue dar a esos textos una lógica clara y asegurarnos de que cada frase siguiera siendo cierta."
+        ],
+        "items": [
+          {
+            "title": "Por qué el sitio habla de invertir",
+            "text": "La línea inicial es “Investing in girls is the smartest thing the world can do.” Este lector, y el asesor que lo acompaña, valoran una donación como un uso del capital, así que el sitio usa ese lenguaje: capital, rendimientos, capitalización. Los argumentos para donar llevan por título “Be right, not just generous.” Esto distingue a la Fundación de un modelo tradicional de organización benéfica, como pidió su equipo."
+          },
+          {
+            "title": "Por qué “platform” y no “community”",
+            "text": "En una revisión inicial propusimos describir a la Fundación como una “community”. La Fundación señaló que en alemán esa palabra puede sonar básica, y que el sitio estaría algún día en alemán. Por eso la línea inicial la llama “the platform for global philanthropists”, lo que no deja lugar a malentendidos y se adapta mejor a este público."
+          },
+          {
+            "title": "Por qué cada cifra indica su fuente",
+            "text": "A “133M girls are out of school worldwide” le siguen el informe y la página de donde procede. Un asesor lo comprobará. Además, la Fundación es joven, así que la mayoría de las cifras son de Plan International o proceden de investigación publicada, y el sitio lo dice."
+          },
+          {
+            "title": "Por qué los números no son la última palabra",
+            "text": "“The numbers make the case. She is the point.” El equipo quería a las niñas en el centro del sitio, y el manual de Plan pide lo mismo. Por eso la evidencia va primero, y el texto vuelve una y otra vez a una niña y a una decisión: si regresa a la escuela cuando baje el agua."
+          },
+          {
+            "title": "Por qué el nombre se escribe completo",
+            "text": "El sitio escribe Global Girls Foundation completo, nunca las iniciales, porque quienes lo visitan por primera vez no las conocen."
+          },
+          {
+            "title": "Por qué el botón dice “Give now”",
+            "text": "Al principio, los botones decían “Start investing”. La Fundación pidió “Give now”, y eso es lo que ahora dice cada botón que abre el panel de donación. La página del fondo de dotación mantuvo su propio texto, porque ese panel no recibe pagos y “Give now” no habría sido cierto."
+          },
+          {
+            "title": "Por qué no se incluye nada que no sea cierto",
+            "text": "La Fundación decide lo que dice, con un límite: no se publica una frase que sería falsa. Cuando se eliminó el límite de la tarjeta, cada frase que lo mencionaba se reescribió en el mismo trabajo. El sitio sigue sin decir que no hay límite, porque Stripe y el propio banco del donante tienen sus propios límites."
+          },
+          {
+            "title": "Por qué la transferencia bancaria es una línea discreta",
+            "text": "Las comisiones de tarjeta en una donación muy grande son dinero de verdad. Por eso, sea cual sea el importe, hay una línea bajo la casilla del importe: “Prefer to give by bank transfer?” Es una opción para el donante, nunca una presión."
+          }
+        ]
+      },
       "decisions": [
         {
-          "title": "Ofrecer una conversación además del pago en línea",
-          "text": "Una gran donación suele empezar con una conversación. Por eso la primera pantalla ofrece dos rutas en paralelo: donar ahora o iniciar una conversación. Al Fondo Anual de Donaciones y al fondo de dotación solo se accede mediante una conversación."
+          "title": "Dar a la Fundación su propio sitio",
+          "text": "La plataforma de Plan International da servicio a toda una red de sitios, así que un cambio estructural o una nueva integración tiene que servir para todos ellos. La Fundación necesitaba su propio panel de donación y su propio proveedor de pagos, por lo que pasó a su propio sitio WordPress. La marca, la salvaguardia, la accesibilidad y la protección de datos siguieron igual."
         },
         {
           "title": "Dejar que el donante indique el importe",
@@ -611,28 +802,6 @@
           "text": "El dominio de la Fundación dependía de Plan International, por lo que la migración estaba en manos de su equipo de TI. Enviamos los cambios exactos necesarios, y cada dirección antigua se configuró para redirigir a su nueva ubicación. El día del lanzamiento, las 21 páginas y las 23 redirecciones respondieron correctamente."
         }
       ],
-      "beforeAfter": [
-        {
-          "label": "Páginas",
-          "before": "11",
-          "after": "21"
-        },
-        {
-          "label": "Dónde está alojado",
-          "before": "La plataforma WordPress de Plan International",
-          "after": "Su propio sitio WordPress, alojado en Bélgica"
-        },
-        {
-          "label": "Donaciones",
-          "before": "Sin una forma integrada de donar",
-          "after": "Donaciones puntuales y mensuales en francos suizos, euros y dólares estadounidenses"
-        },
-        {
-          "label": "Edición",
-          "before": "Difícil de gestionar",
-          "after": "Editado en la página por el propio equipo de la Fundación"
-        }
-      ],
       "results": [
         "El sitio se puso en línea el 9 de octubre de 2026, y ese día las 21 páginas y las 23 redirecciones respondieron correctamente. Para el 12 de octubre, tanto las donaciones puntuales como las mensuales se habían confirmado con pagos reales.",
         "Por primera vez, la Fundación puede recibir una donación en su propio sitio, y su personal ha recibido formación para gestionar las páginas por sí mismo. Los totales de donaciones pertenecen a la Fundación y no se publican aquí."
@@ -653,7 +822,7 @@
         },
         {
           "label": "Rendimiento",
-          "value": "Página de inicio 546 KB, página de donaciones 395 KB. Con el perfil 3G, la página de inicio muestra el primer contenido a los 6,8 s y su contenido principal a los 12,5 s."
+          "value": "Página de inicio 546 KB, página de donaciones 395 KB, medido el 4 de noviembre de 2026. Con un perfil 3G de 400 kbit/s y 2 s de latencia, la página de inicio muestra el primer contenido a los 6,8 s y su contenido principal a los 12,5 s, y termina de cargarse a los 14,0 s."
         },
         {
           "label": "Seguridad",

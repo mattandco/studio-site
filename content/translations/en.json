@@ -240,9 +240,11 @@
     "languages": "Languages",
     "headlineFigures": "Headline figures",
     "onThisPage": "On this page",
-    "challenge": "The challenge",
-    "goals": "The goals",
-    "decisions": "Key decisions",
+    "origin": "How it came about",
+    "research": "The research",
+    "design": "The design",
+    "wording": "The wording",
+    "build": "The build",
     "brand": "The brand",
     "brandGuidelines": "The brand guidelines",
     "beforeAfter": "Before and after",
@@ -359,45 +361,151 @@
       "figures": [
         {
           "value": "283 KB",
-          "label": "Home page as it opens on a phone, against a 500 KB budget. Measured 24 October 2026"
+          "label": "Home page as it opens on a phone, measured 24 October 2026. The 500 KB limit came first, because a slow connection takes that in about 10 seconds"
         },
         {
           "value": "30",
-          "label": "Page templates measured against WCAG 2.2 AA. Measured 22 October 2026"
+          "label": "Page templates measured against WCAG 2.2 AA on 22 October 2026, because bright sun, a cracked screen and a gloved hand create real access needs in the field"
         },
         {
           "value": "279",
-          "label": "Documents read into the Knowledge bank. Measured 4 November 2026"
+          "label": "Documents read into the Knowledge bank by 4 November 2026, so a reader can describe a situation instead of guessing the right search word"
         }
       ],
-      "challenge": [
-        "The Collective Service is a global partnership for risk communication and community engagement in health emergencies. Its website was set up in 2020 as a central library of guidance. It is still the partnership’s front door: the place coordinators and responders go for tools, training and data when they have to reach communities during an outbreak.",
-        "Six years on, the site was still shaped by the pandemic it was built for. Most of its library dated from 2020 to 2022, while the emergencies people were working on had moved on.",
-        "The people who most need it are also the hardest to reach. In a 2022 survey of people sharing emergency-health course content, poor connectivity was the most-cited difficulty in low-income countries, at 29%, against 8% in high-income countries. The median home page on a phone was 2.56 MB in 2025, which takes about 51 seconds at 400 kilobits per second. That is too long for a coordinator who needs a document now.",
-        "The partnership had a recognition problem too. A 2023 evaluation found its name confusing for some and its purpose under-communicated. Its logo was the name alone, so it could not help."
+      "origin": [
+        "The Collective Service is a global partnership for risk communication and community engagement in health emergencies. Its website was set up in 2020 as a central library of guidance, and it is still the partnership’s front door: the place coordinators and responders go for tools, training and data when they have to reach communities during an outbreak.",
+        "Six years on, the site was still shaped by the pandemic it was built for. Most of its library dated from 2020 to 2022, while the emergencies people were working on had moved on. The people who most needed it were also the hardest to reach, often on a phone and a slow connection.",
+        "We did not start with a design. We started by reading: the site’s own database, an independent evaluation of the partnership, and the published research on how people in crises find and use guidance. Every rule on the new site goes back to that reading, and each one is labelled with the kind of support it has, so anyone can challenge it."
       ],
-      "goals": [
-        "Make every page light enough for a slow connection, with a budget of 500 KB a page.",
-        "Bring current guidance to the front and retire what is out of date.",
-        "Build a document library with search, emergency kits and redirects from every old address.",
-        "Hand the site to the partnership’s own editors, with testing, training and a relaunch."
-      ],
+      "research": {
+        "intro": [
+          "A review of comparable platforms and published studies produced thirteen findings that survived a three-way check of each claim. It also stated its limits: no study looked at these coordinators directly, and nothing verified covered look and feel. So the design says where it rests on evidence and where it is our judgement, open to challenge and to testing with responders."
+        ],
+        "items": [
+          {
+            "title": "What already worked",
+            "text": "A 2023 independent evaluation, built on 88 interviews and 98 survey responses, found the site’s online resources were the partnership’s best-rated product, at about 80 out of 100. So the library, the kits and the dashboards stayed at the centre. We changed how things are found, dated and labelled, not what the site is."
+          },
+          {
+            "title": "Slow connections are real, but not universal",
+            "text": "In a 2022 survey of people sharing emergency-health course content, poor connectivity was the most-cited difficulty in low-income countries, at 29%, against 8% in high-income countries, while 47% reported no difficulty at all. The median home page on a phone was 2.56 MB in 2025, about 51 seconds at 400 kilobits per second. So the site is built for the slow connection first: pages are light, and a document can be read in the browser before anyone has to download it."
+          },
+          {
+            "title": "People say finding things is easy, then complain about search",
+            "text": "One comparable hub reports that 92% of people found resources easily, yet 18% of its open comments are about usability, mainly search, navigation and downloads. A user test of another found the lack of a search box on the home page to be one of its two big problems. So search sits in the header of every page, and a satisfaction score is not accepted as proof."
+          },
+          {
+            "title": "Field teams want less, not more",
+            "text": "The evaluation found more guidance being produced than country teams could absorb, and suggested fewer, shorter documents. A study of staff in three crisis-affected countries found short documents preferred, and a 140-page handbook judged too long to navigate. So each kit opens with a “Start here” selection of up to four documents."
+          },
+          {
+            "title": "Guidance goes stale, and trust depends on showing your working",
+            "text": "In a 2020 review of 131 humanitarian guidance documents, only 18% had been updated since they were published. Trust is among the benefits users of comparable hubs cite most. So every document shows who published it and when, and every link is checked automatically. Research does not yet show which signals create trust, so this is our best reading of it, and it stays open to testing."
+          },
+          {
+            "title": "People pass things on",
+            "text": "Among 819 people who shared course content, 60% shared a link, 36% used WhatsApp and 26% reformatted it for SMS or WhatsApp. So the website cannot be the only channel. Every document and kit has a short, stable address and a preview that explains itself when pasted into a chat."
+          },
+          {
+            "title": "Language is a recurring gap",
+            "text": "All 131 of those guidance documents were in English, and only 28% were also in French. So each document appears once, with its other languages together on the same page."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "One rule sat behind the design: when audiences conflict, responders win. Most of what follows comes from that sentence. The colours were worked out with a perceptual colour model and the WCAG contrast formula, and the type, spacing and tap targets were set against published research, so each choice below has a reason that can be checked."
+        ],
+        "items": [
+          {
+            "title": "Why the weight limit came first",
+            "text": "Every page had to stay under 500 KB, about 10 seconds at 400 kilobits per second. That limit was set before any design, so every template was built to it. Each download states its format and size before it is pressed, because a responder on a metered connection decides whether to spend the data before pressing, not after."
+          },
+          {
+            "title": "Why the palette is built on lightness",
+            "text": "About 8% of men have red-green colour blindness, and a photocopier cannot see colour at all. Lightness survives both. So the palette sits in three separate bands on the OKLCH lightness scale of 0 to 100: dark inks at 20 to 46, corals at 49 to 76 and page colours at 90 to 100. In a colour-blindness simulation coral turns olive, but a coral button on sand stays readable, because the difference in lightness remains."
+          },
+          {
+            "title": "Why coral means only one thing",
+            "text": "Ink and sand have almost no colour in them. Coral has about five times as much, so wherever it appears the eye finds it first. That lets coral carry a meaning: what is live now, or the one action that matters on a page. Decision time grows with the number of equally weighted choices, an effect known as Hick’s law, so each view spends coral on one action only."
+          },
+          {
+            "title": "Why the page is sand and the text is ink",
+            "text": "A sand page sends about 7% less light to the eye than white, which eases glare in long reading, and text on it still reaches a contrast of 15 to 1. White is kept for cards and fields, so a white box reads as the place to type. Text is a blue-black ink, not pure black, so text, dark bands and photo overlays are one colour at different strengths, cool against a warm ground."
+          },
+          {
+            "title": "Why every colour pair was computed",
+            "text": "White text on one coral measures 3.63 to 1, which fails the 4.5 to 1 that body text needs. On a slightly darker coral it reaches 4.89, so that is the coral the buttons use. Every text and background pair was worked out the same way. The same care keeps the identity clear of the partners’ own colours: ink has so little colour that it reads as a neutral, and coral is neither the red nor the orange they use."
+          },
+          {
+            "title": "Why text is 17 pixels and lines stop at about 70 characters",
+            "text": "Reviews of reading research put the lower edge of fluent reading at around 16 pixels at normal screen distance, and a 104-person eye-tracking study found comprehension improved as type grew. So body text is 17 pixels and never below 16 on a phone. Reading on screen is most comfortable at about 45 to 75 characters a line, so the column holds about 66 to 70. Line spacing is 1.55, just above the 1.5 recommended by the British Dyslexia Association and used as the test in WCAG."
+          },
+          {
+            "title": "Why headings are sentences, set in a serif",
+            "text": "Text set entirely in capitals is read 10 to 20% more slowly, because word shapes flatten into rectangles, so capitals are kept for short labels and badges. Headings are written as sentences because a scanning reader then gets the point from the heading alone. A serif for headings and a sans for everything else gives two clear voices from only two font families, which matters because fonts are the one asset that can hold back text."
+          },
+          {
+            "title": "Why everything is at least 44 pixels to tap",
+            "text": "The accessibility standard’s minimum is 24 pixels. We took 44 as the floor, because the main audience uses the site one-handed on a phone, often walking or in a vehicle. A study of thumb use on small touchscreens found errors fell sharply up to about 9.2 millimetres, roughly 44 pixels."
+          },
+          {
+            "title": "Why the shapes are rounded",
+            "text": "People judge curved shapes as more pleasant and less threatening than sharp ones. The effect is small but consistent, and a site built for people under stress should use it. Shape also does a job: pills are only for things that can be pressed, cards hold things to read, and fields are squarer, so a field never looks like a button."
+          },
+          {
+            "title": "Why the motion is quiet",
+            "text": "Motion has three jobs: to show where something came from, to confirm that a control responded and to signal that a response is live. A response feels instant at about a tenth of a second, and thought flows unbroken up to about one second, so movement stays close to that range. Anyone who asks their device for less motion gets none."
+          },
+          {
+            "title": "Why the photographs are documentary",
+            "text": "Photography is evidence here, not decoration. The brand asks for real people doing the work, such as a conversation, a radio spot or a training room, in daylight and at eye level, credited as carefully as a cited document. There are no staged metaphors such as handshakes or globes, and no close-ups of distress."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "Everything the Service publishes speaks in one voice, with four rules: plain, concrete, calm and honest. They exist for one reader: someone in the middle of an emergency who has no time to decode a sentence."
+        ],
+        "items": [
+          {
+            "title": "Why the language is plain",
+            "text": "Short sentences, everyday words and active verbs, because jargon is a barrier to someone in the middle of a crisis. The site says what is happening and what to do next."
+          },
+          {
+            "title": "Why there are numbers instead of adjectives",
+            "text": "Claims are counts. “39 documents are ready for this response” persuades; “a wealth of resources” does not. Headings carry a fact, never a label such as “Our resources”."
+          },
+          {
+            "title": "Why it stays calm",
+            "text": "Urgency comes from clarity, never from volume. There are no exclamation marks, no capitals for emphasis and no alarm language outside the alert itself. In an active emergency the words get shorter, not louder: instructions and counts first, with no adjectives."
+          },
+          {
+            "title": "Why some words are not used",
+            "text": "Beneficiaries, target audience, leverage, solutions, empower, comprehensive, world-class and innovative are all left out. People are communities with agency, not recipients, and if a word could open a pitch deck it does not belong here."
+          },
+          {
+            "title": "Why the tone changes from page to page",
+            "text": "There is one voice and four registers. An active emergency gets the shortest sentences. The library is factual. About is the one place for history. The Helpdesk speaks directly to “you”, because that is where the reader acts."
+          },
+          {
+            "title": "Why buttons say what will happen",
+            "text": "“Open the kit” and “Send the request” tell a reader what comes next; “Submit” and “Go” do not. Error messages work the same way: they say what is wrong and what to do, such as “The deadline is before today. Choose a later date.”"
+          },
+          {
+            "title": "Why it admits what is missing",
+            "text": "The voice labels what is draft or missing and invites correction: “Ask for something we are missing” is part of the brand, not an apology. Dates are written out, as in 4 Sep 2025, because 04/09 means two different days on two continents."
+          }
+        ]
+      },
       "decisions": [
         {
           "title": "Rebuild from the ground up",
           "text": "Updating the old site page by page would have kept the structure and weight it needed to lose. So every page was rebuilt: a custom WordPress theme of 30 page templates, a new editing side, and content brought across through a repeatable importer that can be rerun and checked."
         },
         {
-          "title": "Set the weight limit before the design",
-          "text": "One rule sat behind the design: when audiences conflict, responders win. So every page had to stay under 500 KB, about 10 seconds at 400 kilobits per second, and that limit was set first, so every template was built to it. Each download also states its format and size before it is pressed, so nobody spends scarce data on a file they did not expect."
-        },
-        {
           "title": "Hold every document on the site",
           "text": "Many documents were only linked to, so they would stop working if a publisher moved a page. We fetched 155 of them, so the site now holds its own copies, with French, Portuguese, Spanish and Swahili versions where publishers offer them. Documents listed two, three or four times now appear once, with their other languages on the same page."
-        },
-        {
-          "title": "Treat the brand as part of the problem",
-          "text": "A better website could not, on its own, explain what the Service is. So we made the case for a new identity alongside it. The reasons are set out below, under The brand."
         },
         {
           "title": "Build for the people who will run it",
@@ -421,6 +529,10 @@
           {
             "title": "It says what the Service is",
             "text": "Three separate parts join one body: distinct organisations, drawn as equals, becoming one service. A reader sees “together” before reading a word, so the mark works on the confusion the evaluation found every time it appears."
+          },
+          {
+            "title": "It is a shape the sector has not used",
+            "text": "Three bars and a block is specific and ownable. It is not a globe, a hand, a heart or a cross, the shapes the humanitarian sector has already used up. The joined body is drawn to the width of the parts that form it, because nothing is added when organisations combine: the whole is the parts, joined."
           },
           {
             "title": "It keeps the partners equal",
@@ -448,43 +560,11 @@
           }
         ],
         "guidelines": [
-          "The identity goes further than the mark. The voice is plain, concrete, calm and honest, because jargon is a barrier to someone in the middle of a crisis. Colour has a job: ink for text, sand for backgrounds, and coral only for what is live now and the one action that matters.",
+          "The identity goes further than the mark. The voice, the colours and the photography described above all belong to it.",
           "All of this is set out in a 57-page design and brand document, shared with the partnership in October 2026. Part A makes the case and sets the guidelines: the evidence, the side-by-side tests, the cost and risk of changing, voice and tone, construction, clear space and minimum sizes, colour, type, photography, four language versions, use beside the partners and the rules. Part B is the design standard for the website, and every rule in it carries its reason and the kind of support behind it: the terms of reference, published evidence, a computed value, a standard or our own judgement.",
           "The identity is proposed and is shared here with the partnership’s permission; adopting it is the partnership’s decision."
         ]
       },
-      "beforeAfter": [
-        {
-          "label": "The website",
-          "before": "The site set up in 2020",
-          "after": "Rebuilt from the ground up, with 30 page templates"
-        },
-        {
-          "label": "The library",
-          "before": "Mostly from 2020 to 2022",
-          "after": "Current guidance first, with out-of-date material left out"
-        },
-        {
-          "label": "Documents",
-          "before": "Many only linked to on other sites",
-          "after": "Held by the site itself, including 155 fetched from publishers"
-        },
-        {
-          "label": "Repeated entries",
-          "before": "Some listed up to four times",
-          "after": "Each listed once, with its languages together"
-        },
-        {
-          "label": "The logo",
-          "before": "The name alone, in English",
-          "after": "A proposed mark, legible at 16 pixels, shared with the partnership’s permission"
-        },
-        {
-          "label": "Old addresses",
-          "before": "1,593 across the old site",
-          "after": "Every one mapped to a place on the new site"
-        }
-      ],
       "results": [
         "The site has not launched, so there are no visitor results to report yet. Until the relaunch, the partnership’s public address still shows the old site.",
         "What can be reported is what was tested. On 23 October 2026 a crawl of 332 pages and 634 links to other sites found none broken. Every page is checked from 320 to 1,920 pixels wide. Visitor measurement is built in and loads only after a visitor consents, so the relaunch can be judged on real use."
@@ -563,32 +643,143 @@
       "figures": [
         {
           "value": "3",
-          "label": "Currencies for one-time and monthly gifts: Swiss francs, euros and US dollars"
+          "label": "Currencies for one-time and monthly gifts: Swiss francs, euros and US dollars, matching the Foundation’s own bank accounts"
         },
         {
           "value": "100",
-          "label": "Lighthouse accessibility score, live home and giving pages. Measured 4 November 2026"
+          "label": "Lighthouse accessibility score on the live home and giving pages, 4 November 2026. Plan International’s brand manual asks every website for at least AA"
         },
         {
-          "value": "14.0 s",
-          "label": "Live home page fully loaded on a 3G profile of 400 kbit/s and 2 s latency. Measured 4 November 2026"
+          "value": "10",
+          "label": "Text styles in the design standard, cut from 56 font sizes in the first concept, so an editor can only choose from what works"
         }
       ],
-      "challenge": [
-        "The Global Girls Foundation is a Swiss foundation, established in 2022, created by Plan International to fund its programmes for girls. Its website has to reach philanthropists and the people around them: family offices, advisers and lawyers, as well as family and corporate foundations.",
-        "Its website did not match that ambition. It was 11 pages on Plan International’s WordPress platform, hard to manage and to find things on, and it had no integrated way to give.",
+      "origin": [
+        "The Global Girls Foundation is a Swiss foundation, established in 2022, created by Plan International to fund its programmes for girls. It describes itself as the platform for global philanthropists, and it wants them to feel part of a mission, not simply donors to a charity.",
+        "Its website did not say that. It was 11 pages on Plan International’s shared WordPress platform, hard to manage and to find things on. It told strong stories but gave no clear next step, and it had no integrated way to give.",
         "The new site had two jobs that pull in different directions. It had to read as a serious institution to someone thinking about a legacy or an endowment, and it still had to take a gift by card from anyone who wanted to give today."
       ],
-      "goals": [
-        "Say clearly what the Foundation is and why a donor should give to it.",
-        "Give each kind of donor a clear route from first visit to gift.",
-        "Take secure one-time and monthly gifts in more than one currency.",
-        "Let the Foundation’s own team edit every page without breaking the design."
-      ],
+      "research": {
+        "intro": [
+          "We started by asking. Three questionnaires went out in June 2026, one each for donors, stakeholders and the Foundation’s team. The answers were consistent enough to design from, so the interviews we had planned were not needed."
+        ],
+        "items": [
+          {
+            "title": "Who the site is really for",
+            "text": "Six donor audiences were named at the start, and one came first: a philanthropist and the people around them, such as a family office, an adviser or a lawyer. We wrote that down and judged every decision against it. For this reader, proof means governance, audited accounts and what a gift achieves at scale. Small-gift habits such as urgency banners would cheapen that, so they were left out."
+          },
+          {
+            "title": "What the first seconds have to do",
+            "text": "One answer set the bar for the home page: within seconds, a visitor should realise how much investing in girls can achieve. Another pointed to the gap in the old site: strong storytelling, but no clear next step. So the page had to make the case fast and then offer somewhere to go."
+          },
+          {
+            "title": "Three ways to open the home page",
+            "text": "We built three working home pages, led by impact, by a girl’s story and by a flagship programme, and the Foundation’s team and a youth delegate compared them. The impact opening built credibility at once. The story drew people in, but worked best in support. Opening on one programme risked making the Foundation look like a single initiative. So the final page opens on a bold statement, brings in the figures straight after, and uses stories in support."
+          },
+          {
+            "title": "The question every first-time visitor asks",
+            "text": "The team pointed out that a new visitor would ask: why this Foundation, and how is it different from Plan International? So the line “The philanthropic arm of Plan International” sits in the opening screen, because the connection builds credibility, and the Why girls page asks the question outright: why this, and not a general gift?"
+          },
+          {
+            "title": "Plan International’s brand rules",
+            "text": "We read Plan’s 104-page Global Brand Manual and checked the design against it. The manual names the Foundation as an example of an external campaign that may carry an aligned identity, with Plan’s logo leading. Every point where the design departs from the manual is written down in a register, with the reason and its status, ready to hand to Plan’s brand team."
+          },
+          {
+            "title": "How Plan’s own national sites work",
+            "text": "We also looked at what Plan’s strongest fundraising sites actually do. Some use rounded buttons and cards, and one puts a giving control in the header. That showed what could work for a donor while still belonging to the brand."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "The design had to feel like a serious institution and still belong to Plan International. Each choice below comes from the reader, from Plan’s brand rules or from a measured value, and all of it is set out in a design standard of 19 parts."
+        ],
+        "items": [
+          {
+            "title": "Why the first screen offers two routes",
+            "text": "A major gift usually starts with a conversation. So the first screen offers two routes side by side: give now, or start a conversation. The Annual Giving Fund and the endowment are reached only through a conversation, and the giving panel names who to talk to, because this reader expects a person, not a form."
+          },
+          {
+            "title": "Why giving opens over the page",
+            "text": "The giving panel opens from the header on every page instead of sending people somewhere else. It is always within reach, and the page the donor was reading stays behind it, so they never lose their place."
+          },
+          {
+            "title": "Why Plan Blue leads and yellow means give",
+            "text": "Plan’s manual says its blue takes precedence and that no more than three colours should appear at once. Yellow cannot carry text: on white it measures 1.42 to 1, far below the 4.5 to 1 that body text needs. So yellow is only ever a fill or a mark, and the giving button is the button that wears it."
+          },
+          {
+            "title": "Why white text is always pure white",
+            "text": "On Plan Blue, pure white measures 4.89 to 1, which passes. Fade it to 74% and it falls to about 3.4 to 1, which fails. So hierarchy on blue comes from size and weight, never from fading the text."
+          },
+          {
+            "title": "Why each typeface has one job",
+            "text": "Poppins Bold carries structure and Arial carries reading, as Plan’s manual asks. Georgia italic is kept for captions and sources, and it never runs at heading size, because on this site it is the voice of a caveat and a title in it would read as provisional. Running text stops at 68 characters a line, inside the readable band of 45 to 75."
+          },
+          {
+            "title": "Why the corners are rounded, against the manual",
+            "text": "Plan’s manual recommends square corners, but its strongest fundraising sites use rounded ones, and the manual’s word is “recommend”, not “must”. So the site follows that live practice, records the departure and gives corners a rule: pills for controls, soft corners for cards, and square for photographs that meet the page edge and for supplied logos."
+          },
+          {
+            "title": "Why the photographs show girls doing things",
+            "text": "Plan’s manual asks images to show agency, knowledge and resilience, not to portray people as victims. So the rule is girls doing something, not being helped, with faces fully in frame. Visible distress and rescue framing are left out. Portraits are square, not circular, because a circle crops the jaw, and the opening photograph has its own crop for each screen shape so a face is never cut."
+          },
+          {
+            "title": "Why the detail sits in the footer",
+            "text": "An adviser looks for the facts: registration, audit, bank details. They sit in the footer of every page, so the top of each page stays clear and the facts are always one scroll away. Detail lives at the bottom, where it helps the person looking for it and does not overwhelm the person who is not."
+          },
+          {
+            "title": "Why there are only ten text styles",
+            "text": "The first concept had grown to 56 font sizes. Each began as a reasonable local decision, and the count is what happens when local decisions are allowed. The standard cut that to ten text styles, six text colours and four corner radii, and custom sizes, colours and spacing are switched off in WordPress, so an editor cannot bring the drift back."
+          },
+          {
+            "title": "Why everything moves slowly",
+            "text": "Every element moves in one consistent way, slowly enough to be seen, so the site feels considered, not static. It has limits: no face moves, nothing follows the cursor, and anyone who asks their device for less motion gets none."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "The Foundation has the final say on its own words. Our part was to give those words a clear logic and to make sure every sentence stayed true."
+        ],
+        "items": [
+          {
+            "title": "Why the site talks about investing",
+            "text": "The opening line is “Investing in girls is the smartest thing the world can do.” This reader, and the adviser beside them, weigh a gift as a use of capital, so the site uses that language: capital, returns, compounding. The case for giving is headed “Be right, not just generous.” It separates the Foundation from a traditional charity model, as its team asked."
+          },
+          {
+            "title": "Why “platform”, not “community”",
+            "text": "In an early review we suggested describing the Foundation as a community. The Foundation pointed out that in German the word can sound basic, and the site would one day be in German. So the opening line calls it “the platform for global philanthropists”, which leaves no room for misreading and suits this audience better."
+          },
+          {
+            "title": "Why every figure names its source",
+            "text": "“133M girls are out of school worldwide” is followed by the report and page it came from. An adviser will check. The Foundation is also young, so most figures are Plan International’s or come from published research, and the site says so."
+          },
+          {
+            "title": "Why the numbers are not the last word",
+            "text": "“The numbers make the case. She is the point.” The team wanted girls at the heart of the site, and Plan’s manual asks for the same. So the evidence leads, and the writing keeps returning to one girl and one decision: whether she goes back to school after the water recedes."
+          },
+          {
+            "title": "Why the name is spelled out",
+            "text": "The site says Global Girls Foundation in full, never the initials, because first-time visitors do not know them."
+          },
+          {
+            "title": "Why the button says “Give now”",
+            "text": "The buttons first read “Start investing”. The Foundation asked for “Give now”, and that is what every button opening the giving panel now says. The endowment page kept its own wording, because that panel takes no payment and “Give now” would have been untrue."
+          },
+          {
+            "title": "Why nothing untrue goes in",
+            "text": "The Foundation decides what it says, with one limit: a sentence that would be false is not published. When the card limit was removed, every sentence that mentioned it was rewritten in the same piece of work. The site still does not say there is no limit, because Stripe and a donor’s own bank have limits of their own."
+          },
+          {
+            "title": "Why bank transfer is a quiet line",
+            "text": "Card fees on a very large gift are real money. So a line sits under the amount box at every size: “Prefer to give by bank transfer?” It is a choice for the donor, never a push."
+          }
+        ]
+      },
       "decisions": [
         {
-          "title": "Offer a conversation as well as a checkout",
-          "text": "A major gift usually starts with a conversation. So the first screen offers two routes side by side: give now, or start a conversation. The Annual Giving Fund and the endowment are reached only through a conversation."
+          "title": "Give the Foundation its own site",
+          "text": "Plan International’s platform serves a whole network of sites, so a structural change or a new integration has to suit all of them. The Foundation needed its own giving panel and payment provider, so it moved to its own WordPress site. The brand, safeguarding, accessibility and data protection stayed the same."
         },
         {
           "title": "Let the donor name the amount",
@@ -611,28 +802,6 @@
           "text": "The Foundation’s domain sat with Plan International, so the move depended on its IT team. We sent the exact changes needed, and every old address was set to redirect to its new home. On launch day all 21 pages and 23 redirects answered correctly."
         }
       ],
-      "beforeAfter": [
-        {
-          "label": "Pages",
-          "before": "11",
-          "after": "21"
-        },
-        {
-          "label": "Where it lives",
-          "before": "Plan International’s WordPress platform",
-          "after": "Its own WordPress site, hosted in Belgium"
-        },
-        {
-          "label": "Giving",
-          "before": "No integrated way to give",
-          "after": "One-time and monthly gifts in Swiss francs, euros and US dollars"
-        },
-        {
-          "label": "Editing",
-          "before": "Hard to manage",
-          "after": "Edited on the page by the Foundation’s own team"
-        }
-      ],
       "results": [
         "The site went live on 9 October 2026, with all 21 pages and 23 redirects answering correctly on the day. One-time and monthly gifts were both confirmed with real payments by 12 October.",
         "For the first time the Foundation can take a gift on its own site, and its staff have been trained to run the pages themselves. Giving totals belong to the Foundation and are not published here."
@@ -653,7 +822,7 @@
         },
         {
           "label": "Performance",
-          "value": "Home page 546 KB, giving page 395 KB. On the 3G profile the home page shows first content at 6.8 s and its main content at 12.5 s."
+          "value": "Home page 546 KB, giving page 395 KB, measured 4 November 2026. On a 3G profile of 400 kbit/s and 2 s latency the home page shows first content at 6.8 s and its main content at 12.5 s, and is fully loaded at 14.0 s."
         },
         {
           "label": "Security",

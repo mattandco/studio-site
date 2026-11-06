@@ -5,7 +5,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import BeforeAfter from "@/components/BeforeAfter";
 import { ClosingCta, NumberedRows } from "@/components/PageParts";
-import { getContent, getProject, nextProject } from "@/content/i18n";
+import { CASE_SOURCES } from "@/content/case-sources";
+import { getContent, getProject, nextProject, type Reasoned } from "@/content/i18n";
 import { SITE } from "@/content/site";
 import { localePath, type Lang } from "@/lib/languages";
 import { alternates } from "@/lib/seo";
@@ -37,23 +38,45 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+function ReasonedSection({ id, title, content }: { id: string; title: string; content: Reasoned }) {
+  return (
+    <section id={id} aria-labelledby={`h-${id}`}>
+      <h2 id={`h-${id}`} className="body-heading">
+        {title}
+      </h2>
+      {content.intro.map((text) => (
+        <p key={text}>{text}</p>
+      ))}
+      {content.items.map(({ title: heading, text }) => (
+        <div key={heading} className="decision">
+          <h3>{heading}</h3>
+          <p>{text}</p>
+        </div>
+      ))}
+    </section>
+  );
+}
+
 export default async function CaseStudyPage({ params }: Props) {
   const { slug, lang: code } = await params;
   const lang = code as Lang;
   const project = getProject(lang, slug);
   if (!project) notFound();
   const next = nextProject(lang, slug);
-  const { common } = getContent(lang);
+  const { common, post } = getContent(lang);
   const t = getContent(lang).caseStudy;
+  const sources = CASE_SOURCES[slug] ?? [];
   const sections = [
-    ["challenge", t.challenge],
-    ["goals", t.goals],
-    ["decisions", t.decisions],
+    ["origin", t.origin],
+    ["research", t.research],
+    ["design", t.design],
+    ["wording", t.wording],
     ["brand", t.brand],
-    ["before-after", t.beforeAfter],
+    ["build", t.build],
     ["result", t.result],
     ["learned", t.learned],
     ["standards", t.standards],
+    ["sources", post.sources],
     ["team", t.team],
   ];
 
@@ -155,48 +178,17 @@ export default async function CaseStudyPage({ params }: Props) {
           ))}
         </nav>
         <div className="case-body">
-          <section id="challenge" aria-labelledby="h-challenge">
-            <h2 id="h-challenge" className="body-heading">
-              {t.challenge}
+          <section id="origin" aria-labelledby="h-origin">
+            <h2 id="h-origin" className="body-heading">
+              {t.origin}
             </h2>
-            {project.challenge.map((text) => (
+            {project.origin.map((text) => (
               <p key={text}>{text}</p>
             ))}
           </section>
-          <section id="goals" aria-labelledby="h-goals">
-            <h2 id="h-goals" className="body-heading">
-              {t.goals}
-            </h2>
-            <ol className="numbered">
-              {project.goals.map((text, index) => (
-                <li key={text}>
-                  <span aria-hidden="true">{`0${index + 1}`}</span>
-                  <span>{text}</span>
-                </li>
-              ))}
-            </ol>
-          </section>
-          <section id="decisions" aria-labelledby="h-decisions">
-            <h2 id="h-decisions" className="body-heading">
-              {t.decisions}
-            </h2>
-            {project.decisions.map(({ title, text, link }) => (
-              <div key={title} className="decision">
-                <h3>{title}</h3>
-                <p>
-                  {text}
-                  {link && (
-                    <>
-                      {" "}
-                      <Link href={localePath(lang, link.href)} className="link">
-                        {link.text}
-                      </Link>
-                    </>
-                  )}
-                </p>
-              </div>
-            ))}
-          </section>
+          <ReasonedSection id="research" title={t.research} content={project.research} />
+          <ReasonedSection id="design" title={t.design} content={project.design} />
+          <ReasonedSection id="wording" title={t.wording} content={project.wording} />
           {project.brand && (
             <section id="brand" aria-labelledby="h-brand">
               <h2 id="h-brand" className="body-heading">
@@ -219,27 +211,26 @@ export default async function CaseStudyPage({ params }: Props) {
               </div>
             </section>
           )}
-          <section id="before-after" aria-labelledby="h-before-after">
-            <h2 id="h-before-after" className="body-heading">
-              {t.beforeAfter}
+          <section id="build" aria-labelledby="h-build">
+            <h2 id="h-build" className="body-heading">
+              {t.build}
             </h2>
-            <ul className="before-after">
-              {project.beforeAfter.map(({ label, before, after }) => (
-                <li key={label}>
-                  <h3>{label}</h3>
-                  <dl>
-                    <div>
-                      <dt>{t.before}</dt>
-                      <dd>{before}</dd>
-                    </div>
-                    <div>
-                      <dt>{t.after}</dt>
-                      <dd>{after}</dd>
-                    </div>
-                  </dl>
-                </li>
-              ))}
-            </ul>
+            {project.decisions.map(({ title, text, link }) => (
+              <div key={title} className="decision">
+                <h3>{title}</h3>
+                <p>
+                  {text}
+                  {link && (
+                    <>
+                      {" "}
+                      <Link href={localePath(lang, link.href)} className="link">
+                        {link.text}
+                      </Link>
+                    </>
+                  )}
+                </p>
+              </div>
+            ))}
           </section>
           <section id="result" aria-labelledby="h-result">
             <h2 id="h-result" className="body-heading">
@@ -275,6 +266,26 @@ export default async function CaseStudyPage({ params }: Props) {
               ))}
             </dl>
           </section>
+          {sources.length > 0 && (
+            <section id="sources" aria-labelledby="h-sources">
+              <h2 id="h-sources" className="body-heading">
+                {post.sources}
+              </h2>
+              <ul className="case-sources">
+                {sources.map(({ title, href }) => (
+                  <li key={title} lang="en">
+                    {href ? (
+                      <a href={href} target="_blank" rel="noopener noreferrer" className="link">
+                        {title}
+                      </a>
+                    ) : (
+                      title
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
         </div>
       </div>
 

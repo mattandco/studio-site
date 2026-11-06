@@ -240,9 +240,11 @@
     "languages": "Línguas",
     "headlineFigures": "Números principais",
     "onThisPage": "Nesta página",
-    "challenge": "O desafio",
-    "goals": "Os objetivos",
-    "decisions": "Decisões-chave",
+    "origin": "Como surgiu",
+    "research": "A investigação",
+    "design": "O design",
+    "wording": "A redação",
+    "build": "A construção",
     "brand": "A marca",
     "brandGuidelines": "As diretrizes da marca",
     "beforeAfter": "Antes e depois",
@@ -359,45 +361,151 @@
       "figures": [
         {
           "value": "283 KB",
-          "label": "Página inicial ao abrir num telemóvel, face a um limite de 500 KB. Medido a 24 de outubro de 2026"
+          "label": "Página inicial ao abrir num telemóvel, medida a 24 de outubro de 2026. O limite de 500 KB veio primeiro, porque uma ligação lenta demora cerca de 10 segundos a carregar esse volume"
         },
         {
           "value": "30",
-          "label": "Modelos de página medidos segundo as WCAG 2.2 AA. Medido a 22 de outubro de 2026"
+          "label": "Modelos de página medidos segundo as WCAG 2.2 AA a 22 de outubro de 2026, porque o sol forte, um ecrã partido e uma mão com luva criam necessidades reais de acesso no terreno"
         },
         {
           "value": "279",
-          "label": "Documentos integrados no Knowledge bank. Medido a 4 de novembro de 2026"
+          "label": "Documentos integrados no Knowledge bank até 4 de novembro de 2026, para que o leitor possa descrever uma situação em vez de adivinhar a palavra de pesquisa certa"
         }
       ],
-      "challenge": [
+      "origin": [
         "The Collective Service é uma parceria mundial de comunicação de riscos e envolvimento comunitário em emergências de saúde. O seu site foi criado em 2020 como biblioteca central de orientações. Continua a ser a porta de entrada da parceria: o local a que coordenadores e equipas de resposta recorrem para obter ferramentas, formação e dados quando têm de chegar às comunidades durante um surto.",
-        "Seis anos depois, o site continuava moldado pela pandemia para a qual foi criado. A maior parte da biblioteca datava de 2020 a 2022, enquanto as emergências em que as pessoas trabalhavam já eram outras.",
-        "As pessoas que mais precisam dele são também as mais difíceis de alcançar. Num inquérito de 2022 a pessoas que partilhavam conteúdos de cursos sobre saúde em emergências, a má conectividade foi a dificuldade mais referida nos países de baixo rendimento, com 29%, contra 8% nos países de rendimento elevado. Em 2025, a página inicial mediana num telemóvel tinha 2,56 MB, o que demora cerca de 51 segundos a 400 quilobits por segundo. É demasiado tempo para um coordenador que precisa de um documento naquele momento.",
-        "A parceria tinha também um problema de reconhecimento. Uma avaliação de 2023 concluiu que o nome era confuso para alguns e que o seu objetivo era pouco comunicado. O logótipo era apenas o nome, por isso não podia ajudar."
+        "Seis anos depois, o site continuava moldado pela pandemia para a qual foi criado. A maior parte da biblioteca datava de 2020 a 2022, enquanto as emergências em que as pessoas trabalhavam já eram outras. As pessoas que mais precisavam dele eram também as mais difíceis de alcançar, muitas vezes num telemóvel e com uma ligação lenta.",
+        "Não começámos por um design. Começámos por ler: a própria base de dados do site, uma avaliação independente da parceria e a investigação publicada sobre a forma como as pessoas em situações de crise encontram e usam orientações. Cada regra do novo site remonta a essa leitura, e cada uma indica o tipo de fundamento que tem, para que qualquer pessoa a possa contestar."
       ],
-      "goals": [
-        "Tornar cada página suficientemente leve para uma ligação lenta, com um limite de 500 KB por página.",
-        "Pôr em destaque as orientações atuais e retirar o que está desatualizado.",
-        "Criar uma biblioteca de documentos com pesquisa, kits de emergência e redirecionamentos de todos os endereços antigos.",
-        "Entregar o site aos próprios editores da parceria, com testes, formação e um relançamento."
-      ],
+      "research": {
+        "intro": [
+          "Uma análise de plataformas comparáveis e de estudos publicados produziu treze conclusões que resistiram a uma verificação tripla de cada afirmação. Indicou também os seus limites: nenhum estudo analisou diretamente estes coordenadores, e nada do que foi verificado abrangia o aspeto visual e a experiência de utilização. Por isso, o design indica onde assenta em evidências e onde é o nosso próprio critério, aberto a contestação e a testes com as equipas de resposta."
+        ],
+        "items": [
+          {
+            "title": "O que já funcionava",
+            "text": "Uma avaliação independente de 2023, com base em 88 entrevistas e 98 respostas a inquéritos, concluiu que os recursos online do site eram o produto mais bem classificado da parceria, com cerca de 80 em 100. Por isso, a biblioteca, os kits e os painéis de dados mantiveram-se no centro. Mudámos a forma como as coisas são encontradas, datadas e identificadas, não o que o site é."
+          },
+          {
+            "title": "As ligações lentas são reais, mas não universais",
+            "text": "Num inquérito de 2022 a pessoas que partilhavam conteúdos de cursos sobre saúde em emergências, a má conectividade foi a dificuldade mais referida nos países de baixo rendimento, com 29%, contra 8% nos países de rendimento elevado, enquanto 47% não referiram qualquer dificuldade. Em 2025, a página inicial mediana num telemóvel tinha 2,56 MB, o que demora cerca de 51 segundos a 400 quilobits por segundo. Por isso, o site é construído primeiro para a ligação lenta: as páginas são leves, e um documento pode ser lido no navegador antes de alguém o ter de transferir."
+          },
+          {
+            "title": "As pessoas dizem que é fácil encontrar as coisas e depois queixam-se da pesquisa",
+            "text": "Um centro de recursos comparável indica que 92% das pessoas encontraram recursos com facilidade, mas 18% dos seus comentários abertos dizem respeito à usabilidade, sobretudo à pesquisa, à navegação e às transferências. Um teste com utilizadores de outro centro concluiu que a falta de uma caixa de pesquisa na página inicial era um dos seus dois grandes problemas. Por isso, a pesquisa está no cabeçalho de todas as páginas, e uma pontuação de satisfação não é aceite como prova."
+          },
+          {
+            "title": "As equipas no terreno querem menos, não mais",
+            "text": "A avaliação concluiu que se produziam mais orientações do que as equipas nos países conseguiam absorver, e sugeriu menos documentos e mais curtos. Um estudo com pessoal de três países afetados por crises concluiu que os documentos curtos eram os preferidos e que um manual de 140 páginas era considerado demasiado longo para consultar. Por isso, cada kit abre com uma seleção “Start here” de até quatro documentos."
+          },
+          {
+            "title": "As orientações desatualizam-se, e a confiança depende de mostrar o trabalho feito",
+            "text": "Numa análise de 2020 a 131 documentos de orientação humanitária, apenas 18% tinham sido atualizados desde a publicação. A confiança está entre os benefícios que os utilizadores de centros de recursos comparáveis mais referem. Por isso, cada documento mostra quem o publicou e quando, e cada ligação é verificada automaticamente. A investigação ainda não mostra que sinais criam confiança, pelo que esta é a nossa melhor leitura do tema, e continua aberta a testes."
+          },
+          {
+            "title": "As pessoas passam as coisas adiante",
+            "text": "Entre 819 pessoas que partilharam conteúdos de cursos, 60% partilharam uma ligação, 36% usaram o WhatsApp e 26% adaptaram o formato para SMS ou WhatsApp. Por isso, o site não pode ser o único canal. Cada documento e cada kit tem um endereço curto e estável e uma pré-visualização que se explica por si quando é colada numa conversa."
+          },
+          {
+            "title": "A língua é uma lacuna recorrente",
+            "text": "Esses 131 documentos de orientação estavam todos em inglês, e apenas 28% estavam também em francês. Por isso, cada documento aparece uma só vez, com as outras línguas juntas na mesma página."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "Uma regra orientou o design: quando os públicos entram em conflito, as equipas de resposta têm prioridade. A maior parte do que se segue decorre dessa frase. As cores foram calculadas com um modelo de cor percetual e com a fórmula de contraste das WCAG, e a tipografia, o espaçamento e as áreas de toque foram definidos com base em investigação publicada, para que cada escolha abaixo tenha uma razão que possa ser verificada."
+        ],
+        "items": [
+          {
+            "title": "Por que o limite de peso veio primeiro",
+            "text": "Cada página tinha de ficar abaixo de 500 KB, cerca de 10 segundos a 400 quilobits por segundo. Esse limite foi definido antes de qualquer design, para que todos os modelos fossem construídos em função dele. Cada transferência indica o formato e o tamanho antes de se clicar, porque um membro de uma equipa de resposta com uma ligação de dados limitada decide se gasta os dados antes de clicar, não depois."
+          },
+          {
+            "title": "Por que a paleta assenta na luminosidade",
+            "text": "Cerca de 8% dos homens têm daltonismo vermelho-verde, e uma fotocopiadora não vê qualquer cor. A luminosidade resiste a ambos. Por isso, a paleta situa-se em três faixas separadas na escala de luminosidade OKLCH de 0 a 100: tintas escuras de 20 a 46, corais de 49 a 76 e cores de página de 90 a 100. Numa simulação de daltonismo, o coral fica verde-azeitona, mas um botão coral sobre areia continua legível, porque a diferença de luminosidade se mantém."
+          },
+          {
+            "title": "Por que o coral significa apenas uma coisa",
+            "text": "A tinta e a areia quase não têm cor. O coral tem cerca de cinco vezes mais, pelo que, onde quer que apareça, o olhar encontra-o primeiro. Isso permite que o coral tenha um significado: o que está ativo neste momento, ou a única ação que importa numa página. O tempo de decisão aumenta com o número de opções de igual peso, um efeito conhecido como lei de Hick, pelo que cada vista usa o coral numa só ação."
+          },
+          {
+            "title": "Por que a página é cor de areia e o texto é cor de tinta",
+            "text": "Uma página cor de areia envia ao olho cerca de 7% menos luz do que o branco, o que atenua o encandeamento em leituras longas, e o texto sobre ela atinge ainda um contraste de 15:1. O branco fica reservado para cartões e campos, pelo que uma caixa branca se lê como o lugar onde escrever. O texto é uma tinta preto-azulada, não preto puro, pelo que o texto, as faixas escuras e as sobreposições nas fotografias são uma só cor em intensidades diferentes, fria sobre um fundo quente."
+          },
+          {
+            "title": "Por que cada par de cores foi calculado",
+            "text": "O texto branco sobre um dos corais mede 3,63:1, o que fica abaixo dos 4,5:1 de que o texto corrido precisa. Sobre um coral ligeiramente mais escuro atinge 4,89, pelo que é esse o coral usado nos botões. Todos os pares de texto e fundo foram calculados da mesma forma. O mesmo cuidado mantém a identidade afastada das cores dos próprios parceiros: a tinta tem tão pouca cor que se lê como um neutro, e o coral não é nem o vermelho nem o laranja que eles usam."
+          },
+          {
+            "title": "Por que o texto tem 17 pixels e as linhas param em cerca de 70 carateres",
+            "text": "Revisões da investigação sobre leitura situam o limite inferior da leitura fluente em cerca de 16 pixels, à distância normal do ecrã, e um estudo de seguimento ocular com 104 pessoas concluiu que a compreensão melhorava com o aumento do tamanho da letra. Por isso, o texto corrido tem 17 pixels e nunca fica abaixo de 16 num telemóvel. A leitura no ecrã é mais confortável com cerca de 45 a 75 carateres por linha, pelo que a coluna comporta cerca de 66 a 70. O espaçamento entre linhas é de 1,55, ligeiramente acima do valor de 1,5 recomendado pela British Dyslexia Association e usado como critério nas WCAG."
+          },
+          {
+            "title": "Por que os títulos são frases, com um tipo de letra serifado",
+            "text": "O texto escrito só em maiúsculas é lido 10 a 20% mais devagar, porque as formas das palavras se achatam em retângulos, pelo que as maiúsculas ficam reservadas para etiquetas curtas e distintivos. Os títulos são escritos como frases porque, assim, um leitor que percorre a página percebe a ideia só pelo título. Um tipo serifado para os títulos e um tipo sem serifas para tudo o resto dão duas vozes claras com apenas duas famílias de tipos de letra, o que importa porque os tipos de letra são o único recurso que pode atrasar o texto."
+          },
+          {
+            "title": "Por que tudo tem pelo menos 44 pixels para tocar",
+            "text": "O mínimo da norma de acessibilidade é de 24 pixels. Adotámos 44 como valor mínimo, porque o público principal usa o site com uma só mão, num telemóvel, muitas vezes a andar ou dentro de um veículo. Um estudo sobre o uso do polegar em pequenos ecrãs táteis concluiu que os erros diminuíam acentuadamente até cerca de 9,2 milímetros, aproximadamente 44 pixels."
+          },
+          {
+            "title": "Por que as formas são arredondadas",
+            "text": "As pessoas consideram as formas curvas mais agradáveis e menos ameaçadoras do que as pontiagudas. O efeito é pequeno, mas consistente, e um site construído para pessoas sob pressão deve aproveitá-lo. A forma tem também uma função: as cápsulas servem apenas para o que se pode clicar, os cartões contêm o que se lê, e os campos são mais quadrados, pelo que um campo nunca parece um botão."
+          },
+          {
+            "title": "Por que o movimento é discreto",
+            "text": "O movimento tem três funções: mostrar de onde algo veio, confirmar que um controlo respondeu e assinalar que uma resposta está ativa. Uma resposta parece instantânea a cerca de um décimo de segundo, e o pensamento flui sem interrupções até cerca de um segundo, pelo que o movimento se mantém perto desse intervalo. Quem pedir ao seu dispositivo menos movimento não tem nenhum."
+          },
+          {
+            "title": "Por que as fotografias são documentais",
+            "text": "Aqui, a fotografia é prova, não decoração. A marca pede pessoas reais a fazer o trabalho, como uma conversa, um spot de rádio ou uma sala de formação, à luz do dia e ao nível dos olhos, com créditos tão cuidados como os de um documento citado. Não há metáforas encenadas, como apertos de mão ou globos, nem grandes planos de sofrimento."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "Tudo o que o Serviço publica fala com uma só voz, com quatro regras: simples, concreto, calmo e honesto. Existem para um único leitor: alguém no meio de uma emergência que não tem tempo para decifrar uma frase."
+        ],
+        "items": [
+          {
+            "title": "Por que a linguagem é simples",
+            "text": "Frases curtas, palavras do dia a dia e verbos na voz ativa, porque o jargão é uma barreira para quem está no meio de uma crise. O site diz o que está a acontecer e o que fazer a seguir."
+          },
+          {
+            "title": "Por que há números em vez de adjetivos",
+            "text": "As afirmações são contagens. “39 documents are ready for this response” convence; “a wealth of resources” não. Os títulos transmitem um facto, nunca um rótulo como “Our resources”."
+          },
+          {
+            "title": "Por que o tom se mantém calmo",
+            "text": "A urgência vem da clareza, nunca do volume. Não há pontos de exclamação, maiúsculas para dar ênfase nem linguagem de alarme fora do próprio alerta. Numa emergência ativa, as palavras ficam mais curtas, não mais ruidosas: primeiro instruções e contagens, sem adjetivos."
+          },
+          {
+            "title": "Por que algumas palavras não são usadas",
+            "text": "As palavras “beneficiaries”, “target audience”, “leverage”, “solutions”, “empower”, “comprehensive”, “world-class” e “innovative” ficam todas de fora. As pessoas são comunidades com capacidade de agir, não destinatários, e uma palavra que pudesse abrir uma apresentação comercial não tem lugar aqui."
+          },
+          {
+            "title": "Por que o tom muda de página para página",
+            "text": "Há uma só voz e quatro registos. Uma emergência ativa tem as frases mais curtas. A biblioteca é factual. A página About é o único lugar para a história. O Helpdesk trata diretamente o leitor por “you”, porque é aí que ele age."
+          },
+          {
+            "title": "Por que os botões dizem o que vai acontecer",
+            "text": "“Open the kit” e “Send the request” dizem ao leitor o que vem a seguir; “Submit” e “Go” não. As mensagens de erro funcionam da mesma forma: dizem o que está errado e o que fazer, como “The deadline is before today. Choose a later date.”"
+          },
+          {
+            "title": "Por que se admite o que falta",
+            "text": "A voz identifica o que é rascunho ou está em falta e convida à correção: “Ask for something we are missing” faz parte da marca, não é um pedido de desculpa. As datas são escritas por extenso, como em 4 Sep 2025, porque 04/09 significa dois dias diferentes em dois continentes."
+          }
+        ]
+      },
       "decisions": [
         {
           "title": "Reconstruir de raiz",
           "text": "Atualizar o site antigo página a página teria mantido a estrutura e o peso de que precisava de se libertar. Por isso, todas as páginas foram reconstruídas: um tema WordPress personalizado com 30 modelos de página, uma nova área de edição e conteúdos transferidos através de um importador repetível, que pode ser executado de novo e verificado."
         },
         {
-          "title": "Definir o limite de peso antes do design",
-          "text": "Uma regra orientou o design: quando os públicos entram em conflito, as equipas de resposta têm prioridade. Por isso, cada página tinha de ficar abaixo de 500 KB, cerca de 10 segundos a 400 quilobits por segundo, e esse limite foi definido primeiro, para que todos os modelos fossem construídos em função dele. Cada transferência indica também o formato e o tamanho antes de se clicar, para que ninguém gaste dados escassos num ficheiro que não esperava."
-        },
-        {
           "title": "Guardar todos os documentos no site",
           "text": "Muitos documentos estavam apenas ligados, pelo que deixariam de funcionar se a entidade que os publica mudasse uma página de lugar. Recolhemos 155 deles, e o site tem agora as suas próprias cópias, com versões em francês, português, espanhol e suaíli quando as entidades editoras as disponibilizam. Os documentos que surgiam duas, três ou quatro vezes aparecem agora uma só vez, com as outras línguas na mesma página."
-        },
-        {
-          "title": "Tratar a marca como parte do problema",
-          "text": "Um site melhor não conseguiria, por si só, explicar o que é o Serviço. Por isso, defendemos em paralelo uma nova identidade. As razões são apresentadas abaixo, em A marca."
         },
         {
           "title": "Construir para quem vai gerir o site",
@@ -421,6 +529,10 @@
           {
             "title": "Diz o que é o Serviço",
             "text": "Três partes separadas unem-se num só corpo: organizações distintas, desenhadas como iguais, que se tornam um único serviço. O leitor vê “juntos” antes de ler uma palavra, pelo que o símbolo responde à confusão identificada pela avaliação sempre que aparece."
+          },
+          {
+            "title": "É uma forma que o setor não usou",
+            "text": "Três barras e um bloco são uma forma específica, que se pode tornar própria. Não é um globo, uma mão, um coração nem uma cruz, as formas que o setor humanitário já esgotou. O corpo unido é desenhado com a largura das partes que o formam, porque nada se acrescenta quando as organizações se unem: o todo são as partes, unidas."
           },
           {
             "title": "Mantém os parceiros em pé de igualdade",
@@ -448,43 +560,11 @@
           }
         ],
         "guidelines": [
-          "A identidade vai além do símbolo. O tom de voz é simples, concreto, calmo e honesto, porque o jargão é uma barreira para quem está no meio de uma crise. A cor tem uma função: tinta para o texto, areia para os fundos e coral apenas para o que está ativo neste momento e para a única ação que importa.",
+          "A identidade vai além do símbolo. O tom de voz, as cores e a fotografia descritos acima fazem todos parte dela.",
           "Tudo isto está descrito num documento de design e marca de 57 páginas, partilhado com a parceria em outubro de 2026. A Parte A defende a proposta e define as diretrizes: as evidências, os testes lado a lado, o custo e o risco da mudança, voz e tom, construção, área de proteção e tamanhos mínimos, cor, tipografia, fotografia, quatro versões linguísticas, utilização ao lado dos parceiros e as regras. A Parte B é a norma de design do site, e cada regra indica a sua razão e o tipo de fundamento: os termos de referência, evidências publicadas, um valor calculado, uma norma ou o nosso próprio critério.",
           "A identidade é uma proposta e é partilhada aqui com a autorização da parceria; a decisão de a adotar cabe à parceria."
         ]
       },
-      "beforeAfter": [
-        {
-          "label": "O site",
-          "before": "O site criado em 2020",
-          "after": "Reconstruído de raiz, com 30 modelos de página"
-        },
-        {
-          "label": "A biblioteca",
-          "before": "Sobretudo de 2020 a 2022",
-          "after": "Orientações atuais primeiro, sem material desatualizado"
-        },
-        {
-          "label": "Documentos",
-          "before": "Muitos apenas com ligação para outros sites",
-          "after": "Guardados no próprio site, incluindo 155 recolhidos junto das entidades editoras"
-        },
-        {
-          "label": "Entradas repetidas",
-          "before": "Alguns listados até quatro vezes",
-          "after": "Cada um listado uma só vez, com as suas línguas juntas"
-        },
-        {
-          "label": "O logótipo",
-          "before": "Apenas o nome, em inglês",
-          "after": "Um símbolo proposto, legível a 16 pixels, partilhado com a autorização da parceria"
-        },
-        {
-          "label": "Endereços antigos",
-          "before": "1 593 em todo o site antigo",
-          "after": "Todos associados a um lugar no novo site"
-        }
-      ],
       "results": [
         "O site ainda não foi lançado, pelo que ainda não há resultados de visitantes a comunicar. Até ao relançamento, o endereço público da parceria continua a mostrar o site antigo.",
         "O que se pode comunicar é o que foi testado. A 23 de outubro de 2026, um rastreio de 332 páginas e 634 ligações para outros sites não encontrou nenhuma quebrada. Cada página é verificada de 320 a 1 920 pixels de largura. A medição de visitantes está integrada e só é carregada depois de o visitante dar o seu consentimento, para que o relançamento possa ser avaliado com base na utilização real."
@@ -563,32 +643,143 @@
       "figures": [
         {
           "value": "3",
-          "label": "Moedas para donativos pontuais e mensais: francos suíços, euros e dólares americanos"
+          "label": "Moedas para donativos pontuais e mensais: francos suíços, euros e dólares americanos, correspondentes às contas bancárias da própria Fundação"
         },
         {
           "value": "100",
-          "label": "Pontuação de acessibilidade Lighthouse nas páginas inicial e de donativos em funcionamento. Medido a 4 de novembro de 2026"
+          "label": "Pontuação de acessibilidade Lighthouse nas páginas inicial e de donativos em funcionamento, 4 de novembro de 2026. O manual de marca da Plan International pede pelo menos AA a todos os sites"
         },
         {
-          "value": "14.0 s",
-          "label": "Página inicial em funcionamento totalmente carregada num perfil 3G de 400 kbit/s e 2 s de latência. Medido a 4 de novembro de 2026"
+          "value": "10",
+          "label": "Estilos de texto na norma de design, reduzidos a partir de 56 tamanhos de letra no primeiro conceito, para que um editor só possa escolher o que funciona"
         }
       ],
-      "challenge": [
-        "A Global Girls Foundation é uma fundação suíça, criada em 2022 pela Plan International para financiar os seus programas para raparigas. O seu site tem de chegar aos filantropos e às pessoas que os rodeiam: gestores de património familiar, consultores e advogados, bem como fundações familiares e empresariais.",
-        "O site não estava à altura dessa ambição. Tinha 11 páginas na plataforma WordPress da Plan International, era difícil de gerir e de nele encontrar informação, e não dispunha de uma forma integrada de doar.",
+      "origin": [
+        "A Global Girls Foundation é uma fundação suíça, criada em 2022 pela Plan International para financiar os seus programas para raparigas. Descreve-se como a plataforma para filantropos globais e quer que eles se sintam parte de uma missão, não simples doadores de uma instituição de caridade.",
+        "O seu site não dizia isso. Tinha 11 páginas na plataforma WordPress partilhada da Plan International e era difícil de gerir e de nele encontrar informação. Contava histórias fortes, mas não indicava um próximo passo claro, e não dispunha de uma forma integrada de doar.",
         "O novo site tinha duas funções que puxam em direções diferentes. Tinha de transmitir a imagem de uma instituição séria a quem pensa num legado ou num fundo patrimonial e, ainda assim, aceitar um donativo por cartão de quem quisesse doar nesse dia."
       ],
-      "goals": [
-        "Dizer com clareza o que é a Fundação e porque deve um doador contribuir para ela.",
-        "Dar a cada tipo de doador um percurso claro, da primeira visita ao donativo.",
-        "Aceitar donativos pontuais e mensais seguros em mais de uma moeda.",
-        "Permitir que a própria equipa da Fundação edite todas as páginas sem estragar o design."
-      ],
+      "research": {
+        "intro": [
+          "Começámos por perguntar. Em junho de 2026 foram enviados três questionários, um para os doadores, outro para as partes interessadas e outro para a equipa da Fundação. As respostas foram suficientemente coerentes para servirem de base ao design, pelo que as entrevistas que tínhamos planeado não foram necessárias."
+        ],
+        "items": [
+          {
+            "title": "Para quem é realmente o site",
+            "text": "No início foram identificados seis públicos doadores, e um veio em primeiro lugar: o filantropo e as pessoas que o rodeiam, como um gestor de património familiar, um consultor ou um advogado. Registámos isso por escrito e avaliámos cada decisão em função disso. Para este leitor, prova significa governação, contas auditadas e o que um donativo alcança em grande escala. Hábitos dos pequenos donativos, como as faixas de urgência, desvalorizariam isso, pelo que foram deixados de fora."
+          },
+          {
+            "title": "O que os primeiros segundos têm de fazer",
+            "text": "Uma resposta definiu a exigência para a página inicial: em segundos, um visitante devia perceber o quanto se pode alcançar investindo em raparigas. Outra apontou a lacuna do site antigo: boas histórias, mas nenhum próximo passo claro. Por isso, a página tinha de apresentar os argumentos depressa e depois oferecer um caminho a seguir."
+          },
+          {
+            "title": "Três formas de abrir a página inicial",
+            "text": "Construímos três páginas iniciais funcionais, centradas no impacto, na história de uma rapariga e num programa emblemático, e a equipa da Fundação e um delegado da juventude compararam-nas. A abertura pelo impacto criou credibilidade de imediato. A história atraía as pessoas, mas funcionava melhor como apoio. Abrir com um único programa arriscava fazer a Fundação parecer uma iniciativa isolada. Por isso, a página final abre com uma afirmação forte, apresenta logo a seguir os números e usa as histórias como apoio."
+          },
+          {
+            "title": "A pergunta que todos os novos visitantes fazem",
+            "text": "A equipa fez notar que um novo visitante perguntaria: porquê esta Fundação, e em que é diferente da Plan International? Por isso, a frase “The philanthropic arm of Plan International” está no ecrã de abertura, porque a ligação cria credibilidade, e a página Why girls faz a pergunta abertamente: porquê isto, e não um donativo geral?"
+          },
+          {
+            "title": "As regras de marca da Plan International",
+            "text": "Lemos o Global Brand Manual da Plan, com 104 páginas, e verificámos o design face a ele. O manual indica a Fundação como exemplo de uma campanha externa que pode ter uma identidade alinhada, com o logótipo da Plan em destaque. Cada ponto em que o design se afasta do manual está escrito num registo, com a razão e o seu estado, pronto a entregar à equipa de marca da Plan."
+          },
+          {
+            "title": "Como funcionam os sites nacionais da própria Plan",
+            "text": "Analisámos também o que fazem realmente os sites de angariação de fundos mais fortes da Plan. Alguns usam botões e cartões arredondados, e um coloca um controlo de donativos no cabeçalho. Isso mostrou o que podia funcionar para um doador sem deixar de pertencer à marca."
+          }
+        ]
+      },
+      "design": {
+        "intro": [
+          "O design tinha de transmitir a imagem de uma instituição séria e, ainda assim, pertencer à Plan International. Cada escolha abaixo vem do leitor, das regras de marca da Plan ou de um valor medido, e tudo isto está definido numa norma de design com 19 partes."
+        ],
+        "items": [
+          {
+            "title": "Por que o primeiro ecrã oferece dois caminhos",
+            "text": "Um grande donativo começa normalmente com uma conversa. Por isso, o primeiro ecrã oferece dois caminhos lado a lado: doar agora ou iniciar uma conversa. O Annual Giving Fund e o fundo patrimonial só são acessíveis através de uma conversa, e o painel de donativos indica com quem falar, porque este leitor espera uma pessoa, não um formulário."
+          },
+          {
+            "title": "Por que os donativos abrem por cima da página",
+            "text": "O painel de donativos abre a partir do cabeçalho em todas as páginas, em vez de enviar as pessoas para outro lugar. Está sempre ao alcance, e a página que o doador estava a ler fica por trás dele, pelo que nunca perde o ponto onde estava."
+          },
+          {
+            "title": "Por que o Plan Blue tem prioridade e o amarelo significa doar",
+            "text": "O manual da Plan diz que o seu azul tem precedência e que não devem aparecer mais de três cores ao mesmo tempo. O amarelo não serve para texto: sobre branco mede 1,42:1, muito abaixo dos 4,5:1 de que o texto corrido precisa. Por isso, o amarelo é sempre apenas um preenchimento ou uma marca, e o botão de donativos é o botão que o usa."
+          },
+          {
+            "title": "Por que o texto branco é sempre branco puro",
+            "text": "Sobre o Plan Blue, o branco puro mede 4,89:1, o que passa. Atenuado para 74%, desce para cerca de 3,4:1, o que não passa. Por isso, a hierarquia sobre azul vem do tamanho e do peso, nunca de atenuar o texto."
+          },
+          {
+            "title": "Por que cada tipo de letra tem uma função",
+            "text": "A Poppins Bold dá a estrutura e a Arial serve para a leitura, como pede o manual da Plan. A Georgia em itálico fica reservada para legendas e fontes, e nunca é usada em tamanho de título, porque neste site é a voz de uma ressalva e um título nesse tipo de letra pareceria provisório. O texto corrido para aos 68 carateres por linha, dentro da faixa legível de 45 a 75."
+          },
+          {
+            "title": "Por que os cantos são arredondados, contra o manual",
+            "text": "O manual da Plan recomenda cantos retos, mas os seus sites de angariação de fundos mais fortes usam cantos arredondados, e a palavra do manual é “recommend”, não “must”. Por isso, o site segue essa prática real, regista o desvio e dá uma regra aos cantos: cápsulas para os controlos, cantos suaves para os cartões e cantos retos para as fotografias que tocam a margem da página e para os logótipos fornecidos."
+          },
+          {
+            "title": "Por que as fotografias mostram raparigas a fazer coisas",
+            "text": "O manual da Plan pede que as imagens mostrem capacidade de agir, conhecimento e resiliência, e que não retratem as pessoas como vítimas. Por isso, a regra é mostrar raparigas a fazer alguma coisa, não a ser ajudadas, com o rosto inteiro no enquadramento. O sofrimento visível e o enquadramento de salvamento ficam de fora. Os retratos são quadrados, não circulares, porque um círculo corta o maxilar, e a fotografia de abertura tem o seu próprio recorte para cada formato de ecrã, para que um rosto nunca fique cortado."
+          },
+          {
+            "title": "Por que os pormenores ficam no rodapé",
+            "text": "Um consultor procura os factos: registo, auditoria, dados bancários. Estão no rodapé de todas as páginas, pelo que o topo de cada página fica limpo e basta sempre descer a página para chegar aos factos. Os pormenores ficam em baixo, onde ajudam quem os procura e não sobrecarregam quem não os procura."
+          },
+          {
+            "title": "Por que há apenas dez estilos de texto",
+            "text": "O primeiro conceito chegou a ter 56 tamanhos de letra. Cada um começou como uma decisão local razoável, e este número é o que acontece quando as decisões locais são permitidas. A norma reduziu isso a dez estilos de texto, seis cores de texto e quatro raios de canto, e os tamanhos, as cores e os espaçamentos personalizados estão desativados no WordPress, para que um editor não possa trazer de volta esse desvio."
+          },
+          {
+            "title": "Por que tudo se move devagar",
+            "text": "Todos os elementos se movem da mesma forma, suficientemente devagar para serem vistos, para que o site pareça pensado, não estático. Há limites: nenhum rosto se move, nada segue o cursor, e quem pedir ao seu dispositivo menos movimento não tem nenhum."
+          }
+        ]
+      },
+      "wording": {
+        "intro": [
+          "A Fundação tem a decisão final sobre as suas próprias palavras. A nossa parte foi dar a essas palavras uma lógica clara e garantir que cada frase se mantinha verdadeira."
+        ],
+        "items": [
+          {
+            "title": "Por que o site fala de investir",
+            "text": "A frase de abertura é “Investing in girls is the smartest thing the world can do.” Este leitor, e o consultor ao seu lado, avaliam um donativo como uma utilização de capital, pelo que o site usa essa linguagem: capital, retornos, efeito composto. Os argumentos a favor de doar têm o título “Be right, not just generous.” Isto distingue a Fundação de um modelo tradicional de caridade, como a sua equipa pediu."
+          },
+          {
+            "title": "Por que “platform”, não “community”",
+            "text": "Numa revisão inicial, sugerimos descrever a Fundação como uma “community”. A Fundação fez notar que, em alemão, a palavra pode soar básica, e que o site um dia estaria em alemão. Por isso, a frase de abertura chama-lhe “the platform for global philanthropists”, o que não deixa margem para leituras erradas e se adequa melhor a este público."
+          },
+          {
+            "title": "Por que cada número indica a sua fonte",
+            "text": "“133M girls are out of school worldwide” é seguido do relatório e da página de onde vem. Um consultor vai verificar. A Fundação é também jovem, pelo que a maioria dos números é da Plan International ou vem de investigação publicada, e o site di-lo."
+          },
+          {
+            "title": "Por que os números não são a última palavra",
+            "text": "“The numbers make the case. She is the point.” A equipa queria as raparigas no centro do site, e o manual da Plan pede o mesmo. Por isso, as evidências vêm à frente, e o texto volta sempre a uma rapariga e a uma decisão: se ela regressa à escola depois de a água recuar."
+          },
+          {
+            "title": "Por que o nome é escrito por extenso",
+            "text": "O site diz Global Girls Foundation por extenso, nunca as iniciais, porque quem visita pela primeira vez não as conhece."
+          },
+          {
+            "title": "Por que o botão diz “Give now”",
+            "text": "Os botões diziam primeiro “Start investing”. A Fundação pediu “Give now”, e é isso que diz agora cada botão que abre o painel de donativos. A página do fundo patrimonial manteve a sua própria redação, porque esse painel não aceita pagamentos e “Give now” não seria verdade."
+          },
+          {
+            "title": "Por que nada falso é publicado",
+            "text": "A Fundação decide o que diz, com um limite: uma frase que seria falsa não é publicada. Quando o limite do cartão foi retirado, todas as frases que o mencionavam foram reescritas no mesmo trabalho. O site continua a não dizer que não há limite, porque a Stripe e o banco do próprio doador têm os seus próprios limites."
+          },
+          {
+            "title": "Por que a transferência bancária é uma linha discreta",
+            "text": "As comissões do cartão num donativo muito grande são dinheiro a sério. Por isso, há uma linha por baixo da caixa do valor, seja qual for o montante: “Prefer to give by bank transfer?” É uma escolha do doador, nunca uma pressão."
+          }
+        ]
+      },
       "decisions": [
         {
-          "title": "Oferecer uma conversa, além do pagamento",
-          "text": "Um grande donativo começa normalmente com uma conversa. Por isso, o primeiro ecrã oferece dois caminhos lado a lado: doar agora ou iniciar uma conversa. O Annual Giving Fund e o fundo patrimonial só são acessíveis através de uma conversa."
+          "title": "Dar à Fundação o seu próprio site",
+          "text": "A plataforma da Plan International serve toda uma rede de sites, pelo que uma alteração estrutural ou uma nova integração tem de servir a todos. A Fundação precisava do seu próprio painel de donativos e do seu próprio fornecedor de pagamentos, por isso mudou para o seu próprio site WordPress. A marca, a salvaguarda, a acessibilidade e a proteção de dados mantiveram-se iguais."
         },
         {
           "title": "Deixar o doador definir o valor",
@@ -611,28 +802,6 @@
           "text": "O domínio da Fundação estava com a Plan International, pelo que a mudança dependia da equipa de TI desta organização. Enviámos as alterações exatas necessárias e cada endereço antigo foi configurado para redirecionar para a sua nova localização. No dia do lançamento, as 21 páginas e os 23 redirecionamentos responderam corretamente."
         }
       ],
-      "beforeAfter": [
-        {
-          "label": "Páginas",
-          "before": "11",
-          "after": "21"
-        },
-        {
-          "label": "Onde está alojado",
-          "before": "Plataforma WordPress da Plan International",
-          "after": "O seu próprio site WordPress, alojado na Bélgica"
-        },
-        {
-          "label": "Donativos",
-          "before": "Sem forma integrada de doar",
-          "after": "Donativos pontuais e mensais em francos suíços, euros e dólares americanos"
-        },
-        {
-          "label": "Edição",
-          "before": "Difícil de gerir",
-          "after": "Editado na própria página pela equipa da Fundação"
-        }
-      ],
       "results": [
         "O site entrou em funcionamento a 9 de outubro de 2026, com as 21 páginas e os 23 redirecionamentos a responder corretamente nesse dia. Os donativos pontuais e mensais foram ambos confirmados com pagamentos reais até 12 de outubro.",
         "Pela primeira vez, a Fundação pode receber um donativo no seu próprio site, e a sua equipa recebeu formação para gerir as páginas. Os totais de donativos pertencem à Fundação e não são publicados aqui."
@@ -653,7 +822,7 @@
         },
         {
           "label": "Desempenho",
-          "value": "Página inicial com 546 KB, página de donativos com 395 KB. No perfil 3G, a página inicial mostra o primeiro conteúdo aos 6,8 s e o conteúdo principal aos 12,5 s."
+          "value": "Página inicial com 546 KB, página de donativos com 395 KB, medidas a 4 de novembro de 2026. Num perfil 3G de 400 kbit/s e 2 s de latência, a página inicial mostra o primeiro conteúdo aos 6,8 s e o conteúdo principal aos 12,5 s, e fica totalmente carregada aos 14,0 s."
         },
         {
           "label": "Segurança",

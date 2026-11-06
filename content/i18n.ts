@@ -23,6 +23,8 @@ export type Insight = {
   sources: { title: string; href: string }[];
 };
 
+export type Reasoned = { intro: string[]; items: { title: string; text: string }[] };
+
 export type Project = {
   slug: string;
   name: string;
@@ -36,15 +38,16 @@ export type Project = {
   cardImage: { src: string };
   detailImage: { src: string; alt: string; caption: string };
   figures: { value: string; label: string }[];
-  challenge: string[];
-  goals: string[];
+  origin: string[];
+  research: Reasoned;
+  design: Reasoned;
+  wording: Reasoned;
   decisions: { title: string; text: string; link?: Link }[];
   brand?: {
     intro: string[];
     reasons: { title: string; text: string }[];
     guidelines: string[];
   };
-  beforeAfter: { label: string; before: string; after: string }[];
   results: string[];
   lessons: string[];
   standards: { label: string; value: string }[];

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect width="1440" height="810" fill="#FFFFFF"></rect>
+<defs><clipPath id="ai"><path d="M772 810V575A300 300 0 0 1 1072 275H1320V810Z"></path></clipPath></defs>
+<text x="120" y="78" font-size="30" fill="#575757" font-weight="700" textLength="246" lengthAdjust="spacingAndGlyphs">Community Trust</text>
+<text x="373" y="78" font-size="30" fill="#575757" textLength="73" lengthAdjust="spacingAndGlyphs">Index</text>
+<text x="571" y="75" font-size="16" fill="#575757" font-weight="600" textLength="69" lengthAdjust="spacingAndGlyphs">About us</text>
+<text x="672" y="75" font-size="16" fill="#575757" font-weight="600" textLength="76" lengthAdjust="spacingAndGlyphs">Countries</text>
+<text x="780" y="75" font-size="16" fill="#575757" font-weight="600" textLength="76" lengthAdjust="spacingAndGlyphs">The Index</text>
+<text x="888" y="75" font-size="16" fill="#575757" font-weight="600" textLength="55" lengthAdjust="spacingAndGlyphs">Library</text>
+<rect x="1140.75" y="47.75" width="178.5" height="33.5" rx="6" fill="#FFFFFF" stroke="#BDBCC0" stroke-width="1.5"></rect>
+<text x="1157" y="71" font-size="16" fill="#575757">English</text>
+<path d="M1293 61l5 5 5-5" fill="none" stroke="#575757" stroke-width="1.6"></path>
+<circle cx="148" cy="353" r="27" fill="none" stroke="#8A888E" stroke-width="1.6"></circle><path d="M160.15 353H135.85M135.85 353l8.64 -8.64M135.85 353l8.64 8.64" fill="none" stroke="#8A888E" stroke-width="1.6" stroke-linecap="round"></path>
+<circle cx="228" cy="353" r="27" fill="none" stroke="#8A888E" stroke-width="1.6"></circle><path d="M215.85 353H240.15M240.15 353l-8.64 -8.64M240.15 353l-8.64 8.64" fill="none" stroke="#8A888E" stroke-width="1.6" stroke-linecap="round"></path>
+<text x="120" y="452" font-size="52" fill="#575757" font-weight="700" textLength="500" lengthAdjust="spacingAndGlyphs">Building Trust in Early</text>
+<text x="120" y="510" font-size="52" fill="#575757" font-weight="700" textLength="250" lengthAdjust="spacingAndGlyphs">Warning &amp;</text>
+<text x="120" y="568" font-size="52" fill="#575757" font-weight="700" textLength="453" lengthAdjust="spacingAndGlyphs">Anticipatory Action</text>
+<text x="120" y="623" font-size="19" fill="#6E6C72" textLength="490" lengthAdjust="spacingAndGlyphs">Explore how trust shapes effective early warning systems</text>
+<text x="120" y="651" font-size="19" fill="#6E6C72" textLength="510" lengthAdjust="spacingAndGlyphs">and timely action through dedicated frameworks, real-world</text>
+<text x="120" y="679" font-size="19" fill="#6E6C72" textLength="489" lengthAdjust="spacingAndGlyphs">country insights, and practical tools to strengthen impact.</text>
+<path d="M720 810V575A350 350 0 0 1 1070 225H1320V810Z" fill="#DCDBDF"></path>
+<g clip-path="url(#ai)"><rect x="772" y="275" width="548" height="535" fill="#F2F2F3"></rect><path d="M772 275L1320 810M1320 275L772 810" stroke="#DBDBDB" stroke-width="1.5"></path></g>
+<g fill="#D9480F" fill-opacity="0.045"><rect x="120.00" width="78.00" height="810"></rect><rect x="222.00" width="78.00" height="810"></rect><rect x="324.00" width="78.00" height="810"></rect><rect x="426.00" width="78.00" height="810"></rect><rect x="528.00" width="78.00" height="810"></rect><rect x="630.00" width="78.00" height="810"></rect><rect x="732.00" width="78.00" height="810"></rect><rect x="834.00" width="78.00" height="810"></rect><rect x="936.00" width="78.00" height="810"></rect><rect x="1038.00" width="78.00" height="810"></rect><rect x="1140.00" width="78.00" height="810"></rect><rect x="1242.00" width="78.00" height="810"></rect></g>
+</svg>

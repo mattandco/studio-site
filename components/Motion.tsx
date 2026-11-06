@@ -17,10 +17,20 @@ const UP = [
 const REVEALS: [string, string][] = [
   ["rule", ".hero-caption, .rule-label, .case-facts, .post-meta, .post-short, .post-sources, .language-row, .fact-row"],
   ["lines", ".hero-title, .statement, .procurement-line, .type-cta, .case-title, .case-summary, .insights-title, .insights-intro, .post-title, .next-capability, .post-body blockquote"],
-  ["up", ".hero-lede, .hero-links, .work-lead-text, .work-second-text, .contact-row, .closing-text, .breadcrumb, .on-this-page, .body-heading, .note-line, .post-lead, .post-body > p, .post-author, .footer-row, .next-case-label, .service-note"],
-  ["rows", ".services, .numbered, .standards, .insights-list, .more-list, .before-after, .questions"],
+  ["up", ".hero-lede, .hero-links, .work-lead-text, .work-second-text, .work-card-text, .contact-row, .closing-text, .breadcrumb, .on-this-page, .body-heading, .note-line, .post-lead, .post-body > p, .post-author, .footer-row, .next-case-label, .service-note"],
+  ["rows", ".services, .numbered, .standards, .insights-list, .more-list, .questions"],
   ["kids", ".about-text, .procurement-list, .team-list, .service-intro, .case-body section > p, .plan-grid"],
-  ["img", ".work-image, .slider"],
+  ["img", ".work-image, .work-mock, .stack-first"],
+];
+
+// The six dots of the logo, which follow the pointer over a project. Each trails at its own speed.
+const DOTS = [
+  { colour: "#D9480F", x: -6, y: -12, ease: 0.34 },
+  { colour: "#2457D6", x: -6, y: 0, ease: 0.27 },
+  { colour: "#138A55", x: -6, y: 12, ease: 0.2 },
+  { colour: "#B57A00", x: 6, y: -12, ease: 0.3 },
+  { colour: "#7B3FE4", x: 6, y: 0, ease: 0.23 },
+  { colour: "#D6246E", x: 6, y: 12, ease: 0.16 },
 ];
 
 type Pending = { el: Element; animations: Animation[] };
@@ -31,14 +41,14 @@ function tintFor(path: string) {
 }
 
 /** All the site's movement in one place. Everything is skipped for reduced motion. */
-export default function Motion({ view }: { view: string }) {
+export default function Motion() {
   const path = usePathname();
   const canvas = useRef<HTMLCanvasElement>(null);
   const cursor = useRef<HTMLDivElement>(null);
   const pending = useRef<Pending[]>([]);
   const covered = useRef(false);
 
-  // The paper background, the header and the "View" cursor live for the whole visit.
+  // The paper background, the header and the dot cursor live for the whole visit.
   useEffect(() => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
@@ -90,17 +100,22 @@ export default function Motion({ view }: { view: string }) {
     const fine = window.matchMedia("(pointer: fine)").matches && !reduced;
     let mx = 0;
     let my = 0;
-    let cx = 0;
-    let cy = 0;
     let on = false;
     let cursorFrame = 0;
+    const dots = Array.from(cursor.current?.children ?? []) as HTMLElement[];
+    const places = DOTS.map(() => ({ x: 0, y: 0 }));
     const follow = () => {
       cursorFrame = 0;
-      if (!cursor.current) return;
-      cx += (mx - cx) * 0.2;
-      cy += (my - cy) * 0.2;
-      cursor.current.style.translate = `${cx.toFixed(1)}px ${cy.toFixed(1)}px`;
-      if (Math.abs(mx - cx) + Math.abs(my - cy) > 0.3) cursorFrame = requestAnimationFrame(follow);
+      let moving = false;
+      dots.forEach((dot, index) => {
+        const place = places[index];
+        const { x, y, ease } = DOTS[index];
+        place.x += (mx + x - place.x) * ease;
+        place.y += (my + y - place.y) * ease;
+        if (Math.abs(mx + x - place.x) + Math.abs(my + y - place.y) > 0.2) moving = true;
+        dot.style.translate = `${place.x.toFixed(1)}px ${place.y.toFixed(1)}px`;
+      });
+      if (moving) cursorFrame = requestAnimationFrame(follow);
     };
     const onMove = (event: PointerEvent) => {
       mx = event.clientX;
@@ -109,15 +124,22 @@ export default function Motion({ view }: { view: string }) {
     };
     const onOver = (event: MouseEvent) => {
       const target = event.target as Element | null;
-      const next = Boolean(target?.closest?.(".work-image")) && !document.querySelector("dialog[open]");
-      if (next === on || !cursor.current) return;
-      if (next) {
-        cx = mx;
-        cy = my;
-        cursor.current.style.translate = `${cx}px ${cy}px`;
+      const card = target?.closest?.<HTMLElement>(".work-mock, .work-image");
+      const next = Boolean(card) && !document.querySelector("dialog[open]");
+      if (next === on) return;
+      if (next && card) {
+        card.style.cursor = "none";
+        places.forEach((place, index) => {
+          place.x = mx + DOTS[index].x;
+          place.y = my + DOTS[index].y;
+        });
       }
       on = next;
-      cursor.current.style.scale = next ? "1" : "0";
+      dots.forEach((dot, index) => {
+        dot.style.transitionDelay = `${next ? index * 40 : (5 - index) * 25}ms`;
+        dot.style.scale = next ? "1" : "0";
+      });
+      if (next && !cursorFrame) cursorFrame = requestAnimationFrame(follow);
     };
     if (fine) {
       window.addEventListener("pointermove", onMove, { passive: true });
@@ -255,8 +277,10 @@ export default function Motion({ view }: { view: string }) {
   return (
     <>
       <canvas ref={canvas} aria-hidden="true" className="paper" />
-      <div ref={cursor} aria-hidden="true" className="view-cursor">
-        {view}
+      <div ref={cursor} aria-hidden="true" className="dot-cursor">
+        {DOTS.map(({ colour }) => (
+          <span key={colour} style={{ background: colour }} />
+        ))}
       </div>
     </>
   );

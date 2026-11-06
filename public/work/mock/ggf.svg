@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect width="1440" height="810" fill="#FFFFFF"></rect>
+<defs><clipPath id="hc"><rect x="14" y="96" width="1412" height="700" rx="12"></rect></clipPath></defs>
+<rect x="14" y="14" width="1412" height="68" rx="12" fill="#EDEDF0"></rect>
+<rect x="58.75" y="27.75" width="112.5" height="40.5" fill="#FFFFFF" stroke="#BDBCC0" stroke-width="1.5"></rect>
+<text x="115" y="53" font-size="13" fill="#8A888E" font-weight="700" letter-spacing="1.5" text-anchor="middle">LOGO</text>
+<rect x="189" y="30" width="1" height="36" fill="#BDBCC0"></rect>
+<text x="206" y="44" font-size="11.5" fill="#575757" font-weight="700" letter-spacing="1.6" textLength="110" lengthAdjust="spacingAndGlyphs">GLOBAL GIRLS</text>
+<text x="206" y="59" font-size="11.5" fill="#575757" font-weight="700" letter-spacing="1.6" textLength="102" lengthAdjust="spacingAndGlyphs">FOUNDATION</text>
+<text x="632" y="54" font-size="15.5" fill="#575757" font-weight="600" textLength="71" lengthAdjust="spacingAndGlyphs">Why girls</text>
+<text x="740" y="54" font-size="15.5" fill="#575757" font-weight="600" textLength="98" lengthAdjust="spacingAndGlyphs">Programmes</text>
+<path d="M851 46l4 4 4-4" fill="none" stroke="#575757" stroke-width="1.6"></path>
+<text x="899" y="54" font-size="15.5" fill="#575757" font-weight="600" textLength="56" lengthAdjust="spacingAndGlyphs">Impact</text>
+<text x="991" y="54" font-size="15.5" fill="#575757" font-weight="600" textLength="99" lengthAdjust="spacingAndGlyphs">Ways to give</text>
+<path d="M1100 46l4 4 4-4" fill="none" stroke="#575757" stroke-width="1.6"></path>
+<text x="1147" y="54" font-size="15.5" fill="#575757" font-weight="600" textLength="46" lengthAdjust="spacingAndGlyphs">About</text>
+<path d="M1207 46l4 4 4-4" fill="none" stroke="#575757" stroke-width="1.6"></path>
+<rect x="1247" y="26" width="135" height="44" rx="22" fill="#575757"></rect>
+<text x="1314.5" y="54" font-size="15" fill="#FFFFFF" font-weight="600" text-anchor="middle">Give now →</text>
+<rect x="14" y="96" width="1412" height="700" rx="12" fill="#E9E8EB"></rect>
+<g clip-path="url(#hc)"><rect x="700" y="96" width="726" height="700" fill="#F2F2F3"></rect><path d="M700 96L1426 796M1426 96L700 796" stroke="#DBDBDB" stroke-width="1.5"></path></g>
+<rect x="58" y="211" width="22" height="2.5" fill="#575757"></rect>
+<text x="90" y="217" font-size="12.5" fill="#575757" font-weight="700" letter-spacing="1.6" textLength="365" lengthAdjust="spacingAndGlyphs">THE PLATFORM FOR GLOBAL PHILANTHROPISTS</text>
+<text x="58" y="312" font-size="72" fill="#575757" font-weight="700" textLength="648" lengthAdjust="spacingAndGlyphs">Investing in girls is</text>
+<text x="58" y="398" font-size="72" fill="#575757" font-weight="700" textLength="648" lengthAdjust="spacingAndGlyphs">the smartest thing</text>
+<text x="58" y="484" font-size="72" fill="#575757" font-weight="700" textLength="596" lengthAdjust="spacingAndGlyphs">the world can do.</text>
+<text x="58" y="539" font-size="25" fill="#575757" font-weight="700" textLength="543" lengthAdjust="spacingAndGlyphs">The philanthropic arm of Plan International</text>
+<text x="58" y="597" font-size="21" fill="#6E6C72" textLength="564" lengthAdjust="spacingAndGlyphs">When girls have the agency to lead, the education to</text>
+<text x="58" y="631" font-size="21" fill="#6E6C72" textLength="570" lengthAdjust="spacingAndGlyphs">succeed, and the platform to be heard, they become the</text>
+<text x="58" y="666" font-size="21" fill="#6E6C72" textLength="535" lengthAdjust="spacingAndGlyphs">architects of a more equitable and prosperous world.</text>
+<rect x="58" y="709" width="137" height="52" rx="26" fill="#575757"></rect>
+<text x="126.5" y="741" font-size="17" fill="#FFFFFF" font-weight="600" text-anchor="middle">Give now</text>
+<rect x="209.75" y="709.75" width="230.5" height="50.5" rx="25.25" fill="none" stroke="#575757" stroke-width="1.5"></rect>
+<text x="325" y="741" font-size="17" fill="#575757" font-weight="600" text-anchor="middle" textLength="172" lengthAdjust="spacingAndGlyphs">Start a conversation</text>
+<g fill="#D9480F" fill-opacity="0.045"><rect x="58.00" width="88.33" height="810"></rect><rect x="170.33" width="88.33" height="810"></rect><rect x="282.67" width="88.33" height="810"></rect><rect x="395.00" width="88.33" height="810"></rect><rect x="507.33" width="88.33" height="810"></rect><rect x="619.67" width="88.33" height="810"></rect><rect x="732.00" width="88.33" height="810"></rect><rect x="844.33" width="88.33" height="810"></rect><rect x="956.67" width="88.33" height="810"></rect><rect x="1069.00" width="88.33" height="810"></rect><rect x="1181.33" width="88.33" height="810"></rect><rect x="1293.67" width="88.33" height="810"></rect></g>
+</svg>

@@ -438,9 +438,137 @@ textarea::placeholder {
   grid-row: 1;
   aspect-ratio: 4 / 3;
 }
-/* These cards use the full screenshot, so nothing is cut from either side. */
-.work-more .work-image {
+/* Project cards: the desktop and phone screenshots, placed as in the design. */
+.work-mock {
+  position: relative;
+  display: block;
+  width: min(100%, calc((100svh - 112px) * 4 / 5));
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+.work-lead .work-mock {
+  width: min(100%, calc((100svh - 112px) * 2));
+  aspect-ratio: 2 / 1;
+}
+.mock-desktop,
+.mock-phone {
+  position: absolute;
+  display: block;
+  background: #fff;
+}
+.mock-desktop {
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(36, 33, 38, 0.08), 0 14px 30px -14px rgba(36, 33, 38, 0.3);
+}
+.mock-phone {
+  box-shadow: 0 0 0 1px rgba(36, 33, 38, 0.08), 0 16px 34px -14px rgba(36, 33, 38, 0.38);
+}
+.mock-desktop > span,
+.mock-phone > span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #fff;
+}
+.mock-desktop > span {
   aspect-ratio: 16 / 9;
+}
+.mock-phone > span {
+  aspect-ratio: 390 / 844;
+}
+.mock-desktop img,
+.mock-phone img {
+  object-fit: cover;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .work-mock .mock-desktop,
+  .work-mock .mock-phone {
+    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .work-mock:hover .mock-desktop {
+    transform: translateY(-1.5%);
+  }
+  .work-mock:hover .mock-phone {
+    transform: translateY(-4%);
+  }
+}
+.work-pair {
+  margin-top: clamp(64px, 8vw, 128px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: clamp(56px, 7vw, 112px) clamp(20px, 2.4vw, 40px);
+  align-items: start;
+}
+.work-pair article:nth-child(2) {
+  padding-top: clamp(0px, 12vw, 240px);
+}
+.work-single {
+  margin-top: clamp(64px, 8vw, 128px);
+  display: flex;
+  justify-content: flex-end;
+}
+.work-single article {
+  width: min(100%, max(340px, calc(50% - 20px)));
+}
+.work-card-text {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.work-card-text .link {
+  margin-top: 12px;
+}
+.work-card-text .link,
+.work-lead-text .link {
+  white-space: nowrap;
+}
+/* Case studies: each stage of the work stacks over the last as the page scrolls. */
+.stack {
+  margin-top: clamp(20px, 2.4vw, 32px);
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+}
+.stack figure {
+  position: sticky;
+  align-self: flex-start;
+  margin: 0;
+  width: min(100%, calc((100svh - 112px) * 0.74 * 2));
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+  transform-origin: 50% 0;
+}
+.stack-end {
+  height: 20vh;
+}
+.stack-chip {
+  position: absolute;
+  z-index: 1;
+  top: 16px;
+  left: 16px;
+  padding: 2px 10px;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1.6;
+  pointer-events: none;
+}
+.stack-chip-new {
+  background: var(--ink);
+  color: #fff;
+}
+.stack-chip-detailed {
+  background: #575757;
+  color: #fff;
+}
+.stack-chip-rough {
+  background: #dbdbdb;
+  color: var(--ink);
+}
+.stack-chip-original {
+  background: #fff;
+  color: var(--ink);
 }
 .work-second-text {
   grid-column: 1;
@@ -897,25 +1025,23 @@ body {
   inset: 0;
   display: block;
 }
-.view-cursor {
+.dot-cursor {
   position: fixed;
   left: 0;
   top: 0;
   z-index: 75;
-  width: 92px;
-  height: 92px;
-  margin: -46px 0 0 -46px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: var(--ink);
-  color: #fff;
-  font-size: 14px;
-  line-height: 1;
   pointer-events: none;
+}
+.dot-cursor span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 9px;
+  height: 9px;
+  margin: -4.5px 0 0 -4.5px;
+  border-radius: 50%;
   scale: 0;
-  transition: scale 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: scale 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .services li {
   position: relative;
@@ -1164,99 +1290,6 @@ body {
   font-size: 14px;
   color: var(--mute);
 }
-.slider-label {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 4px 24px;
-}
-.slider {
-  position: relative;
-  margin-top: clamp(20px, 2.4vw, 32px);
-  aspect-ratio: var(--frame, 16 / 9);
-  overflow: hidden;
-  background: var(--tint);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: pan-y;
-}
-.slider-side {
-  position: absolute;
-  inset: 0;
-}
-.slider-side img {
-  object-fit: cover;
-  object-position: top center;
-}
-.slider-before {
-  clip-path: inset(0 calc(100% - var(--ba, 50%)) 0 0);
-}
-.slider-after {
-  clip-path: inset(0 0 0 var(--ba, 50%));
-}
-.slider-tag {
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-  padding: 2px 10px;
-  background: #fff;
-  color: var(--ink);
-  font-size: 14px;
-  line-height: 1.6;
-  pointer-events: none;
-}
-.slider-tag-after {
-  left: auto;
-  right: 16px;
-  background: var(--ink);
-  color: #fff;
-}
-.slider-handle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: var(--ba, 50%);
-  width: 64px;
-  margin-left: -32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: ew-resize;
-  outline-offset: -8px;
-}
-.slider-line {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  margin-left: -1px;
-  background: #fff;
-}
-.slider-knob {
-  position: relative;
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 6px 24px rgba(36, 33, 38, 0.18);
-}
-.slider-knob span {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 7px 5px 0;
-  border-color: transparent var(--ink) transparent transparent;
-}
-.slider-knob span:last-child {
-  border-width: 5px 0 5px 7px;
-  border-color: transparent transparent transparent var(--ink);
-}
-
 .pack-link {
   margin: clamp(24px, 3vw, 40px) 0 0;
 }

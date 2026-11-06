@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect width="1440" height="810" fill="#FFFFFF"></rect>
+<path d="M80.75 16.75H141.25V60C141.25 75.5 126 85.5 111 89.2C96 85.5 80.75 75.5 80.75 60Z" fill="none" stroke="#8A888E" stroke-width="1.5"></path><path d="M98 36h26M111 28v44" stroke="#BDBCC0" stroke-width="1.5"></path>
+<text x="153" y="47" font-size="22" fill="#575757" letter-spacing="4" textLength="162" lengthAdjust="spacingAndGlyphs">ACADEMICA</text>
+<rect x="153" y="53" width="162" height="1" fill="#BDBCC0"></rect>
+<text x="156" y="67" font-size="9.5" fill="#575757" letter-spacing="3.5" textLength="150" lengthAdjust="spacingAndGlyphs">DUAL DIPLOMA™</text>
+<text x="385" y="57" font-size="16" fill="#575757" textLength="45" lengthAdjust="spacingAndGlyphs">Home</text>
+<rect x="385" y="63" width="45" height="1.5" fill="#575757"></rect>
+<text x="470" y="57" font-size="16" fill="#575757" textLength="76" lengthAdjust="spacingAndGlyphs">About AIS</text>
+<text x="586" y="57" font-size="16" fill="#575757" textLength="169" lengthAdjust="spacingAndGlyphs">Dual Diploma Program</text>
+<text x="795" y="57" font-size="16" fill="#575757" textLength="94" lengthAdjust="spacingAndGlyphs">Applications</text>
+<text x="929" y="57" font-size="16" fill="#575757" textLength="132" lengthAdjust="spacingAndGlyphs">FAQ &amp; Contact us</text>
+<rect x="1101.75" y="30.75" width="101.5" height="48.5" rx="24.25" fill="#FFFFFF" stroke="#BDBCC0" stroke-width="1.5"></rect>
+<circle cx="1128" cy="54" r="10" fill="#DBDBDB"></circle>
+<text x="1145" y="61" font-size="17" fill="#575757" font-weight="700">EN</text>
+<rect x="1241" y="26" width="119" height="50" rx="25" fill="#575757"></rect>
+<text x="1300.5" y="57" font-size="16" fill="#FFFFFF" font-weight="600" text-anchor="middle">Apply Now</text>
+<rect x="0" y="103" width="720" height="707" fill="#E9E8EB"></rect>
+<text x="80" y="322" font-size="66" fill="#575757" textLength="372" lengthAdjust="spacingAndGlyphs">Welcome to</text>
+<text x="80" y="397" font-size="66" fill="#575757" textLength="414" lengthAdjust="spacingAndGlyphs">Dual Diploma</text>
+<text x="80" y="474" font-size="20" fill="#575757" font-weight="600" textLength="477" lengthAdjust="spacingAndGlyphs">The program created and developed by Academica</text>
+<text x="80" y="509" font-size="20" fill="#575757" font-weight="600" textLength="398" lengthAdjust="spacingAndGlyphs">which allows you to obtain simultaneously:</text>
+<text x="80" y="548" font-size="30" fill="#242126" font-weight="600" textLength="502" lengthAdjust="spacingAndGlyphs">The American High School Diploma</text>
+<text x="80" y="587" font-size="30" fill="#242126" font-weight="600" textLength="478" lengthAdjust="spacingAndGlyphs">and the Swiss Matura/Specialised</text>
+<text x="80" y="626" font-size="30" fill="#242126" font-weight="600" textLength="254" lengthAdjust="spacingAndGlyphs">School Certificate</text>
+<rect x="80" y="679" width="560" height="85" rx="42.5" fill="#FFFFFF"></rect>
+<text x="140" y="715" font-size="16" fill="#575757" textLength="434" lengthAdjust="spacingAndGlyphs">Open applications for 2026-2027! EXTENDED DEADLINE:</text>
+<text x="140" y="737" font-size="16" fill="#575757" textLength="91" lengthAdjust="spacingAndGlyphs">AUGUST 23</text>
+<rect x="720" y="103" width="720" height="707" fill="#F2F2F3"></rect><path d="M720 103L1440 810M1440 103L720 810" stroke="#DBDBDB" stroke-width="1.5"></path>
+<g fill="#D9480F" fill-opacity="0.045"><rect x="80.00" width="84.67" height="810"></rect><rect x="188.67" width="84.67" height="810"></rect><rect x="297.33" width="84.67" height="810"></rect><rect x="406.00" width="84.67" height="810"></rect><rect x="514.67" width="84.67" height="810"></rect><rect x="623.33" width="84.67" height="810"></rect><rect x="732.00" width="84.67" height="810"></rect><rect x="840.67" width="84.67" height="810"></rect><rect x="949.33" width="84.67" height="810"></rect><rect x="1058.00" width="84.67" height="810"></rect><rect x="1166.67" width="84.67" height="810"></rect><rect x="1275.33" width="84.67" height="810"></rect></g>
+</svg>

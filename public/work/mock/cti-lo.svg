@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect width="1440" height="810" fill="#FFFFFF"></rect>
+<defs><clipPath id="ai"><path d="M772 810V575A300 300 0 0 1 1072 275H1320V810Z"></path></clipPath></defs>
+<rect x="120" y="52" width="326" height="30" fill="#DCDBDF"></rect>
+<rect x="571" y="62" width="372" height="18" fill="#E0DFE3"></rect>
+<rect x="1140" y="47" width="180" height="35" rx="6" fill="#E4E3E6"></rect>
+<circle cx="148" cy="353" r="28" fill="#E4E3E6"></circle><circle cx="228" cy="353" r="28" fill="#E4E3E6"></circle>
+<rect x="120" y="410" width="500" height="170" fill="#DCDBDF"></rect>
+<rect x="120" y="605" width="510" height="80" fill="#E4E3E6"></rect>
+<path d="M720 810V575A350 350 0 0 1 1070 225H1320V810Z" fill="#E4E3E6"></path>
+<g clip-path="url(#ai)"><rect x="772" y="275" width="548" height="535" fill="#F2F2F3"></rect><path d="M772 275L1320 810M1320 275L772 810" stroke="#DBDBDB" stroke-width="1.5"></path></g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect width="1440" height="810" fill="#FFFFFF"></rect>
+<rect x="80" y="14" width="62" height="76" fill="#DCDBDF"></rect>
+<rect x="153" y="36" width="162" height="36" fill="#E0DFE3"></rect>
+<rect x="385" y="48" width="676" height="18" fill="#E0DFE3"></rect>
+<rect x="1101" y="30" width="103" height="50" rx="25" fill="#E4E3E6"></rect>
+<rect x="1241" y="26" width="119" height="50" rx="25" fill="#CFCED2"></rect>
+<rect x="0" y="103" width="720" height="707" fill="#EDEDF0"></rect>
+<rect x="80" y="262" width="414" height="150" fill="#DCDBDF"></rect>
+<rect x="80" y="454" width="477" height="64" fill="#E4E3E6"></rect>
+<rect x="80" y="520" width="502" height="112" fill="#DCDBDF"></rect>
+<rect x="80" y="679" width="560" height="85" rx="42.5" fill="#FFFFFF"></rect>
+<rect x="720" y="103" width="720" height="707" fill="#F2F2F3"></rect><path d="M720 103L1440 810M1440 103L720 810" stroke="#DBDBDB" stroke-width="1.5"></path>
+</svg>

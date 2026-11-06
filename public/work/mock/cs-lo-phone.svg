@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect width="390" height="844" fill="#FFFFFF"></rect>
+<rect x="0" y="0" width="390" height="830" fill="#F2F2F3"></rect><path d="M0 0L390 830M390 0L0 830" stroke="#DBDBDB" stroke-width="1.5"></path>
+<rect x="0" y="830" width="390" height="14" fill="#F7F7F8"></rect>
+<rect x="18" y="30" width="146" height="20" fill="#DCDBDF"></rect>
+<rect x="200" y="28" width="22" height="22" fill="#E0DFE3"></rect>
+<rect x="236" y="19" width="90" height="42" rx="21" fill="#DCDBDF"></rect>
+<circle cx="351" cy="40.5" r="21" fill="#DCDBDF"></circle>
+<rect x="18" y="124" width="270" height="100" fill="#DCDBDF"></rect>
+<rect x="18" y="256" width="352" height="46" fill="#E4E3E6"></rect>
+<rect x="18.75" y="331.75" width="354.5" height="62.5" rx="31.25" fill="#FFFFFF" stroke="#D6D5D9" stroke-width="1.5"></rect>
+<rect x="18" y="420" width="354" height="382" rx="16" fill="#FFFFFF"></rect>
+<rect x="46" y="450" width="150" height="14" fill="#E4E3E6"></rect>
+<rect x="46" y="478" width="190" height="36" fill="#DCDBDF"></rect>
+<rect x="46" y="524" width="240" height="12" fill="#EDEDF0"></rect>
+<rect x="46" y="550" width="300" height="162" fill="#EDEDF0"></rect>
+<rect x="46" y="744" width="240" height="32" fill="#E4E3E6"></rect>
+</svg>

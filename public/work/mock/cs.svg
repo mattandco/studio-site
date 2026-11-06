@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect width="1440" height="810" fill="#FFFFFF"></rect>
+<rect x="0" y="0" width="1440" height="720" fill="#F2F2F3"></rect><path d="M0 0L1440 720M1440 0L0 720" stroke="#DBDBDB" stroke-width="1.5"></path>
+<rect x="0" y="720" width="1440" height="90" fill="#F7F7F8"></rect>
+<rect x="56" y="18" width="5" height="30" fill="#8A888E"></rect>
+<rect x="64" y="18" width="5" height="30" fill="#8A888E"></rect>
+<rect x="72" y="18" width="5" height="30" fill="#8A888E"></rect>
+<rect x="80" y="18" width="16" height="30" fill="#8A888E"></rect>
+<rect x="112" y="16" width="1" height="38" fill="#BDBCC0"></rect>
+<text x="130" y="38" font-size="26" fill="#575757" textLength="218" lengthAdjust="spacingAndGlyphs">Collective Service</text>
+<text x="130" y="52" font-size="8.5" fill="#8A888E" letter-spacing="1.2" textLength="268" lengthAdjust="spacingAndGlyphs">RISK COMMUNICATION AND COMMUNITY ENGAGEMENT</text>
+<text x="442" y="46" font-size="16" fill="#575757">Kits</text>
+<text x="501" y="46" font-size="16" fill="#575757">Library</text>
+<text x="576" y="46" font-size="16" fill="#575757" textLength="122" lengthAdjust="spacingAndGlyphs">Knowledge bank</text>
+<text x="723" y="46" font-size="16" fill="#575757">Training</text>
+<text x="807" y="46" font-size="16" fill="#575757" textLength="90" lengthAdjust="spacingAndGlyphs">Dashboards</text>
+<text x="921" y="46" font-size="16" fill="#575757" textLength="127" lengthAdjust="spacingAndGlyphs">News and events</text>
+<text x="1072" y="46" font-size="16" fill="#575757">About</text>
+<circle cx="1179" cy="39" r="7.5" fill="none" stroke="#575757" stroke-width="1.6"></circle><path d="M1184.4 44.4l5.25 5.25" stroke="#575757" stroke-width="1.6" stroke-linecap="round"></path>
+<text x="1198" y="46" font-size="16" fill="#575757">Search</text>
+<text x="1274" y="46" font-size="16" fill="#575757">EN</text>
+<rect x="1310.75" y="18.75" width="105.5" height="42.5" rx="21.25" fill="#FFFFFF" stroke="#575757" stroke-width="1.5"></rect>
+<text x="1363" y="45" font-size="16" fill="#575757" font-weight="600" text-anchor="middle">Helpdesk</text>
+<text x="56" y="392" font-size="84" fill="#575757" textLength="340" lengthAdjust="spacingAndGlyphs">Listen first.</text>
+<text x="56" y="478" font-size="84" fill="#575757" textLength="437" lengthAdjust="spacingAndGlyphs">Then respond.</text>
+<text x="56" y="525" font-size="21" fill="#6E6C72" textLength="509" lengthAdjust="spacingAndGlyphs">Guidance, tools and training for risk communication and</text>
+<text x="56" y="556" font-size="21" fill="#6E6C72" textLength="205" lengthAdjust="spacingAndGlyphs">community engagement.</text>
+<rect x="56.75" y="592.75" width="598.5" height="62.5" rx="31.25" fill="#FFFFFF" stroke="#BDBCC0" stroke-width="1.5"></rect>
+<circle cx="86" cy="622" r="8" fill="none" stroke="#8A888E" stroke-width="1.6"></circle><path d="M91.76 627.76l5.6 5.6" stroke="#8A888E" stroke-width="1.6" stroke-linecap="round"></path>
+<text x="110" y="630" font-size="18" fill="#8A888E" textLength="299" lengthAdjust="spacingAndGlyphs">Search by emergency, country or topic</text>
+<rect x="750.75" y="344.75" width="632.5" height="310.5" rx="16" fill="#FFFFFF" stroke="#BDBCC0" stroke-width="1.5"></rect>
+<circle cx="783" cy="381" r="5" fill="#8A888E"></circle>
+<text x="798" y="386" font-size="13" fill="#575757" font-weight="600" letter-spacing="2" textLength="142" lengthAdjust="spacingAndGlyphs">ACTIVE RESPONSE</text>
+<text x="778" y="434" font-size="36" fill="#575757" textLength="174" lengthAdjust="spacingAndGlyphs">Ebola disease</text>
+<text x="778" y="460" font-size="14" fill="#6E6C72" textLength="269" lengthAdjust="spacingAndGlyphs">Current outbreak strain: Bundibugyo virus</text>
+<text x="778" y="494" font-size="16" fill="#6E6C72" textLength="575" lengthAdjust="spacingAndGlyphs">An Ebola outbreak was confirmed in the Democratic Republic of the Congo and</text>
+<text x="778" y="518" font-size="16" fill="#6E6C72" textLength="553" lengthAdjust="spacingAndGlyphs">in Uganda in May 2026. The Bundibugyo species of Ebola involved is one for</text>
+<text x="778" y="542" font-size="16" fill="#6E6C72" textLength="573" lengthAdjust="spacingAndGlyphs">which there is no vaccine or specific treatment, though work is ongoing to test</text>
+<text x="778" y="566" font-size="16" fill="#6E6C72" textLength="163" lengthAdjust="spacingAndGlyphs">promising candidates.</text>
+<text x="778" y="615" font-size="17" fill="#575757" font-weight="600" textLength="100" lengthAdjust="spacingAndGlyphs">Open the kit</text>
+<text x="888" y="615" font-size="17" fill="#6E6C72" textLength="104" lengthAdjust="spacingAndGlyphs">64 resources</text>
+<text x="1003" y="615" font-size="17" fill="#575757">→</text>
+<rect x="778" y="627" width="240" height="1.5" fill="#575757"></rect>
+<g fill="#D9480F" fill-opacity="0.045"><rect x="56.00" width="88.67" height="810"></rect><rect x="168.67" width="88.67" height="810"></rect><rect x="281.33" width="88.67" height="810"></rect><rect x="394.00" width="88.67" height="810"></rect><rect x="506.67" width="88.67" height="810"></rect><rect x="619.33" width="88.67" height="810"></rect><rect x="732.00" width="88.67" height="810"></rect><rect x="844.67" width="88.67" height="810"></rect><rect x="957.33" width="88.67" height="810"></rect><rect x="1070.00" width="88.67" height="810"></rect><rect x="1182.67" width="88.67" height="810"></rect><rect x="1295.33" width="88.67" height="810"></rect></g>
+</svg>

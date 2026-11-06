@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import DeviceMock from "@/components/DeviceMock";
 import Hero from "@/components/Hero";
 import { ClosingCta, FactRow, NumberedRows, Questions } from "@/components/PageParts";
-import { getContent } from "@/content/i18n";
+import { getContent, type Project } from "@/content/i18n";
+import { CARDS } from "@/content/mockups";
 import { localePath, type Lang } from "@/lib/languages";
 import { alternates } from "@/lib/seo";
 
@@ -18,7 +19,9 @@ export default async function Home({ params }: Props) {
   const lang = (await params).lang as Lang;
   const t = getContent(lang);
   const h = t.home;
-  const [lead, second, ...more] = t.projects;
+  const [lead, ...others] = t.projects;
+  const pair = others.slice(0, 2);
+  const more = others.slice(2);
   const caseHref = (slug: string) => localePath(lang, `/work/${slug}`);
 
   return (
@@ -31,11 +34,7 @@ export default async function Home({ params }: Props) {
         </h2>
         <p className="statement type-lg">{h.workStatement}</p>
         <article aria-labelledby="work-lead" className="work-lead">
-          <Link href={caseHref(lead.slug)} className="work-image" tabIndex={-1} aria-hidden="true">
-            <span className="px">
-              <Image src={lead.cardImage.src} alt="" fill sizes="(max-width: 1512px) 100vw, 1384px" />
-            </span>
-          </Link>
+          <WorkMock slug={lead.slug} href={caseHref(lead.slug)} sizes="(max-width: 1512px) 82vw, 1140px" />
           <div className="work-lead-text">
             <h3 id="work-lead" className="work-title">
               {lead.name}
@@ -46,39 +45,15 @@ export default async function Home({ params }: Props) {
             </Link>
           </div>
         </article>
-        <article aria-labelledby="work-second" className="work-second">
-          <Link href={caseHref(second.slug)} className="work-image" tabIndex={-1} aria-hidden="true">
-            <span className="px">
-              <Image src={second.cardImage.src} alt="" fill sizes="(max-width: 760px) 100vw, 66vw" />
-            </span>
-          </Link>
-          <div className="work-second-text">
-            <h3 id="work-second" className="work-title">
-              {second.name}
-            </h3>
-            <p className="mute">{second.line}</p>
-            <Link href={caseHref(second.slug)} className="link">
-              {h.readCaseStudy}
-            </Link>
-          </div>
-        </article>
+        <div className="work-pair">
+          {pair.map((project) => (
+            <WorkCard key={project.slug} project={project} href={caseHref(project.slug)} action={h.readCaseStudy} />
+          ))}
+        </div>
         {more.map((project) => (
-          <article key={project.slug} aria-labelledby={`work-${project.slug}`} className="work-second work-more">
-            <Link href={caseHref(project.slug)} className="work-image" tabIndex={-1} aria-hidden="true">
-              <span className="px">
-                <Image src={project.cardImage.src} alt="" fill sizes="(max-width: 760px) 100vw, 66vw" />
-              </span>
-            </Link>
-            <div className="work-second-text">
-              <h3 id={`work-${project.slug}`} className="work-title">
-                {project.name}
-              </h3>
-              <p className="mute">{project.line}</p>
-              <Link href={caseHref(project.slug)} className="link">
-                {h.readCaseStudy}
-              </Link>
-            </div>
-          </article>
+          <div key={project.slug} className="work-single">
+            <WorkCard project={project} href={caseHref(project.slug)} action={h.readCaseStudy} />
+          </div>
         ))}
         <p className="note-line">{h.workNote}</p>
       </section>
@@ -176,5 +151,37 @@ export default async function Home({ params }: Props) {
 
       <ClosingCta lang={lang} id="contact" />
     </>
+  );
+}
+
+function WorkMock({ slug, href, sizes }: { slug: string; href: string; sizes: string }) {
+  const card = CARDS[slug];
+  return (
+    <Link href={href} className="work-mock" tabIndex={-1} aria-hidden="true">
+      <DeviceMock
+        desktop={card.desktopSrc}
+        phone={card.phoneSrc}
+        desktopPlace={card.desktop}
+        phonePlace={card.phone}
+        sizes={sizes}
+      />
+    </Link>
+  );
+}
+
+function WorkCard({ project, href, action }: { project: Project; href: string; action: string }) {
+  return (
+    <article aria-labelledby={`work-${project.slug}`}>
+      <WorkMock slug={project.slug} href={href} sizes="(max-width: 760px) 100vw, 50vw" />
+      <div className="work-card-text">
+        <h3 id={`work-${project.slug}`} className="work-title">
+          {project.name}
+        </h3>
+        <p className="mute">{project.line}</p>
+        <Link href={href} className="link">
+          {action}
+        </Link>
+      </div>
+    </article>
   );
 }

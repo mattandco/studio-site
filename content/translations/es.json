@@ -22,9 +22,7 @@
         "Trimestral",
         "Anual"
       ]
-    },
-    "drag": "Arrastre el control para comparar",
-    "view": "Ver"
+    }
   },
   "nav": {
     "work": "Proyectos",
@@ -247,9 +245,6 @@
     "build": "El desarrollo",
     "brand": "La marca",
     "brandGuidelines": "Las directrices de marca",
-    "beforeAfter": "Antes y después",
-    "before": "Antes",
-    "after": "Después",
     "result": "El resultado",
     "learned": "Qué aprendimos",
     "standards": "Normas cumplidas",
@@ -258,7 +253,15 @@
     "clientTeam": "Equipo del cliente",
     "carryNext": "Qué podría incorporar esta plataforma a continuación",
     "nextCase": "Siguiente estudio de caso",
-    "proves": "Qué demuestra esto"
+    "proves": "Qué demuestra esto",
+    "stackFull": "Sitio nuevo, wireframes y original",
+    "stackShort": "Sitio nuevo y wireframes",
+    "newSite": "Sitio nuevo",
+    "newSiteHome": "Sitio nuevo · Inicio",
+    "newSiteCountries": "Sitio nuevo · Países",
+    "detailedWireframe": "Wireframe detallado",
+    "roughWireframe": "Wireframe básico",
+    "original": "Original"
   },
   "insightsPage": {
     "title": "Artículos",

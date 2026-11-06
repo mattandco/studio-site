@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect width="1440" height="810" fill="#FFFFFF"></rect>
+<defs><clipPath id="hc"><rect x="14" y="96" width="1412" height="700" rx="12"></rect></clipPath></defs>
+<rect x="14" y="14" width="1412" height="68" rx="12" fill="#E4E3E6"></rect>
+<rect x="58" y="27" width="114" height="42" fill="#FFFFFF"></rect>
+<rect x="206" y="36" width="112" height="24" fill="#D6D5D9"></rect>
+<rect x="632" y="44" width="583" height="18" fill="#D6D5D9"></rect>
+<rect x="1247" y="26" width="135" height="44" rx="22" fill="#CFCED2"></rect>
+<rect x="14" y="96" width="1412" height="700" rx="12" fill="#EDEDF0"></rect>
+<g clip-path="url(#hc)"><rect x="700" y="96" width="726" height="700" fill="#F2F2F3"></rect><path d="M700 96L1426 796M1426 96L700 796" stroke="#DBDBDB" stroke-width="1.5"></path></g>
+<rect x="58" y="205" width="397" height="14" fill="#DCDBDF"></rect>
+<rect x="58" y="250" width="648" height="240" fill="#DCDBDF"></rect>
+<rect x="58" y="515" width="543" height="30" fill="#E0DFE3"></rect>
+<rect x="58" y="575" width="570" height="95" fill="#E4E3E6"></rect>
+<rect x="58" y="709" width="137" height="52" rx="26" fill="#CFCED2"></rect>
+<rect x="209.75" y="709.75" width="230.5" height="50.5" rx="25.25" fill="none" stroke="#CFCED2" stroke-width="1.5"></rect>
+</svg>

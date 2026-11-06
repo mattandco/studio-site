@@ -3,23 +3,23 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import BeforeAfter from "@/components/BeforeAfter";
+import CaseStack from "@/components/CaseStack";
+import DeviceMock from "@/components/DeviceMock";
 import { ClosingCta, NumberedRows } from "@/components/PageParts";
 import { CASE_SOURCES } from "@/content/case-sources";
 import { getContent, getProject, nextProject, type Reasoned } from "@/content/i18n";
+import { STACKS } from "@/content/mockups";
 import { SITE } from "@/content/site";
 import { localePath, type Lang } from "@/lib/languages";
 import { alternates } from "@/lib/seo";
 
 type Props = { params: Promise<{ lang: string; slug: string }> };
 
-// Each frame matches its screenshot exactly, so nothing is cut off and no strip shows.
-// Sites built from scratch have no earlier version, so they have no slider.
-const FRAMES: Record<string, { image: string; slider?: string }> = {
-  "collective-service": { image: "1800 / 934", slider: "2 / 1" },
-  "global-girls-foundation": { image: "1800 / 1012", slider: "1800 / 1012" },
-  "community-trust-index": { image: "16 / 9" },
-  "dual-diploma-switzerland": { image: "16 / 9" },
+// Each frame matches its screenshot exactly, so nothing is cut off and no strip shows. The two sites
+// built from scratch have no extra image: the stack already shows the same screens.
+const FRAMES: Record<string, string> = {
+  "collective-service": "1800 / 934",
+  "global-girls-foundation": "1800 / 1012",
 };
 
 export const dynamicParams = false;
@@ -83,26 +83,8 @@ export default async function CaseStudyPage({ params }: Props) {
     ["team", t.team],
   ];
 
-  // On the Collective Service study the before and after is the first image, on Matthew's instruction.
-  const sliderFirst = slug === "collective-service";
-  const slider = FRAMES[slug].slider && (
-        <section aria-labelledby="h-slider" className="wrap section">
-          <h2 id="h-slider" className="rule-label slider-label">
-            <span>{t.beforeAfter}</span>
-            <span>{common.drag}</span>
-          </h2>
-          <BeforeAfter
-            before={`/work/${slug}-before.jpg`}
-            after={`/work/${slug}-after.jpg`}
-            beforeLabel={t.before}
-            afterLabel={t.after}
-            label={t.beforeAfter}
-            beforeAlt={`${project.name} · ${t.before}`}
-            afterAlt={`${project.name} · ${t.after}`}
-            frame={FRAMES[slug].slider}
-          />
-        </section>
-  );
+  const stack = STACKS[slug];
+  const hasOriginal = stack.layers.some(({ label }) => label === "original");
 
   return (
     <article aria-labelledby="case-title">
@@ -148,14 +130,40 @@ export default async function CaseStudyPage({ params }: Props) {
         </dl>
       </div>
 
-      {sliderFirst && slider}
+      <section aria-labelledby="h-stack" className="wrap section">
+        <h2 id="h-stack" className="rule-label">
+          {hasOriginal ? t.stackFull : t.stackShort}
+        </h2>
+        <CaseStack>
+          {stack.layers.map(({ label, tone, desktop, phone }, index) => (
+            <figure
+              key={label}
+              className={index === 0 ? "stack-first" : undefined}
+              style={{ top: `calc(13svh + ${14 + index * 12}px)` }}
+            >
+              <DeviceMock
+                desktop={desktop}
+                phone={phone}
+                desktopPlace={stack.desktop}
+                phonePlace={stack.phone}
+                alt={`${project.name} · ${t[label]}`}
+                sizes="(max-width: 1512px) 80vw, 1100px"
+                lag={stack.lag}
+              />
+              <span className={`stack-chip stack-chip-${tone}`}>{t[label]}</span>
+            </figure>
+          ))}
+        </CaseStack>
+      </section>
 
-      <figure className="wrap case-image">
-        <span className="work-image" style={{ "--frame": FRAMES[slug].image } as CSSProperties}>
-          <Image src={project.detailImage.src} alt={project.detailImage.alt} fill sizes="(max-width: 1512px) 100vw, 1384px" />
-        </span>
-        <figcaption>{project.detailImage.caption}</figcaption>
-      </figure>
+      {FRAMES[slug] && (
+        <figure className="wrap case-image">
+          <span className="work-image" style={{ "--frame": FRAMES[slug] } as CSSProperties}>
+            <Image src={project.detailImage.src} alt={project.detailImage.alt} fill sizes="(max-width: 1512px) 100vw, 1384px" />
+          </span>
+          <figcaption>{project.detailImage.caption}</figcaption>
+        </figure>
+      )}
 
       <section aria-label={t.headlineFigures} className="wrap figures">
         <dl>
@@ -167,8 +175,6 @@ export default async function CaseStudyPage({ params }: Props) {
           ))}
         </dl>
       </section>
-
-      {!sliderFirst && slider}
 
       <div className="wrap case-body-wrap">
         <nav aria-label={t.onThisPage} className="on-this-page">

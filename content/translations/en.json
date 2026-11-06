@@ -22,9 +22,7 @@
         "Quarterly",
         "Yearly"
       ]
-    },
-    "drag": "Drag the handle to compare",
-    "view": "View"
+    }
   },
   "nav": {
     "work": "Work",
@@ -247,9 +245,6 @@
     "build": "The build",
     "brand": "The brand",
     "brandGuidelines": "The brand guidelines",
-    "beforeAfter": "Before and after",
-    "before": "Before",
-    "after": "After",
     "result": "The result",
     "learned": "What we learned",
     "standards": "Standards met",
@@ -258,7 +253,15 @@
     "clientTeam": "Client team",
     "carryNext": "What this platform could carry next",
     "nextCase": "Next case study",
-    "proves": "What this proves"
+    "proves": "What this proves",
+    "stackFull": "New site, wireframes and original",
+    "stackShort": "New site and wireframes",
+    "newSite": "New site",
+    "newSiteHome": "New site · Home",
+    "newSiteCountries": "New site · Countries",
+    "detailedWireframe": "Detailed wireframe",
+    "roughWireframe": "Rough wireframe",
+    "original": "Original"
   },
   "insightsPage": {
     "title": "Insights",

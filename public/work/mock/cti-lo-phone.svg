@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect width="390" height="844" fill="#FFFFFF"></rect>
+<defs><clipPath id="ai"><path d="M52 612V345A182 182 0 0 1 234 163H378V612Z"></path></clipPath></defs>
+<rect x="12" y="48" width="326" height="30" fill="#DCDBDF"></rect>
+<rect x="352" y="50" width="26" height="24" fill="#E0DFE3"></rect>
+<path d="M14 612V345A220 220 0 0 1 234 125H378V612Z" fill="#E4E3E6"></path>
+<g clip-path="url(#ai)"><rect x="52" y="163" width="326" height="449" fill="#F2F2F3"></rect><path d="M52 163L378 612M378 163L52 612" stroke="#DBDBDB" stroke-width="1.5"></path></g>
+<circle cx="32" cy="675" r="20" fill="#E4E3E6"></circle><circle cx="84" cy="675" r="20" fill="#E4E3E6"></circle>
+<rect x="12" y="722" width="326" height="140" fill="#DCDBDF"></rect>
+</svg>

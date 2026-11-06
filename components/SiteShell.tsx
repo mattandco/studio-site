@@ -16,7 +16,7 @@ export default function SiteShell({ lang, children }: { lang: Lang; children: Re
       <SiteHeader lang={lang} text={t.nav} menu={t.common.mainMenu} />
       <PageTransition>{children}</PageTransition>
       <SiteFooter lang={lang} />
-      <Motion view={t.common.view} />
+      <Motion />
     </ContactFormProvider>
   );
 }

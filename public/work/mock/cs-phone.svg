@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect width="390" height="844" fill="#FFFFFF"></rect>
+<rect x="0" y="0" width="390" height="830" fill="#F2F2F3"></rect><path d="M0 0L390 830M390 0L0 830" stroke="#DBDBDB" stroke-width="1.5"></path>
+<rect x="0" y="830" width="390" height="14" fill="#F7F7F8"></rect>
+<rect x="18" y="31" width="3.5" height="18" fill="#8A888E"></rect>
+<rect x="23.5" y="31" width="3.5" height="18" fill="#8A888E"></rect>
+<rect x="29" y="31" width="3.5" height="18" fill="#8A888E"></rect>
+<rect x="34.5" y="31" width="10" height="18" fill="#8A888E"></rect>
+<rect x="50" y="29" width="1" height="22" fill="#BDBCC0"></rect>
+<text x="57" y="45" font-size="14" fill="#575757" font-weight="600" textLength="106" lengthAdjust="spacingAndGlyphs">Collective Service</text>
+<circle cx="210" cy="38" r="7.5" fill="none" stroke="#575757" stroke-width="1.6"></circle><path d="M215.4 43.4l5.25 5.25" stroke="#575757" stroke-width="1.6" stroke-linecap="round"></path>
+<rect x="236.75" y="19.75" width="89.5" height="41.5" rx="20.75" fill="#FFFFFF" stroke="#575757" stroke-width="1.5"></rect>
+<text x="281" y="45" font-size="14" fill="#575757" font-weight="600" text-anchor="middle">Helpdesk</text>
+<circle cx="351" cy="40.5" r="20.75" fill="#FFFFFF" stroke="#575757" stroke-width="1.5"></circle>
+<rect x="342" y="34" width="18" height="1.8" fill="#575757"></rect>
+<rect x="342" y="40" width="18" height="1.8" fill="#575757"></rect>
+<rect x="342" y="46" width="18" height="1.8" fill="#575757"></rect>
+<text x="18" y="166" font-size="46" fill="#575757" textLength="252" lengthAdjust="spacingAndGlyphs">Listen first.</text>
+<text x="18" y="214" font-size="46" fill="#575757" textLength="269" lengthAdjust="spacingAndGlyphs">Then respond.</text>
+<text x="18" y="272" font-size="16" fill="#6E6C72" textLength="296" lengthAdjust="spacingAndGlyphs">Guidance, tools and training for risk</text>
+<text x="18" y="296" font-size="16" fill="#6E6C72" textLength="353" lengthAdjust="spacingAndGlyphs">communication and community engagement.</text>
+<rect x="18.75" y="331.75" width="354.5" height="62.5" rx="31.25" fill="#FFFFFF" stroke="#BDBCC0" stroke-width="1.5"></rect>
+<circle cx="46" cy="361" r="7.5" fill="none" stroke="#8A888E" stroke-width="1.6"></circle><path d="M51.4 366.4l5.25 5.25" stroke="#8A888E" stroke-width="1.6" stroke-linecap="round"></path>
+<text x="70" y="368" font-size="16" fill="#8A888E" textLength="300" lengthAdjust="spacingAndGlyphs">Search by emergency, country or top</text>
+<rect x="18.75" y="420.75" width="352.5" height="381.5" rx="16" fill="#FFFFFF" stroke="#BDBCC0" stroke-width="1.5"></rect>
+<circle cx="52" cy="456" r="5" fill="#8A888E"></circle>
+<text x="66" y="461" font-size="13" fill="#575757" font-weight="600" letter-spacing="2" textLength="142" lengthAdjust="spacingAndGlyphs">ACTIVE RESPONSE</text>
+<text x="46" y="507" font-size="32" fill="#575757" textLength="170" lengthAdjust="spacingAndGlyphs">Ebola disease</text>
+<text x="46" y="534" font-size="13" fill="#6E6C72" textLength="256" lengthAdjust="spacingAndGlyphs">Current outbreak strain: Bundibugyo virus</text>
+<text x="46" y="566" font-size="15" fill="#6E6C72">An Ebola outbreak was confirmed in the</text>
+<text x="46" y="590" font-size="15" fill="#6E6C72">Democratic Republic of the Congo and</text>
+<text x="46" y="614" font-size="15" fill="#6E6C72">in Uganda in May 2026. The Bundibugyo</text>
+<text x="46" y="638" font-size="15" fill="#6E6C72">species of Ebola involved is one for</text>
+<text x="46" y="662" font-size="15" fill="#6E6C72">which there is no vaccine or specific</text>
+<text x="46" y="686" font-size="15" fill="#6E6C72">treatment, though work is ongoing to</text>
+<text x="46" y="710" font-size="15" fill="#6E6C72">test promising candidates.</text>
+<text x="46" y="761" font-size="17" fill="#575757" font-weight="600" textLength="100" lengthAdjust="spacingAndGlyphs">Open the kit</text>
+<text x="156" y="761" font-size="17" fill="#6E6C72" textLength="104" lengthAdjust="spacingAndGlyphs">64 resources</text>
+<text x="271" y="761" font-size="17" fill="#575757">→</text>
+<rect x="46" y="773" width="240" height="1.5" fill="#575757"></rect>
+<g fill="#D9480F" fill-opacity="0.045"><rect x="18.00" width="76.50" height="844"></rect><rect x="110.50" width="76.50" height="844"></rect><rect x="203.00" width="76.50" height="844"></rect><rect x="295.50" width="76.50" height="844"></rect></g>
+</svg>

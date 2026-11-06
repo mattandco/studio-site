@@ -2,7 +2,6 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
-import { HERO_LANGUAGES } from "@/lib/hero";
 import { startPaper } from "@/lib/paper";
 
 const EO = "cubic-bezier(.16,1,.3,1)";
@@ -36,8 +35,7 @@ const DOTS = [
 type Pending = { el: Element; animations: Animation[] };
 
 function tintFor(path: string) {
-  const index = path.length % HERO_LANGUAGES.length;
-  return HERO_LANGUAGES[index].colour;
+  return DOTS[path.length % DOTS.length].colour;
 }
 
 /** All the site's movement in one place. Everything is skipped for reduced motion. */

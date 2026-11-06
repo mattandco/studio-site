@@ -1,7 +1,7 @@
 "use client";
 
-import { Fragment, useCallback, useEffect, useRef, useState } from "react";
-import { HERO_LANGUAGES, setHeroIndex } from "@/lib/hero";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { HERO_LANGUAGES, setLogoStep } from "@/lib/hero";
 import DiscussLink from "@/components/DiscussLink";
 import type { Lang } from "@/lib/languages";
 
@@ -9,20 +9,14 @@ type Phase = "intro" | "in" | "out" | "none" | "hide";
 
 const HOLD = 3400;
 
-function units(text: string, code: string) {
-  return code === "ar" ? text.split(" ").length : Array.from(text).length;
-}
-
 function duration(index: number, phase: Phase) {
-  const { code, first, second } = HERO_LANGUAGES[index];
-  const count = units(first, code) + units(second, code) - 1;
-  const ar = code === "ar";
-  if (phase === "out") return 700 + count * (ar ? 90 : 24);
-  if (phase === "in") return 1300 + count * (ar ? 150 : 46);
-  return 1700 + count * (ar ? 180 : 64);
+  const { first, second } = HERO_LANGUAGES[index];
+  const count = Array.from(first + second).length - 1;
+  if (phase === "out") return 700 + count * 24;
+  if (phase === "in") return 1300 + count * 46;
+  return 1700 + count * 64;
 }
 
-// Arabic moves by whole words so its letters stay joined; the rest by letter.
 function Letters({
   text,
   offset,
@@ -36,27 +30,22 @@ function Letters({
   phase: Phase;
   generation: number;
 }) {
-  const ar = code === "ar";
-  const parts = ar ? text.split(" ") : Array.from(text);
   return (
     <>
-      {parts.map((part, index) => {
+      {Array.from(text).map((part, index) => {
         const step = offset + index;
         const animation =
           phase === "none" || phase === "hide"
             ? "none"
             : phase === "out"
-              ? `heroLeave .7s cubic-bezier(.7,0,.84,0) ${step * (ar ? 90 : 24)}ms both`
+              ? `heroLeave .7s cubic-bezier(.7,0,.84,0) ${step * 24}ms both`
               : phase === "in"
-                ? `heroRise 1.3s cubic-bezier(.16,1,.3,1) ${step * (ar ? 150 : 46)}ms both`
-                : `heroRise 1.5s cubic-bezier(.16,1,.3,1) ${200 + step * (ar ? 180 : 64)}ms both`;
+                ? `heroRise 1.3s cubic-bezier(.16,1,.3,1) ${step * 46}ms both`
+                : `heroRise 1.5s cubic-bezier(.16,1,.3,1) ${200 + step * 64}ms both`;
         return (
-          <Fragment key={`${generation}${code}${index}`}>
-            {ar && index > 0 ? " " : null}
-            <span className="hero-unit">
-              <span style={phase === "hide" ? { animation, transform: "translateY(112%)" } : { animation }}>{part === " " ? " " : part}</span>
-            </span>
-          </Fragment>
+          <span key={`${generation}${code}${index}`} className="hero-unit">
+            <span style={phase === "hide" ? { animation, transform: "translateY(112%)" } : { animation }}>{part === " " ? " " : part}</span>
+          </span>
         );
       })}
     </>
@@ -83,7 +72,7 @@ export default function Hero({ lang, text }: { lang: Lang; text: HeroText }) {
 
   const section = useRef<HTMLElement>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
-  const live = useRef({ index: start, phase: "intro" as Phase, paused: false, reduced: false, visible: true });
+  const live = useRef({ index: start, step: start, phase: "intro" as Phase, paused: false, reduced: false, visible: true });
   const stepRef = useRef<() => void>(() => {});
 
   const schedule = useCallback((ms: number) => {
@@ -99,7 +88,8 @@ export default function Hero({ lang, text }: { lang: Lang; text: HeroText }) {
     setIndex(next);
     setPhase("in");
     setGeneration((value) => value + 1);
-    setHeroIndex(next);
+    live.current.step += 1;
+    setLogoStep(live.current.step);
   }, []);
 
   useEffect(() => {
@@ -120,7 +110,7 @@ export default function Hero({ lang, text }: { lang: Lang; text: HeroText }) {
   }, [schedule, show]);
 
   useEffect(() => {
-    setHeroIndex(start);
+    setLogoStep(start);
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     live.current.reduced = reduced;
     if (reduced) {
@@ -153,7 +143,7 @@ export default function Hero({ lang, text }: { lang: Lang; text: HeroText }) {
       window.removeEventListener("nv-uncover", begin);
       clearTimeout(timer.current);
       observer.disconnect();
-      setHeroIndex(0);
+      setLogoStep(0);
     };
   }, [schedule, start]);
 
@@ -174,19 +164,15 @@ export default function Hero({ lang, text }: { lang: Lang; text: HeroText }) {
 
   const language = HERO_LANGUAGES[index];
   const { code } = language;
-  const ar = code === "ar";
-  const joined = ar || code === "zh";
-  const long = code === "fr" || code === "es";
+  const long = code === "es" || code === "fr" || code === "pt";
 
   return (
     <section ref={section} aria-labelledby="home-title" className="wrap hero">
       <div className="hero-top">
         <div className="hero-caption">
           <span aria-hidden="true" className="hero-caption-text">
-            <span className="tabular">{`0${index + 1} / 06`}</span>
-            <span lang={code} dir={ar ? "rtl" : "ltr"}>
-              {language.name}
-            </span>
+            <span className="tabular">{`0${index + 1} / 0${HERO_LANGUAGES.length}`}</span>
+            <span lang={code}>{language.name}</span>
           </span>
           <button type="button" onClick={toggle} className="hero-pause">
             {paused ? (
@@ -206,18 +192,18 @@ export default function Hero({ lang, text }: { lang: Lang; text: HeroText }) {
           style={{
             color: language.colour,
             fontSize: long ? "clamp(50px,10.8vw,188px)" : "clamp(60px,12.6vw,216px)",
-            lineHeight: ar ? 1.3 : code === "zh" ? 1.12 : 1,
-            letterSpacing: joined ? 0 : "-0.05em",
+            lineHeight: 1,
+            letterSpacing: "-0.05em",
           }}
         >
-          <span dir={ar ? "rtl" : "ltr"} lang={code} className="hero-lines">
+          <span lang={code} className="hero-lines">
             <span>
               <Letters text={language.first} offset={0} code={code} phase={phase} generation={generation} />
             </span>
             <span className="hero-line-end">
               <Letters
                 text={language.second}
-                offset={units(language.first, code)}
+                offset={Array.from(language.first).length}
                 code={code}
                 phase={phase}
                 generation={generation}

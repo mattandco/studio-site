@@ -39,15 +39,6 @@ body {
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
 }
-/* Arabic and Chinese appear only in the hero's moving display. */
-.hero-display :lang(ar),
-.hero-caption-text :lang(ar) {
-  font-family: var(--font-alexandria), var(--font-body);
-}
-.hero-display :lang(zh),
-.hero-caption-text :lang(zh) {
-  font-family: var(--font-noto-sc), var(--font-body);
-}
 a {
   color: inherit;
   text-decoration: none;

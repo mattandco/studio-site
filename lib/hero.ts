@@ -8,34 +8,34 @@ export type HeroLanguage = {
   second: string;
 };
 
-// "Design Studio" in the six UN languages, as supplied in the design.
+// "Design Studio" in the site's five languages, in the order of the language buttons.
 export const HERO_LANGUAGES: HeroLanguage[] = [
   { code: "en", colour: "#D9480F", name: "English", first: "Design", second: "Studio" },
-  { code: "fr", colour: "#2457D6", name: "Français", first: "Studio", second: "de design" },
-  { code: "ru", colour: "#138A55", name: "Русский", first: "Дизайн-", second: "студия" },
   { code: "es", colour: "#B57A00", name: "Español", first: "Estudio", second: "de diseño" },
-  { code: "ar", colour: "#7B3FE4", name: "العربية", first: "استوديو", second: "تصميم" },
-  { code: "zh", colour: "#D6246E", name: "中文", first: "设计", second: "工作室" },
+  { code: "fr", colour: "#2457D6", name: "Français", first: "Studio", second: "de design" },
+  { code: "de", colour: "#138A55", name: "Deutsch", first: "Design-", second: "studio" },
+  { code: "pt", colour: "#7B3FE4", name: "Português", first: "Estúdio", second: "de design" },
 ];
 
+// The logo's six colours, clockwise from the top left dot.
+const RING_COLOURS = ["#D9480F", "#B57A00", "#7B3FE4", "#D6246E", "#138A55", "#2457D6"];
+// Where each dot of the logo sits on that ring.
 const RING = [0, 5, 4, 1, 2, 3];
-const RING_START = [0, 3, 4, 5, 2, 1];
 
-/** The logo's six dots, turned one place round the ring for each language. */
+/** The logo's six dots, turned round the ring by the given number of places. */
 export function logoColours(step: number): string[] {
-  return RING.map(
-    (place) => HERO_LANGUAGES[RING_START[(place - step + 6) % 6]].colour
-  );
+  return RING.map((place) => RING_COLOURS[(place - (step % 6) + 6) % 6]);
 }
 
-// The hero and the logo sit in different parts of the page, so the current
-// language lives in a small store rather than in either component.
+// The hero and the logo sit in different parts of the page, so the logo's place
+// lives in a small store rather than in either component. It counts turns rather
+// than languages: five languages and six dots, and the logo always moves one place.
 let current = 0;
 const listeners = new Set<() => void>();
 
-export function setHeroIndex(index: number) {
-  if (index === current) return;
-  current = index;
+export function setLogoStep(step: number) {
+  if (step === current) return;
+  current = step;
   listeners.forEach((listener) => listener());
 }
 
@@ -46,7 +46,7 @@ function subscribe(listener: () => void) {
   };
 }
 
-export function useHeroIndex() {
+export function useLogoStep() {
   return useSyncExternalStore(
     subscribe,
     () => current,

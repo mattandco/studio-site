@@ -1,14 +1,11 @@
 // Checks that each translation has the same shape as en.json: the same keys, the
 // same list lengths, and identical values for fields that must not be translated.
 // Usage: node scripts/check-translations.mjs [es fr de pt]
-// Checks both sites' wording: Nestvested's in content/translations/ and Matthew's own in
-// content/translations/matthew-bowman/, each against its own en.json.
 import { readFileSync } from "node:fs";
 
-const SETS = [
-  ["nestvested", new URL("../content/translations/", import.meta.url)],
-  ["matthew-bowman", new URL("../content/translations/matthew-bowman/", import.meta.url)],
-];
+const dir = new URL("../content/translations/", import.meta.url);
+const read = (code) => JSON.parse(readFileSync(new URL(`${code}.json`, dir), "utf8"));
+const en = read("en");
 const codes = process.argv.slice(2).length ? process.argv.slice(2) : ["es", "fr", "de", "pt"];
 
 // Fields that stay exactly as they are in English.
@@ -55,23 +52,19 @@ function compare(code, a, b, path) {
   }
 }
 
-for (const [site, dir] of SETS) {
-const read = (code) => JSON.parse(readFileSync(new URL(`${code}.json`, dir), "utf8"));
-const en = read("en");
 for (const code of codes) {
   let data;
   try {
     data = read(code);
   } catch (error) {
-    report(`${site} ${code}`, "file", error.message);
+    report(code, "file", error.message);
     continue;
   }
-  compare(`${site} ${code}`, en, data, "");
+  compare(code, en, data, "");
   const text = JSON.stringify(data.projects[0]);
   for (const name of ["WHO", "UNICEF", "GOARN", "IFRC", "Gates"]) {
-    if (new RegExp(`\\b${name}\\b`).test(text)) report(`${site} ${code}`, "projects[0]", `names ${name}`);
+    if (new RegExp(`\\b${name}\\b`).test(text)) report(code, "projects[0]", `names ${name}`);
   }
-}
 }
 console.log(problems ? `${problems} problems` : `OK: ${codes.join(", ")}`);
 process.exit(problems ? 1 : 0);

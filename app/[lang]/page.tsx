@@ -2,13 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import DeviceMock from "@/components/DeviceMock";
 import Hero from "@/components/Hero";
-import HeroFixedLine from "@/components/HeroFixedLine";
 import { ClosingCta, FactRow, NumberedRows, Questions } from "@/components/PageParts";
 import { getContent, type Project } from "@/content/i18n";
 import { CARDS } from "@/content/mockups";
 import { localePath, type Lang } from "@/lib/languages";
 import { alternates } from "@/lib/seo";
-import { PERSONAL } from "@/lib/website";
 
 type Props = { params: Promise<{ lang: string }> };
 
@@ -21,21 +19,14 @@ export default async function Home({ params }: Props) {
   const lang = (await params).lang as Lang;
   const t = getContent(lang);
   const h = t.home;
-  // Nestvested leads with the first project in the content file. Matthew's own site leads with
-  // the Global Girls Foundation, the live site (Matthew, 10 November 2026); the rest follow in order.
-  const lead = (PERSONAL && t.projects.find(({ slug }) => slug === "global-girls-foundation")) || t.projects[0];
-  const others = t.projects.filter((project) => project !== lead);
+  const [lead, ...others] = t.projects;
   const pair = others.slice(0, 2);
   const more = others.slice(2);
   const caseHref = (slug: string) => localePath(lang, `/work/${slug}`);
 
   return (
     <>
-      {PERSONAL ? (
-        <HeroFixedLine lang={lang} text={{ ...t.hero, discuss: t.common.discuss }} />
-      ) : (
-        <Hero lang={lang} text={{ ...t.hero, discuss: t.common.discuss }} />
-      )}
+      <Hero lang={lang} text={{ ...t.hero, discuss: t.common.discuss }} />
 
       <section id="work" aria-labelledby="work-title" className="wrap section">
         <h2 id="work-title" className="rule-label">
@@ -122,13 +113,11 @@ export default async function Home({ params }: Props) {
             </div>
           ))}
         </dl>
-        {!PERSONAL && (
-          <p className="pack-link">
-            <a href="/nestvested-procurement-pack.pdf" className="link">
-              {h.packLink}
-            </a>
-          </p>
-        )}
+        <p className="pack-link">
+          <a href="/nestvested-procurement-pack.pdf" className="link">
+            {h.packLink}
+          </a>
+        </p>
 
         <div id="fees" className="sub-section">
           <h3 className="rule-label">{h.fees.label}</h3>

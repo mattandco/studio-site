@@ -3,14 +3,6 @@
 // It runs from a small inline script, so it never waits for the site's code on a slow
 // connection. It plays on every load, as the design says, except for reduced motion
 // and a language switch, which is a full page load here but not in the design.
-import { SITE } from "@/content/site";
-import { PERSONAL } from "@/lib/website";
-
-// The name is drawn letter by letter. "Matthew Bowman" has a space, kept as a
-// non-breaking one, and starts smaller so it fits a 320px screen.
-const LETTER = PERSONAL ? "(c===' '?'&nbsp;':c)" : "c";
-const SMALLEST = PERSONAL ? 34 : 48;
-
 export const introScript = `(function(){try{
 var d=document,w=window;
 if(w.matchMedia('(prefers-reduced-motion: reduce)').matches||!Element.prototype.animate)return;
@@ -25,8 +17,8 @@ var pos=[[-3.6,-7.2],[-3.6,0],[-3.6,7.2],[3.6,-7.2],[3.6,0],[3.6,7.2]];
 var root=d.createElement('div');root.setAttribute('aria-hidden','true');root.setAttribute('data-nv-intro','');
 root.style.cssText='position:fixed;inset:0;z-index:100';
 var dots=pos.map(function(p,i){return '<circle cx="'+p[0]+'" cy="'+p[1]+'" r="2.88" style="fill:'+cols[i]+';transform-box:fill-box;transform-origin:center;transform:scale(0)"></circle>'}).join('');
-var chars='${SITE.name}'.split('').map(function(c){return '<span style="display:inline-block;overflow:hidden;vertical-align:top;padding:.1em 0 .18em;margin:-.1em 0 -.18em"><span data-c style="display:inline-block;transform:translateY(112%)">'+${LETTER}+'</span></span>'}).join('');
-root.innerHTML='<style data-h>.logo{opacity:0}</style><div data-s style="position:absolute;inset:0;background:#fff"><div data-t style="position:absolute;left:0;right:0;bottom:0;height:1px;background:#242126;transform-origin:left center;transform:scaleX(0)"></div></div><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none"><span data-l style="display:inline-flex;align-items:baseline;gap:.24em;font-size:clamp(${SMALLEST}px,8vw,128px);font-weight:500;letter-spacing:-0.02em;line-height:1.6;color:#242126;white-space:nowrap;transform-origin:0 0"><svg viewBox="-7 -10.5 14 21" style="flex:none;width:.493em;height:.74em;position:relative;top:.04em;overflow:visible">'+dots+'</svg><span style="display:inline-block;white-space:nowrap">'+chars+'</span></span></div>';
+var chars='Nestvested'.split('').map(function(c){return '<span style="display:inline-block;overflow:hidden;vertical-align:top;padding:.1em 0 .18em;margin:-.1em 0 -.18em"><span data-c style="display:inline-block;transform:translateY(112%)">'+c+'</span></span>'}).join('');
+root.innerHTML='<style data-h>.logo{opacity:0}</style><div data-s style="position:absolute;inset:0;background:#fff"><div data-t style="position:absolute;left:0;right:0;bottom:0;height:1px;background:#242126;transform-origin:left center;transform:scaleX(0)"></div></div><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none"><span data-l style="display:inline-flex;align-items:baseline;gap:.24em;font-size:clamp(48px,8vw,128px);font-weight:500;letter-spacing:-0.02em;line-height:1.6;color:#242126;white-space:nowrap;transform-origin:0 0"><svg viewBox="-7 -10.5 14 21" style="flex:none;width:.493em;height:.74em;position:relative;top:.04em;overflow:visible">'+dots+'</svg><span style="display:inline-block;white-space:nowrap">'+chars+'</span></span></div>';
 d.body.appendChild(root);
 var q=function(s){return root.querySelector(s)},sheet=q('[data-s]'),lock=q('[data-l]');
 var done=false,uncover=function(){if(w.__nvCovered){w.__nvCovered=false;w.dispatchEvent(new Event('nv-uncover'))}};

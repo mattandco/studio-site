@@ -1034,6 +1034,11 @@ body {
   scale: 0;
   transition: scale 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
+/* While the dots are the pointer, the system cursor is hidden everywhere. */
+html.dots,
+html.dots * {
+  cursor: none !important;
+}
 .services li {
   position: relative;
 }

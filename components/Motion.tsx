@@ -22,7 +22,7 @@ const REVEALS: [string, string][] = [
   ["img", ".work-image, .work-mock, .stack-first"],
 ];
 
-// The six dots of the logo, which follow the pointer over a project. Each trails at its own speed.
+// The six dots of the logo, which follow the pointer everywhere. Each trails at its own speed.
 const DOTS = [
   { colour: "#D9480F", x: -6, y: -12, ease: 0.34 },
   { colour: "#2457D6", x: -6, y: 0, ease: 0.27 },
@@ -95,10 +95,14 @@ export default function Motion() {
     window.addEventListener("scroll", onScroll, { passive: true });
     tick();
 
+    // The pointer: the six dots follow the mouse everywhere on a fine pointer, and gather into one
+    // blue dot, a little larger, over anything that can be pressed (Matthew, 10 November 2026).
     const fine = window.matchMedia("(pointer: fine)").matches && !reduced;
+    const PRESS = "a, button, [role='button'], input, select, textarea, label, summary";
     let mx = 0;
     let my = 0;
     let on = false;
+    let hot = false;
     let cursorFrame = 0;
     const dots = Array.from(cursor.current?.children ?? []) as HTMLElement[];
     const places = DOTS.map(() => ({ x: 0, y: 0 }));
@@ -108,46 +112,64 @@ export default function Motion() {
       dots.forEach((dot, index) => {
         const place = places[index];
         const { x, y, ease } = DOTS[index];
-        place.x += (mx + x - place.x) * ease;
-        place.y += (my + y - place.y) * ease;
-        if (Math.abs(mx + x - place.x) + Math.abs(my + y - place.y) > 0.2) moving = true;
+        const tx = mx + (hot ? 0 : x);
+        const ty = my + (hot ? 0 : y);
+        place.x += (tx - place.x) * ease;
+        place.y += (ty - place.y) * ease;
+        if (Math.abs(tx - place.x) + Math.abs(ty - place.y) > 0.2) moving = true;
         dot.style.translate = `${place.x.toFixed(1)}px ${place.y.toFixed(1)}px`;
       });
       if (moving) cursorFrame = requestAnimationFrame(follow);
     };
-    const onMove = (event: PointerEvent) => {
-      mx = event.clientX;
-      my = event.clientY;
-      if (on && !cursorFrame) cursorFrame = requestAnimationFrame(follow);
+    const press = (next: boolean) => {
+      if (next === hot) return;
+      hot = next;
+      dots.forEach((dot, index) => {
+        dot.style.transitionDelay = "0ms";
+        dot.style.scale = next ? (index === 1 ? "1.8" : "0") : "1";
+      });
+      if (!cursorFrame) cursorFrame = requestAnimationFrame(follow);
     };
-    const onOver = (event: MouseEvent) => {
-      const target = event.target as Element | null;
-      const card = target?.closest?.<HTMLElement>(".work-mock, .work-image");
-      const next = Boolean(card) && !document.querySelector("dialog[open]");
+    const show = (next: boolean) => {
       if (next === on) return;
-      if (next && card) {
-        card.style.cursor = "none";
+      on = next;
+      if (next) {
         places.forEach((place, index) => {
           place.x = mx + DOTS[index].x;
           place.y = my + DOTS[index].y;
         });
+        document.documentElement.classList.add("dots");
+      } else {
+        document.documentElement.classList.remove("dots");
+        hot = false;
       }
-      on = next;
       dots.forEach((dot, index) => {
         dot.style.transitionDelay = `${next ? index * 40 : (5 - index) * 25}ms`;
         dot.style.scale = next ? "1" : "0";
       });
       if (next && !cursorFrame) cursorFrame = requestAnimationFrame(follow);
     };
+    const onMove = (event: PointerEvent) => {
+      if (event.pointerType && event.pointerType !== "mouse") return;
+      mx = event.clientX;
+      my = event.clientY;
+      if (!on) show(true);
+      else if (!cursorFrame) cursorFrame = requestAnimationFrame(follow);
+      const target = event.target as Element | null;
+      press(Boolean(target?.closest?.(PRESS)));
+    };
+    const onLeave = () => show(false);
     if (fine) {
       window.addEventListener("pointermove", onMove, { passive: true });
-      document.addEventListener("mouseover", onOver);
+      document.addEventListener("mouseleave", onLeave);
+      window.addEventListener("blur", onLeave);
     }
     return () => {
       stopPaper();
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("pointermove", onMove);
-      document.removeEventListener("mouseover", onOver);
+      document.removeEventListener("mouseleave", onLeave);
+      window.removeEventListener("blur", onLeave);
       cancelAnimationFrame(frame);
       cancelAnimationFrame(cursorFrame);
     };

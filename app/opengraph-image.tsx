@@ -1,7 +1,8 @@
 import { ImageResponse } from "next/og";
+import { SITE } from "@/content/site";
 
 export const runtime = "nodejs";
-export const alt = "Nestvested: websites and brands for NGOs and international organisations";
+export const alt = `${SITE.name}: websites and brands for NGOs and international organisations`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -56,7 +57,7 @@ export default async function OpengraphImage() {
               <div key={colour} style={{ width: 32, height: 32, borderRadius: 16, background: colour }} />
             ))}
           </div>
-          <div style={{ display: "flex", fontSize: 72, fontWeight: 500, letterSpacing: -1.5 }}>Nestvested</div>
+          <div style={{ display: "flex", fontSize: 72, fontWeight: 500, letterSpacing: -1.5 }}>{SITE.name}</div>
         </div>
         <div style={{ display: "flex", fontSize: 60, lineHeight: 1.2, letterSpacing: -1, maxWidth: 980 }}>
           Websites and brands for NGOs and international organisations.

@@ -1,3 +1,31 @@
+# Matthew's two websites
+
+One codebase, two sites (Matthew, 10 November 2026):
+
+| Site | Address | Vercel project | Built with |
+|---|---|---|---|
+| Nestvested, the company | https://nestvested.co | `nestvested.co` | no setting |
+| Matthew Bowman, his own | https://mattbowman.vercel.app | `matthew-bowman` | `WEBSITE=matthew-bowman` |
+
+Both Vercel projects build from this repository's `main`, so one push publishes both.
+Everything that differs between them reads `lib/website.ts`:
+
+- the facts (name, email, address): `content/site.ts`
+- the wording: Nestvested's in `content/translations/*.json`, Matthew's own (first person)
+  in `content/translations/matthew-bowman/*.json`. A change to shared wording goes in both.
+  Check with `node scripts/check-translations.mjs`, which checks both sets.
+- the hero: `components/Hero.tsx` turns through the languages; Matthew's own site uses
+  `components/HeroFixedLine.tsx`, one fixed line
+- the opening, header, structured record, search-engine rules and procurement pack
+
+Matthew's own site is kept out of search engines. To see it locally:
+`WEBSITE=matthew-bowman npm run dev`.
+
+Until 10 November 2026 Matthew's own site was a separate copy in `mattandco/matthew-bowman`;
+that repository is archived.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

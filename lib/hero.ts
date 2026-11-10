@@ -17,6 +17,10 @@ export const HERO_LANGUAGES: HeroLanguage[] = [
   { code: "pt", colour: "#7B3FE4", name: "Português", first: "Estúdio", second: "de design" },
 ];
 
+// Matthew's own site: the hero's line is fixed, in English, on every language page;
+// it does not turn through the languages (Matthew, 10 November 2026). The colour is English's.
+export const HERO_LINE = { first: "Technology", second: "Consultant", colour: "#D9480F" };
+
 // The logo's six colours, clockwise from the top left dot.
 const RING_COLOURS = ["#D9480F", "#B57A00", "#7B3FE4", "#D6246E", "#138A55", "#2457D6"];
 // Where each dot of the logo sits on that ring.

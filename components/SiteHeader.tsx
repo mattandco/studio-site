@@ -1,6 +1,7 @@
 import Link from "next/link";
 import LogoMark from "@/components/LogoMark";
 import SiteNav, { type NavText } from "@/components/SiteNav";
+import { SITE } from "@/content/site";
 import { localePath, type Lang } from "@/lib/languages";
 
 export default function SiteHeader({ lang, text, menu }: { lang: Lang; text: NavText; menu: string }) {
@@ -9,7 +10,7 @@ export default function SiteHeader({ lang, text, menu }: { lang: Lang; text: Nav
       <header className="site-header">
         <Link href={localePath(lang, "/")} className="logo">
           <LogoMark lang={lang} />
-          <span>Nestvested</span>
+          <span>{SITE.name}</span>
         </Link>
         <SiteNav lang={lang} text={text} menu={menu} />
       </header>

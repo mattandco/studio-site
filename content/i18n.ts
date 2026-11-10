@@ -1,9 +1,15 @@
 import type { Lang } from "@/lib/languages";
+import { PERSONAL } from "@/lib/website";
 import de from "./translations/de.json";
 import en from "./translations/en.json";
 import es from "./translations/es.json";
 import fr from "./translations/fr.json";
 import pt from "./translations/pt.json";
+import mbDe from "./translations/matthew-bowman/de.json";
+import mbEn from "./translations/matthew-bowman/en.json";
+import mbEs from "./translations/matthew-bowman/es.json";
+import mbFr from "./translations/matthew-bowman/fr.json";
+import mbPt from "./translations/matthew-bowman/pt.json";
 
 export type Block =
   | { kind: "p"; text: string }
@@ -97,7 +103,10 @@ export type Content = Omit<typeof en, "projects" | "insights" | "servicePages"> 
 // Every figure in the projects comes from a dated measurement in the project's
 // own records, or from a test of the live site. Name only what each client has
 // cleared for publication. Translations are checked by scripts/check-translations.mjs.
-const CONTENT = { de, en, es, fr, pt } as unknown as Record<Lang, Content>;
+// Matthew's own site has its own wording, in the first person, in translations/matthew-bowman/.
+const CONTENT = (
+  PERSONAL ? { de: mbDe, en: mbEn, es: mbEs, fr: mbFr, pt: mbPt } : { de, en, es, fr, pt }
+) as unknown as Record<Lang, Content>;
 
 export const getContent = (lang: Lang) => CONTENT[lang];
 

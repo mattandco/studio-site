@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
 
+// Which site this build is: see lib/website.ts. Matthew's own site is kept out of search
+// engines and has no procurement pack.
+const PERSONAL = process.env.WEBSITE === "matthew-bowman";
+
 // The page's inline scripts need 'unsafe-inline' while the pages stay static.
 const CSP = [
   "default-src 'self'",
@@ -16,11 +20,14 @@ const CSP = [
 
 const nextConfig: NextConfig = {
   experimental: { globalNotFound: true },
+  // Passed to the browser code as well, so every part of the site agrees on which site it is.
+  env: { WEBSITE: process.env.WEBSITE ?? "" },
   async headers() {
     return [
       {
         source: "/:path*",
         headers: [
+          ...(PERSONAL ? [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] : []),
           { key: "Content-Security-Policy", value: CSP },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "DENY" },
@@ -43,6 +50,8 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
+        // Nestvested's procurement pack is not part of Matthew's own site: there it is not found.
+        ...(PERSONAL ? [{ source: "/nestvested-procurement-pack.pdf", destination: "/en/not-found" }] : []),
         { source: "/", destination: "/en" },
         // Letters and hyphens only, so the images in public/work are left alone.
         { source: "/work/:slug([a-z-]+)", destination: "/en/work/:slug" },

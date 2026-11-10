@@ -62,7 +62,7 @@ export default function ContactFormProvider({
   text: FormText;
   children: ReactNode;
 }) {
-  // Values stay in English: they go into the email Nestvested receives.
+  // Values stay in English: they go into the email the site's owner receives.
   const budgets = [
     ["Not decided yet", text.budgetNotDecided],
     ["Under CHF 10,000", text.budgetUnder],

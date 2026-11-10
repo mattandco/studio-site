@@ -9,7 +9,7 @@ import "./globals.css";
 
 const { notFound } = getContent("en");
 
-export const metadata: Metadata = { title: `${notFound.title} · Nestvested` };
+export const metadata: Metadata = { title: `${notFound.title} · ${SITE.name}` };
 
 export default function GlobalNotFound() {
   const [before, after = ""] = notFound.text.split("{email}");

@@ -95,40 +95,63 @@ export default function Motion() {
     window.addEventListener("scroll", onScroll, { passive: true });
     tick();
 
-    // The pointer: the six dots follow the mouse everywhere on a fine pointer, and gather into one
-    // blue dot, a little larger, over anything that can be pressed (Matthew, 10 November 2026).
+    // The pointer: the six dots follow the mouse everywhere on a fine pointer. Over anything that can be
+    // pressed they draw together into one blue dot, a little larger, over about two thirds of a second; pressing squeezes
+    // it; leaving lets them spread out again (Matthew, 10 November 2026). Sizes are a timed ease-in-out
+    // tween, so the change reads as a gather, not a switch.
     const fine = window.matchMedia("(pointer: fine)").matches && !reduced;
     const PRESS = "a, button, [role='button'], input, select, textarea, label, summary";
+    const BLUE = 1;
+    const GATHER_MS = 680;
+    const SQUEEZE_MS = 180;
+    type Tween = { from: number; to: number; t0: number };
     let mx = 0;
     let my = 0;
     let on = false;
-    let hot = false;
     let cursorFrame = 0;
+    let gather: Tween = { from: 0, to: 0, t0: 0 };
+    let squeeze: Tween = { from: 0, to: 0, t0: 0 };
     const dots = Array.from(cursor.current?.children ?? []) as HTMLElement[];
     const places = DOTS.map(() => ({ x: 0, y: 0 }));
-    const follow = () => {
+    const inOut = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+    const band = (a: number, b: number, x: number) => {
+      const t = Math.max(0, Math.min(1, (x - a) / (b - a)));
+      return t * t * (3 - 2 * t);
+    };
+    const valueAt = (tween: Tween, duration: number, now: number) => {
+      const t = Math.min(1, Math.max(0, (now - tween.t0) / duration));
+      return tween.from + (tween.to - tween.from) * inOut(t);
+    };
+    const follow = (time?: number) => {
       cursorFrame = 0;
-      let moving = false;
+      const now = time ?? performance.now();
+      const g = valueAt(gather, GATHER_MS, now);
+      const p = valueAt(squeeze, SQUEEZE_MS, now);
+      const spread = 1 - g;
+      let moving = now - gather.t0 < GATHER_MS || now - squeeze.t0 < SQUEEZE_MS;
       dots.forEach((dot, index) => {
         const place = places[index];
         const { x, y, ease } = DOTS[index];
-        const tx = mx + (hot ? 0 : x);
-        const ty = my + (hot ? 0 : y);
+        const tx = mx + x * spread;
+        const ty = my + y * spread;
         place.x += (tx - place.x) * ease;
         place.y += (ty - place.y) * ease;
         if (Math.abs(tx - place.x) + Math.abs(ty - place.y) > 0.2) moving = true;
         dot.style.translate = `${place.x.toFixed(1)}px ${place.y.toFixed(1)}px`;
+        const size = index === BLUE ? (1 + 0.8 * g) * (1 - 0.24 * p) : 1 - band(0.2, 1, g);
+        dot.style.transform = `scale(${size.toFixed(3)})`;
       });
       if (moving) cursorFrame = requestAnimationFrame(follow);
     };
-    const press = (next: boolean) => {
-      if (next === hot) return;
-      hot = next;
-      dots.forEach((dot, index) => {
-        dot.style.transitionDelay = "0ms";
-        dot.style.scale = next ? (index === 1 ? "1.8" : "0") : "1";
-      });
+    const kick = () => {
       if (!cursorFrame) cursorFrame = requestAnimationFrame(follow);
+    };
+    const tweenTo = (tween: Tween, goal: number, duration: number): Tween => {
+      if (goal === tween.to) return tween;
+      const now = performance.now();
+      const next = { from: valueAt(tween, duration, now), to: goal, t0: now };
+      kick();
+      return next;
     };
     const show = (next: boolean) => {
       if (next === on) return;
@@ -141,26 +164,40 @@ export default function Motion() {
         document.documentElement.classList.add("dots");
       } else {
         document.documentElement.classList.remove("dots");
-        hot = false;
+        gather = { from: 0, to: 0, t0: 0 };
+        squeeze = { from: 0, to: 0, t0: 0 };
+        dots.forEach((dot) => {
+          dot.style.transform = "";
+        });
       }
       dots.forEach((dot, index) => {
         dot.style.transitionDelay = `${next ? index * 40 : (5 - index) * 25}ms`;
         dot.style.scale = next ? "1" : "0";
       });
-      if (next && !cursorFrame) cursorFrame = requestAnimationFrame(follow);
+      if (next) kick();
     };
     const onMove = (event: PointerEvent) => {
       if (event.pointerType && event.pointerType !== "mouse") return;
       mx = event.clientX;
       my = event.clientY;
       if (!on) show(true);
-      else if (!cursorFrame) cursorFrame = requestAnimationFrame(follow);
+      else kick();
       const target = event.target as Element | null;
-      press(Boolean(target?.closest?.(PRESS)));
+      gather = tweenTo(gather, target?.closest?.(PRESS) ? 1 : 0, GATHER_MS);
+    };
+    const onDown = (event: PointerEvent) => {
+      if (event.pointerType && event.pointerType !== "mouse") return;
+      if (gather.to === 1) squeeze = tweenTo(squeeze, 1, SQUEEZE_MS);
+    };
+    const onUp = () => {
+      squeeze = tweenTo(squeeze, 0, SQUEEZE_MS);
     };
     const onLeave = () => show(false);
     if (fine) {
       window.addEventListener("pointermove", onMove, { passive: true });
+      window.addEventListener("pointerdown", onDown, { passive: true });
+      window.addEventListener("pointerup", onUp, { passive: true });
+      window.addEventListener("pointercancel", onUp, { passive: true });
       document.addEventListener("mouseleave", onLeave);
       window.addEventListener("blur", onLeave);
     }
@@ -168,6 +205,9 @@ export default function Motion() {
       stopPaper();
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("pointermove", onMove);
+      window.removeEventListener("pointerdown", onDown);
+      window.removeEventListener("pointerup", onUp);
+      window.removeEventListener("pointercancel", onUp);
       document.removeEventListener("mouseleave", onLeave);
       window.removeEventListener("blur", onLeave);
       cancelAnimationFrame(frame);
